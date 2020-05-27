@@ -7,145 +7,111 @@
 //
 
 #import "MainViewController.h"
-#import "Masonry.h"
 
-@interface MainViewController ()
+@interface MainViewController ()<UITableViewDataSource,UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @end
 
 @implementation MainViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIView *redView = [[UIView alloc] init];
-    redView.backgroundColor = UIColor.redColor;
-    [self.view addSubview:redView];
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
     
-    UIView *blueView = [[UIView alloc] init];
-    blueView.backgroundColor = UIColor.blueColor;
-    [self.view addSubview:blueView];
-  
-    //blueView的约束
-    [blueView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(self.view.mas_left).offset(30);
-        make.top.mas_equalTo(self.view.mas_top).offset(30);
-        make.right.mas_equalTo(redView.mas_left).offset(-30);
-        make.width.mas_equalTo(redView.mas_width);
-        make.height.mas_equalTo(50);
-    }];
+    //设置每一组头部高度
+    self.tableView.sectionHeaderHeight = 80;
+    //设置每一行cell的高度
+    self.tableView.rowHeight = 100;
+    //设置分割线颜色
+    self.tableView.separatorColor = UIColor.blueColor;
+    //设置分割线样式
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     
-    //redView的约束
-    [redView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.mas_equalTo(self.view.mas_right).offset(-30);
-        make.top.mas_equalTo(blueView.mas_top);
-        make.bottom.mas_equalTo(blueView.mas_bottom);
-    }];
-    
-    //mas_makeConstraints是新增约束，修改约束用mas_updateConstraints
-    //下面是修改blueView的高度为80
-    [blueView mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.height.mas_equalTo(80);
-    }];
-    
-    //删除之前所有约束，添加新的约束（慎用）
-//    [blueView mas_remakeConstraints:^(MASConstraintMaker *make) {
-//
-//    }];
+    //如下是针对整个列表的头部和尾部设置view
+    self.tableView.tableHeaderView = [[UISwitch alloc] init];
+    self.tableView.tableFooterView = [[UISwitch alloc] init];
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+#pragma mark - UITableViewDataSource
+//告诉tableView有几组数据
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 4;
 }
 
--(void)center{
-    UIView *redView = [[UIView alloc] init];
-        redView.backgroundColor = UIColor.redColor;
-        [self.view addSubview:redView];
-      
-        //1.
-    //    [redView mas_makeConstraints:^(MASConstraintMaker *make) {
-    //        make.width.equalTo(@100);
-    //        make.height.equalTo(@100);
-    //        make.centerX.equalTo(self.view.mas_centerX);
-    //        make.centerY.equalTo(self.view.mas_centerY);
-    //    }];
-        
-        //2.
-    //    [redView mas_makeConstraints:^(MASConstraintMaker *make) {
-    //        make.width.mas_equalTo(100);//自动包装数据类型
-    //        make.height.mas_equalTo(100);
-    //        make.centerX.mas_equalTo(self.view.mas_centerX);
-    //        make.centerY.mas_equalTo(self.view.mas_centerY);
-    //    }];
-        //3.
-    //    [redView mas_makeConstraints:^(MASConstraintMaker *make) {
-    //        make.width.mas_equalTo(100);//自动包装数据类型
-    //        make.height.mas_equalTo(100);
-    //        make.centerX.mas_equalTo(self.view);
-    //        make.centerY.mas_equalTo(self.view);
-    //    }];
-        //4.
-        [redView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.size.mas_equalTo(CGSizeMake(100, 100));
-            make.center.mas_equalTo(self.view);
-        }];
+//告诉tableView每组有多少行数据(此方法不实现，就默认表示列表只有一组数据)
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    if(section == 0){//第0组
+        return 3;
+    }else if(section == 1){//第一组
+        return 8;
+    }else if(section == 2){//第一组
+        return 8;
+    }else{//第一组
+        return 4;
+    }
 }
 
--(void)edge{
-    UIView *redView = [[UIView alloc] init];
-        redView.backgroundColor = UIColor.redColor;
-        [self.view addSubview:redView];
-        
-        //1、ios自带约束
-    //    redView.translatesAutoresizingMaskIntoConstraints = NO;
-    //    NSString *hvfl = @"H:|-[abc(100)]";
-    //    NSDictionary *hviews = @{@"abc":redView};
-    //    NSArray *hlcs = [NSLayoutConstraint constraintsWithVisualFormat:hvfl options:kNilOptions metrics:nil views:hviews];
-    //    [self.view addConstraints:hlcs];
-    //
-    //    NSString *vvfl = @"V:|-[abc(100)]";
-    //    NSDictionary *vviews = @{@"abc":redView};
-    //    NSArray *vlcs = [NSLayoutConstraint constraintsWithVisualFormat:vvfl options:kNilOptions metrics:nil views:vviews];
-    //    [self.view addConstraints:vlcs];
-        
-        //2、masonry约束，常规写法（使用最多）
-    //    [redView mas_makeConstraints:^(MASConstraintMaker *make) {
-    //        make.top.equalTo(self.view.mas_top).multipliedBy(1.0).offset(20);
-    //        make.left.equalTo(self.view.mas_left).multipliedBy(1.0).offset(20);
-    //        make.right.equalTo(self.view.mas_right).multipliedBy(1.0).offset(-20);
-    //        make.bottom.equalTo(self.view.mas_bottom).multipliedBy(1.0).offset(-20);
-    //    }];
-        
-        //3、masonry约束，简单写法（了解就行）
-        //3.1
-    //    [redView mas_makeConstraints:^(MASConstraintMaker *make) {
-    //        make.top.equalTo(self.view).multipliedBy(1.0).offset(20);
-    //        make.left.equalTo(self.view).multipliedBy(1.0).offset(20);
-    //        make.right.equalTo(self.view).multipliedBy(1.0).offset(-20);
-    //        make.bottom.equalTo(self.view).multipliedBy(1.0).offset(-20);
-    //    }];
-        //3.2
-    //    [redView mas_makeConstraints:^(MASConstraintMaker *make) {
-    //        make.top.offset(20);
-    //        make.left.offset(20);
-    //        make.right.offset(-20);
-    //        make.bottom.offset(-20);
-    //    }];
-    //    //3.3
-    //    [redView mas_makeConstraints:^(MASConstraintMaker *make) {
-    //        make.top.and.left.offset(20);
-    //        make.right.and.bottom.offset(-20);
-    //    }];
-        //3.4
-    //    [redView mas_makeConstraints:^(MASConstraintMaker *make) {
-    //        make.top.left.offset(20);
-    //        make.right.bottom.offset(-20);
-    //    }];
-        //3.5
-    //    [redView mas_makeConstraints:^(MASConstraintMaker *make) {
-    //        make.edges.equalTo(self.view).insets(UIEdgeInsetsMake(20, 20, 20, 20));
-    //    }];
-        //3.6
-        [redView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.edges.insets(UIEdgeInsetsMake(20, 20, 20, 20));
-        }];
+//每一行显示的内容
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
+    //哪一组indexPath.section，哪一组的哪一行indexPath.row
+    cell.textLabel.text = [NSString stringWithFormat:@"第%ld组第%ld行",indexPath.section+1,indexPath.row+1];
+    
+    cell.detailTextLabel.text = @"描述1111111111111111111111111111111111111111111111111111";
+    cell.detailTextLabel.textColor = UIColor.redColor;
+    //设置cell右边的指示模式
+//    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    //设置cell右边的另外一种方式,accessoryView优先级>accessoryType优先级
+    cell.accessoryView = [[UISwitch alloc] init];
+    cell.imageView.image = [UIImage imageNamed:@"car"];
+    
+    //选中效果的style,ios7之后，UITableViewCellSelectionStyleGray，UITableViewCellSelectionStyleDefault，UITableViewCellSelectionStyleBlue都是灰色
+    cell.selectionStyle = UITableViewCellSelectionStyleBlue;
+    
+    //设置cell的背景颜色
+//    cell.backgroundColor = UIColor.redColor;
+    
+    //设置cell的背景view，backgroundView优先级大于backgroundColor
+    UIView *view = [[UIView alloc] init];
+    view.backgroundColor = UIColor.greenColor;
+    cell.backgroundView = view;
+    return cell;
+}
+
+//每一组的头部标题
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    if(section == 0){
+        return @"aaaa头";
+    }else{
+        return @"bbbb头";
+    }
+}
+
+//每一组的尾部标题
+- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section{
+    if(section == 0){
+        return @"aaaa尾";
+    }else{
+        return @"bbbb尾";
+    }
+}
+
+#pragma mark - UITableViewDelegate
+//选中一行
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"选中第%ld组，第%ld行",indexPath.section+1,indexPath.row+1);
+}
+//取消选中某一行
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"取消选中第%ld组，第%ld行",indexPath.section+1,indexPath.row+1);
+}
+//设置每一组的头部控件
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    return [UIButton buttonWithType:UIButtonTypeContactAdd];
+}
+//设置每一组的尾部控件
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
+    return [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
 }
 @end
