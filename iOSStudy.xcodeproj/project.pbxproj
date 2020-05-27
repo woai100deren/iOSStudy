@@ -16,7 +16,6 @@
 		E9300EF7247B69410035BF4C /* Third.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9300EF6247B69410035BF4C /* Third.storyboard */; };
 		E9300EFA247B696E0035BF4C /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9300EF9247B696E0035BF4C /* ThirdViewController.m */; };
 		E9300EFD247BB30F0035BF4C /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9300EFC247BB30F0035BF4C /* ScrollViewController.m */; };
-		E9300EFF247BB31F0035BF4C /* ScrollView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9300EFE247BB31F0035BF4C /* ScrollView.storyboard */; };
 		E9300F1B247DEEDA0035BF4C /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E9300F02247DEEDA0035BF4C /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		E9300F1C247DEEDA0035BF4C /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E9300F0B247DEEDA0035BF4C /* ViewController+MASAdditions.m */; };
 		E9300F1D247DEEDA0035BF4C /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E9300F0F247DEEDA0035BF4C /* MASCompositeConstraint.m */; };
@@ -31,6 +30,7 @@
 		E98A007B247E564200669BB8 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E98A0079247E564200669BB8 /* TableViewController.xib */; };
 		E98A007F247E56F900669BB8 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E98A007D247E56F900669BB8 /* MainViewController.m */; };
 		E98A0080247E56F900669BB8 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E98A007E247E56F900669BB8 /* MainViewController.xib */; };
+		E98A0082247E5BAC00669BB8 /* ScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E98A0081247E5BAC00669BB8 /* ScrollView.xib */; };
 		E98AFFF6247E0AB000669BB8 /* MasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E98AFFF5247E0AB000669BB8 /* MasonryViewController.m */; };
 		E990ED7924776E6D00F068D1 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = E990ED7824776E6D00F068D1 /* Car.m */; };
 		E990ED7C24776F2100F068D1 /* CarView.m in Sources */ = {isa = PBXBuildFile; fileRef = E990ED7B24776F2100F068D1 /* CarView.m */; };
@@ -57,7 +57,6 @@
 		E9300EF9247B696E0035BF4C /* ThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		E9300EFB247BB30F0035BF4C /* ScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
 		E9300EFC247BB30F0035BF4C /* ScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
-		E9300EFE247BB31F0035BF4C /* ScrollView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScrollView.storyboard; sourceTree = "<group>"; };
 		E9300F01247DEEDA0035BF4C /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		E9300F02247DEEDA0035BF4C /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
 		E9300F03247DEEDA0035BF4C /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -89,6 +88,7 @@
 		E98A007C247E56F900669BB8 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		E98A007D247E56F900669BB8 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		E98A007E247E56F900669BB8 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		E98A0081247E5BAC00669BB8 /* ScrollView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollView.xib; sourceTree = "<group>"; };
 		E98AFFF4247E0AB000669BB8 /* MasonryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasonryViewController.h; sourceTree = "<group>"; };
 		E98AFFF5247E0AB000669BB8 /* MasonryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasonryViewController.m; sourceTree = "<group>"; };
 		E990ED7724776E6D00F068D1 /* Car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
@@ -155,7 +155,7 @@
 				E9300EF9247B696E0035BF4C /* ThirdViewController.m */,
 				E9300EFB247BB30F0035BF4C /* ScrollViewController.h */,
 				E9300EFC247BB30F0035BF4C /* ScrollViewController.m */,
-				E9300EFE247BB31F0035BF4C /* ScrollView.storyboard */,
+				E98A0081247E5BAC00669BB8 /* ScrollView.xib */,
 				E98AFFF4247E0AB000669BB8 /* MasonryViewController.h */,
 				E98AFFF5247E0AB000669BB8 /* MasonryViewController.m */,
 				E98A0077247E564200669BB8 /* TableViewController.h */,
@@ -301,8 +301,8 @@
 				E90667DC2475040100F44ADD /* Assets.xcassets in Resources */,
 				E98A0080247E56F900669BB8 /* MainViewController.xib in Resources */,
 				E9300EF7247B69410035BF4C /* Third.storyboard in Resources */,
+				E98A0082247E5BAC00669BB8 /* ScrollView.xib in Resources */,
 				E990ED7E2477703D00F068D1 /* CarView.xib in Resources */,
-				E9300EFF247BB31F0035BF4C /* ScrollView.storyboard in Resources */,
 				E98A007B247E564200669BB8 /* TableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -22,6 +22,7 @@
     UINavigationController *rootNavgationController = [[UINavigationController alloc] initWithRootViewController:[[MainViewController alloc] init]];
     //导航控制是rootViewController
     self.window.rootViewController = rootNavgationController;
+    self.window.backgroundColor = UIColor.whiteColor;
     //现实Window
     [self.window makeKeyAndVisible];
     return YES;
