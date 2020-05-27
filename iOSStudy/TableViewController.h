@@ -1,5 +1,5 @@
 //
-//  MainViewController.h
+//  TableViewController.h
 //  iOSStudy
 //
 //  Created by dodoca on 2020/5/27.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MainViewController : UIViewController
+@interface TableViewController : UIViewController
 
 @end
 

@@ -1,13 +1,12 @@
 //
 //  SceneDelegate.m
-//  iOSStudy
+//  aaa
 //
-//  Created by dodoca on 2020/5/20.
+//  Created by dodoca on 2020/5/27.
 //  Copyright © 2020 dodoca. All rights reserved.
 //
 
 #import "SceneDelegate.h"
-#import "AppDelegate.h"
 
 @interface SceneDelegate ()
 
@@ -53,10 +52,8 @@
     // Called as the scene transitions from the foreground to the background.
     // Use this method to save data, release shared resources, and store enough scene-specific state information
     // to restore the scene back to its current state.
-
-    // Save changes in the application's managed object context when the application transitions to the background.
-    [(AppDelegate *)UIApplication.sharedApplication.delegate saveContext];
 }
 
 
 @end
+
