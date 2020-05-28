@@ -102,6 +102,18 @@
                         <action selector="jumpTableViewCustonCell:" destination="-1" eventType="touchUpInside" id="x7Q-20-7BL"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XsK-Fg-vS4">
+                    <rect key="frame" x="121" y="334" width="172" height="30"/>
+                    <color key="backgroundColor" red="0.86267406089999998" green="0.86267406089999998" blue="0.86267406089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Mda-bl-vLm"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="nja-Sj-36L"/>
+                    </constraints>
+                    <state key="normal" title="跳转到TableView不同Cell"/>
+                    <connections>
+                        <action selector="jumpTableViewDiffCell:" destination="-1" eventType="touchUpInside" id="LlF-Ka-XFd"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
@@ -109,6 +121,7 @@
                 <constraint firstItem="7Nc-94-MXU" firstAttribute="top" secondItem="e0G-UT-aHI" secondAttribute="bottom" constant="10" id="DPG-56-vsL"/>
                 <constraint firstItem="e0G-UT-aHI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HW9-0W-5sq"/>
                 <constraint firstItem="B3R-lG-rCN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="L7T-bA-qHm"/>
+                <constraint firstItem="XsK-Fg-vS4" firstAttribute="top" secondItem="7Nc-94-MXU" secondAttribute="bottom" constant="10" id="MxU-QT-FCM"/>
                 <constraint firstItem="3F8-PC-fNs" firstAttribute="top" secondItem="B3R-lG-rCN" secondAttribute="bottom" constant="10" id="RJT-li-F1D"/>
                 <constraint firstItem="TqR-bb-AsY" firstAttribute="top" secondItem="zeh-eV-sj2" secondAttribute="bottom" constant="10" id="Scb-TD-gf5"/>
                 <constraint firstItem="3F8-PC-fNs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="TlZ-iO-B64"/>
@@ -117,6 +130,7 @@
                 <constraint firstItem="zeh-eV-sj2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lSi-Nw-izC"/>
                 <constraint firstItem="e0G-UT-aHI" firstAttribute="top" secondItem="3F8-PC-fNs" secondAttribute="bottom" constant="10" id="mgQ-s8-Esw"/>
                 <constraint firstItem="zeh-eV-sj2" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="10" id="qcI-q8-x2E"/>
+                <constraint firstItem="XsK-Fg-vS4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rHz-jM-XLA"/>
                 <constraint firstItem="TqR-bb-AsY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="sFg-3r-If7"/>
                 <constraint firstItem="GdN-vS-iXL" firstAttribute="top" secondItem="TqR-bb-AsY" secondAttribute="bottom" constant="10" id="vCe-r0-ell"/>
             </constraints>

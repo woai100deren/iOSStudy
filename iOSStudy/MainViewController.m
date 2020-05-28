@@ -14,6 +14,7 @@
 #import "ScrollViewController.h"
 #import "TableViewIndexsController.h"
 #import "TableViewCustonCellViewController.h"
+#import "TableViewDiffCellViewController.h"
 
 @interface MainViewController ()
 
@@ -45,6 +46,9 @@
 }
 - (IBAction)jumpTableViewCustonCell:(id)sender {
     [self jump:[[TableViewCustonCellViewController alloc] init]];
+}
+- (IBAction)jumpTableViewDiffCell:(id)sender {
+    [self jump:[[TableViewDiffCellViewController alloc] init]];
 }
 
 -(void)jump:(UIViewController*) vc{
