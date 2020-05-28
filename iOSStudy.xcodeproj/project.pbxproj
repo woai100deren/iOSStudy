@@ -36,6 +36,7 @@
 		E990ED8B2477B62400F068D1 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = E990ED8A2477B62400F068D1 /* UIColor+Hex.m */; };
 		E99738782476720A00D6F041 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99738772476720A00D6F041 /* SecondViewController.m */; };
 		E997387A247767CC00D6F041 /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9973879247767CC00D6F041 /* Second.storyboard */; };
+		E9ECA05E247F8E8C0041E22D /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9ECA05D247F8E8C0041E22D /* MyTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +88,7 @@
 		E99738762476720A00D6F041 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		E99738772476720A00D6F041 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		E9973879247767CC00D6F041 /* Second.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
+		E9ECA05D247F8E8C0041E22D /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
 		FA2100E6233EC29B67BF103C /* Pods_iOSStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -140,6 +142,7 @@
 		E90667CB2475040100F44ADD /* iOSStudy */ = {
 			isa = PBXGroup;
 			children = (
+				E9ECA05F247F91010041E22D /* tableview学习 */,
 				E990ED852477B5B800F068D1 /* common */,
 				E990ED7F2477A76C00F068D1 /* 自定义控件学习 */,
 				E90667CC2475040100F44ADD /* AppDelegate.h */,
@@ -161,23 +164,9 @@
 				E98A0081247E5BAC00669BB8 /* ScrollView.xib */,
 				E98AFFF4247E0AB000669BB8 /* MasonryViewController.h */,
 				E98AFFF5247E0AB000669BB8 /* MasonryViewController.m */,
-				E98A0077247E564200669BB8 /* TableViewController.h */,
-				E98A0078247E564200669BB8 /* TableViewController.m */,
-				E98A0079247E564200669BB8 /* TableViewController.xib */,
 				E98A007C247E56F900669BB8 /* MainViewController.h */,
 				E98A007D247E56F900669BB8 /* MainViewController.m */,
 				E98A007E247E56F900669BB8 /* MainViewController.xib */,
-				E98A0083247E5D8000669BB8 /* TableViewIndexsController.h */,
-				E98A0084247E5D8000669BB8 /* TableViewIndexsController.m */,
-				E98A0085247E5D8000669BB8 /* TableViewIndexsController.xib */,
-				E98A0088247E5EEF00669BB8 /* cars.plist */,
-				E98A008A247E614F00669BB8 /* CarGroup.h */,
-				E98A008B247E614F00669BB8 /* CarGroup.m */,
-				E98A008D247E6B8B00669BB8 /* TableViewCustonCellViewController.h */,
-				E98A008E247E6B8B00669BB8 /* TableViewCustonCellViewController.m */,
-				E98A008F247E6B8B00669BB8 /* TableViewCustonCellViewController.xib */,
-				E98A0092247E6E6500669BB8 /* MyTableViewCell.h */,
-				E98A0093247E6E6500669BB8 /* MyTableViewCell.m */,
 			);
 			path = iOSStudy;
 			sourceTree = "<group>";
@@ -219,6 +208,28 @@
 				E990ED8A2477B62400F068D1 /* UIColor+Hex.m */,
 			);
 			path = common;
+			sourceTree = "<group>";
+		};
+		E9ECA05F247F91010041E22D /* tableview学习 */ = {
+			isa = PBXGroup;
+			children = (
+				E98A0077247E564200669BB8 /* TableViewController.h */,
+				E98A0078247E564200669BB8 /* TableViewController.m */,
+				E98A0079247E564200669BB8 /* TableViewController.xib */,
+				E98A0083247E5D8000669BB8 /* TableViewIndexsController.h */,
+				E98A0084247E5D8000669BB8 /* TableViewIndexsController.m */,
+				E98A0085247E5D8000669BB8 /* TableViewIndexsController.xib */,
+				E98A0088247E5EEF00669BB8 /* cars.plist */,
+				E98A008A247E614F00669BB8 /* CarGroup.h */,
+				E98A008B247E614F00669BB8 /* CarGroup.m */,
+				E98A008D247E6B8B00669BB8 /* TableViewCustonCellViewController.h */,
+				E98A008E247E6B8B00669BB8 /* TableViewCustonCellViewController.m */,
+				E98A008F247E6B8B00669BB8 /* TableViewCustonCellViewController.xib */,
+				E98A0092247E6E6500669BB8 /* MyTableViewCell.h */,
+				E98A0093247E6E6500669BB8 /* MyTableViewCell.m */,
+				E9ECA05D247F8E8C0041E22D /* MyTableViewCell.xib */,
+			);
+			path = "tableview学习";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E997387A247767CC00D6F041 /* Second.storyboard in Resources */,
+				E9ECA05E247F8E8C0041E22D /* MyTableViewCell.xib in Resources */,
 				E90667DF2475040100F44ADD /* LaunchScreen.storyboard in Resources */,
 				E98A0091247E6B8B00669BB8 /* TableViewCustonCellViewController.xib in Resources */,
 				E98A0087247E5D8000669BB8 /* TableViewIndexsController.xib in Resources */,

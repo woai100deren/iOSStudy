@@ -11,10 +11,16 @@
 
 @interface MyTableViewCell()
 
+//代码方式自定义cell
 //这个地方要注意，cell本身自带了imageView的空间，所以这里取名称不能用imageView，否则会出问题
-@property(nonatomic,weak) UIImageView *iconView;
-@property(nonatomic,weak) UILabel *titleView;
-@property(nonatomic,weak) UILabel *describeView;
+//@property(nonatomic,weak) UIImageView *iconView;
+//@property(nonatomic,weak) UILabel *titleView;
+//@property(nonatomic,weak) UILabel *describeView;
+
+//xib的方式自定义cell
+@property (weak, nonatomic) IBOutlet UIImageView *iconView;
+@property (weak, nonatomic) IBOutlet UILabel *titleView;
+@property (weak, nonatomic) IBOutlet UILabel *describeView;
 
 @end
 
@@ -22,7 +28,7 @@
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if(self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]){
-        [self setUpUI];
+//        [self setUpUI];
     }
     return self;
 }
@@ -31,6 +37,7 @@
     [super layoutSubviews];
 }
 
+//代码方式自定义cell
 -(void)setUpUI{
     //左边图片
     //下面这句不能这么写，因为self.imageView是弱引用，那么[[UIImageView alloc] init]被创造出来就会立马销毁
