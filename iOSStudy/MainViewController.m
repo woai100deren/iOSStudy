@@ -13,6 +13,7 @@
 #import "ThirdViewController.h"
 #import "ScrollViewController.h"
 #import "TableViewIndexsController.h"
+#import "TableViewCustonCellViewController.h"
 
 @interface MainViewController ()
 
@@ -41,6 +42,9 @@
 }
 - (IBAction)jumpTableViewIndex:(id)sender {
     [self jump:[[TableViewIndexsController alloc] init]];
+}
+- (IBAction)jumpTableViewCustonCell:(id)sender {
+    [self jump:[[TableViewCustonCellViewController alloc] init]];
 }
 
 -(void)jump:(UIViewController*) vc{
