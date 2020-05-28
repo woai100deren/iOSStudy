@@ -20,6 +20,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     //自定义导航控制器
     UINavigationController *rootNavgationController = [[UINavigationController alloc] initWithRootViewController:[[MainViewController alloc] init]];
+    //不设置为NO的话，iOS7 之后导航栏默认会遮挡UIViewController的内容
+    rootNavgationController.navigationBar.translucent = NO;
     //导航控制是rootViewController
     self.window.rootViewController = rootNavgationController;
     self.window.backgroundColor = UIColor.whiteColor;
