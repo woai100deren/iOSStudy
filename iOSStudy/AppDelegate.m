@@ -27,6 +27,9 @@
     self.window.backgroundColor = UIColor.whiteColor;
     //现实Window
     [self.window makeKeyAndVisible];
+    
+    // 启动图片延时: 2秒
+    [NSThread sleepForTimeInterval:2];
     return YES;
 }
 @end
