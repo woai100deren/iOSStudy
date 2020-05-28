@@ -10,7 +10,6 @@
 		823771A861BB5CC9AA0E3016 /* Pods_iOSStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2100E6233EC29B67BF103C /* Pods_iOSStudy.framework */; };
 		E90667CE2475040100F44ADD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E90667CD2475040100F44ADD /* AppDelegate.m */; };
 		E90667D12475040100F44ADD /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E90667D02475040100F44ADD /* SceneDelegate.m */; };
-		E90667DA2475040100F44ADD /* iOSStudy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E90667D82475040100F44ADD /* iOSStudy.xcdatamodeld */; };
 		E90667DC2475040100F44ADD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E90667DB2475040100F44ADD /* Assets.xcassets */; };
 		E90667DF2475040100F44ADD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90667DD2475040100F44ADD /* LaunchScreen.storyboard */; };
 		E90667E22475040100F44ADD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E90667E12475040100F44ADD /* main.m */; };
@@ -47,7 +46,6 @@
 		E90667CD2475040100F44ADD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E90667CF2475040100F44ADD /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		E90667D02475040100F44ADD /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		E90667D92475040100F44ADD /* iOSStudy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOSStudy.xcdatamodel; sourceTree = "<group>"; };
 		E90667DB2475040100F44ADD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E90667DE2475040100F44ADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E90667E02475040100F44ADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -152,7 +150,6 @@
 				E90667DD2475040100F44ADD /* LaunchScreen.storyboard */,
 				E90667E02475040100F44ADD /* Info.plist */,
 				E90667E12475040100F44ADD /* main.m */,
-				E90667D82475040100F44ADD /* iOSStudy.xcdatamodeld */,
 				E99738762476720A00D6F041 /* SecondViewController.h */,
 				E99738772476720A00D6F041 /* SecondViewController.m */,
 				E9973879247767CC00D6F041 /* Second.storyboard */,
@@ -354,7 +351,6 @@
 				E98A008C247E614F00669BB8 /* CarGroup.m in Sources */,
 				E90667E22475040100F44ADD /* main.m in Sources */,
 				E9300EFD247BB30F0035BF4C /* ScrollViewController.m in Sources */,
-				E90667DA2475040100F44ADD /* iOSStudy.xcdatamodeld in Sources */,
 				E90667CE2475040100F44ADD /* AppDelegate.m in Sources */,
 				E9300EFA247B696E0035BF4C /* ThirdViewController.m in Sources */,
 				E98A0086247E5D8000669BB8 /* TableViewIndexsController.m in Sources */,
@@ -547,19 +543,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		E90667D82475040100F44ADD /* iOSStudy.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				E90667D92475040100F44ADD /* iOSStudy.xcdatamodel */,
-			);
-			currentVersion = E90667D92475040100F44ADD /* iOSStudy.xcdatamodel */;
-			path = iOSStudy.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = E90667C12475040100F44ADD /* Project object */;
 }
