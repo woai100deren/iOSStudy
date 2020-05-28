@@ -16,6 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.navigationItem.title = @"表格控制器";
+    
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     
