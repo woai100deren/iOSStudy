@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 //copy拷贝的是不可变部分，所以用copy的话，不能对cars数据进行修改
 @property(nonatomic,strong) NSMutableArray *cars;
+@property (weak, nonatomic) IBOutlet UIButton *editButton;
 @end
 
 @implementation TableViewCustonCellViewController
@@ -24,8 +25,23 @@
     
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
+    //设置这个属性后，如果tableview进入编辑状态，可以批量操作
+    self.tableView.allowsSelectionDuringEditing = YES;
     
     self.cars = [self getData];
+}
+- (IBAction)editTableView:(id)sender {
+    [self editable:!self.tableView.isEditing];
+}
+
+-(void)editable:(BOOL)flag{
+    if(!flag){
+        [self.editButton setTitle:@"编辑" forState:UIControlStateNormal];
+        [self.tableView setEditing:NO animated:YES];
+    }else{
+        [self.editButton setTitle:@"取消编辑" forState:UIControlStateNormal];
+        [self.tableView setEditing:YES animated:YES];
+    }
 }
 
 #pragma mark - UITableViewDataSource
@@ -69,12 +85,14 @@
     UITableViewRowAction *action1 = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"关注" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
         NSLog(@"点击了关注 - %ld",indexPath.row);
         // 收回左滑出现的按钮(退出编辑模式)，不加此句，ios11以下不会自动缩回去
-        tableView.editing = NO;
+//        tableView.editing = NO;
+        [self editable:NO];
     }];
     UITableViewRowAction *action2 = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"删除" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
         NSLog(@"点击了删除 - %ld",indexPath.row);
         // 收回左滑出现的按钮(退出编辑模式)，不加此句，ios11以下不会自动缩回去
-        tableView.editing = NO;
+//        tableView.editing = NO;
+        [self editable:NO];
     }];
     return @[action2,action1];
 }
