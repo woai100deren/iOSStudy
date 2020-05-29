@@ -11,9 +11,10 @@
 #import "Car.h"
 #import "MJExtension.h"
 
-@interface TableViewCustonCellViewController ()<UITableViewDataSource>
+@interface TableViewCustonCellViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property(nonatomic,copy) NSArray *cars;
+//copy拷贝的是不可变部分，所以用copy的话，不能对cars数据进行修改
+@property(nonatomic,strong) NSMutableArray *cars;
 @end
 
 @implementation TableViewCustonCellViewController
@@ -22,6 +23,7 @@
     [super viewDidLoad];
     
     self.tableView.dataSource = self;
+    self.tableView.delegate = self;
     
     self.cars = [self getData];
 }
@@ -48,7 +50,38 @@
     return  cell;
 }
 
--(NSArray*)getData{
+#pragma mark - UITableViewDelegate
+//ios11 以下的系统，下面这个方法（↓）必须实现，但是里面可以不做任何操作，如果不实现就不会有滑动功能
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self.cars removeObjectAtIndex:indexPath.row];
+    [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationMiddle];
+}
+
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return UITableViewCellEditingStyleDelete;
+}
+- (NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return @"删除";
+}
+
+//如果想侧滑出来有多个操作按钮，需要实现（↓）这个方法，而且（↑）单个操作按钮会失效，但commitEditingStyle必须实现
+- (NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewRowAction *action1 = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"关注" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+        NSLog(@"点击了关注 - %ld",indexPath.row);
+        // 收回左滑出现的按钮(退出编辑模式)，不加此句，ios11以下不会自动缩回去
+        tableView.editing = NO;
+    }];
+    UITableViewRowAction *action2 = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"删除" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+        NSLog(@"点击了删除 - %ld",indexPath.row);
+        // 收回左滑出现的按钮(退出编辑模式)，不加此句，ios11以下不会自动缩回去
+        tableView.editing = NO;
+    }];
+    return @[action2,action1];
+}
+
+#pragma mark - data
+
+-(NSMutableArray*)getData{
     NSArray *datas = @[
         @{
             @"image" : @"car",
@@ -81,7 +114,7 @@
             @"subTitle":@"我是六辆车的描述我是六辆车的描述我是六辆车的描述我是六辆车的描述我是六辆车的描述"
         }
     ];
-    NSArray *carsArray = [Car mj_objectArrayWithKeyValuesArray:datas];
+    NSMutableArray *carsArray = [Car mj_objectArrayWithKeyValuesArray:datas];
     return carsArray;
 }
 @end
