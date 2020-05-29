@@ -114,6 +114,18 @@
                         <action selector="jumpTableViewDiffCell:" destination="-1" eventType="touchUpInside" id="LlF-Ka-XFd"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6LE-Se-0eo">
+                    <rect key="frame" x="157" y="374" width="100" height="30"/>
+                    <color key="backgroundColor" red="0.86267406089999998" green="0.86267406089999998" blue="0.86267406089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="WgP-3B-zdt"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="vM4-15-APL"/>
+                    </constraints>
+                    <state key="normal" title="跳转到购物车"/>
+                    <connections>
+                        <action selector="jumpShoppingCartView:" destination="-1" eventType="touchUpInside" id="NzJ-xE-rM0"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
@@ -125,6 +137,7 @@
                 <constraint firstItem="3F8-PC-fNs" firstAttribute="top" secondItem="B3R-lG-rCN" secondAttribute="bottom" constant="10" id="RJT-li-F1D"/>
                 <constraint firstItem="TqR-bb-AsY" firstAttribute="top" secondItem="zeh-eV-sj2" secondAttribute="bottom" constant="10" id="Scb-TD-gf5"/>
                 <constraint firstItem="3F8-PC-fNs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="TlZ-iO-B64"/>
+                <constraint firstItem="6LE-Se-0eo" firstAttribute="top" secondItem="XsK-Fg-vS4" secondAttribute="bottom" constant="10" id="dEt-Vz-sQS"/>
                 <constraint firstItem="7Nc-94-MXU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="e95-GX-DE5"/>
                 <constraint firstItem="GdN-vS-iXL" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hfW-cr-mf7"/>
                 <constraint firstItem="zeh-eV-sj2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lSi-Nw-izC"/>
@@ -133,6 +146,7 @@
                 <constraint firstItem="XsK-Fg-vS4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rHz-jM-XLA"/>
                 <constraint firstItem="TqR-bb-AsY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="sFg-3r-If7"/>
                 <constraint firstItem="GdN-vS-iXL" firstAttribute="top" secondItem="TqR-bb-AsY" secondAttribute="bottom" constant="10" id="vCe-r0-ell"/>
+                <constraint firstItem="6LE-Se-0eo" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="zCe-MS-yGI"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <point key="canvasLocation" x="132" y="131"/>

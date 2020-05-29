@@ -20,6 +20,12 @@
 		E9549143247F975E008C5995 /* TableViewDiffCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9549141247F975E008C5995 /* TableViewDiffCellViewController.xib */; };
 		E9549147247F98EC008C5995 /* MyTableViewDiffCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9549145247F98EC008C5995 /* MyTableViewDiffCell.m */; };
 		E9549148247F98EC008C5995 /* MyTableViewDiffCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9549146247F98EC008C5995 /* MyTableViewDiffCell.xib */; };
+		E97F33692480E43E0068E757 /* drinks.plist in Resources */ = {isa = PBXBuildFile; fileRef = E97F33682480E43E0068E757 /* drinks.plist */; };
+		E97F336D2480E79F0068E757 /* ShoppingCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97F336B2480E79F0068E757 /* ShoppingCartViewController.m */; };
+		E97F336E2480E79F0068E757 /* ShoppingCartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E97F336C2480E79F0068E757 /* ShoppingCartViewController.xib */; };
+		E97F33722480E99C0068E757 /* ShoppingCartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E97F33702480E99C0068E757 /* ShoppingCartCell.m */; };
+		E97F33732480E99C0068E757 /* ShoppingCartCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E97F33712480E99C0068E757 /* ShoppingCartCell.xib */; };
+		E97F33762480E9BC0068E757 /* DrinkGoods.m in Sources */ = {isa = PBXBuildFile; fileRef = E97F33752480E9BC0068E757 /* DrinkGoods.m */; };
 		E98A007A247E564200669BB8 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E98A0078247E564200669BB8 /* TableViewController.m */; };
 		E98A007B247E564200669BB8 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E98A0079247E564200669BB8 /* TableViewController.xib */; };
 		E98A007F247E56F900669BB8 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E98A007D247E56F900669BB8 /* MainViewController.m */; };
@@ -66,6 +72,15 @@
 		E9549144247F98EC008C5995 /* MyTableViewDiffCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTableViewDiffCell.h; sourceTree = "<group>"; };
 		E9549145247F98EC008C5995 /* MyTableViewDiffCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTableViewDiffCell.m; sourceTree = "<group>"; };
 		E9549146247F98EC008C5995 /* MyTableViewDiffCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewDiffCell.xib; sourceTree = "<group>"; };
+		E97F33682480E43E0068E757 /* drinks.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = drinks.plist; sourceTree = "<group>"; };
+		E97F336A2480E79F0068E757 /* ShoppingCartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShoppingCartViewController.h; sourceTree = "<group>"; };
+		E97F336B2480E79F0068E757 /* ShoppingCartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShoppingCartViewController.m; sourceTree = "<group>"; };
+		E97F336C2480E79F0068E757 /* ShoppingCartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShoppingCartViewController.xib; sourceTree = "<group>"; };
+		E97F336F2480E99C0068E757 /* ShoppingCartCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShoppingCartCell.h; sourceTree = "<group>"; };
+		E97F33702480E99C0068E757 /* ShoppingCartCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShoppingCartCell.m; sourceTree = "<group>"; };
+		E97F33712480E99C0068E757 /* ShoppingCartCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShoppingCartCell.xib; sourceTree = "<group>"; };
+		E97F33742480E9BC0068E757 /* DrinkGoods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrinkGoods.h; sourceTree = "<group>"; };
+		E97F33752480E9BC0068E757 /* DrinkGoods.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrinkGoods.m; sourceTree = "<group>"; };
 		E98A0077247E564200669BB8 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		E98A0078247E564200669BB8 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		E98A0079247E564200669BB8 /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
@@ -223,13 +238,13 @@
 		E9ECA05F247F91010041E22D /* tableview学习 */ = {
 			isa = PBXGroup;
 			children = (
+				E98A0088247E5EEF00669BB8 /* cars.plist */,
 				E98A0077247E564200669BB8 /* TableViewController.h */,
 				E98A0078247E564200669BB8 /* TableViewController.m */,
 				E98A0079247E564200669BB8 /* TableViewController.xib */,
 				E98A0083247E5D8000669BB8 /* TableViewIndexsController.h */,
 				E98A0084247E5D8000669BB8 /* TableViewIndexsController.m */,
 				E98A0085247E5D8000669BB8 /* TableViewIndexsController.xib */,
-				E98A0088247E5EEF00669BB8 /* cars.plist */,
 				E98A008A247E614F00669BB8 /* CarGroup.h */,
 				E98A008B247E614F00669BB8 /* CarGroup.m */,
 				E98A008D247E6B8B00669BB8 /* TableViewCustonCellViewController.h */,
@@ -244,6 +259,15 @@
 				E9549144247F98EC008C5995 /* MyTableViewDiffCell.h */,
 				E9549145247F98EC008C5995 /* MyTableViewDiffCell.m */,
 				E9549146247F98EC008C5995 /* MyTableViewDiffCell.xib */,
+				E97F33682480E43E0068E757 /* drinks.plist */,
+				E97F336A2480E79F0068E757 /* ShoppingCartViewController.h */,
+				E97F336B2480E79F0068E757 /* ShoppingCartViewController.m */,
+				E97F336C2480E79F0068E757 /* ShoppingCartViewController.xib */,
+				E97F336F2480E99C0068E757 /* ShoppingCartCell.h */,
+				E97F33702480E99C0068E757 /* ShoppingCartCell.m */,
+				E97F33712480E99C0068E757 /* ShoppingCartCell.xib */,
+				E97F33742480E9BC0068E757 /* DrinkGoods.h */,
+				E97F33752480E9BC0068E757 /* DrinkGoods.m */,
 			);
 			path = "tableview学习";
 			sourceTree = "<group>";
@@ -307,14 +331,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E97F336E2480E79F0068E757 /* ShoppingCartViewController.xib in Resources */,
 				E997387A247767CC00D6F041 /* Second.storyboard in Resources */,
 				E9ECA05E247F8E8C0041E22D /* MyTableViewCell.xib in Resources */,
 				E90667DF2475040100F44ADD /* LaunchScreen.storyboard in Resources */,
+				E97F33692480E43E0068E757 /* drinks.plist in Resources */,
 				E98A0091247E6B8B00669BB8 /* TableViewCustonCellViewController.xib in Resources */,
 				E9549148247F98EC008C5995 /* MyTableViewDiffCell.xib in Resources */,
 				E98A0087247E5D8000669BB8 /* TableViewIndexsController.xib in Resources */,
 				E98A0089247E5EEF00669BB8 /* cars.plist in Resources */,
 				E90667DC2475040100F44ADD /* Assets.xcassets in Resources */,
+				E97F33732480E99C0068E757 /* ShoppingCartCell.xib in Resources */,
 				E98A0080247E56F900669BB8 /* MainViewController.xib in Resources */,
 				E9300EF7247B69410035BF4C /* Third.storyboard in Resources */,
 				E98A0082247E5BAC00669BB8 /* ScrollView.xib in Resources */,
@@ -381,6 +408,8 @@
 				E990ED8B2477B62400F068D1 /* UIColor+Hex.m in Sources */,
 				E98A008C247E614F00669BB8 /* CarGroup.m in Sources */,
 				E90667E22475040100F44ADD /* main.m in Sources */,
+				E97F33722480E99C0068E757 /* ShoppingCartCell.m in Sources */,
+				E97F336D2480E79F0068E757 /* ShoppingCartViewController.m in Sources */,
 				E9300EFD247BB30F0035BF4C /* ScrollViewController.m in Sources */,
 				E90667CE2475040100F44ADD /* AppDelegate.m in Sources */,
 				E9300EFA247B696E0035BF4C /* ThirdViewController.m in Sources */,
@@ -392,6 +421,7 @@
 				E98A0090247E6B8B00669BB8 /* TableViewCustonCellViewController.m in Sources */,
 				E90667D12475040100F44ADD /* SceneDelegate.m in Sources */,
 				E990ED842477ADC400F068D1 /* NewCarView.m in Sources */,
+				E97F33762480E9BC0068E757 /* DrinkGoods.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
