@@ -13,4 +13,6 @@
 @property(nonatomic,copy)NSString *name;
 @property(nonatomic,copy)NSString *priceShow;
 
+//购买数量
+@property(nonatomic,assign)int buyCount;
 @end

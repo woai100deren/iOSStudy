@@ -43,7 +43,7 @@
             //一、通过代码方式创建的cell
     //        cell = [[MyTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
             //二、通过xib的方式，需要加载xib来处理
-            cell = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([MyTableViewCell class]) owner:nil options:nil] lastObject];
+            cell = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([MyTableViewCell class]) owner:self options:nil] lastObject];
         }
         
         [cell setData:self.cars[indexPath.row%2 == 0?indexPath.row/2:indexPath.row/2+1]];
