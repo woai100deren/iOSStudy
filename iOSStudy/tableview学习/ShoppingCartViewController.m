@@ -14,6 +14,9 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property(nonatomic,strong)NSArray *goodsArray;
 @property (weak, nonatomic) IBOutlet UILabel *totalPriceLabel;
+
+//购物车对象，存储已经添加到购物车的数据
+@property(nonatomic,strong)NSMutableArray *shoppingCartGoods;
 @end
 
 @implementation ShoppingCartViewController
@@ -57,6 +60,13 @@
     return _goodsArray;
 }
 
+- (NSMutableArray *)shoppingCartGoods{
+    if (!_shoppingCartGoods) {
+        _shoppingCartGoods =[NSMutableArray array];
+    }
+    return _shoppingCartGoods;
+}
+
 //DrinkGoods监听回调，配上上面drinkGoods addObserver
 //- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(DrinkGoods*)drinkGoods change:(NSDictionary *)change context:(void *)context{
 //    int new = [change[NSKeyValueChangeNewKey] intValue];
@@ -80,13 +90,29 @@
     }
 }
 
+-(void)dealData{
+    int totalPrice = 0;
+    for(DrinkGoods *drinkGoods in self.shoppingCartGoods){
+        totalPrice = totalPrice + drinkGoods.buyCount * drinkGoods.price.intValue;
+    }
+    
+    self.totalPriceLabel.text =  [NSString stringWithFormat:@"%d",totalPrice];
+}
+
 #pragma mark - ShoppingCartCell自定义delegate的实现
 - (void)buyCountNumChanged:(BOOL)isAdd value:(DrinkGoods *)drinkGoods{
     if(isAdd){//加
-       self.totalPriceLabel.text =  [NSString stringWithFormat:@"%d",self.totalPriceLabel.text.intValue +  drinkGoods.price.intValue];
+//       self.totalPriceLabel.text =  [NSString stringWithFormat:@"%d",self.totalPriceLabel.text.intValue +  drinkGoods.price.intValue];
+        if(![self.shoppingCartGoods containsObject:drinkGoods]){
+            [self.shoppingCartGoods addObject:drinkGoods];
+        }
     }else{//减
-        self.totalPriceLabel.text =  [NSString stringWithFormat:@"%d",self.totalPriceLabel.text.intValue - drinkGoods.price.intValue];
+//        self.totalPriceLabel.text =  [NSString stringWithFormat:@"%d",self.totalPriceLabel.text.intValue - drinkGoods.price.intValue];
+        if([self.shoppingCartGoods containsObject:drinkGoods] && drinkGoods.buyCount == 0){
+            [self.shoppingCartGoods removeObject:drinkGoods];
+        }
     }
+    [self dealData];
 }
 
 #pragma mark - click
@@ -99,7 +125,10 @@
         drinkGoods.buyCount = 0;
     }
     [self.tableView reloadData];
-    self.totalPriceLabel.text = @"0";
+//    self.totalPriceLabel.text = @"0";
+    [self.shoppingCartGoods removeAllObjects];
+    [self dealData];
+    
 }
 
 #pragma mark -tableviewDataSource
