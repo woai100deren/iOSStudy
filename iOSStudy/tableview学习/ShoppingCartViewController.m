@@ -10,7 +10,7 @@
 #import "ShoppingCartCell.h"
 #import "MJExtension.h"
 
-@interface ShoppingCartViewController ()<UITableViewDataSource>
+@interface ShoppingCartViewController ()<UITableViewDataSource,ShoppingCartCellDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property(nonatomic,strong)NSArray *goodsArray;
 @property (weak, nonatomic) IBOutlet UILabel *totalPriceLabel;
@@ -38,10 +38,10 @@
 
     
     //KVO的方式也需要移除
-    for(DrinkGoods *drinkGoods in self.goodsArray){
-        //监听模型的buyCount数据变化（KVO方式）
-        [drinkGoods removeObserver:self forKeyPath:@"buyCount"];
-    }
+//    for(DrinkGoods *drinkGoods in self.goodsArray){
+//        //监听模型的buyCount数据变化（KVO方式）
+//        [drinkGoods removeObserver:self forKeyPath:@"buyCount"];
+//    }
 }
 
 //加载数据字典数据
@@ -49,31 +49,40 @@
     if(!_goodsArray){
         _goodsArray = [DrinkGoods mj_objectArrayWithFilename:@"drinks.plist" ];
         
-        for(DrinkGoods *drinkGoods in _goodsArray){
-            //监听模型的buyCount数据变化（KVO方式）
-            [drinkGoods addObserver:self forKeyPath:@"buyCount" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
-        }
+//        for(DrinkGoods *drinkGoods in _goodsArray){
+//            //监听模型的buyCount数据变化（KVO方式）
+//            [drinkGoods addObserver:self forKeyPath:@"buyCount" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
+//        }
     }
     return _goodsArray;
 }
 
 //DrinkGoods监听回调，配上上面drinkGoods addObserver
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(DrinkGoods*)drinkGoods change:(NSDictionary *)change context:(void *)context{
-    int new = [change[NSKeyValueChangeNewKey] intValue];
-    int old = [change[NSKeyValueChangeOldKey] intValue];
-//    if((new - old) >0){//加
-//       self.totalPriceLabel.text =  [NSString stringWithFormat:@"%d",self.totalPriceLabel.text.intValue +  drinkGoods.price.intValue];
-//    }else{//减
-//        self.totalPriceLabel.text =  [NSString stringWithFormat:@"%d",self.totalPriceLabel.text.intValue - drinkGoods.price.intValue];
-//    }
-    
-    self.totalPriceLabel.text =  [NSString stringWithFormat:@"%d",self.totalPriceLabel.text.intValue +  (new - old) * drinkGoods.price.intValue];
-}
+//- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(DrinkGoods*)drinkGoods change:(NSDictionary *)change context:(void *)context{
+//    int new = [change[NSKeyValueChangeNewKey] intValue];
+//    int old = [change[NSKeyValueChangeOldKey] intValue];
+////    if((new - old) >0){//加
+////       self.totalPriceLabel.text =  [NSString stringWithFormat:@"%d",self.totalPriceLabel.text.intValue +  drinkGoods.price.intValue];
+////    }else{//减
+////        self.totalPriceLabel.text =  [NSString stringWithFormat:@"%d",self.totalPriceLabel.text.intValue - drinkGoods.price.intValue];
+////    }
+//
+//    self.totalPriceLabel.text =  [NSString stringWithFormat:@"%d",self.totalPriceLabel.text.intValue +  (new - old) * drinkGoods.price.intValue];
+//}
 
 -(void)dealSubAndAdd:(NSNotification *)notifycation{
     BOOL flag = [[[notifycation userInfo] valueForKey:@"flag"] boolValue];
     DrinkGoods *drinkGoods = [DrinkGoods mj_objectWithKeyValues:[[notifycation userInfo] valueForKey:@"drinkGoods"]];
     if(flag){//加
+       self.totalPriceLabel.text =  [NSString stringWithFormat:@"%d",self.totalPriceLabel.text.intValue +  drinkGoods.price.intValue];
+    }else{//减
+        self.totalPriceLabel.text =  [NSString stringWithFormat:@"%d",self.totalPriceLabel.text.intValue - drinkGoods.price.intValue];
+    }
+}
+
+#pragma mark - ShoppingCartCell自定义delegate的实现
+- (void)buyCountNumChanged:(BOOL)isAdd value:(DrinkGoods *)drinkGoods{
+    if(isAdd){//加
        self.totalPriceLabel.text =  [NSString stringWithFormat:@"%d",self.totalPriceLabel.text.intValue +  drinkGoods.price.intValue];
     }else{//减
         self.totalPriceLabel.text =  [NSString stringWithFormat:@"%d",self.totalPriceLabel.text.intValue - drinkGoods.price.intValue];
@@ -106,6 +115,7 @@
         cell = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([ShoppingCartCell class]) owner:nil options:nil] firstObject];
     }
     cell.drinkGoods = self.goodsArray[indexPath.row];
+    cell.delegate = self;
     return cell;
 }
 

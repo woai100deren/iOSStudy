@@ -7,8 +7,17 @@
 
 #import <UIKit/UIKit.h>
 @class DrinkGoods;
+
+@protocol ShoppingCartCellDelegate <NSObject>
+
+-(void)buyCountNumChanged:(BOOL)isAdd value:(DrinkGoods *)drinkGoods;
+
+@end
+
 @interface ShoppingCartCell : UITableViewCell
 
 @property(nonatomic,copy)DrinkGoods *drinkGoods;
+
+@property(nonatomic,weak) id<ShoppingCartCellDelegate> delegate;
 
 @end

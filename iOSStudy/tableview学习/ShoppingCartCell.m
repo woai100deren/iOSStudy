@@ -50,6 +50,8 @@
     }
     self.numLabel.text = [NSString stringWithFormat:@"%d",self.drinkGoods.buyCount];
 //    [self sendNotify:NO];
+    
+    [self.delegate buyCountNumChanged:NO value:self.drinkGoods];
 }
 - (IBAction)add:(id)sender {
     self.drinkGoods.buyCount ++;
@@ -60,6 +62,8 @@
     }
     
 //    [self sendNotify:YES];
+    
+    [self.delegate buyCountNumChanged:YES value:self.drinkGoods];
 }
 
 /**
