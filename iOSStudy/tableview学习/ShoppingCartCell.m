@@ -49,7 +49,7 @@
         self.subBottun.enabled = NO;
     }
     self.numLabel.text = [NSString stringWithFormat:@"%d",self.drinkGoods.buyCount];
-    [self sendNotify:NO];
+//    [self sendNotify:NO];
 }
 - (IBAction)add:(id)sender {
     self.drinkGoods.buyCount ++;
@@ -59,7 +59,7 @@
         self.subBottun.enabled = YES;
     }
     
-    [self sendNotify:YES];
+//    [self sendNotify:YES];
 }
 
 /**
