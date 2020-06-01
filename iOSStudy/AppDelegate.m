@@ -26,7 +26,7 @@
     //导航控制是rootViewController
     self.window.rootViewController = rootNavgationController;
     self.window.backgroundColor = UIColor.whiteColor;
-    //现实Window
+    //显示Window
     [self.window makeKeyAndVisible];
     
     // 启动图片延时: 2秒

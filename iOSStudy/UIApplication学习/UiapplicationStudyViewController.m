@@ -53,11 +53,11 @@
     //打电话
 //    [application openURL:[NSURL URLWithString:@"tel://10086"]];
     //发短信
-    [application openURL:[NSURL URLWithString:@"sms://10086"]];
+//    [application openURL:[NSURL URLWithString:@"sms://10086"]];
     //发邮件
 //    [application openURL:[NSURL URLWithString:@"mailto://10086@qq.com"]];
     //打开网页
-//    [application openURL:[NSURL URLWithString:@"https://www.baidu.com"]];
+    [application openURL:[NSURL URLWithString:@"https://www.baidu.com"]];
 }
 
 #pragma mark - viewcontroller管理状态栏相关
