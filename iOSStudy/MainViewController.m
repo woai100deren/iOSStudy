@@ -16,6 +16,7 @@
 #import "TableViewCustonCellViewController.h"
 #import "TableViewDiffCellViewController.h"
 #import "ShoppingCartViewController.h"
+#import "UiapplicationStudyViewController.h"
 
 @interface MainViewController ()
 
@@ -57,6 +58,9 @@
 }
 - (IBAction)jumpShoppingCartView:(id)sender {
     [self jump:[[ShoppingCartViewController alloc] init]];
+}
+- (IBAction)jumpUIApplicationStudy:(id)sender {
+    [self jump:[[UiapplicationStudyViewController alloc] init]];
 }
 
 -(void)jump:(UIViewController*) vc{

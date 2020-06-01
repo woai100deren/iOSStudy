@@ -123,7 +123,19 @@
                     </constraints>
                     <state key="normal" title="跳转到购物车"/>
                     <connections>
-                        <action selector="jumpShoppingCartView:" destination="-1" eventType="touchUpInside" id="NzJ-xE-rM0"/>
+                        <action selector="jumpShoppingCartView:" destination="-1" eventType="touchUpInside" id="qWC-dF-csQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DbB-oS-EqR">
+                    <rect key="frame" x="123" y="414" width="168" height="30"/>
+                    <color key="backgroundColor" red="0.86267406089999998" green="0.86267406089999998" blue="0.86267406089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="3Y2-If-d4S"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="5F7-MP-ceX"/>
+                    </constraints>
+                    <state key="normal" title="跳转到UIApplication学习"/>
+                    <connections>
+                        <action selector="jumpUIApplicationStudy:" destination="-1" eventType="touchUpInside" id="QGB-fh-niA"/>
                     </connections>
                 </button>
             </subviews>
@@ -132,12 +144,14 @@
                 <constraint firstItem="B3R-lG-rCN" firstAttribute="top" secondItem="GdN-vS-iXL" secondAttribute="bottom" constant="10" id="63e-ku-Nqo"/>
                 <constraint firstItem="7Nc-94-MXU" firstAttribute="top" secondItem="e0G-UT-aHI" secondAttribute="bottom" constant="10" id="DPG-56-vsL"/>
                 <constraint firstItem="e0G-UT-aHI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HW9-0W-5sq"/>
+                <constraint firstItem="DbB-oS-EqR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="I5z-aq-9gL"/>
                 <constraint firstItem="B3R-lG-rCN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="L7T-bA-qHm"/>
                 <constraint firstItem="XsK-Fg-vS4" firstAttribute="top" secondItem="7Nc-94-MXU" secondAttribute="bottom" constant="10" id="MxU-QT-FCM"/>
                 <constraint firstItem="3F8-PC-fNs" firstAttribute="top" secondItem="B3R-lG-rCN" secondAttribute="bottom" constant="10" id="RJT-li-F1D"/>
                 <constraint firstItem="TqR-bb-AsY" firstAttribute="top" secondItem="zeh-eV-sj2" secondAttribute="bottom" constant="10" id="Scb-TD-gf5"/>
                 <constraint firstItem="3F8-PC-fNs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="TlZ-iO-B64"/>
                 <constraint firstItem="6LE-Se-0eo" firstAttribute="top" secondItem="XsK-Fg-vS4" secondAttribute="bottom" constant="10" id="dEt-Vz-sQS"/>
+                <constraint firstItem="DbB-oS-EqR" firstAttribute="top" secondItem="6LE-Se-0eo" secondAttribute="bottom" constant="10" id="dhg-Bd-cS7"/>
                 <constraint firstItem="7Nc-94-MXU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="e95-GX-DE5"/>
                 <constraint firstItem="GdN-vS-iXL" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hfW-cr-mf7"/>
                 <constraint firstItem="zeh-eV-sj2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lSi-Nw-izC"/>

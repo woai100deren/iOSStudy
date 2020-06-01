@@ -26,6 +26,9 @@
 		E97F33722480E99C0068E757 /* ShoppingCartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E97F33702480E99C0068E757 /* ShoppingCartCell.m */; };
 		E97F33732480E99C0068E757 /* ShoppingCartCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E97F33712480E99C0068E757 /* ShoppingCartCell.xib */; };
 		E97F33762480E9BC0068E757 /* DrinkGoods.m in Sources */ = {isa = PBXBuildFile; fileRef = E97F33752480E9BC0068E757 /* DrinkGoods.m */; };
+		E97F33802484DE550068E757 /* UiapplicationStudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97F337E2484DE550068E757 /* UiapplicationStudyViewController.m */; };
+		E97F33812484DE550068E757 /* UiapplicationStudyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E97F337F2484DE550068E757 /* UiapplicationStudyViewController.xib */; };
+		E97F33842484DEFA0068E757 /* SingleObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E97F33832484DEFA0068E757 /* SingleObject.m */; };
 		E98A007A247E564200669BB8 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E98A0078247E564200669BB8 /* TableViewController.m */; };
 		E98A007B247E564200669BB8 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E98A0079247E564200669BB8 /* TableViewController.xib */; };
 		E98A007F247E56F900669BB8 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E98A007D247E56F900669BB8 /* MainViewController.m */; };
@@ -81,6 +84,11 @@
 		E97F33712480E99C0068E757 /* ShoppingCartCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShoppingCartCell.xib; sourceTree = "<group>"; };
 		E97F33742480E9BC0068E757 /* DrinkGoods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrinkGoods.h; sourceTree = "<group>"; };
 		E97F33752480E9BC0068E757 /* DrinkGoods.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrinkGoods.m; sourceTree = "<group>"; };
+		E97F337D2484DE550068E757 /* UiapplicationStudyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UiapplicationStudyViewController.h; sourceTree = "<group>"; };
+		E97F337E2484DE550068E757 /* UiapplicationStudyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UiapplicationStudyViewController.m; sourceTree = "<group>"; };
+		E97F337F2484DE550068E757 /* UiapplicationStudyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UiapplicationStudyViewController.xib; sourceTree = "<group>"; };
+		E97F33822484DEFA0068E757 /* SingleObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleObject.h; sourceTree = "<group>"; };
+		E97F33832484DEFA0068E757 /* SingleObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleObject.m; sourceTree = "<group>"; };
 		E98A0077247E564200669BB8 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		E98A0078247E564200669BB8 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		E98A0079247E564200669BB8 /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
@@ -167,6 +175,7 @@
 		E90667CB2475040100F44ADD /* iOSStudy */ = {
 			isa = PBXGroup;
 			children = (
+				E97F33772484D9A80068E757 /* UIApplication学习 */,
 				E9ECA05F247F91010041E22D /* tableview学习 */,
 				E990ED852477B5B800F068D1 /* common */,
 				E990ED7F2477A76C00F068D1 /* 自定义控件学习 */,
@@ -194,6 +203,18 @@
 				E98A007E247E56F900669BB8 /* MainViewController.xib */,
 			);
 			path = iOSStudy;
+			sourceTree = "<group>";
+		};
+		E97F33772484D9A80068E757 /* UIApplication学习 */ = {
+			isa = PBXGroup;
+			children = (
+				E97F337D2484DE550068E757 /* UiapplicationStudyViewController.h */,
+				E97F337E2484DE550068E757 /* UiapplicationStudyViewController.m */,
+				E97F337F2484DE550068E757 /* UiapplicationStudyViewController.xib */,
+				E97F33822484DEFA0068E757 /* SingleObject.h */,
+				E97F33832484DEFA0068E757 /* SingleObject.m */,
+			);
+			path = "UIApplication学习";
 			sourceTree = "<group>";
 		};
 		E990ED7F2477A76C00F068D1 /* 自定义控件学习 */ = {
@@ -340,6 +361,7 @@
 				E9549148247F98EC008C5995 /* MyTableViewDiffCell.xib in Resources */,
 				E98A0087247E5D8000669BB8 /* TableViewIndexsController.xib in Resources */,
 				E98A0089247E5EEF00669BB8 /* cars.plist in Resources */,
+				E97F33812484DE550068E757 /* UiapplicationStudyViewController.xib in Resources */,
 				E90667DC2475040100F44ADD /* Assets.xcassets in Resources */,
 				E97F33732480E99C0068E757 /* ShoppingCartCell.xib in Resources */,
 				E98A0080247E56F900669BB8 /* MainViewController.xib in Resources */,
@@ -402,6 +424,7 @@
 			files = (
 				E9549147247F98EC008C5995 /* MyTableViewDiffCell.m in Sources */,
 				E98A007A247E564200669BB8 /* TableViewController.m in Sources */,
+				E97F33802484DE550068E757 /* UiapplicationStudyViewController.m in Sources */,
 				E98A0094247E6E6500669BB8 /* MyTableViewCell.m in Sources */,
 				E98AFFF6247E0AB000669BB8 /* MasonryViewController.m in Sources */,
 				E99738782476720A00D6F041 /* SecondViewController.m in Sources */,
@@ -409,6 +432,7 @@
 				E98A008C247E614F00669BB8 /* CarGroup.m in Sources */,
 				E90667E22475040100F44ADD /* main.m in Sources */,
 				E97F33722480E99C0068E757 /* ShoppingCartCell.m in Sources */,
+				E97F33842484DEFA0068E757 /* SingleObject.m in Sources */,
 				E97F336D2480E79F0068E757 /* ShoppingCartViewController.m in Sources */,
 				E9300EFD247BB30F0035BF4C /* ScrollViewController.m in Sources */,
 				E90667CE2475040100F44ADD /* AppDelegate.m in Sources */,
