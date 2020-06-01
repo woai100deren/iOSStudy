@@ -14,6 +14,7 @@
 @end
 
 @implementation AppDelegate
+//app启动完毕时调用
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     //在Xcode11创建的项目中，需要自行给AppDelegate添加属性window
     //自定义Window
@@ -31,5 +32,29 @@
     // 启动图片延时: 2秒
     [NSThread sleepForTimeInterval:2];
     return YES;
+}
+//应用程序将要失去焦点时
+- (void)applicationWillResignActive:(UIApplication *)application{
+    
+}
+//应用程序获取焦点
+- (void)applicationDidBecomeActive:(UIApplication *)application{
+    
+}
+//app进入后台时调用，比如按home键
+- (void)applicationDidEnterBackground:(UIApplication *)application{
+    
+}
+//应用程序进入到前台时调用
+- (void)applicationWillEnterForeground:(UIApplication *)application{
+    
+}
+//app接收内存警告时调用
+- (void)applicationDidReceiveMemoryWarning:(UIApplication *)application{
+    
+}
+//应用程序退出时调用
+- (void)applicationWillTerminate:(UIApplication *)application{
+    
 }
 @end
