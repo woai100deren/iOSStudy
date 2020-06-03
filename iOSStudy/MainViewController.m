@@ -19,6 +19,7 @@
 #import "UiapplicationStudyViewController.h"
 #import "PickViewController.h"
 #import "PickViewUseViewController.h"
+#import "ABLoginViewController.h"
 
 @interface MainViewController ()
 
@@ -26,12 +27,37 @@
 
 @implementation MainViewController
 
+//当控制加载完毕时
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"主页";
     //去掉返回文字
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@" " style:UIBarButtonItemStylePlain target:nil action:nil];
     self.navigationItem.backBarButtonItem = item;
+}
+//当控制器即将显示时
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+}
+//当控制器显示完毕时
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+}
+//当控制器view将要布局子控件的时候
+- (void)viewWillLayoutSubviews{
+    [super viewWillLayoutSubviews];
+}
+//当控制器view布局子控件完毕时
+- (void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+}
+//当控制器即将消失时
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+}
+//当控制器消失完毕时
+- (void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
 }
 
 - (IBAction)jumpTableView:(id)sender {
@@ -69,6 +95,9 @@
 }
 - (IBAction)jumpPickViewUse:(id)sender {
     [self jump:[[PickViewUseViewController alloc] init]];
+}
+- (IBAction)jumpAddressBookDemo:(id)sender {
+    [self jump:[[ABLoginViewController alloc] init]];
 }
 
 -(void)jump:(UIViewController*) vc{

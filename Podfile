@@ -9,4 +9,6 @@ target 'iOSStudy' do
 
   pod 'Masonry'
   pod 'MJExtension'
+  pod 'MBProgressHUD', '~> 1.2.0'
+  
 end

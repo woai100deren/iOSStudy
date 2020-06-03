@@ -22,7 +22,7 @@
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <subviews>
                         <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="2000" translatesAutoresizingMaskIntoConstraints="NO" id="IfE-YC-sBw" userLabel="contentView">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="490"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="530"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TqR-bb-AsY">
                                     <rect key="frame" x="154.5" y="50" width="105" height="30"/>
@@ -168,12 +168,25 @@
                                         <action selector="jumpPickViewUse:" destination="-1" eventType="touchUpInside" id="YwC-QZ-HL8"/>
                                     </connections>
                                 </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haX-X6-Kdl">
+                                    <rect key="frame" x="140.5" y="490" width="133" height="30"/>
+                                    <color key="backgroundColor" red="0.86267406089999998" green="0.86267406089999998" blue="0.86267406089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="DNY-5x-Ld4"/>
+                                        <constraint firstAttribute="height" constant="30" id="e4f-uO-PL0"/>
+                                    </constraints>
+                                    <state key="normal" title="跳转到通讯录Demo"/>
+                                    <connections>
+                                        <action selector="jumpAddressBookDemo:" destination="-1" eventType="touchUpInside" id="GCy-Js-9jY"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <constraints>
                                 <constraint firstItem="e0G-UT-aHI" firstAttribute="top" secondItem="3F8-PC-fNs" secondAttribute="bottom" constant="10" id="26l-HV-f7n"/>
                                 <constraint firstItem="7Nc-94-MXU" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="6FP-7s-kQl"/>
                                 <constraint firstItem="XsK-Fg-vS4" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="AZG-5C-v0B"/>
                                 <constraint firstItem="6LE-Se-0eo" firstAttribute="top" secondItem="XsK-Fg-vS4" secondAttribute="bottom" constant="10" id="GDO-g4-Bvs"/>
+                                <constraint firstItem="haX-X6-Kdl" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="NgY-xk-VOs"/>
                                 <constraint firstItem="6LE-Se-0eo" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="Nw5-qM-fL2"/>
                                 <constraint firstItem="B3R-lG-rCN" firstAttribute="top" secondItem="GdN-vS-iXL" secondAttribute="bottom" constant="10" id="OeV-Us-tEj"/>
                                 <constraint firstItem="zeh-eV-sj2" firstAttribute="top" secondItem="IfE-YC-sBw" secondAttribute="top" constant="10" id="QEd-Xh-P8b"/>
@@ -181,6 +194,7 @@
                                 <constraint firstItem="e0G-UT-aHI" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="X6S-qb-jKx"/>
                                 <constraint firstItem="TqR-bb-AsY" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="Z3r-7c-S7Q"/>
                                 <constraint firstItem="xAx-p4-ZJI" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="a5y-Zl-wxb"/>
+                                <constraint firstItem="haX-X6-Kdl" firstAttribute="top" secondItem="mah-Km-QJ2" secondAttribute="bottom" constant="10" id="cFk-bX-FAz"/>
                                 <constraint firstItem="3F8-PC-fNs" firstAttribute="top" secondItem="B3R-lG-rCN" secondAttribute="bottom" constant="10" id="e0W-Wt-9MQ"/>
                                 <constraint firstItem="xAx-p4-ZJI" firstAttribute="top" secondItem="DbB-oS-EqR" secondAttribute="bottom" constant="10" id="eCQ-qP-9Q0"/>
                                 <constraint firstItem="7Nc-94-MXU" firstAttribute="top" secondItem="e0G-UT-aHI" secondAttribute="bottom" constant="10" id="g40-4M-hw1"/>
@@ -193,7 +207,7 @@
                                 <constraint firstItem="DbB-oS-EqR" firstAttribute="top" secondItem="6LE-Se-0eo" secondAttribute="bottom" constant="10" id="u5S-Me-4LN"/>
                                 <constraint firstItem="zeh-eV-sj2" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="u9Q-2Y-iw5"/>
                                 <constraint firstItem="mah-Km-QJ2" firstAttribute="top" secondItem="xAx-p4-ZJI" secondAttribute="bottom" constant="10" id="vPJ-Tp-Yil"/>
-                                <constraint firstAttribute="bottom" secondItem="mah-Km-QJ2" secondAttribute="bottom" constant="10" id="x0Z-xW-I5g"/>
+                                <constraint firstAttribute="bottom" secondItem="haX-X6-Kdl" secondAttribute="bottom" constant="10" id="yjf-Dw-Q47"/>
                                 <constraint firstItem="B3R-lG-rCN" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="zmQ-un-iyw"/>
                             </constraints>
                         </view>

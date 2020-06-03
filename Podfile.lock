@@ -1,20 +1,24 @@
 PODS:
   - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
   - MJExtension (3.2.1)
 
 DEPENDENCIES:
   - Masonry
+  - MBProgressHUD (~> 1.2.0)
   - MJExtension
 
 SPEC REPOS:
   trunk:
     - Masonry
+    - MBProgressHUD
     - MJExtension
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJExtension: 635f2c663dcb1bf76fa4b715b2570a5710aec545
 
-PODFILE CHECKSUM: 964c1856e82a9c7a5043d10ff9e5bce5e7c1d5a3
+PODFILE CHECKSUM: f02d71b254e1e7dcb3e097e8d8ab79ddecf751c8
 
 COCOAPODS: 1.9.1
