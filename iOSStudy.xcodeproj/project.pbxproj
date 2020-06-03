@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		823771A861BB5CC9AA0E3016 /* Pods_iOSStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2100E6233EC29B67BF103C /* Pods_iOSStudy.framework */; };
+		D29E47102487E48100BDB9C0 /* NSString+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = D29E470F2487E48100BDB9C0 /* NSString+Extensions.m */; };
 		E90667CE2475040100F44ADD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E90667CD2475040100F44ADD /* AppDelegate.m */; };
 		E90667D12475040100F44ADD /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E90667D02475040100F44ADD /* SceneDelegate.m */; };
 		E90667DC2475040100F44ADD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E90667DB2475040100F44ADD /* Assets.xcassets */; };
@@ -70,7 +71,6 @@
 		E9EA4D1524878AD200E53569 /* ABTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9EA4D1324878AD200E53569 /* ABTableViewController.xib */; };
 		E9EA4D192487A2B900E53569 /* ABAddContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA4D172487A2B900E53569 /* ABAddContactsViewController.m */; };
 		E9EA4D1A2487A2B900E53569 /* ABAddContactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9EA4D182487A2B900E53569 /* ABAddContactsViewController.xib */; };
-		E9EA4D1C2487A48F00E53569 /* addressBook.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9EA4D1B2487A48F00E53569 /* addressBook.plist */; };
 		E9EA4D1F2487A72D00E53569 /* ABContacts.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA4D1E2487A72D00E53569 /* ABContacts.m */; };
 		E9ECA05E247F8E8C0041E22D /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9ECA05D247F8E8C0041E22D /* MyTableViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -78,6 +78,8 @@
 /* Begin PBXFileReference section */
 		36DDA412446AA61373D3D378 /* Pods-iOSStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSStudy.debug.xcconfig"; path = "Target Support Files/Pods-iOSStudy/Pods-iOSStudy.debug.xcconfig"; sourceTree = "<group>"; };
 		98E1FD6995F50453A37D5BB9 /* Pods-iOSStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSStudy.release.xcconfig"; path = "Target Support Files/Pods-iOSStudy/Pods-iOSStudy.release.xcconfig"; sourceTree = "<group>"; };
+		D29E470E2487E48100BDB9C0 /* NSString+Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Extensions.h"; sourceTree = "<group>"; };
+		D29E470F2487E48100BDB9C0 /* NSString+Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extensions.m"; sourceTree = "<group>"; };
 		E90667C92475040100F44ADD /* iOS学习.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS学习.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E90667CC2475040100F44ADD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E90667CD2475040100F44ADD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -177,7 +179,6 @@
 		E9EA4D162487A2B900E53569 /* ABAddContactsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABAddContactsViewController.h; sourceTree = "<group>"; };
 		E9EA4D172487A2B900E53569 /* ABAddContactsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABAddContactsViewController.m; sourceTree = "<group>"; };
 		E9EA4D182487A2B900E53569 /* ABAddContactsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ABAddContactsViewController.xib; sourceTree = "<group>"; };
-		E9EA4D1B2487A48F00E53569 /* addressBook.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = addressBook.plist; sourceTree = "<group>"; };
 		E9EA4D1D2487A72D00E53569 /* ABContacts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABContacts.h; sourceTree = "<group>"; };
 		E9EA4D1E2487A72D00E53569 /* ABContacts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABContacts.m; sourceTree = "<group>"; };
 		E9ECA05D247F8E8C0041E22D /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
@@ -213,6 +214,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D29E470D2487E43600BDB9C0 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				D29E470E2487E48100BDB9C0 /* NSString+Extensions.h */,
+				D29E470F2487E48100BDB9C0 /* NSString+Extensions.m */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
 		E90667C02475040100F44ADD = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +244,7 @@
 		E90667CB2475040100F44ADD /* iOSStudy */ = {
 			isa = PBXGroup;
 			children = (
+				D29E470D2487E43600BDB9C0 /* extension */,
 				E9EA4D0624877B7300E53569 /* addressBook */,
 				E97F338824862A300068E757 /* pickViews */,
 				E97F33772484D9A80068E757 /* UIApplication学习 */,
@@ -384,7 +395,6 @@
 				E9EA4D162487A2B900E53569 /* ABAddContactsViewController.h */,
 				E9EA4D172487A2B900E53569 /* ABAddContactsViewController.m */,
 				E9EA4D182487A2B900E53569 /* ABAddContactsViewController.xib */,
-				E9EA4D1B2487A48F00E53569 /* addressBook.plist */,
 				E9EA4D1D2487A72D00E53569 /* ABContacts.h */,
 				E9EA4D1E2487A72D00E53569 /* ABContacts.m */,
 			);
@@ -491,7 +501,6 @@
 				E97F338F24862DC20068E757 /* foods.plist in Resources */,
 				E97F336E2480E79F0068E757 /* ShoppingCartViewController.xib in Resources */,
 				E997387A247767CC00D6F041 /* Second.storyboard in Resources */,
-				E9EA4D1C2487A48F00E53569 /* addressBook.plist in Resources */,
 				E9ECA05E247F8E8C0041E22D /* MyTableViewCell.xib in Resources */,
 				E90667DF2475040100F44ADD /* LaunchScreen.storyboard in Resources */,
 				E97F33692480E43E0068E757 /* drinks.plist in Resources */,
@@ -572,6 +581,7 @@
 				E98A007A247E564200669BB8 /* TableViewController.m in Sources */,
 				E9EA4CEF2486444900E53569 /* FlagItem.m in Sources */,
 				E97F33802484DE550068E757 /* UiapplicationStudyViewController.m in Sources */,
+				D29E47102487E48100BDB9C0 /* NSString+Extensions.m in Sources */,
 				E98A0094247E6E6500669BB8 /* MyTableViewCell.m in Sources */,
 				E98AFFF6247E0AB000669BB8 /* MasonryViewController.m in Sources */,
 				E99738782476720A00D6F041 /* SecondViewController.m in Sources */,
