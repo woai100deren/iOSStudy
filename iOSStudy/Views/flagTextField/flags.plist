@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>flagName</key>
+		<string>中国</string>
+		<key>flagImage</key>
+		<string>icon_flag_china</string>
+	</dict>
+	<dict>
+		<key>flagName</key>
+		<string>美国</string>
+		<key>flagImage</key>
+		<string>icon_flag_us</string>
+	</dict>
+	<dict>
+		<key>flagName</key>
+		<string>法国</string>
+		<key>flagImage</key>
+		<string>icon_flag_french</string>
+	</dict>
+	<dict>
+		<key>flagName</key>
+		<string>英国</string>
+		<key>flagImage</key>
+		<string>icon_flag_england</string>
+	</dict>
+	<dict>
+		<key>flagName</key>
+		<string>德国</string>
+		<key>flagImage</key>
+		<string>icon_flag_germany</string>
+	</dict>
+	<dict>
+		<key>flagName</key>
+		<string>澳大利亚</string>
+		<key>flagImage</key>
+		<string>icon_flag_australia</string>
+	</dict>
+	<dict>
+		<key>flagName</key>
+		<string>韩国</string>
+		<key>flagImage</key>
+		<string>icon_flag_korea</string>
+	</dict>
+	<dict>
+		<key>flagName</key>
+		<string>加拿大</string>
+		<key>flagImage</key>
+		<string>icon_flag_canada</string>
+	</dict>
+	<dict>
+		<key>flagName</key>
+		<string>巴西</string>
+		<key>flagImage</key>
+		<string>icon_flag_brazil</string>
+	</dict>
+	<dict>
+		<key>flagName</key>
+		<string>俄罗斯</string>
+		<key>flagImage</key>
+		<string>icon_flag_russia</string>
+	</dict>
+</array>
+</plist>

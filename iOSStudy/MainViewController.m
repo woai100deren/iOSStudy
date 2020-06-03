@@ -17,6 +17,8 @@
 #import "TableViewDiffCellViewController.h"
 #import "ShoppingCartViewController.h"
 #import "UiapplicationStudyViewController.h"
+#import "PickViewController.h"
+#import "PickViewUseViewController.h"
 
 @interface MainViewController ()
 
@@ -61,6 +63,12 @@
 }
 - (IBAction)jumpUIApplicationStudy:(id)sender {
     [self jump:[[UiapplicationStudyViewController alloc] init]];
+}
+- (IBAction)jumpPickView:(id)sender {
+    [self jump:[[PickViewController alloc] init]];
+}
+- (IBAction)jumpPickViewUse:(id)sender {
+    [self jump:[[PickViewUseViewController alloc] init]];
 }
 
 -(void)jump:(UIViewController*) vc{

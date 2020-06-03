@@ -29,6 +29,11 @@
 		E97F33802484DE550068E757 /* UiapplicationStudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97F337E2484DE550068E757 /* UiapplicationStudyViewController.m */; };
 		E97F33812484DE550068E757 /* UiapplicationStudyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E97F337F2484DE550068E757 /* UiapplicationStudyViewController.xib */; };
 		E97F33842484DEFA0068E757 /* SingleObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E97F33832484DEFA0068E757 /* SingleObject.m */; };
+		E97F338C24862A830068E757 /* PickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97F338A24862A830068E757 /* PickViewController.m */; };
+		E97F338D24862A830068E757 /* PickViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E97F338B24862A830068E757 /* PickViewController.xib */; };
+		E97F338F24862DC20068E757 /* foods.plist in Resources */ = {isa = PBXBuildFile; fileRef = E97F338E24862DC20068E757 /* foods.plist */; };
+		E97F3393248639D00068E757 /* PickViewUseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97F3391248639D00068E757 /* PickViewUseViewController.m */; };
+		E97F3394248639D00068E757 /* PickViewUseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E97F3392248639D00068E757 /* PickViewUseViewController.xib */; };
 		E98A007A247E564200669BB8 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E98A0078247E564200669BB8 /* TableViewController.m */; };
 		E98A007B247E564200669BB8 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E98A0079247E564200669BB8 /* TableViewController.xib */; };
 		E98A007F247E56F900669BB8 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E98A007D247E56F900669BB8 /* MainViewController.m */; };
@@ -49,6 +54,11 @@
 		E990ED8B2477B62400F068D1 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = E990ED8A2477B62400F068D1 /* UIColor+Hex.m */; };
 		E99738782476720A00D6F041 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99738772476720A00D6F041 /* SecondViewController.m */; };
 		E997387A247767CC00D6F041 /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9973879247767CC00D6F041 /* Second.storyboard */; };
+		E9EA4CEA2486410300E53569 /* FlagTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA4CE92486410300E53569 /* FlagTextField.m */; };
+		E9EA4CEC2486434D00E53569 /* flags.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9EA4CEB2486434D00E53569 /* flags.plist */; };
+		E9EA4CEF2486444900E53569 /* FlagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA4CEE2486444900E53569 /* FlagItem.m */; };
+		E9EA4CF2248647F600E53569 /* FlagItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA4CF1248647F600E53569 /* FlagItemView.m */; };
+		E9EA4CF42486480D00E53569 /* FlagItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9EA4CF32486480D00E53569 /* FlagItemView.xib */; };
 		E9ECA05E247F8E8C0041E22D /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9ECA05D247F8E8C0041E22D /* MyTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +99,13 @@
 		E97F337F2484DE550068E757 /* UiapplicationStudyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UiapplicationStudyViewController.xib; sourceTree = "<group>"; };
 		E97F33822484DEFA0068E757 /* SingleObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleObject.h; sourceTree = "<group>"; };
 		E97F33832484DEFA0068E757 /* SingleObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleObject.m; sourceTree = "<group>"; };
+		E97F338924862A830068E757 /* PickViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickViewController.h; sourceTree = "<group>"; };
+		E97F338A24862A830068E757 /* PickViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickViewController.m; sourceTree = "<group>"; };
+		E97F338B24862A830068E757 /* PickViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickViewController.xib; sourceTree = "<group>"; };
+		E97F338E24862DC20068E757 /* foods.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = foods.plist; sourceTree = "<group>"; };
+		E97F3390248639D00068E757 /* PickViewUseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickViewUseViewController.h; sourceTree = "<group>"; };
+		E97F3391248639D00068E757 /* PickViewUseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickViewUseViewController.m; sourceTree = "<group>"; };
+		E97F3392248639D00068E757 /* PickViewUseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickViewUseViewController.xib; sourceTree = "<group>"; };
 		E98A0077247E564200669BB8 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		E98A0078247E564200669BB8 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		E98A0079247E564200669BB8 /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
@@ -121,6 +138,14 @@
 		E99738762476720A00D6F041 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		E99738772476720A00D6F041 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		E9973879247767CC00D6F041 /* Second.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
+		E9EA4CE82486410300E53569 /* FlagTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlagTextField.h; sourceTree = "<group>"; };
+		E9EA4CE92486410300E53569 /* FlagTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlagTextField.m; sourceTree = "<group>"; };
+		E9EA4CEB2486434D00E53569 /* flags.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = flags.plist; sourceTree = "<group>"; };
+		E9EA4CED2486444900E53569 /* FlagItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlagItem.h; sourceTree = "<group>"; };
+		E9EA4CEE2486444900E53569 /* FlagItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlagItem.m; sourceTree = "<group>"; };
+		E9EA4CF0248647F600E53569 /* FlagItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlagItemView.h; sourceTree = "<group>"; };
+		E9EA4CF1248647F600E53569 /* FlagItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlagItemView.m; sourceTree = "<group>"; };
+		E9EA4CF32486480D00E53569 /* FlagItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlagItemView.xib; sourceTree = "<group>"; };
 		E9ECA05D247F8E8C0041E22D /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
 		FA2100E6233EC29B67BF103C /* Pods_iOSStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -175,6 +200,7 @@
 		E90667CB2475040100F44ADD /* iOSStudy */ = {
 			isa = PBXGroup;
 			children = (
+				E97F338824862A300068E757 /* Views */,
 				E97F33772484D9A80068E757 /* UIApplication学习 */,
 				E9ECA05F247F91010041E22D /* tableview学习 */,
 				E990ED852477B5B800F068D1 /* common */,
@@ -217,6 +243,21 @@
 			path = "UIApplication学习";
 			sourceTree = "<group>";
 		};
+		E97F338824862A300068E757 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E9EA4CF52486514200E53569 /* flagTextField */,
+				E97F338924862A830068E757 /* PickViewController.h */,
+				E97F338A24862A830068E757 /* PickViewController.m */,
+				E97F338B24862A830068E757 /* PickViewController.xib */,
+				E97F338E24862DC20068E757 /* foods.plist */,
+				E97F3390248639D00068E757 /* PickViewUseViewController.h */,
+				E97F3391248639D00068E757 /* PickViewUseViewController.m */,
+				E97F3392248639D00068E757 /* PickViewUseViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		E990ED7F2477A76C00F068D1 /* 自定义控件学习 */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,6 +295,21 @@
 				E990ED8A2477B62400F068D1 /* UIColor+Hex.m */,
 			);
 			path = common;
+			sourceTree = "<group>";
+		};
+		E9EA4CF52486514200E53569 /* flagTextField */ = {
+			isa = PBXGroup;
+			children = (
+				E9EA4CE82486410300E53569 /* FlagTextField.h */,
+				E9EA4CE92486410300E53569 /* FlagTextField.m */,
+				E9EA4CEB2486434D00E53569 /* flags.plist */,
+				E9EA4CED2486444900E53569 /* FlagItem.h */,
+				E9EA4CEE2486444900E53569 /* FlagItem.m */,
+				E9EA4CF0248647F600E53569 /* FlagItemView.h */,
+				E9EA4CF1248647F600E53569 /* FlagItemView.m */,
+				E9EA4CF32486480D00E53569 /* FlagItemView.xib */,
+			);
+			path = flagTextField;
 			sourceTree = "<group>";
 		};
 		E9ECA05F247F91010041E22D /* tableview学习 */ = {
@@ -352,6 +408,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9EA4CF42486480D00E53569 /* FlagItemView.xib in Resources */,
+				E97F338F24862DC20068E757 /* foods.plist in Resources */,
 				E97F336E2480E79F0068E757 /* ShoppingCartViewController.xib in Resources */,
 				E997387A247767CC00D6F041 /* Second.storyboard in Resources */,
 				E9ECA05E247F8E8C0041E22D /* MyTableViewCell.xib in Resources */,
@@ -363,12 +421,15 @@
 				E98A0089247E5EEF00669BB8 /* cars.plist in Resources */,
 				E97F33812484DE550068E757 /* UiapplicationStudyViewController.xib in Resources */,
 				E90667DC2475040100F44ADD /* Assets.xcassets in Resources */,
+				E9EA4CEC2486434D00E53569 /* flags.plist in Resources */,
 				E97F33732480E99C0068E757 /* ShoppingCartCell.xib in Resources */,
 				E98A0080247E56F900669BB8 /* MainViewController.xib in Resources */,
 				E9300EF7247B69410035BF4C /* Third.storyboard in Resources */,
+				E97F338D24862A830068E757 /* PickViewController.xib in Resources */,
 				E98A0082247E5BAC00669BB8 /* ScrollView.xib in Resources */,
 				E9549143247F975E008C5995 /* TableViewDiffCellViewController.xib in Resources */,
 				E990ED7E2477703D00F068D1 /* CarView.xib in Resources */,
+				E97F3394248639D00068E757 /* PickViewUseViewController.xib in Resources */,
 				E98A007B247E564200669BB8 /* TableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,11 +485,14 @@
 			files = (
 				E9549147247F98EC008C5995 /* MyTableViewDiffCell.m in Sources */,
 				E98A007A247E564200669BB8 /* TableViewController.m in Sources */,
+				E9EA4CEF2486444900E53569 /* FlagItem.m in Sources */,
 				E97F33802484DE550068E757 /* UiapplicationStudyViewController.m in Sources */,
 				E98A0094247E6E6500669BB8 /* MyTableViewCell.m in Sources */,
 				E98AFFF6247E0AB000669BB8 /* MasonryViewController.m in Sources */,
 				E99738782476720A00D6F041 /* SecondViewController.m in Sources */,
+				E97F3393248639D00068E757 /* PickViewUseViewController.m in Sources */,
 				E990ED8B2477B62400F068D1 /* UIColor+Hex.m in Sources */,
+				E97F338C24862A830068E757 /* PickViewController.m in Sources */,
 				E98A008C247E614F00669BB8 /* CarGroup.m in Sources */,
 				E90667E22475040100F44ADD /* main.m in Sources */,
 				E97F33722480E99C0068E757 /* ShoppingCartCell.m in Sources */,
@@ -445,7 +509,9 @@
 				E98A0090247E6B8B00669BB8 /* TableViewCustonCellViewController.m in Sources */,
 				E90667D12475040100F44ADD /* SceneDelegate.m in Sources */,
 				E990ED842477ADC400F068D1 /* NewCarView.m in Sources */,
+				E9EA4CEA2486410300E53569 /* FlagTextField.m in Sources */,
 				E97F33762480E9BC0068E757 /* DrinkGoods.m in Sources */,
+				E9EA4CF2248647F600E53569 /* FlagItemView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
