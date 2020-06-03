@@ -214,7 +214,7 @@
 		E90667CB2475040100F44ADD /* iOSStudy */ = {
 			isa = PBXGroup;
 			children = (
-				E97F338824862A300068E757 /* Views */,
+				E97F338824862A300068E757 /* pickViews */,
 				E97F33772484D9A80068E757 /* UIApplication学习 */,
 				E9ECA05F247F91010041E22D /* tableview学习 */,
 				E990ED852477B5B800F068D1 /* common */,
@@ -257,7 +257,7 @@
 			path = "UIApplication学习";
 			sourceTree = "<group>";
 		};
-		E97F338824862A300068E757 /* Views */ = {
+		E97F338824862A300068E757 /* pickViews */ = {
 			isa = PBXGroup;
 			children = (
 				E9EA4D0224873B0600E53569 /* dateTextField */,
@@ -271,7 +271,7 @@
 				E97F3391248639D00068E757 /* PickViewUseViewController.m */,
 				E97F3392248639D00068E757 /* PickViewUseViewController.xib */,
 			);
-			path = Views;
+			path = pickViews;
 			sourceTree = "<group>";
 		};
 		E990ED7F2477A76C00F068D1 /* 自定义控件学习 */ = {
