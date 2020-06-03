@@ -59,6 +59,11 @@
 		E9EA4CEF2486444900E53569 /* FlagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA4CEE2486444900E53569 /* FlagItem.m */; };
 		E9EA4CF2248647F600E53569 /* FlagItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA4CF1248647F600E53569 /* FlagItemView.m */; };
 		E9EA4CF42486480D00E53569 /* FlagItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9EA4CF32486480D00E53569 /* FlagItemView.xib */; };
+		E9EA4CF92487334E00E53569 /* CityTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA4CF82487334E00E53569 /* CityTextField.m */; };
+		E9EA4CFB248733C600E53569 /* ProvincesAndCities.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9EA4CFA248733C600E53569 /* ProvincesAndCities.plist */; };
+		E9EA4CFE2487344500E53569 /* CityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA4CFD2487344500E53569 /* CityModel.m */; };
+		E9EA4D012487349100E53569 /* ProvinceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA4D002487349100E53569 /* ProvinceModel.m */; };
+		E9EA4D0524873B1D00E53569 /* DateTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA4D0424873B1D00E53569 /* DateTextField.m */; };
 		E9ECA05E247F8E8C0041E22D /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9ECA05D247F8E8C0041E22D /* MyTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
@@ -146,6 +151,15 @@
 		E9EA4CF0248647F600E53569 /* FlagItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlagItemView.h; sourceTree = "<group>"; };
 		E9EA4CF1248647F600E53569 /* FlagItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlagItemView.m; sourceTree = "<group>"; };
 		E9EA4CF32486480D00E53569 /* FlagItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlagItemView.xib; sourceTree = "<group>"; };
+		E9EA4CF72487334E00E53569 /* CityTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CityTextField.h; sourceTree = "<group>"; };
+		E9EA4CF82487334E00E53569 /* CityTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CityTextField.m; sourceTree = "<group>"; };
+		E9EA4CFA248733C600E53569 /* ProvincesAndCities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ProvincesAndCities.plist; sourceTree = "<group>"; };
+		E9EA4CFC2487344500E53569 /* CityModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CityModel.h; sourceTree = "<group>"; };
+		E9EA4CFD2487344500E53569 /* CityModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CityModel.m; sourceTree = "<group>"; };
+		E9EA4CFF2487349100E53569 /* ProvinceModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProvinceModel.h; sourceTree = "<group>"; };
+		E9EA4D002487349100E53569 /* ProvinceModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProvinceModel.m; sourceTree = "<group>"; };
+		E9EA4D0324873B1D00E53569 /* DateTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DateTextField.h; sourceTree = "<group>"; };
+		E9EA4D0424873B1D00E53569 /* DateTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateTextField.m; sourceTree = "<group>"; };
 		E9ECA05D247F8E8C0041E22D /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
 		FA2100E6233EC29B67BF103C /* Pods_iOSStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -246,6 +260,8 @@
 		E97F338824862A300068E757 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E9EA4D0224873B0600E53569 /* dateTextField */,
+				E9EA4CF62487330500E53569 /* cityTextField */,
 				E9EA4CF52486514200E53569 /* flagTextField */,
 				E97F338924862A830068E757 /* PickViewController.h */,
 				E97F338A24862A830068E757 /* PickViewController.m */,
@@ -310,6 +326,29 @@
 				E9EA4CF32486480D00E53569 /* FlagItemView.xib */,
 			);
 			path = flagTextField;
+			sourceTree = "<group>";
+		};
+		E9EA4CF62487330500E53569 /* cityTextField */ = {
+			isa = PBXGroup;
+			children = (
+				E9EA4CFA248733C600E53569 /* ProvincesAndCities.plist */,
+				E9EA4CF72487334E00E53569 /* CityTextField.h */,
+				E9EA4CF82487334E00E53569 /* CityTextField.m */,
+				E9EA4CFC2487344500E53569 /* CityModel.h */,
+				E9EA4CFD2487344500E53569 /* CityModel.m */,
+				E9EA4CFF2487349100E53569 /* ProvinceModel.h */,
+				E9EA4D002487349100E53569 /* ProvinceModel.m */,
+			);
+			path = cityTextField;
+			sourceTree = "<group>";
+		};
+		E9EA4D0224873B0600E53569 /* dateTextField */ = {
+			isa = PBXGroup;
+			children = (
+				E9EA4D0324873B1D00E53569 /* DateTextField.h */,
+				E9EA4D0424873B1D00E53569 /* DateTextField.m */,
+			);
+			path = dateTextField;
 			sourceTree = "<group>";
 		};
 		E9ECA05F247F91010041E22D /* tableview学习 */ = {
@@ -431,6 +470,7 @@
 				E990ED7E2477703D00F068D1 /* CarView.xib in Resources */,
 				E97F3394248639D00068E757 /* PickViewUseViewController.xib in Resources */,
 				E98A007B247E564200669BB8 /* TableViewController.xib in Resources */,
+				E9EA4CFB248733C600E53569 /* ProvincesAndCities.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +524,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9549147247F98EC008C5995 /* MyTableViewDiffCell.m in Sources */,
+				E9EA4D012487349100E53569 /* ProvinceModel.m in Sources */,
 				E98A007A247E564200669BB8 /* TableViewController.m in Sources */,
 				E9EA4CEF2486444900E53569 /* FlagItem.m in Sources */,
 				E97F33802484DE550068E757 /* UiapplicationStudyViewController.m in Sources */,
@@ -496,6 +537,7 @@
 				E98A008C247E614F00669BB8 /* CarGroup.m in Sources */,
 				E90667E22475040100F44ADD /* main.m in Sources */,
 				E97F33722480E99C0068E757 /* ShoppingCartCell.m in Sources */,
+				E9EA4CFE2487344500E53569 /* CityModel.m in Sources */,
 				E97F33842484DEFA0068E757 /* SingleObject.m in Sources */,
 				E97F336D2480E79F0068E757 /* ShoppingCartViewController.m in Sources */,
 				E9300EFD247BB30F0035BF4C /* ScrollViewController.m in Sources */,
@@ -503,11 +545,13 @@
 				E9300EFA247B696E0035BF4C /* ThirdViewController.m in Sources */,
 				E98A0086247E5D8000669BB8 /* TableViewIndexsController.m in Sources */,
 				E990ED7924776E6D00F068D1 /* Car.m in Sources */,
+				E9EA4D0524873B1D00E53569 /* DateTextField.m in Sources */,
 				E990ED7C24776F2100F068D1 /* CarView.m in Sources */,
 				E9549142247F975E008C5995 /* TableViewDiffCellViewController.m in Sources */,
 				E98A007F247E56F900669BB8 /* MainViewController.m in Sources */,
 				E98A0090247E6B8B00669BB8 /* TableViewCustonCellViewController.m in Sources */,
 				E90667D12475040100F44ADD /* SceneDelegate.m in Sources */,
+				E9EA4CF92487334E00E53569 /* CityTextField.m in Sources */,
 				E990ED842477ADC400F068D1 /* NewCarView.m in Sources */,
 				E9EA4CEA2486410300E53569 /* FlagTextField.m in Sources */,
 				E97F33762480E9BC0068E757 /* DrinkGoods.m in Sources */,
