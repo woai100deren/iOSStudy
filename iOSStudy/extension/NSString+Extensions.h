@@ -10,4 +10,5 @@
 
 @interface NSString (Extensions)
 +(BOOL)isBlankString:(NSString *)string;
++(NSString *)getFirstLetterFromString:(NSString *)aString;
 @end

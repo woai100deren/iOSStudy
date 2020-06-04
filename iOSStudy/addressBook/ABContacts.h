@@ -11,6 +11,7 @@
 @interface ABContacts : NSObject
 @property(nonatomic,strong) NSString *name;
 @property(nonatomic,strong) NSString *phone;
+@property(nonatomic,strong) NSString *index;
 
 +(instancetype)contactsWithName:(NSString *)name AndPhone:(NSString *)phone;
 @end

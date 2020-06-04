@@ -8,9 +8,13 @@
 
 #import "ABTableViewController.h"
 #import "ABAddContactsViewController.h"
+#import "ABContacts.h"
+#import "MJExtension.h"
+#import "ABTableViewCell.h"
 
-@interface ABTableViewController ()
-
+@interface ABTableViewController ()<UITableViewDataSource,UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic,strong) NSArray *dataArray;
 @end
 
 @implementation ABTableViewController
@@ -18,12 +22,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"注销" style:UIBarButtonItemStylePlain target:self action:@selector(logout)];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"添加" style:UIBarButtonItemStylePlain target:self action:@selector(add)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"添加" style:UIBarButtonItemStylePlain target:self action:@selector(toAdd)];
+    
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [self initDataArray];
 }
 
 - (void)setUsername:(NSString *)username{
     _username = username;
     self.navigationItem.title = [NSString stringWithFormat:@"%@的通讯录",username];
+}
+
+- (void)initDataArray{
+    //获取沙盒Document路径
+    NSString *currentPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
+    NSString *filePath = [currentPath stringByAppendingPathComponent:@"addressBook.plist"];
+    self.dataArray = [ABContacts mj_objectArrayWithFile:filePath];
+    [self.tableView reloadData];
 }
 
 /**
@@ -42,9 +61,32 @@
      [self presentViewController:alertController animated:YES completion:nil];
 }
 /**
- 新增通讯录
+ 跳转到新增通讯录
  */
--(void)add{
+-(void)toAdd{
     [self.navigationController pushViewController:[[ABAddContactsViewController alloc]init] animated:YES];
+}
+
+#pragma mark - UITableViewDataSource
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.dataArray.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString *ID = @"contacts";
+    
+    ABTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    
+    if(cell == nil){
+        cell = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([ABTableViewCell class]) owner:nil options:nil] firstObject];
+    }
+    cell.abContacts = self.dataArray[indexPath.row];
+    
+    return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    eatDetailVC *detailView = [[eatDetailVC alloc]init];
+    [self.navigationController pushViewController:detailView animated:NO];
 }
 @end

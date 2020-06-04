@@ -7,7 +7,6 @@
 //
 
 #import "ABAddContactsViewController.h"
-#import "MJExtension.h"
 #import "ABContacts.h"
 #import "NSString+Extensions.h"
 
@@ -45,7 +44,7 @@
     
     NSMutableDictionary *contactsDic = [[NSMutableDictionary alloc]init];
     [contactsDic setValue:self.nameTF.text forKey:@"name"];
-    [contactsDic setValue:self.phoneTF.text forKey:@"pwd"];
+    [contactsDic setValue:self.phoneTF.text forKey:@"phone"];
     
     [contactsArray addObject:contactsDic];
     //若之前没有该文件，会自动创建该文件

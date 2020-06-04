@@ -72,6 +72,10 @@
 		E9EA4D192487A2B900E53569 /* ABAddContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA4D172487A2B900E53569 /* ABAddContactsViewController.m */; };
 		E9EA4D1A2487A2B900E53569 /* ABAddContactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9EA4D182487A2B900E53569 /* ABAddContactsViewController.xib */; };
 		E9EA4D1F2487A72D00E53569 /* ABContacts.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA4D1E2487A72D00E53569 /* ABContacts.m */; };
+		E9EA4D26248880C400E53569 /* ABTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA4D24248880C400E53569 /* ABTableViewCell.m */; };
+		E9EA4D27248880C400E53569 /* ABTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9EA4D25248880C400E53569 /* ABTableViewCell.xib */; };
+		E9EA4D2B24888AB800E53569 /* ABContactsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA4D2924888AB800E53569 /* ABContactsDetailViewController.m */; };
+		E9EA4D2C24888AB800E53569 /* ABContactsDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9EA4D2A24888AB800E53569 /* ABContactsDetailViewController.xib */; };
 		E9ECA05E247F8E8C0041E22D /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9ECA05D247F8E8C0041E22D /* MyTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
@@ -181,6 +185,12 @@
 		E9EA4D182487A2B900E53569 /* ABAddContactsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ABAddContactsViewController.xib; sourceTree = "<group>"; };
 		E9EA4D1D2487A72D00E53569 /* ABContacts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABContacts.h; sourceTree = "<group>"; };
 		E9EA4D1E2487A72D00E53569 /* ABContacts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABContacts.m; sourceTree = "<group>"; };
+		E9EA4D23248880C400E53569 /* ABTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABTableViewCell.h; sourceTree = "<group>"; };
+		E9EA4D24248880C400E53569 /* ABTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABTableViewCell.m; sourceTree = "<group>"; };
+		E9EA4D25248880C400E53569 /* ABTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ABTableViewCell.xib; sourceTree = "<group>"; };
+		E9EA4D2824888AB800E53569 /* ABContactsDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABContactsDetailViewController.h; sourceTree = "<group>"; };
+		E9EA4D2924888AB800E53569 /* ABContactsDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABContactsDetailViewController.m; sourceTree = "<group>"; };
+		E9EA4D2A24888AB800E53569 /* ABContactsDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ABContactsDetailViewController.xib; sourceTree = "<group>"; };
 		E9ECA05D247F8E8C0041E22D /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
 		FA2100E6233EC29B67BF103C /* Pods_iOSStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -392,11 +402,17 @@
 				E9EA4D1124878AD200E53569 /* ABTableViewController.h */,
 				E9EA4D1224878AD200E53569 /* ABTableViewController.m */,
 				E9EA4D1324878AD200E53569 /* ABTableViewController.xib */,
+				E9EA4D23248880C400E53569 /* ABTableViewCell.h */,
+				E9EA4D24248880C400E53569 /* ABTableViewCell.m */,
+				E9EA4D25248880C400E53569 /* ABTableViewCell.xib */,
 				E9EA4D162487A2B900E53569 /* ABAddContactsViewController.h */,
 				E9EA4D172487A2B900E53569 /* ABAddContactsViewController.m */,
 				E9EA4D182487A2B900E53569 /* ABAddContactsViewController.xib */,
 				E9EA4D1D2487A72D00E53569 /* ABContacts.h */,
 				E9EA4D1E2487A72D00E53569 /* ABContacts.m */,
+				E9EA4D2824888AB800E53569 /* ABContactsDetailViewController.h */,
+				E9EA4D2924888AB800E53569 /* ABContactsDetailViewController.m */,
+				E9EA4D2A24888AB800E53569 /* ABContactsDetailViewController.xib */,
 			);
 			path = addressBook;
 			sourceTree = "<group>";
@@ -509,12 +525,14 @@
 				E98A0087247E5D8000669BB8 /* TableViewIndexsController.xib in Resources */,
 				E9EA4D1024877C6C00E53569 /* ABLoginViewController.xib in Resources */,
 				E98A0089247E5EEF00669BB8 /* cars.plist in Resources */,
+				E9EA4D2C24888AB800E53569 /* ABContactsDetailViewController.xib in Resources */,
 				E97F33812484DE550068E757 /* UiapplicationStudyViewController.xib in Resources */,
 				E90667DC2475040100F44ADD /* Assets.xcassets in Resources */,
 				E9EA4CEC2486434D00E53569 /* flags.plist in Resources */,
 				E97F33732480E99C0068E757 /* ShoppingCartCell.xib in Resources */,
 				E9EA4D1524878AD200E53569 /* ABTableViewController.xib in Resources */,
 				E98A0080247E56F900669BB8 /* MainViewController.xib in Resources */,
+				E9EA4D27248880C400E53569 /* ABTableViewCell.xib in Resources */,
 				E9300EF7247B69410035BF4C /* Third.storyboard in Resources */,
 				E97F338D24862A830068E757 /* PickViewController.xib in Resources */,
 				E98A0082247E5BAC00669BB8 /* ScrollView.xib in Resources */,
@@ -582,6 +600,7 @@
 				E9EA4CEF2486444900E53569 /* FlagItem.m in Sources */,
 				E97F33802484DE550068E757 /* UiapplicationStudyViewController.m in Sources */,
 				D29E47102487E48100BDB9C0 /* NSString+Extensions.m in Sources */,
+				E9EA4D2B24888AB800E53569 /* ABContactsDetailViewController.m in Sources */,
 				E98A0094247E6E6500669BB8 /* MyTableViewCell.m in Sources */,
 				E98AFFF6247E0AB000669BB8 /* MasonryViewController.m in Sources */,
 				E99738782476720A00D6F041 /* SecondViewController.m in Sources */,
@@ -601,6 +620,7 @@
 				E98A0086247E5D8000669BB8 /* TableViewIndexsController.m in Sources */,
 				E9EA4D192487A2B900E53569 /* ABAddContactsViewController.m in Sources */,
 				E990ED7924776E6D00F068D1 /* Car.m in Sources */,
+				E9EA4D26248880C400E53569 /* ABTableViewCell.m in Sources */,
 				E9EA4D0524873B1D00E53569 /* DateTextField.m in Sources */,
 				E9EA4D1F2487A72D00E53569 /* ABContacts.m in Sources */,
 				E990ED7C24776F2100F068D1 /* CarView.m in Sources */,

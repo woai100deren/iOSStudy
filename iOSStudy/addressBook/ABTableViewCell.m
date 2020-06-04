@@ -7,18 +7,27 @@
 //
 
 #import "ABTableViewCell.h"
+#import "ABContacts.h"
+
+@interface ABTableViewCell()
+@property (weak, nonatomic) IBOutlet UILabel *name;
+@property (weak, nonatomic) IBOutlet UILabel *phone;
+
+@end
 
 @implementation ABTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
 }
 
+- (void)setAbContacts:(ABContacts *)abContacts{
+    _abContacts = abContacts;
+    self.name.text = abContacts.name;
+    self.phone.text = abContacts.phone;
+}
 @end

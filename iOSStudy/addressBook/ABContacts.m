@@ -7,6 +7,7 @@
 //
 
 #import "ABContacts.h"
+#import "NSString+Extensions.h"
 
 @implementation ABContacts
 +(instancetype)contactsWithName:(NSString *)name AndPhone:(NSString *)phone{
@@ -14,5 +15,11 @@
     contacts.name = name;
     contacts.phone = phone;
     return contacts;
+}
+- (NSString *)index{
+    if(!_index){
+        _index = [NSString getFirstLetterFromString:_name];
+    }
+    return _index;
 }
 @end
