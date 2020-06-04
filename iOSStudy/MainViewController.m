@@ -20,6 +20,7 @@
 #import "PickViewController.h"
 #import "PickViewUseViewController.h"
 #import "ABLoginViewController.h"
+#import "WKWebViewController.h"
 
 @interface MainViewController ()
 
@@ -98,6 +99,9 @@
 }
 - (IBAction)jumpAddressBookDemo:(id)sender {
     [self jump:[[ABLoginViewController alloc] init]];
+}
+- (IBAction)jumpWKWebView:(id)sender {
+    [self jump:[[WKWebViewController alloc] init]];
 }
 
 -(void)jump:(UIViewController*) vc{

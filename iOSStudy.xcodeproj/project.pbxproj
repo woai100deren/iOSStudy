@@ -76,6 +76,10 @@
 		E9EA4D27248880C400E53569 /* ABTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9EA4D25248880C400E53569 /* ABTableViewCell.xib */; };
 		E9EA4D2B24888AB800E53569 /* ABContactsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA4D2924888AB800E53569 /* ABContactsDetailViewController.m */; };
 		E9EA4D2C24888AB800E53569 /* ABContactsDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9EA4D2A24888AB800E53569 /* ABContactsDetailViewController.xib */; };
+		E9EA4D3124889A3000E53569 /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA4D2F24889A3000E53569 /* WKWebViewController.m */; };
+		E9EA4D3224889A3000E53569 /* WKWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9EA4D3024889A3000E53569 /* WKWebViewController.xib */; };
+		E9EA4D3524889BB600E53569 /* MyWKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA4D3424889BB600E53569 /* MyWKWebView.m */; };
+		E9EA4D372488C1A500E53569 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = E9EA4D362488C1A500E53569 /* test.html */; };
 		E9ECA05E247F8E8C0041E22D /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9ECA05D247F8E8C0041E22D /* MyTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
@@ -191,6 +195,12 @@
 		E9EA4D2824888AB800E53569 /* ABContactsDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABContactsDetailViewController.h; sourceTree = "<group>"; };
 		E9EA4D2924888AB800E53569 /* ABContactsDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABContactsDetailViewController.m; sourceTree = "<group>"; };
 		E9EA4D2A24888AB800E53569 /* ABContactsDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ABContactsDetailViewController.xib; sourceTree = "<group>"; };
+		E9EA4D2E24889A3000E53569 /* WKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
+		E9EA4D2F24889A3000E53569 /* WKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
+		E9EA4D3024889A3000E53569 /* WKWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WKWebViewController.xib; sourceTree = "<group>"; };
+		E9EA4D3324889BB600E53569 /* MyWKWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyWKWebView.h; sourceTree = "<group>"; };
+		E9EA4D3424889BB600E53569 /* MyWKWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWKWebView.m; sourceTree = "<group>"; };
+		E9EA4D362488C1A500E53569 /* test.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 		E9ECA05D247F8E8C0041E22D /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
 		FA2100E6233EC29B67BF103C /* Pods_iOSStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -254,6 +264,7 @@
 		E90667CB2475040100F44ADD /* iOSStudy */ = {
 			isa = PBXGroup;
 			children = (
+				E9EA4D2D248899E400E53569 /* WKWebView */,
 				D29E470D2487E43600BDB9C0 /* extension */,
 				E9EA4D0624877B7300E53569 /* addressBook */,
 				E97F338824862A300068E757 /* pickViews */,
@@ -417,6 +428,19 @@
 			path = addressBook;
 			sourceTree = "<group>";
 		};
+		E9EA4D2D248899E400E53569 /* WKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				E9EA4D2E24889A3000E53569 /* WKWebViewController.h */,
+				E9EA4D2F24889A3000E53569 /* WKWebViewController.m */,
+				E9EA4D3024889A3000E53569 /* WKWebViewController.xib */,
+				E9EA4D3324889BB600E53569 /* MyWKWebView.h */,
+				E9EA4D3424889BB600E53569 /* MyWKWebView.m */,
+				E9EA4D362488C1A500E53569 /* test.html */,
+			);
+			path = WKWebView;
+			sourceTree = "<group>";
+		};
 		E9ECA05F247F91010041E22D /* tableview学习 */ = {
 			isa = PBXGroup;
 			children = (
@@ -520,6 +544,7 @@
 				E9ECA05E247F8E8C0041E22D /* MyTableViewCell.xib in Resources */,
 				E90667DF2475040100F44ADD /* LaunchScreen.storyboard in Resources */,
 				E97F33692480E43E0068E757 /* drinks.plist in Resources */,
+				E9EA4D372488C1A500E53569 /* test.html in Resources */,
 				E98A0091247E6B8B00669BB8 /* TableViewCustonCellViewController.xib in Resources */,
 				E9549148247F98EC008C5995 /* MyTableViewDiffCell.xib in Resources */,
 				E98A0087247E5D8000669BB8 /* TableViewIndexsController.xib in Resources */,
@@ -528,6 +553,7 @@
 				E9EA4D2C24888AB800E53569 /* ABContactsDetailViewController.xib in Resources */,
 				E97F33812484DE550068E757 /* UiapplicationStudyViewController.xib in Resources */,
 				E90667DC2475040100F44ADD /* Assets.xcassets in Resources */,
+				E9EA4D3224889A3000E53569 /* WKWebViewController.xib in Resources */,
 				E9EA4CEC2486434D00E53569 /* flags.plist in Resources */,
 				E97F33732480E99C0068E757 /* ShoppingCartCell.xib in Resources */,
 				E9EA4D1524878AD200E53569 /* ABTableViewController.xib in Resources */,
@@ -617,6 +643,7 @@
 				E9300EFD247BB30F0035BF4C /* ScrollViewController.m in Sources */,
 				E90667CE2475040100F44ADD /* AppDelegate.m in Sources */,
 				E9300EFA247B696E0035BF4C /* ThirdViewController.m in Sources */,
+				E9EA4D3124889A3000E53569 /* WKWebViewController.m in Sources */,
 				E98A0086247E5D8000669BB8 /* TableViewIndexsController.m in Sources */,
 				E9EA4D192487A2B900E53569 /* ABAddContactsViewController.m in Sources */,
 				E990ED7924776E6D00F068D1 /* Car.m in Sources */,
@@ -628,6 +655,7 @@
 				E98A007F247E56F900669BB8 /* MainViewController.m in Sources */,
 				E98A0090247E6B8B00669BB8 /* TableViewCustonCellViewController.m in Sources */,
 				E90667D12475040100F44ADD /* SceneDelegate.m in Sources */,
+				E9EA4D3524889BB600E53569 /* MyWKWebView.m in Sources */,
 				E9EA4CF92487334E00E53569 /* CityTextField.m in Sources */,
 				E9EA4D1424878AD200E53569 /* ABTableViewController.m in Sources */,
 				E990ED842477ADC400F068D1 /* NewCarView.m in Sources */,
