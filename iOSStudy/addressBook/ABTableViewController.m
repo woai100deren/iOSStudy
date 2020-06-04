@@ -86,7 +86,7 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    eatDetailVC *detailView = [[eatDetailVC alloc]init];
-    [self.navigationController pushViewController:detailView animated:NO];
+//    eatDetailVC *detailView = [[eatDetailVC alloc]init];
+//    [self.navigationController pushViewController:detailView animated:NO];
 }
 @end
