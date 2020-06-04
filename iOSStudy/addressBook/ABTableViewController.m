@@ -11,6 +11,7 @@
 #import "ABContacts.h"
 #import "MJExtension.h"
 #import "ABTableViewCell.h"
+#import "ABContactsDetailViewController.h"
 
 @interface ABTableViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -86,7 +87,8 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-//    eatDetailVC *detailView = [[eatDetailVC alloc]init];
-//    [self.navigationController pushViewController:detailView animated:NO];
+    ABContactsDetailViewController *detalVC = [[ABContactsDetailViewController alloc]init];
+    [detalVC setData:self.dataArray[indexPath.row] inIndex:indexPath.row];
+    [self.navigationController pushViewController:detalVC animated:YES];
 }
 @end

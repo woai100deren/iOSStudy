@@ -10,6 +10,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ABContactsDetailViewController">
             <connections>
+                <outlet property="deleteButton" destination="WwZ-I6-CEy" id="0gw-Ka-JPH"/>
+                <outlet property="nameTF" destination="LiD-pt-Pyu" id="Veb-8g-EB5"/>
+                <outlet property="phoneTF" destination="73w-zJ-6yA" id="OHW-Yk-A9o"/>
+                <outlet property="saveButton" destination="nuj-1c-1VR" id="ZzM-bw-DTQ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,43 +22,80 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="姓名：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Gi-b6-UKw">
-                    <rect key="frame" x="40" y="165" width="52" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Gi-b6-UKw" userLabel="nameLabel">
+                    <rect key="frame" x="80" y="164" width="52" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="52" id="O9r-bN-4YU"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LiD-pt-Pyu">
-                    <rect key="frame" x="100" y="158" width="277" height="34"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LiD-pt-Pyu" userLabel="nameTF">
+                    <rect key="frame" x="137" y="154.5" width="197" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="rEo-R5-JLo"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="电话：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abq-v0-kUY">
-                    <rect key="frame" x="40" y="247" width="52" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电话：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abq-v0-kUY" userLabel="phoneLabel">
+                    <rect key="frame" x="80" y="225" width="52" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="73w-zJ-6yA">
-                    <rect key="frame" x="100" y="240" width="277" height="34"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="73w-zJ-6yA" userLabel="phoneTF">
+                    <rect key="frame" x="137" y="218.5" width="197" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nuj-1c-1VR">
-                    <rect key="frame" x="191" y="349" width="33" height="32"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nuj-1c-1VR" userLabel="saveBtn">
+                    <rect key="frame" x="100" y="312.5" width="119.5" height="40"/>
                     <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="gch-Iy-tEu"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <state key="normal" title="保存">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="saveContacts:" destination="-1" eventType="touchUpInside" id="0R2-fB-WbM"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WwZ-I6-CEy" userLabel="deleteBtn">
+                    <rect key="frame" x="234.5" y="312.5" width="119.5" height="40"/>
+                    <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="删除">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="deleteContacts:" destination="-1" eventType="touchUpInside" id="Wdi-G3-bMz"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="9Gi-b6-UKw" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="120" id="0Cw-3d-NEw"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="LiD-pt-Pyu" secondAttribute="trailing" constant="80" id="51C-VQ-JOd"/>
+                <constraint firstItem="abq-v0-kUY" firstAttribute="top" secondItem="9Gi-b6-UKw" secondAttribute="bottom" constant="40" id="5F2-U5-hco"/>
+                <constraint firstItem="nuj-1c-1VR" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="100" id="Ew8-dA-Vl5"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="WwZ-I6-CEy" secondAttribute="trailing" constant="60" id="FrD-qb-cDI"/>
+                <constraint firstItem="LiD-pt-Pyu" firstAttribute="leading" secondItem="9Gi-b6-UKw" secondAttribute="trailing" constant="5" id="QUA-Q2-uhs"/>
+                <constraint firstItem="73w-zJ-6yA" firstAttribute="trailing" secondItem="LiD-pt-Pyu" secondAttribute="trailing" id="VPx-YL-Da8"/>
+                <constraint firstItem="WwZ-I6-CEy" firstAttribute="height" secondItem="nuj-1c-1VR" secondAttribute="height" id="Z7i-dJ-gqt"/>
+                <constraint firstItem="abq-v0-kUY" firstAttribute="trailing" secondItem="9Gi-b6-UKw" secondAttribute="trailing" id="dWx-RU-Kdd"/>
+                <constraint firstItem="nuj-1c-1VR" firstAttribute="top" secondItem="73w-zJ-6yA" secondAttribute="bottom" constant="60" id="dzH-kX-Axc"/>
+                <constraint firstItem="WwZ-I6-CEy" firstAttribute="leading" secondItem="nuj-1c-1VR" secondAttribute="trailing" constant="15" id="e2s-8C-J86"/>
+                <constraint firstItem="73w-zJ-6yA" firstAttribute="leading" secondItem="LiD-pt-Pyu" secondAttribute="leading" id="ekF-aj-8ZZ"/>
+                <constraint firstItem="WwZ-I6-CEy" firstAttribute="top" secondItem="nuj-1c-1VR" secondAttribute="top" id="gkb-8a-ZMS"/>
+                <constraint firstItem="LiD-pt-Pyu" firstAttribute="centerY" secondItem="9Gi-b6-UKw" secondAttribute="centerY" id="jFH-gw-ANH"/>
+                <constraint firstItem="73w-zJ-6yA" firstAttribute="centerY" secondItem="abq-v0-kUY" secondAttribute="centerY" id="sik-8G-kdn"/>
+                <constraint firstItem="WwZ-I6-CEy" firstAttribute="width" secondItem="nuj-1c-1VR" secondAttribute="width" id="sj4-6o-QrE"/>
+                <constraint firstItem="9Gi-b6-UKw" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="80" id="veF-I1-yed"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <point key="canvasLocation" x="131.8840579710145" y="91.741071428571431"/>
         </view>

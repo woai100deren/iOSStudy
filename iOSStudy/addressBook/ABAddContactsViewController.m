@@ -19,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.navigationItem.title = @"添加联系人";
 }
 - (IBAction)addContacts:(id)sender {
     if([NSString isBlankString:self.nameTF.text] || [NSString isBlankString:self.phoneTF.text]){
