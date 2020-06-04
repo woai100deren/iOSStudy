@@ -22,7 +22,7 @@
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <subviews>
                         <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="2000" translatesAutoresizingMaskIntoConstraints="NO" id="IfE-YC-sBw" userLabel="contentView">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="610"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="650"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TqR-bb-AsY">
                                     <rect key="frame" x="154.5" y="50" width="105" height="30"/>
@@ -204,15 +204,29 @@
                                         <action selector="jumpBackCarryValue:" destination="-1" eventType="touchUpInside" id="5T8-uv-86c"/>
                                     </connections>
                                 </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FEK-5J-tRA">
+                                    <rect key="frame" x="125.5" y="610" width="163" height="30"/>
+                                    <color key="backgroundColor" red="0.86267406089999998" green="0.86267406089999998" blue="0.86267406089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="J9V-tB-4aT"/>
+                                    </constraints>
+                                    <state key="normal" title="本地持久化数据5种方式"/>
+                                    <connections>
+                                        <action selector="jumpLocalValue:" destination="-1" eventType="touchUpInside" id="Vya-1I-fcz"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <constraints>
                                 <constraint firstItem="e0G-UT-aHI" firstAttribute="top" secondItem="3F8-PC-fNs" secondAttribute="bottom" constant="10" id="26l-HV-f7n"/>
                                 <constraint firstItem="7Nc-94-MXU" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="6FP-7s-kQl"/>
+                                <constraint firstItem="FEK-5J-tRA" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="6Lv-0C-rW1"/>
                                 <constraint firstItem="XsK-Fg-vS4" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="AZG-5C-v0B"/>
                                 <constraint firstItem="6LE-Se-0eo" firstAttribute="top" secondItem="XsK-Fg-vS4" secondAttribute="bottom" constant="10" id="GDO-g4-Bvs"/>
+                                <constraint firstItem="FEK-5J-tRA" firstAttribute="top" secondItem="UQL-YI-wsM" secondAttribute="bottom" constant="10" id="MoI-im-5oH"/>
                                 <constraint firstItem="haX-X6-Kdl" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="NgY-xk-VOs"/>
                                 <constraint firstItem="6LE-Se-0eo" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="Nw5-qM-fL2"/>
                                 <constraint firstItem="B3R-lG-rCN" firstAttribute="top" secondItem="GdN-vS-iXL" secondAttribute="bottom" constant="10" id="OeV-Us-tEj"/>
+                                <constraint firstAttribute="bottom" secondItem="FEK-5J-tRA" secondAttribute="bottom" constant="10" id="OmC-rb-3Si"/>
                                 <constraint firstItem="zeh-eV-sj2" firstAttribute="top" secondItem="IfE-YC-sBw" secondAttribute="top" constant="10" id="QEd-Xh-P8b"/>
                                 <constraint firstItem="TqR-bb-AsY" firstAttribute="top" secondItem="zeh-eV-sj2" secondAttribute="bottom" constant="10" id="Se7-TA-yAs"/>
                                 <constraint firstItem="e0G-UT-aHI" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="X6S-qb-jKx"/>
@@ -228,7 +242,6 @@
                                 <constraint firstItem="7Nc-94-MXU" firstAttribute="top" secondItem="e0G-UT-aHI" secondAttribute="bottom" constant="10" id="g40-4M-hw1"/>
                                 <constraint firstItem="XsK-Fg-vS4" firstAttribute="top" secondItem="7Nc-94-MXU" secondAttribute="bottom" constant="10" id="hDa-0c-aIf"/>
                                 <constraint firstItem="mah-Km-QJ2" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="kFs-fA-77r"/>
-                                <constraint firstAttribute="bottom" secondItem="UQL-YI-wsM" secondAttribute="bottom" constant="10" id="kYn-QQ-mfb"/>
                                 <constraint firstItem="GdN-vS-iXL" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="p5x-8W-D9M"/>
                                 <constraint firstItem="3F8-PC-fNs" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="q6w-rv-T4u"/>
                                 <constraint firstItem="GdN-vS-iXL" firstAttribute="top" secondItem="TqR-bb-AsY" secondAttribute="bottom" constant="10" id="qJt-Hg-FoI"/>

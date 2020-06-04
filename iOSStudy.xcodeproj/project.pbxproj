@@ -21,6 +21,18 @@
 		E9549143247F975E008C5995 /* TableViewDiffCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9549141247F975E008C5995 /* TableViewDiffCellViewController.xib */; };
 		E9549147247F98EC008C5995 /* MyTableViewDiffCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9549145247F98EC008C5995 /* MyTableViewDiffCell.m */; };
 		E9549148247F98EC008C5995 /* MyTableViewDiffCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9549146247F98EC008C5995 /* MyTableViewDiffCell.xib */; };
+		E97D8B4A2488F162008CF06C /* LocalValuePlistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D8B482488F162008CF06C /* LocalValuePlistViewController.m */; };
+		E97D8B4B2488F162008CF06C /* LocalValuePlistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E97D8B492488F162008CF06C /* LocalValuePlistViewController.xib */; };
+		E97D8B4F2488F17F008CF06C /* LocalValuePreferenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D8B4D2488F17F008CF06C /* LocalValuePreferenceViewController.m */; };
+		E97D8B502488F17F008CF06C /* LocalValuePreferenceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E97D8B4E2488F17F008CF06C /* LocalValuePreferenceViewController.xib */; };
+		E97D8B542488F193008CF06C /* LocalValueNSCodingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D8B522488F193008CF06C /* LocalValueNSCodingViewController.m */; };
+		E97D8B552488F193008CF06C /* LocalValueNSCodingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E97D8B532488F193008CF06C /* LocalValueNSCodingViewController.xib */; };
+		E97D8B5E2488F1B9008CF06C /* LocalValueSQLiteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D8B5C2488F1B9008CF06C /* LocalValueSQLiteViewController.m */; };
+		E97D8B5F2488F1B9008CF06C /* LocalValueSQLiteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E97D8B5D2488F1B9008CF06C /* LocalValueSQLiteViewController.xib */; };
+		E97D8B632488F1C7008CF06C /* LocalValueCoreDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D8B612488F1C7008CF06C /* LocalValueCoreDataViewController.m */; };
+		E97D8B642488F1C7008CF06C /* LocalValueCoreDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E97D8B622488F1C7008CF06C /* LocalValueCoreDataViewController.xib */; };
+		E97D8B682488F253008CF06C /* LocalValueMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D8B662488F253008CF06C /* LocalValueMainViewController.m */; };
+		E97D8B692488F253008CF06C /* LocalValueMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E97D8B672488F253008CF06C /* LocalValueMainViewController.xib */; };
 		E97F33692480E43E0068E757 /* drinks.plist in Resources */ = {isa = PBXBuildFile; fileRef = E97F33682480E43E0068E757 /* drinks.plist */; };
 		E97F336D2480E79F0068E757 /* ShoppingCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97F336B2480E79F0068E757 /* ShoppingCartViewController.m */; };
 		E97F336E2480E79F0068E757 /* ShoppingCartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E97F336C2480E79F0068E757 /* ShoppingCartViewController.xib */; };
@@ -112,6 +124,24 @@
 		E9549144247F98EC008C5995 /* MyTableViewDiffCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTableViewDiffCell.h; sourceTree = "<group>"; };
 		E9549145247F98EC008C5995 /* MyTableViewDiffCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTableViewDiffCell.m; sourceTree = "<group>"; };
 		E9549146247F98EC008C5995 /* MyTableViewDiffCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewDiffCell.xib; sourceTree = "<group>"; };
+		E97D8B472488F162008CF06C /* LocalValuePlistViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalValuePlistViewController.h; sourceTree = "<group>"; };
+		E97D8B482488F162008CF06C /* LocalValuePlistViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalValuePlistViewController.m; sourceTree = "<group>"; };
+		E97D8B492488F162008CF06C /* LocalValuePlistViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocalValuePlistViewController.xib; sourceTree = "<group>"; };
+		E97D8B4C2488F17F008CF06C /* LocalValuePreferenceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalValuePreferenceViewController.h; sourceTree = "<group>"; };
+		E97D8B4D2488F17F008CF06C /* LocalValuePreferenceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalValuePreferenceViewController.m; sourceTree = "<group>"; };
+		E97D8B4E2488F17F008CF06C /* LocalValuePreferenceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocalValuePreferenceViewController.xib; sourceTree = "<group>"; };
+		E97D8B512488F193008CF06C /* LocalValueNSCodingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalValueNSCodingViewController.h; sourceTree = "<group>"; };
+		E97D8B522488F193008CF06C /* LocalValueNSCodingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalValueNSCodingViewController.m; sourceTree = "<group>"; };
+		E97D8B532488F193008CF06C /* LocalValueNSCodingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocalValueNSCodingViewController.xib; sourceTree = "<group>"; };
+		E97D8B5B2488F1B9008CF06C /* LocalValueSQLiteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalValueSQLiteViewController.h; sourceTree = "<group>"; };
+		E97D8B5C2488F1B9008CF06C /* LocalValueSQLiteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalValueSQLiteViewController.m; sourceTree = "<group>"; };
+		E97D8B5D2488F1B9008CF06C /* LocalValueSQLiteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocalValueSQLiteViewController.xib; sourceTree = "<group>"; };
+		E97D8B602488F1C7008CF06C /* LocalValueCoreDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalValueCoreDataViewController.h; sourceTree = "<group>"; };
+		E97D8B612488F1C7008CF06C /* LocalValueCoreDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalValueCoreDataViewController.m; sourceTree = "<group>"; };
+		E97D8B622488F1C7008CF06C /* LocalValueCoreDataViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocalValueCoreDataViewController.xib; sourceTree = "<group>"; };
+		E97D8B652488F253008CF06C /* LocalValueMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalValueMainViewController.h; sourceTree = "<group>"; };
+		E97D8B662488F253008CF06C /* LocalValueMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalValueMainViewController.m; sourceTree = "<group>"; };
+		E97D8B672488F253008CF06C /* LocalValueMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocalValueMainViewController.xib; sourceTree = "<group>"; };
 		E97F33682480E43E0068E757 /* drinks.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = drinks.plist; sourceTree = "<group>"; };
 		E97F336A2480E79F0068E757 /* ShoppingCartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShoppingCartViewController.h; sourceTree = "<group>"; };
 		E97F336B2480E79F0068E757 /* ShoppingCartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShoppingCartViewController.m; sourceTree = "<group>"; };
@@ -274,6 +304,7 @@
 		E90667CB2475040100F44ADD /* iOSStudy */ = {
 			isa = PBXGroup;
 			children = (
+				E97D8B462488F120008CF06C /* 本地化数据 */,
 				E9EA4D382488E28100E53569 /* 反向传值 */,
 				E9EA4D2D248899E400E53569 /* WKWebView */,
 				D29E470D2487E43600BDB9C0 /* extension */,
@@ -307,6 +338,31 @@
 				E98A007E247E56F900669BB8 /* MainViewController.xib */,
 			);
 			path = iOSStudy;
+			sourceTree = "<group>";
+		};
+		E97D8B462488F120008CF06C /* 本地化数据 */ = {
+			isa = PBXGroup;
+			children = (
+				E97D8B472488F162008CF06C /* LocalValuePlistViewController.h */,
+				E97D8B482488F162008CF06C /* LocalValuePlistViewController.m */,
+				E97D8B492488F162008CF06C /* LocalValuePlistViewController.xib */,
+				E97D8B4C2488F17F008CF06C /* LocalValuePreferenceViewController.h */,
+				E97D8B4D2488F17F008CF06C /* LocalValuePreferenceViewController.m */,
+				E97D8B4E2488F17F008CF06C /* LocalValuePreferenceViewController.xib */,
+				E97D8B512488F193008CF06C /* LocalValueNSCodingViewController.h */,
+				E97D8B522488F193008CF06C /* LocalValueNSCodingViewController.m */,
+				E97D8B532488F193008CF06C /* LocalValueNSCodingViewController.xib */,
+				E97D8B5B2488F1B9008CF06C /* LocalValueSQLiteViewController.h */,
+				E97D8B5C2488F1B9008CF06C /* LocalValueSQLiteViewController.m */,
+				E97D8B5D2488F1B9008CF06C /* LocalValueSQLiteViewController.xib */,
+				E97D8B602488F1C7008CF06C /* LocalValueCoreDataViewController.h */,
+				E97D8B612488F1C7008CF06C /* LocalValueCoreDataViewController.m */,
+				E97D8B622488F1C7008CF06C /* LocalValueCoreDataViewController.xib */,
+				E97D8B652488F253008CF06C /* LocalValueMainViewController.h */,
+				E97D8B662488F253008CF06C /* LocalValueMainViewController.m */,
+				E97D8B672488F253008CF06C /* LocalValueMainViewController.xib */,
+			);
+			path = "本地化数据";
 			sourceTree = "<group>";
 		};
 		E97F33772484D9A80068E757 /* UIApplication学习 */ = {
@@ -562,6 +618,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9EA4CF42486480D00E53569 /* FlagItemView.xib in Resources */,
+				E97D8B552488F193008CF06C /* LocalValueNSCodingViewController.xib in Resources */,
 				E97F338F24862DC20068E757 /* foods.plist in Resources */,
 				E97F336E2480E79F0068E757 /* ShoppingCartViewController.xib in Resources */,
 				E997387A247767CC00D6F041 /* Second.storyboard in Resources */,
@@ -571,6 +628,7 @@
 				E9EA4D372488C1A500E53569 /* test.html in Resources */,
 				E9EA4D422488E2AD00E53569 /* DeliverValueSecondViewController.xib in Resources */,
 				E98A0091247E6B8B00669BB8 /* TableViewCustonCellViewController.xib in Resources */,
+				E97D8B642488F1C7008CF06C /* LocalValueCoreDataViewController.xib in Resources */,
 				E9549148247F98EC008C5995 /* MyTableViewDiffCell.xib in Resources */,
 				E98A0087247E5D8000669BB8 /* TableViewIndexsController.xib in Resources */,
 				E9EA4D1024877C6C00E53569 /* ABLoginViewController.xib in Resources */,
@@ -584,15 +642,19 @@
 				E97F33732480E99C0068E757 /* ShoppingCartCell.xib in Resources */,
 				E9EA4D1524878AD200E53569 /* ABTableViewController.xib in Resources */,
 				E98A0080247E56F900669BB8 /* MainViewController.xib in Resources */,
+				E97D8B692488F253008CF06C /* LocalValueMainViewController.xib in Resources */,
 				E9EA4D27248880C400E53569 /* ABTableViewCell.xib in Resources */,
 				E9300EF7247B69410035BF4C /* Third.storyboard in Resources */,
 				E97F338D24862A830068E757 /* PickViewController.xib in Resources */,
 				E98A0082247E5BAC00669BB8 /* ScrollView.xib in Resources */,
+				E97D8B4B2488F162008CF06C /* LocalValuePlistViewController.xib in Resources */,
 				E9549143247F975E008C5995 /* TableViewDiffCellViewController.xib in Resources */,
 				E990ED7E2477703D00F068D1 /* CarView.xib in Resources */,
 				E97F3394248639D00068E757 /* PickViewUseViewController.xib in Resources */,
 				E9EA4D1A2487A2B900E53569 /* ABAddContactsViewController.xib in Resources */,
+				E97D8B502488F17F008CF06C /* LocalValuePreferenceViewController.xib in Resources */,
 				E98A007B247E564200669BB8 /* TableViewController.xib in Resources */,
+				E97D8B5F2488F1B9008CF06C /* LocalValueSQLiteViewController.xib in Resources */,
 				E9EA4CFB248733C600E53569 /* ProvincesAndCities.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -646,9 +708,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E97D8B542488F193008CF06C /* LocalValueNSCodingViewController.m in Sources */,
 				E9549147247F98EC008C5995 /* MyTableViewDiffCell.m in Sources */,
 				E9EA4D012487349100E53569 /* ProvinceModel.m in Sources */,
 				E98A007A247E564200669BB8 /* TableViewController.m in Sources */,
+				E97D8B632488F1C7008CF06C /* LocalValueCoreDataViewController.m in Sources */,
 				E9EA4CEF2486444900E53569 /* FlagItem.m in Sources */,
 				E97F33802484DE550068E757 /* UiapplicationStudyViewController.m in Sources */,
 				D29E47102487E48100BDB9C0 /* NSString+Extensions.m in Sources */,
@@ -658,6 +722,7 @@
 				E98AFFF6247E0AB000669BB8 /* MasonryViewController.m in Sources */,
 				E99738782476720A00D6F041 /* SecondViewController.m in Sources */,
 				E97F3393248639D00068E757 /* PickViewUseViewController.m in Sources */,
+				E97D8B4A2488F162008CF06C /* LocalValuePlistViewController.m in Sources */,
 				E9EA4D0F24877C6C00E53569 /* ABLoginViewController.m in Sources */,
 				E990ED8B2477B62400F068D1 /* UIColor+Hex.m in Sources */,
 				E97F338C24862A830068E757 /* PickViewController.m in Sources */,
@@ -668,6 +733,7 @@
 				E97F33842484DEFA0068E757 /* SingleObject.m in Sources */,
 				E97F336D2480E79F0068E757 /* ShoppingCartViewController.m in Sources */,
 				E9300EFD247BB30F0035BF4C /* ScrollViewController.m in Sources */,
+				E97D8B5E2488F1B9008CF06C /* LocalValueSQLiteViewController.m in Sources */,
 				E90667CE2475040100F44ADD /* AppDelegate.m in Sources */,
 				E9300EFA247B696E0035BF4C /* ThirdViewController.m in Sources */,
 				E9EA4D3124889A3000E53569 /* WKWebViewController.m in Sources */,
@@ -676,12 +742,14 @@
 				E990ED7924776E6D00F068D1 /* Car.m in Sources */,
 				E9EA4D26248880C400E53569 /* ABTableViewCell.m in Sources */,
 				E9EA4D0524873B1D00E53569 /* DateTextField.m in Sources */,
+				E97D8B4F2488F17F008CF06C /* LocalValuePreferenceViewController.m in Sources */,
 				E9EA4D1F2487A72D00E53569 /* ABContacts.m in Sources */,
 				E990ED7C24776F2100F068D1 /* CarView.m in Sources */,
 				E9549142247F975E008C5995 /* TableViewDiffCellViewController.m in Sources */,
 				E9EA4D3C2488E2A000E53569 /* DeliverValueFirstViewController.m in Sources */,
 				E98A007F247E56F900669BB8 /* MainViewController.m in Sources */,
 				E98A0090247E6B8B00669BB8 /* TableViewCustonCellViewController.m in Sources */,
+				E97D8B682488F253008CF06C /* LocalValueMainViewController.m in Sources */,
 				E90667D12475040100F44ADD /* SceneDelegate.m in Sources */,
 				E9EA4D3524889BB600E53569 /* MyWKWebView.m in Sources */,
 				E9EA4CF92487334E00E53569 /* CityTextField.m in Sources */,

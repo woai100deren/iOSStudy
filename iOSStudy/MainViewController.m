@@ -22,6 +22,7 @@
 #import "ABLoginViewController.h"
 #import "WKWebViewController.h"
 #import "DeliverValueFirstViewController.h"
+#import "LocalValueMainViewController.h"
 
 @interface MainViewController ()
 
@@ -106,6 +107,9 @@
 }
 - (IBAction)jumpBackCarryValue:(id)sender {
     [self jump:[[DeliverValueFirstViewController alloc] init]];
+}
+- (IBAction)jumpLocalValue:(id)sender {
+    [self jump:[[LocalValueMainViewController alloc] init]];
 }
 
 -(void)jump:(UIViewController*) vc{
