@@ -21,6 +21,7 @@
 #import "PickViewUseViewController.h"
 #import "ABLoginViewController.h"
 #import "WKWebViewController.h"
+#import "DeliverValueFirstViewController.h"
 
 @interface MainViewController ()
 
@@ -102,6 +103,9 @@
 }
 - (IBAction)jumpWKWebView:(id)sender {
     [self jump:[[WKWebViewController alloc] init]];
+}
+- (IBAction)jumpBackCarryValue:(id)sender {
+    [self jump:[[DeliverValueFirstViewController alloc] init]];
 }
 
 -(void)jump:(UIViewController*) vc{
