@@ -63,6 +63,8 @@
     NSLog(@"页面加载完成之后调用");
     self.goBackBtn.enabled = self.webView.canGoBack;
     self.goFrontBtn.enabled = self.webView.canGoForward;
+    
+    self.navigationItem.title = self.webView.title;
 }
 // 页面加载失败时调用
 - (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(WKNavigation *)navigation{
