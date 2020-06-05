@@ -23,7 +23,7 @@
 }
 -(void)saveData{
     Student *student = [NSEntityDescription insertNewObjectForEntityForName:@"Student" inManagedObjectContext:kLVCoreDataManager.managedObjectContext];
-    student.name = @"2222aievan";
+    student.name = @"aievan";
     student.age = INT32_C(20);
 
     [kLVCoreDataManager save];
@@ -31,7 +31,7 @@
     NSFetchRequest *fetchRequest =  [NSFetchRequest fetchRequestWithEntityName:@"Student"];
     //查询数据count：NSCountResultType
     //查询数据对象：NSManagedObjectResultType，默认就是这个
-    fetchRequest.resultType = NSCountResultType;
+    fetchRequest.resultType = NSManagedObjectResultType;
     
     //查询age>5的数据
 //    fetchRequest.predicate = [NSPredicate predicateWithFormat:@"age > 5"];
