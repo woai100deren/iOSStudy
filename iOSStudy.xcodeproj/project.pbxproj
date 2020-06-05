@@ -33,6 +33,8 @@
 		E97D8B642488F1C7008CF06C /* LocalValueCoreDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E97D8B622488F1C7008CF06C /* LocalValueCoreDataViewController.xib */; };
 		E97D8B682488F253008CF06C /* LocalValueMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D8B662488F253008CF06C /* LocalValueMainViewController.m */; };
 		E97D8B692488F253008CF06C /* LocalValueMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E97D8B672488F253008CF06C /* LocalValueMainViewController.xib */; };
+		E97D8B6C2489E349008CF06C /* LocalValueModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D8B6B2489E349008CF06C /* LocalValueModel.m */; };
+		E97D8B702489ED20008CF06C /* SqliteTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D8B6F2489ED20008CF06C /* SqliteTool.m */; };
 		E97F33692480E43E0068E757 /* drinks.plist in Resources */ = {isa = PBXBuildFile; fileRef = E97F33682480E43E0068E757 /* drinks.plist */; };
 		E97F336D2480E79F0068E757 /* ShoppingCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97F336B2480E79F0068E757 /* ShoppingCartViewController.m */; };
 		E97F336E2480E79F0068E757 /* ShoppingCartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E97F336C2480E79F0068E757 /* ShoppingCartViewController.xib */; };
@@ -142,6 +144,10 @@
 		E97D8B652488F253008CF06C /* LocalValueMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalValueMainViewController.h; sourceTree = "<group>"; };
 		E97D8B662488F253008CF06C /* LocalValueMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalValueMainViewController.m; sourceTree = "<group>"; };
 		E97D8B672488F253008CF06C /* LocalValueMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocalValueMainViewController.xib; sourceTree = "<group>"; };
+		E97D8B6A2489E349008CF06C /* LocalValueModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalValueModel.h; sourceTree = "<group>"; };
+		E97D8B6B2489E349008CF06C /* LocalValueModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalValueModel.m; sourceTree = "<group>"; };
+		E97D8B6E2489ED20008CF06C /* SqliteTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SqliteTool.h; sourceTree = "<group>"; };
+		E97D8B6F2489ED20008CF06C /* SqliteTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SqliteTool.m; sourceTree = "<group>"; };
 		E97F33682480E43E0068E757 /* drinks.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = drinks.plist; sourceTree = "<group>"; };
 		E97F336A2480E79F0068E757 /* ShoppingCartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShoppingCartViewController.h; sourceTree = "<group>"; };
 		E97F336B2480E79F0068E757 /* ShoppingCartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShoppingCartViewController.m; sourceTree = "<group>"; };
@@ -361,6 +367,10 @@
 				E97D8B652488F253008CF06C /* LocalValueMainViewController.h */,
 				E97D8B662488F253008CF06C /* LocalValueMainViewController.m */,
 				E97D8B672488F253008CF06C /* LocalValueMainViewController.xib */,
+				E97D8B6A2489E349008CF06C /* LocalValueModel.h */,
+				E97D8B6B2489E349008CF06C /* LocalValueModel.m */,
+				E97D8B6E2489ED20008CF06C /* SqliteTool.h */,
+				E97D8B6F2489ED20008CF06C /* SqliteTool.m */,
 			);
 			path = "本地化数据";
 			sourceTree = "<group>";
@@ -720,6 +730,7 @@
 				E98A0094247E6E6500669BB8 /* MyTableViewCell.m in Sources */,
 				E9EA4D412488E2AD00E53569 /* DeliverValueSecondViewController.m in Sources */,
 				E98AFFF6247E0AB000669BB8 /* MasonryViewController.m in Sources */,
+				E97D8B6C2489E349008CF06C /* LocalValueModel.m in Sources */,
 				E99738782476720A00D6F041 /* SecondViewController.m in Sources */,
 				E97F3393248639D00068E757 /* PickViewUseViewController.m in Sources */,
 				E97D8B4A2488F162008CF06C /* LocalValuePlistViewController.m in Sources */,
@@ -754,6 +765,7 @@
 				E9EA4D3524889BB600E53569 /* MyWKWebView.m in Sources */,
 				E9EA4CF92487334E00E53569 /* CityTextField.m in Sources */,
 				E9EA4D1424878AD200E53569 /* ABTableViewController.m in Sources */,
+				E97D8B702489ED20008CF06C /* SqliteTool.m in Sources */,
 				E990ED842477ADC400F068D1 /* NewCarView.m in Sources */,
 				E9EA4CEA2486410300E53569 /* FlagTextField.m in Sources */,
 				E97F33762480E9BC0068E757 /* DrinkGoods.m in Sources */,

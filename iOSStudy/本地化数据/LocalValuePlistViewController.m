@@ -47,7 +47,8 @@
 
 -(NSString*)getDocumentsPath:(NSString*)fileName{
     //沙盒获取路径
-    //第一个参数：搜索的目录，NSDocumentDirectory搜索的是沙盒目录
+    //第一个参数：搜索的目录，NSDocumentDirectory搜索的是沙盒中的Documents目录。
+    //                   NSCachesDirectory搜索的是沙盒中的Library/Caches目录。
     //第二个参数：搜索的范围，当前用户下
     //第三个参数：是否展开路径(在ios当中识别~)
     NSArray *pathArray = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
