@@ -7,6 +7,7 @@
 //
 
 #import "SceneDelegate.h"
+#import "AppDelegate.h"
 
 @interface SceneDelegate ()
 
@@ -27,5 +28,8 @@
     [self.window makeKeyAndVisible];
 }
 
+- (void)sceneDidEnterBackground:(UIScene *)scene {
+    [(AppDelegate *)UIApplication.sharedApplication.delegate saveContext];
+}
 @end
 

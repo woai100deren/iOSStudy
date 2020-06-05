@@ -35,6 +35,8 @@
 		E97D8B692488F253008CF06C /* LocalValueMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E97D8B672488F253008CF06C /* LocalValueMainViewController.xib */; };
 		E97D8B6C2489E349008CF06C /* LocalValueModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D8B6B2489E349008CF06C /* LocalValueModel.m */; };
 		E97D8B702489ED20008CF06C /* SqliteTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D8B6F2489ED20008CF06C /* SqliteTool.m */; };
+		E97D8B9E248A0EF6008CF06C /* iOSStudy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E97D8B9C248A0EF6008CF06C /* iOSStudy.xcdatamodeld */; };
+		E97D8BA1248A1086008CF06C /* LVCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D8BA0248A1086008CF06C /* LVCoreDataManager.m */; };
 		E97F33692480E43E0068E757 /* drinks.plist in Resources */ = {isa = PBXBuildFile; fileRef = E97F33682480E43E0068E757 /* drinks.plist */; };
 		E97F336D2480E79F0068E757 /* ShoppingCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97F336B2480E79F0068E757 /* ShoppingCartViewController.m */; };
 		E97F336E2480E79F0068E757 /* ShoppingCartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E97F336C2480E79F0068E757 /* ShoppingCartViewController.xib */; };
@@ -148,6 +150,9 @@
 		E97D8B6B2489E349008CF06C /* LocalValueModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalValueModel.m; sourceTree = "<group>"; };
 		E97D8B6E2489ED20008CF06C /* SqliteTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SqliteTool.h; sourceTree = "<group>"; };
 		E97D8B6F2489ED20008CF06C /* SqliteTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SqliteTool.m; sourceTree = "<group>"; };
+		E97D8B9D248A0EF6008CF06C /* iOSStudy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOSStudy.xcdatamodel; sourceTree = "<group>"; };
+		E97D8B9F248A1086008CF06C /* LVCoreDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LVCoreDataManager.h; sourceTree = "<group>"; };
+		E97D8BA0248A1086008CF06C /* LVCoreDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LVCoreDataManager.m; sourceTree = "<group>"; };
 		E97F33682480E43E0068E757 /* drinks.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = drinks.plist; sourceTree = "<group>"; };
 		E97F336A2480E79F0068E757 /* ShoppingCartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShoppingCartViewController.h; sourceTree = "<group>"; };
 		E97F336B2480E79F0068E757 /* ShoppingCartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShoppingCartViewController.m; sourceTree = "<group>"; };
@@ -342,6 +347,7 @@
 				E98A007C247E56F900669BB8 /* MainViewController.h */,
 				E98A007D247E56F900669BB8 /* MainViewController.m */,
 				E98A007E247E56F900669BB8 /* MainViewController.xib */,
+				E97D8B9C248A0EF6008CF06C /* iOSStudy.xcdatamodeld */,
 			);
 			path = iOSStudy;
 			sourceTree = "<group>";
@@ -371,6 +377,8 @@
 				E97D8B6B2489E349008CF06C /* LocalValueModel.m */,
 				E97D8B6E2489ED20008CF06C /* SqliteTool.h */,
 				E97D8B6F2489ED20008CF06C /* SqliteTool.m */,
+				E97D8B9F248A1086008CF06C /* LVCoreDataManager.h */,
+				E97D8BA0248A1086008CF06C /* LVCoreDataManager.m */,
 			);
 			path = "本地化数据";
 			sourceTree = "<group>";
@@ -734,11 +742,13 @@
 				E99738782476720A00D6F041 /* SecondViewController.m in Sources */,
 				E97F3393248639D00068E757 /* PickViewUseViewController.m in Sources */,
 				E97D8B4A2488F162008CF06C /* LocalValuePlistViewController.m in Sources */,
+				E97D8BA1248A1086008CF06C /* LVCoreDataManager.m in Sources */,
 				E9EA4D0F24877C6C00E53569 /* ABLoginViewController.m in Sources */,
 				E990ED8B2477B62400F068D1 /* UIColor+Hex.m in Sources */,
 				E97F338C24862A830068E757 /* PickViewController.m in Sources */,
 				E98A008C247E614F00669BB8 /* CarGroup.m in Sources */,
 				E90667E22475040100F44ADD /* main.m in Sources */,
+				E97D8B9E248A0EF6008CF06C /* iOSStudy.xcdatamodeld in Sources */,
 				E97F33722480E99C0068E757 /* ShoppingCartCell.m in Sources */,
 				E9EA4CFE2487344500E53569 /* CityModel.m in Sources */,
 				E97F33842484DEFA0068E757 /* SingleObject.m in Sources */,
@@ -955,6 +965,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E97D8B9C248A0EF6008CF06C /* iOSStudy.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E97D8B9D248A0EF6008CF06C /* iOSStudy.xcdatamodel */,
+			);
+			currentVersion = E97D8B9D248A0EF6008CF06C /* iOSStudy.xcdatamodel */;
+			path = iOSStudy.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E90667C12475040100F44ADD /* Project object */;
 }
