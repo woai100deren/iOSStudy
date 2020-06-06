@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		823771A861BB5CC9AA0E3016 /* Pods_iOSStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2100E6233EC29B67BF103C /* Pods_iOSStudy.framework */; };
 		D29E47102487E48100BDB9C0 /* NSString+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = D29E470F2487E48100BDB9C0 /* NSString+Extensions.m */; };
+		D29E4715248A984400BDB9C0 /* UserDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29E4713248A984400BDB9C0 /* UserDetailViewController.m */; };
+		D29E4716248A984400BDB9C0 /* UserDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D29E4714248A984400BDB9C0 /* UserDetailViewController.xib */; };
 		E90667CE2475040100F44ADD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E90667CD2475040100F44ADD /* AppDelegate.m */; };
 		E90667D12475040100F44ADD /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E90667D02475040100F44ADD /* SceneDelegate.m */; };
 		E90667DC2475040100F44ADD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E90667DB2475040100F44ADD /* Assets.xcassets */; };
@@ -108,6 +110,9 @@
 		98E1FD6995F50453A37D5BB9 /* Pods-iOSStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSStudy.release.xcconfig"; path = "Target Support Files/Pods-iOSStudy/Pods-iOSStudy.release.xcconfig"; sourceTree = "<group>"; };
 		D29E470E2487E48100BDB9C0 /* NSString+Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Extensions.h"; sourceTree = "<group>"; };
 		D29E470F2487E48100BDB9C0 /* NSString+Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extensions.m"; sourceTree = "<group>"; };
+		D29E4712248A984400BDB9C0 /* UserDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserDetailViewController.h; sourceTree = "<group>"; };
+		D29E4713248A984400BDB9C0 /* UserDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserDetailViewController.m; sourceTree = "<group>"; };
+		D29E4714248A984400BDB9C0 /* UserDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailViewController.xib; sourceTree = "<group>"; };
 		E90667C92475040100F44ADD /* iOS学习.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS学习.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E90667CC2475040100F44ADD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E90667CD2475040100F44ADD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -294,6 +299,16 @@
 			path = extension;
 			sourceTree = "<group>";
 		};
+		D29E4711248A982600BDB9C0 /* 个人详情 */ = {
+			isa = PBXGroup;
+			children = (
+				D29E4712248A984400BDB9C0 /* UserDetailViewController.h */,
+				D29E4713248A984400BDB9C0 /* UserDetailViewController.m */,
+				D29E4714248A984400BDB9C0 /* UserDetailViewController.xib */,
+			);
+			path = "个人详情";
+			sourceTree = "<group>";
+		};
 		E90667C02475040100F44ADD = {
 			isa = PBXGroup;
 			children = (
@@ -315,6 +330,7 @@
 		E90667CB2475040100F44ADD /* iOSStudy */ = {
 			isa = PBXGroup;
 			children = (
+				D29E4711248A982600BDB9C0 /* 个人详情 */,
 				E97D8B462488F120008CF06C /* 本地化数据 */,
 				E9EA4D382488E28100E53569 /* 反向传值 */,
 				E9EA4D2D248899E400E53569 /* WKWebView */,
@@ -641,6 +657,7 @@
 				E97F336E2480E79F0068E757 /* ShoppingCartViewController.xib in Resources */,
 				E997387A247767CC00D6F041 /* Second.storyboard in Resources */,
 				E9ECA05E247F8E8C0041E22D /* MyTableViewCell.xib in Resources */,
+				D29E4716248A984400BDB9C0 /* UserDetailViewController.xib in Resources */,
 				E90667DF2475040100F44ADD /* LaunchScreen.storyboard in Resources */,
 				E97F33692480E43E0068E757 /* drinks.plist in Resources */,
 				E9EA4D372488C1A500E53569 /* test.html in Resources */,
@@ -729,6 +746,7 @@
 				E97D8B542488F193008CF06C /* LocalValueNSCodingViewController.m in Sources */,
 				E9549147247F98EC008C5995 /* MyTableViewDiffCell.m in Sources */,
 				E9EA4D012487349100E53569 /* ProvinceModel.m in Sources */,
+				D29E4715248A984400BDB9C0 /* UserDetailViewController.m in Sources */,
 				E98A007A247E564200669BB8 /* TableViewController.m in Sources */,
 				E97D8B632488F1C7008CF06C /* LocalValueCoreDataViewController.m in Sources */,
 				E9EA4CEF2486444900E53569 /* FlagItem.m in Sources */,
