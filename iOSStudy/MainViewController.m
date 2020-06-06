@@ -23,6 +23,7 @@
 #import "WKWebViewController.h"
 #import "DeliverValueFirstViewController.h"
 #import "LocalValueMainViewController.h"
+#import "UserDetailViewController.h"
 
 @interface MainViewController ()
 
@@ -110,6 +111,9 @@
 }
 - (IBAction)jumpLocalValue:(id)sender {
     [self jump:[[LocalValueMainViewController alloc] init]];
+}
+- (IBAction)jumpUserDetail:(id)sender {
+    [self jump:[[UserDetailViewController alloc] init]];
 }
 
 -(void)jump:(UIViewController*) vc{

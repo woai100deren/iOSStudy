@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserDetailViewController">
+            <connections>
+                <outlet property="imageHeightConstraints" destination="fWb-O3-6Xi" id="tRz-L6-5Uy"/>
+                <outlet property="imageView" destination="IXu-qW-axd" id="MDN-WH-Zrs"/>
+                <outlet property="tableView" destination="Pfs-7b-ERD" id="Spq-1R-vM0"/>
+                <outlet property="view" destination="cxl-I3-ARU" id="OEM-aN-1Vd"/>
+                <outlet property="yellowView" destination="mer-bi-Lru" id="3yk-ez-a48"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="cxl-I3-ARU">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Pfs-7b-ERD">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nv" translatesAutoresizingMaskIntoConstraints="NO" id="IXu-qW-axd">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="fWb-O3-6Xi"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mer-bi-Lru" userLabel="yellowView">
+                    <rect key="frame" x="0.0" y="200" width="414" height="40"/>
+                    <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="EkU-sI-Jwt"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="Pfs-7b-ERD" firstAttribute="top" secondItem="cxl-I3-ARU" secondAttribute="top" id="75E-Va-HGP"/>
+                <constraint firstItem="IXu-qW-axd" firstAttribute="top" secondItem="cxl-I3-ARU" secondAttribute="top" id="9EH-DD-xB5"/>
+                <constraint firstItem="IXu-qW-axd" firstAttribute="leading" secondItem="hAm-ke-BZn" secondAttribute="leading" id="N4I-gu-IZ8"/>
+                <constraint firstItem="mer-bi-Lru" firstAttribute="leading" secondItem="hAm-ke-BZn" secondAttribute="leading" id="RnX-NX-MxS"/>
+                <constraint firstItem="Pfs-7b-ERD" firstAttribute="leading" secondItem="hAm-ke-BZn" secondAttribute="leading" id="fPD-sr-Vpy"/>
+                <constraint firstItem="mer-bi-Lru" firstAttribute="top" secondItem="IXu-qW-axd" secondAttribute="bottom" id="ffo-qp-ozn"/>
+                <constraint firstItem="hAm-ke-BZn" firstAttribute="bottom" secondItem="Pfs-7b-ERD" secondAttribute="bottom" id="kWT-Jj-JeM"/>
+                <constraint firstItem="hAm-ke-BZn" firstAttribute="trailing" secondItem="mer-bi-Lru" secondAttribute="trailing" id="p8b-v9-nSi"/>
+                <constraint firstItem="hAm-ke-BZn" firstAttribute="trailing" secondItem="Pfs-7b-ERD" secondAttribute="trailing" id="rdW-mV-ZFR"/>
+                <constraint firstItem="hAm-ke-BZn" firstAttribute="trailing" secondItem="IXu-qW-axd" secondAttribute="trailing" id="tUy-Le-2la"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="hAm-ke-BZn"/>
+            <point key="canvasLocation" x="-66" y="-227"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="nv" width="552.5" height="800"/>
+    </resources>
+</document>
