@@ -25,6 +25,7 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
+    self.view.backgroundColor = UIColor.whiteColor;
     
     Car *car = [[Car alloc] init];
     car.image = @"car";

@@ -16,6 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = UIColor.whiteColor;
+    
     UIView *redView = [[UIView alloc] init];
     redView.backgroundColor = UIColor.redColor;
     [self.view addSubview:redView];

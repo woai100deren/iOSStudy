@@ -25,6 +25,7 @@
 #import "LocalValueMainViewController.h"
 #import "UserDetailViewController.h"
 #import "TabBarSystemViewController.h"
+#import "BaseUIFrameViewController.h"
 
 @interface MainViewController ()
 
@@ -118,6 +119,9 @@
 }
 - (IBAction)jumpSystemTabBar:(id)sender {
     [self jump:[[TabBarSystemViewController alloc] init]];
+}
+- (IBAction)jumpBaseUIFrame:(id)sender {
+    [self jump:[[BaseUIFrameViewController alloc] init]];
 }
 
 -(void)jump:(UIViewController*) vc{
