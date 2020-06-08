@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,7 +22,7 @@
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <subviews>
                         <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="2000" translatesAutoresizingMaskIntoConstraints="NO" id="IfE-YC-sBw" userLabel="contentView">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="690"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="730"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TqR-bb-AsY">
                                     <rect key="frame" x="154.5" y="50" width="105" height="30"/>
@@ -226,6 +226,17 @@
                                         <action selector="jumpUserDetail:" destination="-1" eventType="touchUpInside" id="GAf-L2-xqZ"/>
                                     </connections>
                                 </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NnH-x3-y1P">
+                                    <rect key="frame" x="144.5" y="690" width="125" height="30"/>
+                                    <color key="backgroundColor" red="0.86267406089999998" green="0.86267406089999998" blue="0.86267406089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="U6l-CQ-fTY"/>
+                                    </constraints>
+                                    <state key="normal" title="跳转到自带TabBar"/>
+                                    <connections>
+                                        <action selector="jumpSystemTabBar:" destination="-1" eventType="touchUpInside" id="zi4-ov-jxB"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <constraints>
                                 <constraint firstItem="e0G-UT-aHI" firstAttribute="top" secondItem="3F8-PC-fNs" secondAttribute="bottom" constant="10" id="26l-HV-f7n"/>
@@ -238,6 +249,7 @@
                                 <constraint firstItem="6LE-Se-0eo" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="Nw5-qM-fL2"/>
                                 <constraint firstItem="B3R-lG-rCN" firstAttribute="top" secondItem="GdN-vS-iXL" secondAttribute="bottom" constant="10" id="OeV-Us-tEj"/>
                                 <constraint firstItem="zeh-eV-sj2" firstAttribute="top" secondItem="IfE-YC-sBw" secondAttribute="top" constant="10" id="QEd-Xh-P8b"/>
+                                <constraint firstItem="NnH-x3-y1P" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="RcD-Qo-YYU"/>
                                 <constraint firstItem="TqR-bb-AsY" firstAttribute="top" secondItem="zeh-eV-sj2" secondAttribute="bottom" constant="10" id="Se7-TA-yAs"/>
                                 <constraint firstItem="e0G-UT-aHI" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="X6S-qb-jKx"/>
                                 <constraint firstItem="UQL-YI-wsM" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="XvD-hc-Nzp"/>
@@ -253,15 +265,17 @@
                                 <constraint firstItem="XsK-Fg-vS4" firstAttribute="top" secondItem="7Nc-94-MXU" secondAttribute="bottom" constant="10" id="hDa-0c-aIf"/>
                                 <constraint firstItem="mah-Km-QJ2" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="kFs-fA-77r"/>
                                 <constraint firstItem="GdN-vS-iXL" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="p5x-8W-D9M"/>
+                                <constraint firstAttribute="bottom" secondItem="NnH-x3-y1P" secondAttribute="bottom" constant="10" id="pgJ-ym-BPI"/>
                                 <constraint firstItem="3F8-PC-fNs" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="q6w-rv-T4u"/>
                                 <constraint firstItem="GdN-vS-iXL" firstAttribute="top" secondItem="TqR-bb-AsY" secondAttribute="bottom" constant="10" id="qJt-Hg-FoI"/>
                                 <constraint firstItem="DbB-oS-EqR" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="s5q-Oo-PSv"/>
-                                <constraint firstAttribute="bottom" secondItem="meZ-T6-Akc" secondAttribute="bottom" constant="10" id="sUM-Dy-b0T"/>
                                 <constraint firstItem="DbB-oS-EqR" firstAttribute="top" secondItem="6LE-Se-0eo" secondAttribute="bottom" constant="10" id="u5S-Me-4LN"/>
                                 <constraint firstItem="zeh-eV-sj2" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="u9Q-2Y-iw5"/>
                                 <constraint firstItem="meZ-T6-Akc" firstAttribute="top" secondItem="FEK-5J-tRA" secondAttribute="bottom" constant="10" id="v9u-93-m49"/>
                                 <constraint firstItem="mah-Km-QJ2" firstAttribute="top" secondItem="xAx-p4-ZJI" secondAttribute="bottom" constant="10" id="vPJ-Tp-Yil"/>
                                 <constraint firstItem="meZ-T6-Akc" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="y70-aW-sTD"/>
+                                <constraint firstItem="NnH-x3-y1P" firstAttribute="top" secondItem="meZ-T6-Akc" secondAttribute="bottom" constant="10" id="zSb-3l-arK"/>
+                                <constraint firstItem="NnH-x3-y1P" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="zii-Ou-d64"/>
                                 <constraint firstItem="B3R-lG-rCN" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="zmQ-un-iyw"/>
                             </constraints>
                         </view>

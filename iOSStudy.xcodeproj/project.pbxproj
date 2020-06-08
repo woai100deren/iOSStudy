@@ -39,6 +39,7 @@
 		E97D8B702489ED20008CF06C /* SqliteTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D8B6F2489ED20008CF06C /* SqliteTool.m */; };
 		E97D8B9E248A0EF6008CF06C /* iOSStudy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E97D8B9C248A0EF6008CF06C /* iOSStudy.xcdatamodeld */; };
 		E97D8BA1248A1086008CF06C /* LVCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D8BA0248A1086008CF06C /* LVCoreDataManager.m */; };
+		E97D8BCE248E2A1A008CF06C /* TabBarSystemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D8BCC248E2A1A008CF06C /* TabBarSystemViewController.m */; };
 		E97F33692480E43E0068E757 /* drinks.plist in Resources */ = {isa = PBXBuildFile; fileRef = E97F33682480E43E0068E757 /* drinks.plist */; };
 		E97F336D2480E79F0068E757 /* ShoppingCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97F336B2480E79F0068E757 /* ShoppingCartViewController.m */; };
 		E97F336E2480E79F0068E757 /* ShoppingCartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E97F336C2480E79F0068E757 /* ShoppingCartViewController.xib */; };
@@ -158,6 +159,8 @@
 		E97D8B9D248A0EF6008CF06C /* iOSStudy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOSStudy.xcdatamodel; sourceTree = "<group>"; };
 		E97D8B9F248A1086008CF06C /* LVCoreDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LVCoreDataManager.h; sourceTree = "<group>"; };
 		E97D8BA0248A1086008CF06C /* LVCoreDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LVCoreDataManager.m; sourceTree = "<group>"; };
+		E97D8BCB248E2A1A008CF06C /* TabBarSystemViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarSystemViewController.h; sourceTree = "<group>"; };
+		E97D8BCC248E2A1A008CF06C /* TabBarSystemViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarSystemViewController.m; sourceTree = "<group>"; };
 		E97F33682480E43E0068E757 /* drinks.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = drinks.plist; sourceTree = "<group>"; };
 		E97F336A2480E79F0068E757 /* ShoppingCartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShoppingCartViewController.h; sourceTree = "<group>"; };
 		E97F336B2480E79F0068E757 /* ShoppingCartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShoppingCartViewController.m; sourceTree = "<group>"; };
@@ -330,6 +333,7 @@
 		E90667CB2475040100F44ADD /* iOSStudy */ = {
 			isa = PBXGroup;
 			children = (
+				E97D8BCA248E29F4008CF06C /* tabBar */,
 				D29E4711248A982600BDB9C0 /* 个人详情 */,
 				E97D8B462488F120008CF06C /* 本地化数据 */,
 				E9EA4D382488E28100E53569 /* 反向传值 */,
@@ -397,6 +401,15 @@
 				E97D8BA0248A1086008CF06C /* LVCoreDataManager.m */,
 			);
 			path = "本地化数据";
+			sourceTree = "<group>";
+		};
+		E97D8BCA248E29F4008CF06C /* tabBar */ = {
+			isa = PBXGroup;
+			children = (
+				E97D8BCB248E2A1A008CF06C /* TabBarSystemViewController.h */,
+				E97D8BCC248E2A1A008CF06C /* TabBarSystemViewController.m */,
+			);
+			path = tabBar;
 			sourceTree = "<group>";
 		};
 		E97F33772484D9A80068E757 /* UIApplication学习 */ = {
@@ -758,6 +771,7 @@
 				E98AFFF6247E0AB000669BB8 /* MasonryViewController.m in Sources */,
 				E97D8B6C2489E349008CF06C /* LocalValueModel.m in Sources */,
 				E99738782476720A00D6F041 /* SecondViewController.m in Sources */,
+				E97D8BCE248E2A1A008CF06C /* TabBarSystemViewController.m in Sources */,
 				E97F3393248639D00068E757 /* PickViewUseViewController.m in Sources */,
 				E97D8B4A2488F162008CF06C /* LocalValuePlistViewController.m in Sources */,
 				E97D8BA1248A1086008CF06C /* LVCoreDataManager.m in Sources */,

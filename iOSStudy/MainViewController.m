@@ -24,6 +24,7 @@
 #import "DeliverValueFirstViewController.h"
 #import "LocalValueMainViewController.h"
 #import "UserDetailViewController.h"
+#import "TabBarSystemViewController.h"
 
 @interface MainViewController ()
 
@@ -114,6 +115,9 @@
 }
 - (IBAction)jumpUserDetail:(id)sender {
     [self jump:[[UserDetailViewController alloc] init]];
+}
+- (IBAction)jumpSystemTabBar:(id)sender {
+    [self jump:[[TabBarSystemViewController alloc] init]];
 }
 
 -(void)jump:(UIViewController*) vc{
