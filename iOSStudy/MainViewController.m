@@ -26,6 +26,7 @@
 #import "UserDetailViewController.h"
 #import "TabBarSystemViewController.h"
 #import "BaseUIFrameViewController.h"
+#import "ModalViewController.h"
 
 @interface MainViewController ()
 
@@ -123,9 +124,19 @@
 - (IBAction)jumpBaseUIFrame:(id)sender {
     [self jump:[[BaseUIFrameViewController alloc] init]];
 }
+- (IBAction)jumpModal:(id)sender {
+    [self modalJump:[[ModalViewController alloc] init]];
+}
 
 -(void)jump:(UIViewController*) vc{
     //跳转到tableView
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+-(void)modalJump:(UIViewController*) vc{
+    //在presentViewController前为要弹出的VC设置这两条属性，否则modal方式弹出来的页面无法全屏
+    vc.modalPresentationStyle = UIModalPresentationFullScreen;
+    vc.edgesForExtendedLayout = YES;
+    [self presentViewController:vc animated:YES completion:nil];
 }
 @end
