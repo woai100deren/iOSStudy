@@ -8,8 +8,8 @@
 
 #import "UserDetailViewController.h"
 
-#define oriOfftY -240
-#define imageHeight 200
+#define oriOfftY -340
+#define imageHeight 300
 #define yellowViewHeight 40
 
 @interface UserDetailViewController ()<UITableViewDataSource,UITableViewDelegate>
@@ -63,6 +63,11 @@
     if(offsetY>(imageHeight-[[UIApplication sharedApplication] statusBarFrame].size.height - self.navigationController.navigationBar.bounds.size.height)){
         
         h = [[UIApplication sharedApplication] statusBarFrame].size.height + self.navigationController.navigationBar.bounds.size.height;
+    }
+    
+    //下拉最大不超过图片的高度
+    if(h >= self.imageView.image.size.height){
+        h = self.imageView.image.size.height;
     }
     
     self.imageHeightConstraints.constant = h;
