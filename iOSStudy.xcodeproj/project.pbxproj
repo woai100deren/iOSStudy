@@ -105,6 +105,10 @@
 		E9A928F3248F553900694EF7 /* TransmitImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A928F2248F553900694EF7 /* TransmitImageView.m */; };
 		E9A928FA248F813B00694EF7 /* GestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A928F8248F813B00694EF7 /* GestureViewController.m */; };
 		E9A928FB248F813B00694EF7 /* GestureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9A928F9248F813B00694EF7 /* GestureViewController.xib */; };
+		E9A92900248F8EA100694EF7 /* DrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A928FE248F8EA100694EF7 /* DrawerViewController.m */; };
+		E9A92901248F8EA100694EF7 /* DrawerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9A928FF248F8EA100694EF7 /* DrawerViewController.xib */; };
+		E9A92907248F94A700694EF7 /* MainJumpViews.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9A92906248F94A700694EF7 /* MainJumpViews.plist */; };
+		E9A9290A248F952A00694EF7 /* JumpModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A92909248F952A00694EF7 /* JumpModel.m */; };
 		E9EA4CEA2486410300E53569 /* FlagTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA4CE92486410300E53569 /* FlagTextField.m */; };
 		E9EA4CEC2486434D00E53569 /* flags.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9EA4CEB2486434D00E53569 /* flags.plist */; };
 		E9EA4CEF2486444900E53569 /* FlagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA4CEE2486444900E53569 /* FlagItem.m */; };
@@ -299,6 +303,12 @@
 		E9A928F7248F813B00694EF7 /* GestureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GestureViewController.h; sourceTree = "<group>"; };
 		E9A928F8248F813B00694EF7 /* GestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestureViewController.m; sourceTree = "<group>"; };
 		E9A928F9248F813B00694EF7 /* GestureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GestureViewController.xib; sourceTree = "<group>"; };
+		E9A928FD248F8EA100694EF7 /* DrawerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawerViewController.h; sourceTree = "<group>"; };
+		E9A928FE248F8EA100694EF7 /* DrawerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawerViewController.m; sourceTree = "<group>"; };
+		E9A928FF248F8EA100694EF7 /* DrawerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrawerViewController.xib; sourceTree = "<group>"; };
+		E9A92906248F94A700694EF7 /* MainJumpViews.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MainJumpViews.plist; path = ../MainJumpViews.plist; sourceTree = "<group>"; };
+		E9A92908248F952A00694EF7 /* JumpModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JumpModel.h; sourceTree = "<group>"; };
+		E9A92909248F952A00694EF7 /* JumpModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JumpModel.m; sourceTree = "<group>"; };
 		E9EA4CE82486410300E53569 /* FlagTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlagTextField.h; sourceTree = "<group>"; };
 		E9EA4CE92486410300E53569 /* FlagTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlagTextField.m; sourceTree = "<group>"; };
 		E9EA4CEB2486434D00E53569 /* flags.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = flags.plist; sourceTree = "<group>"; };
@@ -418,6 +428,7 @@
 		E90667CB2475040100F44ADD /* iOSStudy */ = {
 			isa = PBXGroup;
 			children = (
+				E9A928FC248F8E7D00694EF7 /* 抽屉效果 */,
 				E9A928C9248F2B5B00694EF7 /* 事件 */,
 				E97D8BF5248F20E8008CF06C /* 动画相关 */,
 				E97D8BEE248E435F008CF06C /* modal */,
@@ -456,7 +467,10 @@
 				E98A007C247E56F900669BB8 /* MainViewController.h */,
 				E98A007D247E56F900669BB8 /* MainViewController.m */,
 				E98A007E247E56F900669BB8 /* MainViewController.xib */,
+				E9A92906248F94A700694EF7 /* MainJumpViews.plist */,
 				E97D8B9C248A0EF6008CF06C /* iOSStudy.xcdatamodeld */,
+				E9A92908248F952A00694EF7 /* JumpModel.h */,
+				E9A92909248F952A00694EF7 /* JumpModel.m */,
 			);
 			path = iOSStudy;
 			sourceTree = "<group>";
@@ -675,6 +689,16 @@
 			path = "手势识别";
 			sourceTree = "<group>";
 		};
+		E9A928FC248F8E7D00694EF7 /* 抽屉效果 */ = {
+			isa = PBXGroup;
+			children = (
+				E9A928FD248F8EA100694EF7 /* DrawerViewController.h */,
+				E9A928FE248F8EA100694EF7 /* DrawerViewController.m */,
+				E9A928FF248F8EA100694EF7 /* DrawerViewController.xib */,
+			);
+			path = "抽屉效果";
+			sourceTree = "<group>";
+		};
 		E9EA4CF52486514200E53569 /* flagTextField */ = {
 			isa = PBXGroup;
 			children = (
@@ -881,12 +905,14 @@
 				E9EA4D2C24888AB800E53569 /* ABContactsDetailViewController.xib in Resources */,
 				E97F33812484DE550068E757 /* UiapplicationStudyViewController.xib in Resources */,
 				E9EA4D3D2488E2A000E53569 /* DeliverValueFirstViewController.xib in Resources */,
+				E9A92907248F94A700694EF7 /* MainJumpViews.plist in Resources */,
 				E90667DC2475040100F44ADD /* Assets.xcassets in Resources */,
 				E9EA4D3224889A3000E53569 /* WKWebViewController.xib in Resources */,
 				E9A928FB248F813B00694EF7 /* GestureViewController.xib in Resources */,
 				E9EA4CEC2486434D00E53569 /* flags.plist in Resources */,
 				E9A928D3248F2DD000694EF7 /* EventUIDragViewController.xib in Resources */,
 				E97F33732480E99C0068E757 /* ShoppingCartCell.xib in Resources */,
+				E9A92901248F8EA100694EF7 /* DrawerViewController.xib in Resources */,
 				E9EA4D1524878AD200E53569 /* ABTableViewController.xib in Resources */,
 				E98A0080247E56F900669BB8 /* MainViewController.xib in Resources */,
 				E9A928CE248F2D7800694EF7 /* EventMainViewController.xib in Resources */,
@@ -1012,6 +1038,7 @@
 				E98A0086247E5D8000669BB8 /* TableViewIndexsController.m in Sources */,
 				E9EA4D192487A2B900E53569 /* ABAddContactsViewController.m in Sources */,
 				E990ED7924776E6D00F068D1 /* Car.m in Sources */,
+				E9A92900248F8EA100694EF7 /* DrawerViewController.m in Sources */,
 				E9EA4D26248880C400E53569 /* ABTableViewCell.m in Sources */,
 				E9EA4D0524873B1D00E53569 /* DateTextField.m in Sources */,
 				E97D8B4F2488F17F008CF06C /* LocalValuePreferenceViewController.m in Sources */,
@@ -1029,6 +1056,7 @@
 				E9A928F0248F39A300694EF7 /* TransmitBaseView.m in Sources */,
 				E97D8BD3248E2E37008CF06C /* BaseUIFrameViewController.m in Sources */,
 				E9EA4CF92487334E00E53569 /* CityTextField.m in Sources */,
+				E9A9290A248F952A00694EF7 /* JumpModel.m in Sources */,
 				E9A928ED248F392300694EF7 /* TransmitOrangeView.m in Sources */,
 				E9EA4D1424878AD200E53569 /* ABTableViewController.m in Sources */,
 				E97D8B702489ED20008CF06C /* SqliteTool.m in Sources */,
