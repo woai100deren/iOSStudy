@@ -88,6 +88,21 @@
 		E990ED8B2477B62400F068D1 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = E990ED8A2477B62400F068D1 /* UIColor+Hex.m */; };
 		E99738782476720A00D6F041 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99738772476720A00D6F041 /* SecondViewController.m */; };
 		E997387A247767CC00D6F041 /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9973879247767CC00D6F041 /* Second.storyboard */; };
+		E9A928CD248F2D7800694EF7 /* EventMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A928CB248F2D7800694EF7 /* EventMainViewController.m */; };
+		E9A928CE248F2D7800694EF7 /* EventMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9A928CC248F2D7800694EF7 /* EventMainViewController.xib */; };
+		E9A928D2248F2DD000694EF7 /* EventUIDragViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A928D0248F2DD000694EF7 /* EventUIDragViewController.m */; };
+		E9A928D3248F2DD000694EF7 /* EventUIDragViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9A928D1248F2DD000694EF7 /* EventUIDragViewController.xib */; };
+		E9A928D6248F2EF200694EF7 /* RedView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A928D5248F2EF200694EF7 /* RedView.m */; };
+		E9A928DA248F362100694EF7 /* EventTransmitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A928D8248F362100694EF7 /* EventTransmitViewController.m */; };
+		E9A928DB248F362100694EF7 /* EventTransmitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9A928D9248F362100694EF7 /* EventTransmitViewController.xib */; };
+		E9A928DE248F378600694EF7 /* TransmitWhiteView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A928DD248F378600694EF7 /* TransmitWhiteView.m */; };
+		E9A928E1248F37FC00694EF7 /* TransmitGreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A928E0248F37FC00694EF7 /* TransmitGreenView.m */; };
+		E9A928E4248F384A00694EF7 /* TransmitBlueView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A928E3248F384A00694EF7 /* TransmitBlueView.m */; };
+		E9A928E7248F38C500694EF7 /* TransmitYellowView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A928E6248F38C500694EF7 /* TransmitYellowView.m */; };
+		E9A928EA248F38D300694EF7 /* TransmitRedView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A928E9248F38D300694EF7 /* TransmitRedView.m */; };
+		E9A928ED248F392300694EF7 /* TransmitOrangeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A928EC248F392300694EF7 /* TransmitOrangeView.m */; };
+		E9A928F0248F39A300694EF7 /* TransmitBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A928EF248F39A300694EF7 /* TransmitBaseView.m */; };
+		E9A928F3248F553900694EF7 /* TransmitImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A928F2248F553900694EF7 /* TransmitImageView.m */; };
 		E9EA4CEA2486410300E53569 /* FlagTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA4CE92486410300E53569 /* FlagTextField.m */; };
 		E9EA4CEC2486434D00E53569 /* flags.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9EA4CEB2486434D00E53569 /* flags.plist */; };
 		E9EA4CEF2486444900E53569 /* FlagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA4CEE2486444900E53569 /* FlagItem.m */; };
@@ -252,6 +267,33 @@
 		E99738762476720A00D6F041 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		E99738772476720A00D6F041 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		E9973879247767CC00D6F041 /* Second.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
+		E9A928CA248F2D7800694EF7 /* EventMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventMainViewController.h; sourceTree = "<group>"; };
+		E9A928CB248F2D7800694EF7 /* EventMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventMainViewController.m; sourceTree = "<group>"; };
+		E9A928CC248F2D7800694EF7 /* EventMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventMainViewController.xib; sourceTree = "<group>"; };
+		E9A928CF248F2DD000694EF7 /* EventUIDragViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventUIDragViewController.h; sourceTree = "<group>"; };
+		E9A928D0248F2DD000694EF7 /* EventUIDragViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventUIDragViewController.m; sourceTree = "<group>"; };
+		E9A928D1248F2DD000694EF7 /* EventUIDragViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventUIDragViewController.xib; sourceTree = "<group>"; };
+		E9A928D4248F2EF200694EF7 /* RedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RedView.h; sourceTree = "<group>"; };
+		E9A928D5248F2EF200694EF7 /* RedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedView.m; sourceTree = "<group>"; };
+		E9A928D7248F362100694EF7 /* EventTransmitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventTransmitViewController.h; sourceTree = "<group>"; };
+		E9A928D8248F362100694EF7 /* EventTransmitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventTransmitViewController.m; sourceTree = "<group>"; };
+		E9A928D9248F362100694EF7 /* EventTransmitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTransmitViewController.xib; sourceTree = "<group>"; };
+		E9A928DC248F378600694EF7 /* TransmitWhiteView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransmitWhiteView.h; sourceTree = "<group>"; };
+		E9A928DD248F378600694EF7 /* TransmitWhiteView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransmitWhiteView.m; sourceTree = "<group>"; };
+		E9A928DF248F37FC00694EF7 /* TransmitGreenView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransmitGreenView.h; sourceTree = "<group>"; };
+		E9A928E0248F37FC00694EF7 /* TransmitGreenView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransmitGreenView.m; sourceTree = "<group>"; };
+		E9A928E2248F384A00694EF7 /* TransmitBlueView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransmitBlueView.h; sourceTree = "<group>"; };
+		E9A928E3248F384A00694EF7 /* TransmitBlueView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransmitBlueView.m; sourceTree = "<group>"; };
+		E9A928E5248F38C500694EF7 /* TransmitYellowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransmitYellowView.h; sourceTree = "<group>"; };
+		E9A928E6248F38C500694EF7 /* TransmitYellowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransmitYellowView.m; sourceTree = "<group>"; };
+		E9A928E8248F38D300694EF7 /* TransmitRedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransmitRedView.h; sourceTree = "<group>"; };
+		E9A928E9248F38D300694EF7 /* TransmitRedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransmitRedView.m; sourceTree = "<group>"; };
+		E9A928EB248F392300694EF7 /* TransmitOrangeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransmitOrangeView.h; sourceTree = "<group>"; };
+		E9A928EC248F392300694EF7 /* TransmitOrangeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransmitOrangeView.m; sourceTree = "<group>"; };
+		E9A928EE248F39A300694EF7 /* TransmitBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransmitBaseView.h; sourceTree = "<group>"; };
+		E9A928EF248F39A300694EF7 /* TransmitBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransmitBaseView.m; sourceTree = "<group>"; };
+		E9A928F1248F553900694EF7 /* TransmitImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransmitImageView.h; sourceTree = "<group>"; };
+		E9A928F2248F553900694EF7 /* TransmitImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransmitImageView.m; sourceTree = "<group>"; };
 		E9EA4CE82486410300E53569 /* FlagTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlagTextField.h; sourceTree = "<group>"; };
 		E9EA4CE92486410300E53569 /* FlagTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlagTextField.m; sourceTree = "<group>"; };
 		E9EA4CEB2486434D00E53569 /* flags.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = flags.plist; sourceTree = "<group>"; };
@@ -371,6 +413,7 @@
 		E90667CB2475040100F44ADD /* iOSStudy */ = {
 			isa = PBXGroup;
 			children = (
+				E9A928C9248F2B5B00694EF7 /* 事件 */,
 				E97D8BF5248F20E8008CF06C /* 动画相关 */,
 				E97D8BEE248E435F008CF06C /* modal */,
 				E97D8BD5248E2E3E008CF06C /* 基本项目展示框架 */,
@@ -564,6 +607,56 @@
 				E990ED8A2477B62400F068D1 /* UIColor+Hex.m */,
 			);
 			path = common;
+			sourceTree = "<group>";
+		};
+		E9A928C9248F2B5B00694EF7 /* 事件 */ = {
+			isa = PBXGroup;
+			children = (
+				E9A928CA248F2D7800694EF7 /* EventMainViewController.h */,
+				E9A928CB248F2D7800694EF7 /* EventMainViewController.m */,
+				E9A928CC248F2D7800694EF7 /* EventMainViewController.xib */,
+				E9A928F5248F55F300694EF7 /* UIView拖动 */,
+				E9A928F4248F55CF00694EF7 /* 事件传递 */,
+			);
+			path = "事件";
+			sourceTree = "<group>";
+		};
+		E9A928F4248F55CF00694EF7 /* 事件传递 */ = {
+			isa = PBXGroup;
+			children = (
+				E9A928D7248F362100694EF7 /* EventTransmitViewController.h */,
+				E9A928D8248F362100694EF7 /* EventTransmitViewController.m */,
+				E9A928D9248F362100694EF7 /* EventTransmitViewController.xib */,
+				E9A928EE248F39A300694EF7 /* TransmitBaseView.h */,
+				E9A928EF248F39A300694EF7 /* TransmitBaseView.m */,
+				E9A928DC248F378600694EF7 /* TransmitWhiteView.h */,
+				E9A928DD248F378600694EF7 /* TransmitWhiteView.m */,
+				E9A928DF248F37FC00694EF7 /* TransmitGreenView.h */,
+				E9A928E0248F37FC00694EF7 /* TransmitGreenView.m */,
+				E9A928E2248F384A00694EF7 /* TransmitBlueView.h */,
+				E9A928E3248F384A00694EF7 /* TransmitBlueView.m */,
+				E9A928E5248F38C500694EF7 /* TransmitYellowView.h */,
+				E9A928E6248F38C500694EF7 /* TransmitYellowView.m */,
+				E9A928E8248F38D300694EF7 /* TransmitRedView.h */,
+				E9A928E9248F38D300694EF7 /* TransmitRedView.m */,
+				E9A928EB248F392300694EF7 /* TransmitOrangeView.h */,
+				E9A928EC248F392300694EF7 /* TransmitOrangeView.m */,
+				E9A928F1248F553900694EF7 /* TransmitImageView.h */,
+				E9A928F2248F553900694EF7 /* TransmitImageView.m */,
+			);
+			path = "事件传递";
+			sourceTree = "<group>";
+		};
+		E9A928F5248F55F300694EF7 /* UIView拖动 */ = {
+			isa = PBXGroup;
+			children = (
+				E9A928CF248F2DD000694EF7 /* EventUIDragViewController.h */,
+				E9A928D0248F2DD000694EF7 /* EventUIDragViewController.m */,
+				E9A928D1248F2DD000694EF7 /* EventUIDragViewController.xib */,
+				E9A928D4248F2EF200694EF7 /* RedView.h */,
+				E9A928D5248F2EF200694EF7 /* RedView.m */,
+			);
+			path = "UIView拖动";
 			sourceTree = "<group>";
 		};
 		E9EA4CF52486514200E53569 /* flagTextField */ = {
@@ -775,9 +868,12 @@
 				E90667DC2475040100F44ADD /* Assets.xcassets in Resources */,
 				E9EA4D3224889A3000E53569 /* WKWebViewController.xib in Resources */,
 				E9EA4CEC2486434D00E53569 /* flags.plist in Resources */,
+				E9A928D3248F2DD000694EF7 /* EventUIDragViewController.xib in Resources */,
 				E97F33732480E99C0068E757 /* ShoppingCartCell.xib in Resources */,
 				E9EA4D1524878AD200E53569 /* ABTableViewController.xib in Resources */,
 				E98A0080247E56F900669BB8 /* MainViewController.xib in Resources */,
+				E9A928CE248F2D7800694EF7 /* EventMainViewController.xib in Resources */,
+				E9A928DB248F362100694EF7 /* EventTransmitViewController.xib in Resources */,
 				E97D8B692488F253008CF06C /* LocalValueMainViewController.xib in Resources */,
 				E9EA4D27248880C400E53569 /* ABTableViewCell.xib in Resources */,
 				E9300EF7247B69410035BF4C /* Third.storyboard in Resources */,
@@ -848,6 +944,7 @@
 			files = (
 				E97D8B542488F193008CF06C /* LocalValueNSCodingViewController.m in Sources */,
 				E9549147247F98EC008C5995 /* MyTableViewDiffCell.m in Sources */,
+				E9A928E1248F37FC00694EF7 /* TransmitGreenView.m in Sources */,
 				E9EA4D012487349100E53569 /* ProvinceModel.m in Sources */,
 				D29E4715248A984400BDB9C0 /* UserDetailViewController.m in Sources */,
 				E97D8BE9248E3A2F008CF06C /* DynamicViewController.m in Sources */,
@@ -858,10 +955,15 @@
 				D29E47102487E48100BDB9C0 /* NSString+Extensions.m in Sources */,
 				E97D8BFD248F226C008CF06C /* AnimTransformViewController.m in Sources */,
 				E9EA4D2B24888AB800E53569 /* ABContactsDetailViewController.m in Sources */,
+				E9A928EA248F38D300694EF7 /* TransmitRedView.m in Sources */,
 				E98A0094247E6E6500669BB8 /* MyTableViewCell.m in Sources */,
 				E9EA4D412488E2AD00E53569 /* DeliverValueSecondViewController.m in Sources */,
+				E9A928DE248F378600694EF7 /* TransmitWhiteView.m in Sources */,
+				E9A928D6248F2EF200694EF7 /* RedView.m in Sources */,
 				E97D8BE2248E3486008CF06C /* SegmenteSecondViewController.m in Sources */,
+				E9A928D2248F2DD000694EF7 /* EventUIDragViewController.m in Sources */,
 				E98AFFF6247E0AB000669BB8 /* MasonryViewController.m in Sources */,
+				E9A928E4248F384A00694EF7 /* TransmitBlueView.m in Sources */,
 				E97D8B6C2489E349008CF06C /* LocalValueModel.m in Sources */,
 				E99738782476720A00D6F041 /* SecondViewController.m in Sources */,
 				E97D8BED248E3E15008CF06C /* BaseContactsAddViewController.m in Sources */,
@@ -887,6 +989,7 @@
 				E97D8B5E2488F1B9008CF06C /* LocalValueSQLiteViewController.m in Sources */,
 				E90667CE2475040100F44ADD /* AppDelegate.m in Sources */,
 				E9300EFA247B696E0035BF4C /* ThirdViewController.m in Sources */,
+				E9A928CD248F2D7800694EF7 /* EventMainViewController.m in Sources */,
 				E9EA4D3124889A3000E53569 /* WKWebViewController.m in Sources */,
 				E98A0086247E5D8000669BB8 /* TableViewIndexsController.m in Sources */,
 				E9EA4D192487A2B900E53569 /* ABAddContactsViewController.m in Sources */,
@@ -902,11 +1005,16 @@
 				E98A0090247E6B8B00669BB8 /* TableViewCustonCellViewController.m in Sources */,
 				E97D8B682488F253008CF06C /* LocalValueMainViewController.m in Sources */,
 				E90667D12475040100F44ADD /* SceneDelegate.m in Sources */,
+				E9A928E7248F38C500694EF7 /* TransmitYellowView.m in Sources */,
+				E9A928DA248F362100694EF7 /* EventTransmitViewController.m in Sources */,
 				E9EA4D3524889BB600E53569 /* MyWKWebView.m in Sources */,
+				E9A928F0248F39A300694EF7 /* TransmitBaseView.m in Sources */,
 				E97D8BD3248E2E37008CF06C /* BaseUIFrameViewController.m in Sources */,
 				E9EA4CF92487334E00E53569 /* CityTextField.m in Sources */,
+				E9A928ED248F392300694EF7 /* TransmitOrangeView.m in Sources */,
 				E9EA4D1424878AD200E53569 /* ABTableViewController.m in Sources */,
 				E97D8B702489ED20008CF06C /* SqliteTool.m in Sources */,
+				E9A928F3248F553900694EF7 /* TransmitImageView.m in Sources */,
 				E990ED842477ADC400F068D1 /* NewCarView.m in Sources */,
 				E9EA4CEA2486410300E53569 /* FlagTextField.m in Sources */,
 				E97D8BDF248E3479008CF06C /* SegmenteFirstViewController.m in Sources */,

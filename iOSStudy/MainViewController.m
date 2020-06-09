@@ -28,6 +28,7 @@
 #import "BaseUIFrameViewController.h"
 #import "ModalViewController.h"
 #import "AnimationMainViewController.h"
+#import "EventMainViewController.h"
 
 @interface MainViewController ()
 
@@ -130,6 +131,9 @@
 }
 - (IBAction)jumpAnim:(id)sender {
     [self jump:[[AnimationMainViewController alloc] init]];
+}
+- (IBAction)jumpEvents:(id)sender {
+    [self jump:[[EventMainViewController alloc] init]];
 }
 
 -(void)jump:(UIViewController*) vc{
