@@ -103,6 +103,8 @@
 		E9A928ED248F392300694EF7 /* TransmitOrangeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A928EC248F392300694EF7 /* TransmitOrangeView.m */; };
 		E9A928F0248F39A300694EF7 /* TransmitBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A928EF248F39A300694EF7 /* TransmitBaseView.m */; };
 		E9A928F3248F553900694EF7 /* TransmitImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A928F2248F553900694EF7 /* TransmitImageView.m */; };
+		E9A928FA248F813B00694EF7 /* GestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A928F8248F813B00694EF7 /* GestureViewController.m */; };
+		E9A928FB248F813B00694EF7 /* GestureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9A928F9248F813B00694EF7 /* GestureViewController.xib */; };
 		E9EA4CEA2486410300E53569 /* FlagTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA4CE92486410300E53569 /* FlagTextField.m */; };
 		E9EA4CEC2486434D00E53569 /* flags.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9EA4CEB2486434D00E53569 /* flags.plist */; };
 		E9EA4CEF2486444900E53569 /* FlagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA4CEE2486444900E53569 /* FlagItem.m */; };
@@ -294,6 +296,9 @@
 		E9A928EF248F39A300694EF7 /* TransmitBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransmitBaseView.m; sourceTree = "<group>"; };
 		E9A928F1248F553900694EF7 /* TransmitImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransmitImageView.h; sourceTree = "<group>"; };
 		E9A928F2248F553900694EF7 /* TransmitImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransmitImageView.m; sourceTree = "<group>"; };
+		E9A928F7248F813B00694EF7 /* GestureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GestureViewController.h; sourceTree = "<group>"; };
+		E9A928F8248F813B00694EF7 /* GestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestureViewController.m; sourceTree = "<group>"; };
+		E9A928F9248F813B00694EF7 /* GestureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GestureViewController.xib; sourceTree = "<group>"; };
 		E9EA4CE82486410300E53569 /* FlagTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlagTextField.h; sourceTree = "<group>"; };
 		E9EA4CE92486410300E53569 /* FlagTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlagTextField.m; sourceTree = "<group>"; };
 		E9EA4CEB2486434D00E53569 /* flags.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = flags.plist; sourceTree = "<group>"; };
@@ -617,6 +622,7 @@
 				E9A928CC248F2D7800694EF7 /* EventMainViewController.xib */,
 				E9A928F5248F55F300694EF7 /* UIView拖动 */,
 				E9A928F4248F55CF00694EF7 /* 事件传递 */,
+				E9A928F6248F80E700694EF7 /* 手势识别 */,
 			);
 			path = "事件";
 			sourceTree = "<group>";
@@ -657,6 +663,16 @@
 				E9A928D5248F2EF200694EF7 /* RedView.m */,
 			);
 			path = "UIView拖动";
+			sourceTree = "<group>";
+		};
+		E9A928F6248F80E700694EF7 /* 手势识别 */ = {
+			isa = PBXGroup;
+			children = (
+				E9A928F7248F813B00694EF7 /* GestureViewController.h */,
+				E9A928F8248F813B00694EF7 /* GestureViewController.m */,
+				E9A928F9248F813B00694EF7 /* GestureViewController.xib */,
+			);
+			path = "手势识别";
 			sourceTree = "<group>";
 		};
 		E9EA4CF52486514200E53569 /* flagTextField */ = {
@@ -867,6 +883,7 @@
 				E9EA4D3D2488E2A000E53569 /* DeliverValueFirstViewController.xib in Resources */,
 				E90667DC2475040100F44ADD /* Assets.xcassets in Resources */,
 				E9EA4D3224889A3000E53569 /* WKWebViewController.xib in Resources */,
+				E9A928FB248F813B00694EF7 /* GestureViewController.xib in Resources */,
 				E9EA4CEC2486434D00E53569 /* flags.plist in Resources */,
 				E9A928D3248F2DD000694EF7 /* EventUIDragViewController.xib in Resources */,
 				E97F33732480E99C0068E757 /* ShoppingCartCell.xib in Resources */,
@@ -961,6 +978,7 @@
 				E9A928DE248F378600694EF7 /* TransmitWhiteView.m in Sources */,
 				E9A928D6248F2EF200694EF7 /* RedView.m in Sources */,
 				E97D8BE2248E3486008CF06C /* SegmenteSecondViewController.m in Sources */,
+				E9A928FA248F813B00694EF7 /* GestureViewController.m in Sources */,
 				E9A928D2248F2DD000694EF7 /* EventUIDragViewController.m in Sources */,
 				E98AFFF6247E0AB000669BB8 /* MasonryViewController.m in Sources */,
 				E9A928E4248F384A00694EF7 /* TransmitBlueView.m in Sources */,

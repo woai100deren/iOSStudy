@@ -9,6 +9,7 @@
 #import "EventMainViewController.h"
 #import "EventUIDragViewController.h"
 #import "EventTransmitViewController.h"
+#import "GestureViewController.h"
 
 @interface EventMainViewController ()
 
@@ -25,6 +26,9 @@
 }
 - (IBAction)eventTransmit:(id)sender {
     [self jump:[[EventTransmitViewController alloc] init]];
+}
+- (IBAction)jumpGesture:(id)sender {
+    [self jump:[[GestureViewController alloc] init]];
 }
 
 -(void)jump:(UIViewController*) vc{
