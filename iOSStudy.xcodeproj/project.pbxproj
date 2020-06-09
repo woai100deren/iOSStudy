@@ -50,6 +50,10 @@
 		E97D8BED248E3E15008CF06C /* BaseContactsAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D8BEC248E3E15008CF06C /* BaseContactsAddViewController.m */; };
 		E97D8BF1248E436F008CF06C /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D8BF0248E436F008CF06C /* ModalViewController.m */; };
 		E97D8BF3248E4662008CF06C /* ModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E97D8BF2248E4662008CF06C /* ModalViewController.xib */; };
+		E97D8BF9248F215A008CF06C /* AnimationMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D8BF7248F215A008CF06C /* AnimationMainViewController.m */; };
+		E97D8BFA248F215A008CF06C /* AnimationMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E97D8BF8248F215A008CF06C /* AnimationMainViewController.xib */; };
+		E97D8BFD248F226C008CF06C /* AnimTransformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97D8BFC248F226C008CF06C /* AnimTransformViewController.m */; };
+		E97D8BFF248F23DE008CF06C /* AnimTransformViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E97D8BFE248F23DE008CF06C /* AnimTransformViewController.xib */; };
 		E97F33692480E43E0068E757 /* drinks.plist in Resources */ = {isa = PBXBuildFile; fileRef = E97F33682480E43E0068E757 /* drinks.plist */; };
 		E97F336D2480E79F0068E757 /* ShoppingCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E97F336B2480E79F0068E757 /* ShoppingCartViewController.m */; };
 		E97F336E2480E79F0068E757 /* ShoppingCartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E97F336C2480E79F0068E757 /* ShoppingCartViewController.xib */; };
@@ -189,6 +193,12 @@
 		E97D8BEF248E436F008CF06C /* ModalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
 		E97D8BF0248E436F008CF06C /* ModalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
 		E97D8BF2248E4662008CF06C /* ModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalViewController.xib; sourceTree = "<group>"; };
+		E97D8BF6248F215A008CF06C /* AnimationMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationMainViewController.h; sourceTree = "<group>"; };
+		E97D8BF7248F215A008CF06C /* AnimationMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationMainViewController.m; sourceTree = "<group>"; };
+		E97D8BF8248F215A008CF06C /* AnimationMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimationMainViewController.xib; sourceTree = "<group>"; };
+		E97D8BFB248F226C008CF06C /* AnimTransformViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimTransformViewController.h; sourceTree = "<group>"; };
+		E97D8BFC248F226C008CF06C /* AnimTransformViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimTransformViewController.m; sourceTree = "<group>"; };
+		E97D8BFE248F23DE008CF06C /* AnimTransformViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimTransformViewController.xib; sourceTree = "<group>"; };
 		E97F33682480E43E0068E757 /* drinks.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = drinks.plist; sourceTree = "<group>"; };
 		E97F336A2480E79F0068E757 /* ShoppingCartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShoppingCartViewController.h; sourceTree = "<group>"; };
 		E97F336B2480E79F0068E757 /* ShoppingCartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShoppingCartViewController.m; sourceTree = "<group>"; };
@@ -361,6 +371,7 @@
 		E90667CB2475040100F44ADD /* iOSStudy */ = {
 			isa = PBXGroup;
 			children = (
+				E97D8BF5248F20E8008CF06C /* 动画相关 */,
 				E97D8BEE248E435F008CF06C /* modal */,
 				E97D8BD5248E2E3E008CF06C /* 基本项目展示框架 */,
 				E97D8BCA248E29F4008CF06C /* tabBar */,
@@ -472,6 +483,19 @@
 				E97D8BF2248E4662008CF06C /* ModalViewController.xib */,
 			);
 			path = modal;
+			sourceTree = "<group>";
+		};
+		E97D8BF5248F20E8008CF06C /* 动画相关 */ = {
+			isa = PBXGroup;
+			children = (
+				E97D8BF6248F215A008CF06C /* AnimationMainViewController.h */,
+				E97D8BF7248F215A008CF06C /* AnimationMainViewController.m */,
+				E97D8BF8248F215A008CF06C /* AnimationMainViewController.xib */,
+				E97D8BFB248F226C008CF06C /* AnimTransformViewController.h */,
+				E97D8BFC248F226C008CF06C /* AnimTransformViewController.m */,
+				E97D8BFE248F23DE008CF06C /* AnimTransformViewController.xib */,
+			);
+			path = "动画相关";
 			sourceTree = "<group>";
 		};
 		E97F33772484D9A80068E757 /* UIApplication学习 */ = {
@@ -734,6 +758,7 @@
 				E9ECA05E247F8E8C0041E22D /* MyTableViewCell.xib in Resources */,
 				D29E4716248A984400BDB9C0 /* UserDetailViewController.xib in Resources */,
 				E90667DF2475040100F44ADD /* LaunchScreen.storyboard in Resources */,
+				E97D8BFF248F23DE008CF06C /* AnimTransformViewController.xib in Resources */,
 				E97D8BF3248E4662008CF06C /* ModalViewController.xib in Resources */,
 				E97F33692480E43E0068E757 /* drinks.plist in Resources */,
 				E9EA4D372488C1A500E53569 /* test.html in Resources */,
@@ -763,6 +788,7 @@
 				E990ED7E2477703D00F068D1 /* CarView.xib in Resources */,
 				E97F3394248639D00068E757 /* PickViewUseViewController.xib in Resources */,
 				E9EA4D1A2487A2B900E53569 /* ABAddContactsViewController.xib in Resources */,
+				E97D8BFA248F215A008CF06C /* AnimationMainViewController.xib in Resources */,
 				E97D8BEA248E3A2F008CF06C /* DynamicViewController.xib in Resources */,
 				E97D8B502488F17F008CF06C /* LocalValuePreferenceViewController.xib in Resources */,
 				E98A007B247E564200669BB8 /* TableViewController.xib in Resources */,
@@ -830,6 +856,7 @@
 				E9EA4CEF2486444900E53569 /* FlagItem.m in Sources */,
 				E97F33802484DE550068E757 /* UiapplicationStudyViewController.m in Sources */,
 				D29E47102487E48100BDB9C0 /* NSString+Extensions.m in Sources */,
+				E97D8BFD248F226C008CF06C /* AnimTransformViewController.m in Sources */,
 				E9EA4D2B24888AB800E53569 /* ABContactsDetailViewController.m in Sources */,
 				E98A0094247E6E6500669BB8 /* MyTableViewCell.m in Sources */,
 				E9EA4D412488E2AD00E53569 /* DeliverValueSecondViewController.m in Sources */,
@@ -846,6 +873,7 @@
 				E990ED8B2477B62400F068D1 /* UIColor+Hex.m in Sources */,
 				E97D8BE5248E3986008CF06C /* BaseConstactsViewController.m in Sources */,
 				E97F338C24862A830068E757 /* PickViewController.m in Sources */,
+				E97D8BF9248F215A008CF06C /* AnimationMainViewController.m in Sources */,
 				E98A008C247E614F00669BB8 /* CarGroup.m in Sources */,
 				E90667E22475040100F44ADD /* main.m in Sources */,
 				E97D8BF1248E436F008CF06C /* ModalViewController.m in Sources */,

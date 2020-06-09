@@ -22,7 +22,7 @@
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <subviews>
                         <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="2000" translatesAutoresizingMaskIntoConstraints="NO" id="IfE-YC-sBw" userLabel="contentView">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="810"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="850"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TqR-bb-AsY">
                                     <rect key="frame" x="154.5" y="50" width="105" height="30"/>
@@ -259,6 +259,18 @@
                                         <action selector="jumpModal:" destination="-1" eventType="touchUpInside" id="ZZ5-7G-jC1"/>
                                     </connections>
                                 </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBU-Ao-dz9">
+                                    <rect key="frame" x="157" y="810" width="100" height="30"/>
+                                    <color key="backgroundColor" red="0.86267406089999998" green="0.86267406089999998" blue="0.86267406089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="c4c-U9-5bb"/>
+                                        <constraint firstAttribute="width" constant="100" id="mrF-FC-gLU"/>
+                                    </constraints>
+                                    <state key="normal" title="动画相关"/>
+                                    <connections>
+                                        <action selector="jumpAnim:" destination="-1" eventType="touchUpInside" id="H5S-wO-nmM"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <constraints>
                                 <constraint firstItem="e0G-UT-aHI" firstAttribute="top" secondItem="3F8-PC-fNs" secondAttribute="bottom" constant="10" id="26l-HV-f7n"/>
@@ -266,6 +278,7 @@
                                 <constraint firstItem="FEK-5J-tRA" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="6Lv-0C-rW1"/>
                                 <constraint firstItem="XsK-Fg-vS4" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="AZG-5C-v0B"/>
                                 <constraint firstItem="6LE-Se-0eo" firstAttribute="top" secondItem="XsK-Fg-vS4" secondAttribute="bottom" constant="10" id="GDO-g4-Bvs"/>
+                                <constraint firstItem="TBU-Ao-dz9" firstAttribute="top" secondItem="IXh-IQ-Dhv" secondAttribute="bottom" constant="10" id="IcH-lN-I6f"/>
                                 <constraint firstItem="IXh-IQ-Dhv" firstAttribute="top" secondItem="33c-bu-Cco" secondAttribute="bottom" constant="10" id="MPP-3e-Ukh"/>
                                 <constraint firstItem="FEK-5J-tRA" firstAttribute="top" secondItem="UQL-YI-wsM" secondAttribute="bottom" constant="10" id="MoI-im-5oH"/>
                                 <constraint firstItem="haX-X6-Kdl" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="NgY-xk-VOs"/>
@@ -275,13 +288,14 @@
                                 <constraint firstItem="NnH-x3-y1P" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="RcD-Qo-YYU"/>
                                 <constraint firstItem="TqR-bb-AsY" firstAttribute="top" secondItem="zeh-eV-sj2" secondAttribute="bottom" constant="10" id="Se7-TA-yAs"/>
                                 <constraint firstItem="IXh-IQ-Dhv" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="Tzs-56-bEc"/>
+                                <constraint firstAttribute="bottom" secondItem="TBU-Ao-dz9" secondAttribute="bottom" constant="10" id="Vcr-V4-CdJ"/>
                                 <constraint firstItem="33c-bu-Cco" firstAttribute="top" secondItem="NnH-x3-y1P" secondAttribute="bottom" constant="10" id="WbY-I9-zSX"/>
                                 <constraint firstItem="e0G-UT-aHI" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="X6S-qb-jKx"/>
                                 <constraint firstItem="UQL-YI-wsM" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="XvD-hc-Nzp"/>
                                 <constraint firstItem="TqR-bb-AsY" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="Z3r-7c-S7Q"/>
                                 <constraint firstItem="xAx-p4-ZJI" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="a5y-Zl-wxb"/>
-                                <constraint firstAttribute="bottom" secondItem="IXh-IQ-Dhv" secondAttribute="bottom" constant="10" id="bAz-Gb-MeT"/>
                                 <constraint firstItem="QkE-iG-5iR" firstAttribute="top" secondItem="haX-X6-Kdl" secondAttribute="bottom" constant="10" id="bRm-QA-tsc"/>
+                                <constraint firstItem="TBU-Ao-dz9" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="bvE-GD-x5w"/>
                                 <constraint firstItem="haX-X6-Kdl" firstAttribute="top" secondItem="mah-Km-QJ2" secondAttribute="bottom" constant="10" id="cFk-bX-FAz"/>
                                 <constraint firstItem="UQL-YI-wsM" firstAttribute="top" secondItem="QkE-iG-5iR" secondAttribute="bottom" constant="10" id="cMb-Mx-2hY"/>
                                 <constraint firstItem="QkE-iG-5iR" firstAttribute="centerX" secondItem="IfE-YC-sBw" secondAttribute="centerX" id="d9u-YA-O3A"/>

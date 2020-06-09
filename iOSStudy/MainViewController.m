@@ -27,6 +27,7 @@
 #import "TabBarSystemViewController.h"
 #import "BaseUIFrameViewController.h"
 #import "ModalViewController.h"
+#import "AnimationMainViewController.h"
 
 @interface MainViewController ()
 
@@ -126,6 +127,9 @@
 }
 - (IBAction)jumpModal:(id)sender {
     [self modalJump:[[ModalViewController alloc] init]];
+}
+- (IBAction)jumpAnim:(id)sender {
+    [self jump:[[AnimationMainViewController alloc] init]];
 }
 
 -(void)jump:(UIViewController*) vc{
