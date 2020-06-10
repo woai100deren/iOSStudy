@@ -19,6 +19,11 @@
 		E9300EF7247B69410035BF4C /* Third.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9300EF6247B69410035BF4C /* Third.storyboard */; };
 		E9300EFA247B696E0035BF4C /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9300EF9247B696E0035BF4C /* ThirdViewController.m */; };
 		E9300EFD247BB30F0035BF4C /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9300EFC247BB30F0035BF4C /* ScrollViewController.m */; };
+		E94DCC8B2490BFF500ACFF3E /* QDShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC8A2490BFF500ACFF3E /* QDShapeView.m */; };
+		E94DCC8E2490CE7E00ACFF3E /* QDDownloadProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC8D2490CE7E00ACFF3E /* QDDownloadProgressView.m */; };
+		E94DCC912490DB2900ACFF3E /* QDTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC902490DB2900ACFF3E /* QDTextView.m */; };
+		E94DCC942490DB3500ACFF3E /* QDImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC932490DB3500ACFF3E /* QDImageView.m */; };
+		E94DCC962490DCFE00ACFF3E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94DCC952490DCFE00ACFF3E /* UIKit.framework */; };
 		E9549142247F975E008C5995 /* TableViewDiffCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9549140247F975E008C5995 /* TableViewDiffCellViewController.m */; };
 		E9549143247F975E008C5995 /* TableViewDiffCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9549141247F975E008C5995 /* TableViewDiffCellViewController.xib */; };
 		E9549147247F98EC008C5995 /* MyTableViewDiffCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9549145247F98EC008C5995 /* MyTableViewDiffCell.m */; };
@@ -108,6 +113,10 @@
 		E9A92900248F8EA100694EF7 /* DrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A928FE248F8EA100694EF7 /* DrawerViewController.m */; };
 		E9A92907248F94A700694EF7 /* MainJumpViews.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9A92906248F94A700694EF7 /* MainJumpViews.plist */; };
 		E9A9290A248F952A00694EF7 /* JumpModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A92909248F952A00694EF7 /* JumpModel.m */; };
+		E9A9290F2490875800694EF7 /* Quartz2DViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A9290D2490875800694EF7 /* Quartz2DViewController.m */; };
+		E9A929102490875800694EF7 /* Quartz2DViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9A9290E2490875800694EF7 /* Quartz2DViewController.xib */; };
+		E9A9291324908B2100694EF7 /* QDLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A9291224908B2100694EF7 /* QDLineView.m */; };
+		E9A9291C2490B41F00694EF7 /* QDBightView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A9291B2490B41F00694EF7 /* QDBightView.m */; };
 		E9EA4CEA2486410300E53569 /* FlagTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA4CE92486410300E53569 /* FlagTextField.m */; };
 		E9EA4CEC2486434D00E53569 /* flags.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9EA4CEB2486434D00E53569 /* flags.plist */; };
 		E9EA4CEF2486444900E53569 /* FlagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA4CEE2486444900E53569 /* FlagItem.m */; };
@@ -162,6 +171,15 @@
 		E9300EF9247B696E0035BF4C /* ThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		E9300EFB247BB30F0035BF4C /* ScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
 		E9300EFC247BB30F0035BF4C /* ScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
+		E94DCC892490BFF500ACFF3E /* QDShapeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDShapeView.h; sourceTree = "<group>"; };
+		E94DCC8A2490BFF500ACFF3E /* QDShapeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDShapeView.m; sourceTree = "<group>"; };
+		E94DCC8C2490CE7E00ACFF3E /* QDDownloadProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDDownloadProgressView.h; sourceTree = "<group>"; };
+		E94DCC8D2490CE7E00ACFF3E /* QDDownloadProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDDownloadProgressView.m; sourceTree = "<group>"; };
+		E94DCC8F2490DB2900ACFF3E /* QDTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDTextView.h; sourceTree = "<group>"; };
+		E94DCC902490DB2900ACFF3E /* QDTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDTextView.m; sourceTree = "<group>"; };
+		E94DCC922490DB3500ACFF3E /* QDImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDImageView.h; sourceTree = "<group>"; };
+		E94DCC932490DB3500ACFF3E /* QDImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDImageView.m; sourceTree = "<group>"; };
+		E94DCC952490DCFE00ACFF3E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E954913F247F975E008C5995 /* TableViewDiffCellViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewDiffCellViewController.h; sourceTree = "<group>"; };
 		E9549140247F975E008C5995 /* TableViewDiffCellViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewDiffCellViewController.m; sourceTree = "<group>"; };
 		E9549141247F975E008C5995 /* TableViewDiffCellViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewDiffCellViewController.xib; sourceTree = "<group>"; };
@@ -307,6 +325,13 @@
 		E9A92906248F94A700694EF7 /* MainJumpViews.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MainJumpViews.plist; path = ../MainJumpViews.plist; sourceTree = "<group>"; };
 		E9A92908248F952A00694EF7 /* JumpModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JumpModel.h; sourceTree = "<group>"; };
 		E9A92909248F952A00694EF7 /* JumpModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JumpModel.m; sourceTree = "<group>"; };
+		E9A9290C2490875800694EF7 /* Quartz2DViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Quartz2DViewController.h; sourceTree = "<group>"; };
+		E9A9290D2490875800694EF7 /* Quartz2DViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quartz2DViewController.m; sourceTree = "<group>"; };
+		E9A9290E2490875800694EF7 /* Quartz2DViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Quartz2DViewController.xib; sourceTree = "<group>"; };
+		E9A9291124908B2100694EF7 /* QDLineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDLineView.h; sourceTree = "<group>"; };
+		E9A9291224908B2100694EF7 /* QDLineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDLineView.m; sourceTree = "<group>"; };
+		E9A9291A2490B41F00694EF7 /* QDBightView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDBightView.h; sourceTree = "<group>"; };
+		E9A9291B2490B41F00694EF7 /* QDBightView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDBightView.m; sourceTree = "<group>"; };
 		E9EA4CE82486410300E53569 /* FlagTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlagTextField.h; sourceTree = "<group>"; };
 		E9EA4CE92486410300E53569 /* FlagTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlagTextField.m; sourceTree = "<group>"; };
 		E9EA4CEB2486434D00E53569 /* flags.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = flags.plist; sourceTree = "<group>"; };
@@ -363,6 +388,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				823771A861BB5CC9AA0E3016 /* Pods_iOSStudy.framework in Frameworks */,
+				E94DCC962490DCFE00ACFF3E /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +398,7 @@
 		AFD319F9D9518CC05C44E2BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E94DCC952490DCFE00ACFF3E /* UIKit.framework */,
 				FA2100E6233EC29B67BF103C /* Pods_iOSStudy.framework */,
 			);
 			name = Frameworks;
@@ -426,6 +453,7 @@
 		E90667CB2475040100F44ADD /* iOSStudy */ = {
 			isa = PBXGroup;
 			children = (
+				E9A9290B2490870500694EF7 /* 绘图Quartz2D */,
 				E9A928FC248F8E7D00694EF7 /* 抽屉效果 */,
 				E9A928C9248F2B5B00694EF7 /* 事件 */,
 				E97D8BF5248F20E8008CF06C /* 动画相关 */,
@@ -696,6 +724,28 @@
 			path = "抽屉效果";
 			sourceTree = "<group>";
 		};
+		E9A9290B2490870500694EF7 /* 绘图Quartz2D */ = {
+			isa = PBXGroup;
+			children = (
+				E9A9290C2490875800694EF7 /* Quartz2DViewController.h */,
+				E9A9290D2490875800694EF7 /* Quartz2DViewController.m */,
+				E9A9290E2490875800694EF7 /* Quartz2DViewController.xib */,
+				E9A9291124908B2100694EF7 /* QDLineView.h */,
+				E9A9291224908B2100694EF7 /* QDLineView.m */,
+				E9A9291A2490B41F00694EF7 /* QDBightView.h */,
+				E9A9291B2490B41F00694EF7 /* QDBightView.m */,
+				E94DCC892490BFF500ACFF3E /* QDShapeView.h */,
+				E94DCC8A2490BFF500ACFF3E /* QDShapeView.m */,
+				E94DCC8C2490CE7E00ACFF3E /* QDDownloadProgressView.h */,
+				E94DCC8D2490CE7E00ACFF3E /* QDDownloadProgressView.m */,
+				E94DCC8F2490DB2900ACFF3E /* QDTextView.h */,
+				E94DCC902490DB2900ACFF3E /* QDTextView.m */,
+				E94DCC922490DB3500ACFF3E /* QDImageView.h */,
+				E94DCC932490DB3500ACFF3E /* QDImageView.m */,
+			);
+			path = "绘图Quartz2D";
+			sourceTree = "<group>";
+		};
 		E9EA4CF52486514200E53569 /* flagTextField */ = {
 			isa = PBXGroup;
 			children = (
@@ -905,6 +955,7 @@
 				E9A92907248F94A700694EF7 /* MainJumpViews.plist in Resources */,
 				E90667DC2475040100F44ADD /* Assets.xcassets in Resources */,
 				E9EA4D3224889A3000E53569 /* WKWebViewController.xib in Resources */,
+				E9A929102490875800694EF7 /* Quartz2DViewController.xib in Resources */,
 				E9A928FB248F813B00694EF7 /* GestureViewController.xib in Resources */,
 				E9EA4CEC2486434D00E53569 /* flags.plist in Resources */,
 				E9A928D3248F2DD000694EF7 /* EventUIDragViewController.xib in Resources */,
@@ -983,21 +1034,26 @@
 			files = (
 				E97D8B542488F193008CF06C /* LocalValueNSCodingViewController.m in Sources */,
 				E9549147247F98EC008C5995 /* MyTableViewDiffCell.m in Sources */,
+				E94DCC8E2490CE7E00ACFF3E /* QDDownloadProgressView.m in Sources */,
 				E9A928E1248F37FC00694EF7 /* TransmitGreenView.m in Sources */,
 				E9EA4D012487349100E53569 /* ProvinceModel.m in Sources */,
 				D29E4715248A984400BDB9C0 /* UserDetailViewController.m in Sources */,
+				E94DCC8B2490BFF500ACFF3E /* QDShapeView.m in Sources */,
 				E97D8BE9248E3A2F008CF06C /* DynamicViewController.m in Sources */,
 				E98A007A247E564200669BB8 /* TableViewController.m in Sources */,
 				E97D8B632488F1C7008CF06C /* LocalValueCoreDataViewController.m in Sources */,
+				E94DCC912490DB2900ACFF3E /* QDTextView.m in Sources */,
 				E9EA4CEF2486444900E53569 /* FlagItem.m in Sources */,
 				E97F33802484DE550068E757 /* UiapplicationStudyViewController.m in Sources */,
 				D29E47102487E48100BDB9C0 /* NSString+Extensions.m in Sources */,
+				E9A9291324908B2100694EF7 /* QDLineView.m in Sources */,
 				E97D8BFD248F226C008CF06C /* AnimTransformViewController.m in Sources */,
 				E9EA4D2B24888AB800E53569 /* ABContactsDetailViewController.m in Sources */,
 				E9A928EA248F38D300694EF7 /* TransmitRedView.m in Sources */,
 				E98A0094247E6E6500669BB8 /* MyTableViewCell.m in Sources */,
 				E9EA4D412488E2AD00E53569 /* DeliverValueSecondViewController.m in Sources */,
 				E9A928DE248F378600694EF7 /* TransmitWhiteView.m in Sources */,
+				E9A9290F2490875800694EF7 /* Quartz2DViewController.m in Sources */,
 				E9A928D6248F2EF200694EF7 /* RedView.m in Sources */,
 				E97D8BE2248E3486008CF06C /* SegmenteSecondViewController.m in Sources */,
 				E9A928FA248F813B00694EF7 /* GestureViewController.m in Sources */,
@@ -1019,6 +1075,7 @@
 				E98A008C247E614F00669BB8 /* CarGroup.m in Sources */,
 				E90667E22475040100F44ADD /* main.m in Sources */,
 				E97D8BF1248E436F008CF06C /* ModalViewController.m in Sources */,
+				E94DCC942490DB3500ACFF3E /* QDImageView.m in Sources */,
 				E97D8B9E248A0EF6008CF06C /* iOSStudy.xcdatamodeld in Sources */,
 				E97F33722480E99C0068E757 /* ShoppingCartCell.m in Sources */,
 				E9EA4CFE2487344500E53569 /* CityModel.m in Sources */,
@@ -1061,6 +1118,7 @@
 				E9EA4CEA2486410300E53569 /* FlagTextField.m in Sources */,
 				E97D8BDF248E3479008CF06C /* SegmenteFirstViewController.m in Sources */,
 				E97F33762480E9BC0068E757 /* DrinkGoods.m in Sources */,
+				E9A9291C2490B41F00694EF7 /* QDBightView.m in Sources */,
 				E9EA4CF2248647F600E53569 /* FlagItemView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
