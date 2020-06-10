@@ -146,5 +146,11 @@
 		<key>controller</key>
 		<string>Quartz2DViewController</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>定时器-雪花效果</string>
+		<key>controller</key>
+		<string>SnowflakeTimerViewController</string>
+	</dict>
 </array>
 </plist>

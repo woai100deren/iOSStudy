@@ -24,6 +24,8 @@
 		E94DCC912490DB2900ACFF3E /* QDTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC902490DB2900ACFF3E /* QDTextView.m */; };
 		E94DCC942490DB3500ACFF3E /* QDImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC932490DB3500ACFF3E /* QDImageView.m */; };
 		E94DCC962490DCFE00ACFF3E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94DCC952490DCFE00ACFF3E /* UIKit.framework */; };
+		E94DCC9B2490E40000ACFF3E /* SnowflakeTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC992490E40000ACFF3E /* SnowflakeTimerViewController.m */; };
+		E94DCC9F2490E4CB00ACFF3E /* SnowflakeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC9E2490E4CB00ACFF3E /* SnowflakeView.m */; };
 		E9549142247F975E008C5995 /* TableViewDiffCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9549140247F975E008C5995 /* TableViewDiffCellViewController.m */; };
 		E9549143247F975E008C5995 /* TableViewDiffCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9549141247F975E008C5995 /* TableViewDiffCellViewController.xib */; };
 		E9549147247F98EC008C5995 /* MyTableViewDiffCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9549145247F98EC008C5995 /* MyTableViewDiffCell.m */; };
@@ -180,6 +182,10 @@
 		E94DCC922490DB3500ACFF3E /* QDImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDImageView.h; sourceTree = "<group>"; };
 		E94DCC932490DB3500ACFF3E /* QDImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDImageView.m; sourceTree = "<group>"; };
 		E94DCC952490DCFE00ACFF3E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E94DCC982490E40000ACFF3E /* SnowflakeTimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnowflakeTimerViewController.h; sourceTree = "<group>"; };
+		E94DCC992490E40000ACFF3E /* SnowflakeTimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnowflakeTimerViewController.m; sourceTree = "<group>"; };
+		E94DCC9D2490E4CB00ACFF3E /* SnowflakeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnowflakeView.h; sourceTree = "<group>"; };
+		E94DCC9E2490E4CB00ACFF3E /* SnowflakeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnowflakeView.m; sourceTree = "<group>"; };
 		E954913F247F975E008C5995 /* TableViewDiffCellViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewDiffCellViewController.h; sourceTree = "<group>"; };
 		E9549140247F975E008C5995 /* TableViewDiffCellViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewDiffCellViewController.m; sourceTree = "<group>"; };
 		E9549141247F975E008C5995 /* TableViewDiffCellViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewDiffCellViewController.xib; sourceTree = "<group>"; };
@@ -453,6 +459,7 @@
 		E90667CB2475040100F44ADD /* iOSStudy */ = {
 			isa = PBXGroup;
 			children = (
+				E94DCC972490E3AE00ACFF3E /* 定时器 */,
 				E9A9290B2490870500694EF7 /* 绘图Quartz2D */,
 				E9A928FC248F8E7D00694EF7 /* 抽屉效果 */,
 				E9A928C9248F2B5B00694EF7 /* 事件 */,
@@ -499,6 +506,17 @@
 				E9A92909248F952A00694EF7 /* JumpModel.m */,
 			);
 			path = iOSStudy;
+			sourceTree = "<group>";
+		};
+		E94DCC972490E3AE00ACFF3E /* 定时器 */ = {
+			isa = PBXGroup;
+			children = (
+				E94DCC982490E40000ACFF3E /* SnowflakeTimerViewController.h */,
+				E94DCC992490E40000ACFF3E /* SnowflakeTimerViewController.m */,
+				E94DCC9D2490E4CB00ACFF3E /* SnowflakeView.h */,
+				E94DCC9E2490E4CB00ACFF3E /* SnowflakeView.m */,
+			);
+			path = "定时器";
 			sourceTree = "<group>";
 		};
 		E97D8B462488F120008CF06C /* 本地化数据 */ = {
@@ -1046,6 +1064,7 @@
 				E9EA4CEF2486444900E53569 /* FlagItem.m in Sources */,
 				E97F33802484DE550068E757 /* UiapplicationStudyViewController.m in Sources */,
 				D29E47102487E48100BDB9C0 /* NSString+Extensions.m in Sources */,
+				E94DCC9B2490E40000ACFF3E /* SnowflakeTimerViewController.m in Sources */,
 				E9A9291324908B2100694EF7 /* QDLineView.m in Sources */,
 				E97D8BFD248F226C008CF06C /* AnimTransformViewController.m in Sources */,
 				E9EA4D2B24888AB800E53569 /* ABContactsDetailViewController.m in Sources */,
@@ -1106,6 +1125,7 @@
 				E9A928E7248F38C500694EF7 /* TransmitYellowView.m in Sources */,
 				E9A928DA248F362100694EF7 /* EventTransmitViewController.m in Sources */,
 				E9EA4D3524889BB600E53569 /* MyWKWebView.m in Sources */,
+				E94DCC9F2490E4CB00ACFF3E /* SnowflakeView.m in Sources */,
 				E9A928F0248F39A300694EF7 /* TransmitBaseView.m in Sources */,
 				E97D8BD3248E2E37008CF06C /* BaseUIFrameViewController.m in Sources */,
 				E9EA4CF92487334E00E53569 /* CityTextField.m in Sources */,
