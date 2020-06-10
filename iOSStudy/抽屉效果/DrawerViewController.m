@@ -9,9 +9,7 @@
 #import "DrawerViewController.h"
 
 @interface DrawerViewController ()
-@property(weak,nonatomic)UIView *mainView;
-@property(weak,nonatomic)UIView *leftView;
-@property(weak,nonatomic)UIView *rightView;
+
 @end
 
 @implementation DrawerViewController
@@ -28,17 +26,17 @@
     //左view
     UIView *leftView = [[UIView alloc] initWithFrame:self.view.bounds];
     leftView.backgroundColor = UIColor.blueColor;
-    self.leftView = leftView;
+    _leftView = leftView;
     [self.view addSubview:leftView];
     //右view
     UIView *rightView = [[UIView alloc] initWithFrame:self.view.bounds];
     rightView.backgroundColor = UIColor.greenColor;
-    self.rightView = rightView;
+    _rightView = rightView;
     [self.view addSubview:rightView];
     //主view
     UIView *mainView = [[UIView alloc] initWithFrame:self.view.bounds];
     mainView.backgroundColor = UIColor.redColor;
-    self.mainView = mainView;
+    _mainView = mainView;
     [self.view addSubview:mainView];
     
     //添加手势
