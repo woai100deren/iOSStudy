@@ -106,7 +106,6 @@
 		E9A928FA248F813B00694EF7 /* GestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A928F8248F813B00694EF7 /* GestureViewController.m */; };
 		E9A928FB248F813B00694EF7 /* GestureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9A928F9248F813B00694EF7 /* GestureViewController.xib */; };
 		E9A92900248F8EA100694EF7 /* DrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A928FE248F8EA100694EF7 /* DrawerViewController.m */; };
-		E9A92901248F8EA100694EF7 /* DrawerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9A928FF248F8EA100694EF7 /* DrawerViewController.xib */; };
 		E9A92907248F94A700694EF7 /* MainJumpViews.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9A92906248F94A700694EF7 /* MainJumpViews.plist */; };
 		E9A9290A248F952A00694EF7 /* JumpModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A92909248F952A00694EF7 /* JumpModel.m */; };
 		E9EA4CEA2486410300E53569 /* FlagTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA4CE92486410300E53569 /* FlagTextField.m */; };
@@ -305,7 +304,6 @@
 		E9A928F9248F813B00694EF7 /* GestureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GestureViewController.xib; sourceTree = "<group>"; };
 		E9A928FD248F8EA100694EF7 /* DrawerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawerViewController.h; sourceTree = "<group>"; };
 		E9A928FE248F8EA100694EF7 /* DrawerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawerViewController.m; sourceTree = "<group>"; };
-		E9A928FF248F8EA100694EF7 /* DrawerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrawerViewController.xib; sourceTree = "<group>"; };
 		E9A92906248F94A700694EF7 /* MainJumpViews.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MainJumpViews.plist; path = ../MainJumpViews.plist; sourceTree = "<group>"; };
 		E9A92908248F952A00694EF7 /* JumpModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JumpModel.h; sourceTree = "<group>"; };
 		E9A92909248F952A00694EF7 /* JumpModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JumpModel.m; sourceTree = "<group>"; };
@@ -694,7 +692,6 @@
 			children = (
 				E9A928FD248F8EA100694EF7 /* DrawerViewController.h */,
 				E9A928FE248F8EA100694EF7 /* DrawerViewController.m */,
-				E9A928FF248F8EA100694EF7 /* DrawerViewController.xib */,
 			);
 			path = "抽屉效果";
 			sourceTree = "<group>";
@@ -912,7 +909,6 @@
 				E9EA4CEC2486434D00E53569 /* flags.plist in Resources */,
 				E9A928D3248F2DD000694EF7 /* EventUIDragViewController.xib in Resources */,
 				E97F33732480E99C0068E757 /* ShoppingCartCell.xib in Resources */,
-				E9A92901248F8EA100694EF7 /* DrawerViewController.xib in Resources */,
 				E9EA4D1524878AD200E53569 /* ABTableViewController.xib in Resources */,
 				E98A0080247E56F900669BB8 /* MainViewController.xib in Resources */,
 				E9A928CE248F2D7800694EF7 /* EventMainViewController.xib in Resources */,
