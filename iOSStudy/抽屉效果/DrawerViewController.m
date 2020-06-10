@@ -103,8 +103,6 @@
 }
 
 #define maxY 100
-#define statusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
-#define navHeight self.navigationController.navigationBar.bounds.size.height
 //根据偏移量计算mainview的frame
 -(CGRect)frameWithOffset:(CGFloat)offsetx{
     CGRect frame = self.mainView.frame;
@@ -112,6 +110,12 @@
     
     //计算Y轴,fabs取绝对值
     frame.origin.y = fabs(frame.origin.x * maxY / screenW);
+    
+    //状态栏高度
+    CGFloat statusBarHeight = [[UIApplication sharedApplication] statusBarFrame].size.height;
+    //导航栏高度
+    CGFloat navHeight = self.navigationController.navigationBar.bounds.size.height;
+    
     //计算高度：屏幕高度 - 状态栏高度 - 导航栏高度 - Y轴偏移量2倍
     frame.size.height = screenH -statusBarHeight - navHeight - (2 * frame.origin.y);
     
