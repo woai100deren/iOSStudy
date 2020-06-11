@@ -36,6 +36,10 @@
 		E94DCCB52491FF7400ACFF3E /* ImageArbitrarilyTailorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94DCCB32491FF7400ACFF3E /* ImageArbitrarilyTailorViewController.xib */; };
 		E94DCCB9249208DA00ACFF3E /* ImgeWipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCCB7249208DA00ACFF3E /* ImgeWipeViewController.m */; };
 		E94DCCBA249208DA00ACFF3E /* ImgeWipeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94DCCB8249208DA00ACFF3E /* ImgeWipeViewController.xib */; };
+		E94DCCBE24920CE900ACFF3E /* GestureLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCCBC24920CE900ACFF3E /* GestureLockViewController.m */; };
+		E94DCCBF24920CE900ACFF3E /* GestureLockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94DCCBD24920CE900ACFF3E /* GestureLockViewController.xib */; };
+		E94DCCC224920DE600ACFF3E /* GestureLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCCC124920DE600ACFF3E /* GestureLockView.m */; };
+		E94DCCC524921D6C00ACFF3E /* UIView+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCCC424921D6C00ACFF3E /* UIView+Extensions.m */; };
 		E9549142247F975E008C5995 /* TableViewDiffCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9549140247F975E008C5995 /* TableViewDiffCellViewController.m */; };
 		E9549143247F975E008C5995 /* TableViewDiffCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9549141247F975E008C5995 /* TableViewDiffCellViewController.xib */; };
 		E9549147247F98EC008C5995 /* MyTableViewDiffCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9549145247F98EC008C5995 /* MyTableViewDiffCell.m */; };
@@ -211,6 +215,13 @@
 		E94DCCB6249208DA00ACFF3E /* ImgeWipeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImgeWipeViewController.h; sourceTree = "<group>"; };
 		E94DCCB7249208DA00ACFF3E /* ImgeWipeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImgeWipeViewController.m; sourceTree = "<group>"; };
 		E94DCCB8249208DA00ACFF3E /* ImgeWipeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImgeWipeViewController.xib; sourceTree = "<group>"; };
+		E94DCCBB24920CE900ACFF3E /* GestureLockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GestureLockViewController.h; sourceTree = "<group>"; };
+		E94DCCBC24920CE900ACFF3E /* GestureLockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestureLockViewController.m; sourceTree = "<group>"; };
+		E94DCCBD24920CE900ACFF3E /* GestureLockViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GestureLockViewController.xib; sourceTree = "<group>"; };
+		E94DCCC024920DE600ACFF3E /* GestureLockView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GestureLockView.h; sourceTree = "<group>"; };
+		E94DCCC124920DE600ACFF3E /* GestureLockView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestureLockView.m; sourceTree = "<group>"; };
+		E94DCCC324921D6C00ACFF3E /* UIView+Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Extensions.h"; sourceTree = "<group>"; };
+		E94DCCC424921D6C00ACFF3E /* UIView+Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extensions.m"; sourceTree = "<group>"; };
 		E954913F247F975E008C5995 /* TableViewDiffCellViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewDiffCellViewController.h; sourceTree = "<group>"; };
 		E9549140247F975E008C5995 /* TableViewDiffCellViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewDiffCellViewController.m; sourceTree = "<group>"; };
 		E9549141247F975E008C5995 /* TableViewDiffCellViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewDiffCellViewController.xib; sourceTree = "<group>"; };
@@ -449,6 +460,8 @@
 			children = (
 				D29E470E2487E48100BDB9C0 /* NSString+Extensions.h */,
 				D29E470F2487E48100BDB9C0 /* NSString+Extensions.m */,
+				E94DCCC324921D6C00ACFF3E /* UIView+Extensions.h */,
+				E94DCCC424921D6C00ACFF3E /* UIView+Extensions.m */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -571,6 +584,11 @@
 		E94DCCB02491FE8F00ACFF3E /* 手势解锁 */ = {
 			isa = PBXGroup;
 			children = (
+				E94DCCBB24920CE900ACFF3E /* GestureLockViewController.h */,
+				E94DCCBC24920CE900ACFF3E /* GestureLockViewController.m */,
+				E94DCCBD24920CE900ACFF3E /* GestureLockViewController.xib */,
+				E94DCCC024920DE600ACFF3E /* GestureLockView.h */,
+				E94DCCC124920DE600ACFF3E /* GestureLockView.m */,
 			);
 			path = "手势解锁";
 			sourceTree = "<group>";
@@ -1009,6 +1027,7 @@
 				E97F338F24862DC20068E757 /* foods.plist in Resources */,
 				E97F336E2480E79F0068E757 /* ShoppingCartViewController.xib in Resources */,
 				E997387A247767CC00D6F041 /* Second.storyboard in Resources */,
+				E94DCCBF24920CE900ACFF3E /* GestureLockViewController.xib in Resources */,
 				E9ECA05E247F8E8C0041E22D /* MyTableViewCell.xib in Resources */,
 				D29E4716248A984400BDB9C0 /* UserDetailViewController.xib in Resources */,
 				E90667DF2475040100F44ADD /* LaunchScreen.storyboard in Resources */,
@@ -1133,6 +1152,7 @@
 				E98A0094247E6E6500669BB8 /* MyTableViewCell.m in Sources */,
 				E9EA4D412488E2AD00E53569 /* DeliverValueSecondViewController.m in Sources */,
 				E9A928DE248F378600694EF7 /* TransmitWhiteView.m in Sources */,
+				E94DCCC524921D6C00ACFF3E /* UIView+Extensions.m in Sources */,
 				E9A9290F2490875800694EF7 /* Quartz2DViewController.m in Sources */,
 				E9A928D6248F2EF200694EF7 /* RedView.m in Sources */,
 				E94DCCAE2491CEB800ACFF3E /* ImageTailorViewController.m in Sources */,
@@ -1140,6 +1160,7 @@
 				E9A928FA248F813B00694EF7 /* GestureViewController.m in Sources */,
 				E9A928D2248F2DD000694EF7 /* EventUIDragViewController.m in Sources */,
 				E98AFFF6247E0AB000669BB8 /* MasonryViewController.m in Sources */,
+				E94DCCBE24920CE900ACFF3E /* GestureLockViewController.m in Sources */,
 				E9A928E4248F384A00694EF7 /* TransmitBlueView.m in Sources */,
 				E97D8B6C2489E349008CF06C /* LocalValueModel.m in Sources */,
 				E99738782476720A00D6F041 /* SecondViewController.m in Sources */,
@@ -1155,6 +1176,7 @@
 				E97D8BF9248F215A008CF06C /* AnimationMainViewController.m in Sources */,
 				E98A008C247E614F00669BB8 /* CarGroup.m in Sources */,
 				E94DCCB9249208DA00ACFF3E /* ImgeWipeViewController.m in Sources */,
+				E94DCCC224920DE600ACFF3E /* GestureLockView.m in Sources */,
 				E90667E22475040100F44ADD /* main.m in Sources */,
 				E94DCCA32491C94F00ACFF3E /* ImageWatermarkViewController.m in Sources */,
 				E97D8BF1248E436F008CF06C /* ModalViewController.m in Sources */,

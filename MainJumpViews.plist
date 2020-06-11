@@ -158,5 +158,11 @@
 		<key>controller</key>
 		<string>ImageDealViewController</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>手势解锁</string>
+		<key>controller</key>
+		<string>GestureLockViewController</string>
+	</dict>
 </array>
 </plist>
