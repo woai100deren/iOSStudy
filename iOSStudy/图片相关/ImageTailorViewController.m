@@ -96,6 +96,7 @@
     self.imageView3.image = image;
     
     [self requestSaveImage:image];
+    [self saveImageToFile:image];
 }
 
 -(void)requestSaveImage:(UIImage *)image{
@@ -124,4 +125,19 @@
         }
     }];
 }
+/**
+ 存储到一个文件路径中
+ */
+-(void)saveImageToFile:(UIImage *)image{
+    //把生成的图片写到一个路径中
+    //把图片转换成二进制流
+//    //jpeg格式
+//    NSData *jpegData = UIImageJPEGRepresentation(image, 1);
+//    [jpegData writeToURL:[NSURL fileURLWithPath:@"/Users/dodoca/Desktop/image.jpeg"] atomically:YES];
+//
+//    //png格式
+//    NSData *pngData = UIImagePNGRepresentation(image);
+//    [pngData writeToURL:[NSURL fileURLWithPath:@"/Users/dodoca/Desktop/image.png"] atomically:YES];
+}
 @end
+
