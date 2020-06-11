@@ -40,6 +40,10 @@
 		E94DCCBF24920CE900ACFF3E /* GestureLockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94DCCBD24920CE900ACFF3E /* GestureLockViewController.xib */; };
 		E94DCCC224920DE600ACFF3E /* GestureLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCCC124920DE600ACFF3E /* GestureLockView.m */; };
 		E94DCCC524921D6C00ACFF3E /* UIView+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCCC424921D6C00ACFF3E /* UIView+Extensions.m */; };
+		E94DCCCA24922B2200ACFF3E /* DrawingBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCCC824922B2200ACFF3E /* DrawingBoardViewController.m */; };
+		E94DCCCB24922B2200ACFF3E /* DrawingBoardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94DCCC924922B2200ACFF3E /* DrawingBoardViewController.xib */; };
+		E94DCCCE24922B3500ACFF3E /* DrawingBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCCCD24922B3500ACFF3E /* DrawingBoardView.m */; };
+		E94DCCD12492386D00ACFF3E /* DBUIBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCCD02492386D00ACFF3E /* DBUIBezierPath.m */; };
 		E9549142247F975E008C5995 /* TableViewDiffCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9549140247F975E008C5995 /* TableViewDiffCellViewController.m */; };
 		E9549143247F975E008C5995 /* TableViewDiffCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9549141247F975E008C5995 /* TableViewDiffCellViewController.xib */; };
 		E9549147247F98EC008C5995 /* MyTableViewDiffCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9549145247F98EC008C5995 /* MyTableViewDiffCell.m */; };
@@ -222,6 +226,13 @@
 		E94DCCC124920DE600ACFF3E /* GestureLockView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestureLockView.m; sourceTree = "<group>"; };
 		E94DCCC324921D6C00ACFF3E /* UIView+Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Extensions.h"; sourceTree = "<group>"; };
 		E94DCCC424921D6C00ACFF3E /* UIView+Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extensions.m"; sourceTree = "<group>"; };
+		E94DCCC724922B2200ACFF3E /* DrawingBoardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawingBoardViewController.h; sourceTree = "<group>"; };
+		E94DCCC824922B2200ACFF3E /* DrawingBoardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawingBoardViewController.m; sourceTree = "<group>"; };
+		E94DCCC924922B2200ACFF3E /* DrawingBoardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrawingBoardViewController.xib; sourceTree = "<group>"; };
+		E94DCCCC24922B3500ACFF3E /* DrawingBoardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawingBoardView.h; sourceTree = "<group>"; };
+		E94DCCCD24922B3500ACFF3E /* DrawingBoardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawingBoardView.m; sourceTree = "<group>"; };
+		E94DCCCF2492386D00ACFF3E /* DBUIBezierPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBUIBezierPath.h; sourceTree = "<group>"; };
+		E94DCCD02492386D00ACFF3E /* DBUIBezierPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBUIBezierPath.m; sourceTree = "<group>"; };
 		E954913F247F975E008C5995 /* TableViewDiffCellViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewDiffCellViewController.h; sourceTree = "<group>"; };
 		E9549140247F975E008C5995 /* TableViewDiffCellViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewDiffCellViewController.m; sourceTree = "<group>"; };
 		E9549141247F975E008C5995 /* TableViewDiffCellViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewDiffCellViewController.xib; sourceTree = "<group>"; };
@@ -497,6 +508,7 @@
 		E90667CB2475040100F44ADD /* iOSStudy */ = {
 			isa = PBXGroup;
 			children = (
+				E94DCCC624922B0000ACFF3E /* 画板 */,
 				E94DCCB02491FE8F00ACFF3E /* 手势解锁 */,
 				E94DCCA02491C92200ACFF3E /* 图片相关 */,
 				E94DCC972490E3AE00ACFF3E /* 定时器 */,
@@ -591,6 +603,20 @@
 				E94DCCC124920DE600ACFF3E /* GestureLockView.m */,
 			);
 			path = "手势解锁";
+			sourceTree = "<group>";
+		};
+		E94DCCC624922B0000ACFF3E /* 画板 */ = {
+			isa = PBXGroup;
+			children = (
+				E94DCCC724922B2200ACFF3E /* DrawingBoardViewController.h */,
+				E94DCCC824922B2200ACFF3E /* DrawingBoardViewController.m */,
+				E94DCCC924922B2200ACFF3E /* DrawingBoardViewController.xib */,
+				E94DCCCC24922B3500ACFF3E /* DrawingBoardView.h */,
+				E94DCCCD24922B3500ACFF3E /* DrawingBoardView.m */,
+				E94DCCCF2492386D00ACFF3E /* DBUIBezierPath.h */,
+				E94DCCD02492386D00ACFF3E /* DBUIBezierPath.m */,
+			);
+			path = "画板";
 			sourceTree = "<group>";
 		};
 		E97D8B462488F120008CF06C /* 本地化数据 */ = {
@@ -1039,6 +1065,7 @@
 				E98A0091247E6B8B00669BB8 /* TableViewCustonCellViewController.xib in Resources */,
 				E97D8B642488F1C7008CF06C /* LocalValueCoreDataViewController.xib in Resources */,
 				E9549148247F98EC008C5995 /* MyTableViewDiffCell.xib in Resources */,
+				E94DCCCB24922B2200ACFF3E /* DrawingBoardViewController.xib in Resources */,
 				E98A0087247E5D8000669BB8 /* TableViewIndexsController.xib in Resources */,
 				E9EA4D1024877C6C00E53569 /* ABLoginViewController.xib in Resources */,
 				E98A0089247E5EEF00669BB8 /* cars.plist in Resources */,
@@ -1164,6 +1191,7 @@
 				E9A928E4248F384A00694EF7 /* TransmitBlueView.m in Sources */,
 				E97D8B6C2489E349008CF06C /* LocalValueModel.m in Sources */,
 				E99738782476720A00D6F041 /* SecondViewController.m in Sources */,
+				E94DCCD12492386D00ACFF3E /* DBUIBezierPath.m in Sources */,
 				E97D8BED248E3E15008CF06C /* BaseContactsAddViewController.m in Sources */,
 				E97D8BCE248E2A1A008CF06C /* TabBarSystemViewController.m in Sources */,
 				E97F3393248639D00068E757 /* PickViewUseViewController.m in Sources */,
@@ -1203,6 +1231,7 @@
 				E9EA4D0524873B1D00E53569 /* DateTextField.m in Sources */,
 				E97D8B4F2488F17F008CF06C /* LocalValuePreferenceViewController.m in Sources */,
 				E9EA4D1F2487A72D00E53569 /* ABContacts.m in Sources */,
+				E94DCCCA24922B2200ACFF3E /* DrawingBoardViewController.m in Sources */,
 				E990ED7C24776F2100F068D1 /* CarView.m in Sources */,
 				E9549142247F975E008C5995 /* TableViewDiffCellViewController.m in Sources */,
 				E9EA4D3C2488E2A000E53569 /* DeliverValueFirstViewController.m in Sources */,
@@ -1213,6 +1242,7 @@
 				E9A928E7248F38C500694EF7 /* TransmitYellowView.m in Sources */,
 				E9A928DA248F362100694EF7 /* EventTransmitViewController.m in Sources */,
 				E9EA4D3524889BB600E53569 /* MyWKWebView.m in Sources */,
+				E94DCCCE24922B3500ACFF3E /* DrawingBoardView.m in Sources */,
 				E94DCC9F2490E4CB00ACFF3E /* SnowflakeView.m in Sources */,
 				E9A928F0248F39A300694EF7 /* TransmitBaseView.m in Sources */,
 				E97D8BD3248E2E37008CF06C /* BaseUIFrameViewController.m in Sources */,

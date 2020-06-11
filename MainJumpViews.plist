@@ -164,5 +164,11 @@
 		<key>controller</key>
 		<string>GestureLockViewController</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>画板</string>
+		<key>controller</key>
+		<string>DrawingBoardViewController</string>
+	</dict>
 </array>
 </plist>
