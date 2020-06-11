@@ -152,5 +152,11 @@
 		<key>controller</key>
 		<string>SnowflakeTimerViewController</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>给图片加水印</string>
+		<key>controller</key>
+		<string>ImageWatermarkViewController</string>
+	</dict>
 </array>
 </plist>
