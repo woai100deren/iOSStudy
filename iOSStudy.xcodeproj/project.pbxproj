@@ -32,6 +32,10 @@
 		E94DCCAA2491CDA200ACFF3E /* ImageDealViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94DCCA82491CDA200ACFF3E /* ImageDealViewController.xib */; };
 		E94DCCAE2491CEB800ACFF3E /* ImageTailorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCCAC2491CEB800ACFF3E /* ImageTailorViewController.m */; };
 		E94DCCAF2491CEB800ACFF3E /* ImageTailorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94DCCAD2491CEB800ACFF3E /* ImageTailorViewController.xib */; };
+		E94DCCB42491FF7400ACFF3E /* ImageArbitrarilyTailorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCCB22491FF7400ACFF3E /* ImageArbitrarilyTailorViewController.m */; };
+		E94DCCB52491FF7400ACFF3E /* ImageArbitrarilyTailorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94DCCB32491FF7400ACFF3E /* ImageArbitrarilyTailorViewController.xib */; };
+		E94DCCB9249208DA00ACFF3E /* ImgeWipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCCB7249208DA00ACFF3E /* ImgeWipeViewController.m */; };
+		E94DCCBA249208DA00ACFF3E /* ImgeWipeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94DCCB8249208DA00ACFF3E /* ImgeWipeViewController.xib */; };
 		E9549142247F975E008C5995 /* TableViewDiffCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9549140247F975E008C5995 /* TableViewDiffCellViewController.m */; };
 		E9549143247F975E008C5995 /* TableViewDiffCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9549141247F975E008C5995 /* TableViewDiffCellViewController.xib */; };
 		E9549147247F98EC008C5995 /* MyTableViewDiffCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9549145247F98EC008C5995 /* MyTableViewDiffCell.m */; };
@@ -201,6 +205,12 @@
 		E94DCCAB2491CEB800ACFF3E /* ImageTailorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageTailorViewController.h; sourceTree = "<group>"; };
 		E94DCCAC2491CEB800ACFF3E /* ImageTailorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageTailorViewController.m; sourceTree = "<group>"; };
 		E94DCCAD2491CEB800ACFF3E /* ImageTailorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageTailorViewController.xib; sourceTree = "<group>"; };
+		E94DCCB12491FF7400ACFF3E /* ImageArbitrarilyTailorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageArbitrarilyTailorViewController.h; sourceTree = "<group>"; };
+		E94DCCB22491FF7400ACFF3E /* ImageArbitrarilyTailorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageArbitrarilyTailorViewController.m; sourceTree = "<group>"; };
+		E94DCCB32491FF7400ACFF3E /* ImageArbitrarilyTailorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageArbitrarilyTailorViewController.xib; sourceTree = "<group>"; };
+		E94DCCB6249208DA00ACFF3E /* ImgeWipeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImgeWipeViewController.h; sourceTree = "<group>"; };
+		E94DCCB7249208DA00ACFF3E /* ImgeWipeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImgeWipeViewController.m; sourceTree = "<group>"; };
+		E94DCCB8249208DA00ACFF3E /* ImgeWipeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImgeWipeViewController.xib; sourceTree = "<group>"; };
 		E954913F247F975E008C5995 /* TableViewDiffCellViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewDiffCellViewController.h; sourceTree = "<group>"; };
 		E9549140247F975E008C5995 /* TableViewDiffCellViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewDiffCellViewController.m; sourceTree = "<group>"; };
 		E9549141247F975E008C5995 /* TableViewDiffCellViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewDiffCellViewController.xib; sourceTree = "<group>"; };
@@ -474,6 +484,7 @@
 		E90667CB2475040100F44ADD /* iOSStudy */ = {
 			isa = PBXGroup;
 			children = (
+				E94DCCB02491FE8F00ACFF3E /* 手势解锁 */,
 				E94DCCA02491C92200ACFF3E /* 图片相关 */,
 				E94DCC972490E3AE00ACFF3E /* 定时器 */,
 				E9A9290B2490870500694EF7 /* 绘图Quartz2D */,
@@ -547,8 +558,21 @@
 				E94DCCAB2491CEB800ACFF3E /* ImageTailorViewController.h */,
 				E94DCCAC2491CEB800ACFF3E /* ImageTailorViewController.m */,
 				E94DCCAD2491CEB800ACFF3E /* ImageTailorViewController.xib */,
+				E94DCCB12491FF7400ACFF3E /* ImageArbitrarilyTailorViewController.h */,
+				E94DCCB22491FF7400ACFF3E /* ImageArbitrarilyTailorViewController.m */,
+				E94DCCB32491FF7400ACFF3E /* ImageArbitrarilyTailorViewController.xib */,
+				E94DCCB6249208DA00ACFF3E /* ImgeWipeViewController.h */,
+				E94DCCB7249208DA00ACFF3E /* ImgeWipeViewController.m */,
+				E94DCCB8249208DA00ACFF3E /* ImgeWipeViewController.xib */,
 			);
 			path = "图片相关";
+			sourceTree = "<group>";
+		};
+		E94DCCB02491FE8F00ACFF3E /* 手势解锁 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "手势解锁";
 			sourceTree = "<group>";
 		};
 		E97D8B462488F120008CF06C /* 本地化数据 */ = {
@@ -1000,6 +1024,7 @@
 				E9EA4D1024877C6C00E53569 /* ABLoginViewController.xib in Resources */,
 				E98A0089247E5EEF00669BB8 /* cars.plist in Resources */,
 				E9EA4D2C24888AB800E53569 /* ABContactsDetailViewController.xib in Resources */,
+				E94DCCBA249208DA00ACFF3E /* ImgeWipeViewController.xib in Resources */,
 				E97F33812484DE550068E757 /* UiapplicationStudyViewController.xib in Resources */,
 				E9EA4D3D2488E2A000E53569 /* DeliverValueFirstViewController.xib in Resources */,
 				E9A92907248F94A700694EF7 /* MainJumpViews.plist in Resources */,
@@ -1023,6 +1048,7 @@
 				E94DCCAA2491CDA200ACFF3E /* ImageDealViewController.xib in Resources */,
 				E97D8B4B2488F162008CF06C /* LocalValuePlistViewController.xib in Resources */,
 				E9549143247F975E008C5995 /* TableViewDiffCellViewController.xib in Resources */,
+				E94DCCB52491FF7400ACFF3E /* ImageArbitrarilyTailorViewController.xib in Resources */,
 				E990ED7E2477703D00F068D1 /* CarView.xib in Resources */,
 				E94DCCAF2491CEB800ACFF3E /* ImageTailorViewController.xib in Resources */,
 				E97F3394248639D00068E757 /* PickViewUseViewController.xib in Resources */,
@@ -1128,10 +1154,12 @@
 				E97F338C24862A830068E757 /* PickViewController.m in Sources */,
 				E97D8BF9248F215A008CF06C /* AnimationMainViewController.m in Sources */,
 				E98A008C247E614F00669BB8 /* CarGroup.m in Sources */,
+				E94DCCB9249208DA00ACFF3E /* ImgeWipeViewController.m in Sources */,
 				E90667E22475040100F44ADD /* main.m in Sources */,
 				E94DCCA32491C94F00ACFF3E /* ImageWatermarkViewController.m in Sources */,
 				E97D8BF1248E436F008CF06C /* ModalViewController.m in Sources */,
 				E94DCC942490DB3500ACFF3E /* QDImageView.m in Sources */,
+				E94DCCB42491FF7400ACFF3E /* ImageArbitrarilyTailorViewController.m in Sources */,
 				E97D8B9E248A0EF6008CF06C /* iOSStudy.xcdatamodeld in Sources */,
 				E97F33722480E99C0068E757 /* ShoppingCartCell.m in Sources */,
 				E9EA4CFE2487344500E53569 /* CityModel.m in Sources */,

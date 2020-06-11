@@ -9,6 +9,8 @@
 #import "ImageDealViewController.h"
 #import "ImageWatermarkViewController.h"
 #import "ImageTailorViewController.h"
+#import "ImageArbitrarilyTailorViewController.h"
+#import "ImgeWipeViewController.h"
 
 @interface ImageDealViewController ()
 
@@ -25,6 +27,12 @@
 }
 - (IBAction)imageTailor:(id)sender {
     [self jump:[[ImageTailorViewController alloc] init]];
+}
+- (IBAction)imageArbTailor:(id)sender {
+    [self jump:[[ImageArbitrarilyTailorViewController alloc] init]];
+}
+- (IBAction)imageWipe:(id)sender {
+    [self jump:[[ImgeWipeViewController alloc] init]];
 }
 -(void)jump:(UIViewController*)controller{
     [self.navigationController pushViewController:controller animated:YES];
