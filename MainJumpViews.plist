@@ -154,9 +154,9 @@
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>给图片加水印</string>
+		<string>图片处理相关</string>
 		<key>controller</key>
-		<string>ImageWatermarkViewController</string>
+		<string>ImageDealViewController</string>
 	</dict>
 </array>
 </plist>

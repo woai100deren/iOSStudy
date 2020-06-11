@@ -27,7 +27,11 @@
 		E94DCC9B2490E40000ACFF3E /* SnowflakeTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC992490E40000ACFF3E /* SnowflakeTimerViewController.m */; };
 		E94DCC9F2490E4CB00ACFF3E /* SnowflakeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC9E2490E4CB00ACFF3E /* SnowflakeView.m */; };
 		E94DCCA32491C94F00ACFF3E /* ImageWatermarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCCA22491C94F00ACFF3E /* ImageWatermarkViewController.m */; };
-		E94DCCA52491CB7800ACFF3E /* ImageWatermarkView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94DCCA42491CB7800ACFF3E /* ImageWatermarkView.xib */; };
+		E94DCCA52491CB7800ACFF3E /* ImageWatermarkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94DCCA42491CB7800ACFF3E /* ImageWatermarkViewController.xib */; };
+		E94DCCA92491CDA200ACFF3E /* ImageDealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCCA72491CDA200ACFF3E /* ImageDealViewController.m */; };
+		E94DCCAA2491CDA200ACFF3E /* ImageDealViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94DCCA82491CDA200ACFF3E /* ImageDealViewController.xib */; };
+		E94DCCAE2491CEB800ACFF3E /* ImageTailorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCCAC2491CEB800ACFF3E /* ImageTailorViewController.m */; };
+		E94DCCAF2491CEB800ACFF3E /* ImageTailorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94DCCAD2491CEB800ACFF3E /* ImageTailorViewController.xib */; };
 		E9549142247F975E008C5995 /* TableViewDiffCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9549140247F975E008C5995 /* TableViewDiffCellViewController.m */; };
 		E9549143247F975E008C5995 /* TableViewDiffCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9549141247F975E008C5995 /* TableViewDiffCellViewController.xib */; };
 		E9549147247F98EC008C5995 /* MyTableViewDiffCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9549145247F98EC008C5995 /* MyTableViewDiffCell.m */; };
@@ -190,7 +194,13 @@
 		E94DCC9E2490E4CB00ACFF3E /* SnowflakeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnowflakeView.m; sourceTree = "<group>"; };
 		E94DCCA12491C94F00ACFF3E /* ImageWatermarkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageWatermarkViewController.h; sourceTree = "<group>"; };
 		E94DCCA22491C94F00ACFF3E /* ImageWatermarkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageWatermarkViewController.m; sourceTree = "<group>"; };
-		E94DCCA42491CB7800ACFF3E /* ImageWatermarkView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageWatermarkView.xib; sourceTree = "<group>"; };
+		E94DCCA42491CB7800ACFF3E /* ImageWatermarkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageWatermarkViewController.xib; sourceTree = "<group>"; };
+		E94DCCA62491CDA200ACFF3E /* ImageDealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageDealViewController.h; sourceTree = "<group>"; };
+		E94DCCA72491CDA200ACFF3E /* ImageDealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageDealViewController.m; sourceTree = "<group>"; };
+		E94DCCA82491CDA200ACFF3E /* ImageDealViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageDealViewController.xib; sourceTree = "<group>"; };
+		E94DCCAB2491CEB800ACFF3E /* ImageTailorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageTailorViewController.h; sourceTree = "<group>"; };
+		E94DCCAC2491CEB800ACFF3E /* ImageTailorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageTailorViewController.m; sourceTree = "<group>"; };
+		E94DCCAD2491CEB800ACFF3E /* ImageTailorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageTailorViewController.xib; sourceTree = "<group>"; };
 		E954913F247F975E008C5995 /* TableViewDiffCellViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewDiffCellViewController.h; sourceTree = "<group>"; };
 		E9549140247F975E008C5995 /* TableViewDiffCellViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewDiffCellViewController.m; sourceTree = "<group>"; };
 		E9549141247F975E008C5995 /* TableViewDiffCellViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewDiffCellViewController.xib; sourceTree = "<group>"; };
@@ -464,7 +474,7 @@
 		E90667CB2475040100F44ADD /* iOSStudy */ = {
 			isa = PBXGroup;
 			children = (
-				E94DCCA02491C92200ACFF3E /* 图片加水印 */,
+				E94DCCA02491C92200ACFF3E /* 图片相关 */,
 				E94DCC972490E3AE00ACFF3E /* 定时器 */,
 				E9A9290B2490870500694EF7 /* 绘图Quartz2D */,
 				E9A928FC248F8E7D00694EF7 /* 抽屉效果 */,
@@ -525,14 +535,20 @@
 			path = "定时器";
 			sourceTree = "<group>";
 		};
-		E94DCCA02491C92200ACFF3E /* 图片加水印 */ = {
+		E94DCCA02491C92200ACFF3E /* 图片相关 */ = {
 			isa = PBXGroup;
 			children = (
+				E94DCCA62491CDA200ACFF3E /* ImageDealViewController.h */,
+				E94DCCA72491CDA200ACFF3E /* ImageDealViewController.m */,
+				E94DCCA82491CDA200ACFF3E /* ImageDealViewController.xib */,
 				E94DCCA12491C94F00ACFF3E /* ImageWatermarkViewController.h */,
 				E94DCCA22491C94F00ACFF3E /* ImageWatermarkViewController.m */,
-				E94DCCA42491CB7800ACFF3E /* ImageWatermarkView.xib */,
+				E94DCCA42491CB7800ACFF3E /* ImageWatermarkViewController.xib */,
+				E94DCCAB2491CEB800ACFF3E /* ImageTailorViewController.h */,
+				E94DCCAC2491CEB800ACFF3E /* ImageTailorViewController.m */,
+				E94DCCAD2491CEB800ACFF3E /* ImageTailorViewController.xib */,
 			);
-			path = "图片加水印";
+			path = "图片相关";
 			sourceTree = "<group>";
 		};
 		E97D8B462488F120008CF06C /* 本地化数据 */ = {
@@ -999,14 +1015,16 @@
 				E9A928CE248F2D7800694EF7 /* EventMainViewController.xib in Resources */,
 				E9A928DB248F362100694EF7 /* EventTransmitViewController.xib in Resources */,
 				E97D8B692488F253008CF06C /* LocalValueMainViewController.xib in Resources */,
-				E94DCCA52491CB7800ACFF3E /* ImageWatermarkView.xib in Resources */,
+				E94DCCA52491CB7800ACFF3E /* ImageWatermarkViewController.xib in Resources */,
 				E9EA4D27248880C400E53569 /* ABTableViewCell.xib in Resources */,
 				E9300EF7247B69410035BF4C /* Third.storyboard in Resources */,
 				E97F338D24862A830068E757 /* PickViewController.xib in Resources */,
 				E98A0082247E5BAC00669BB8 /* ScrollView.xib in Resources */,
+				E94DCCAA2491CDA200ACFF3E /* ImageDealViewController.xib in Resources */,
 				E97D8B4B2488F162008CF06C /* LocalValuePlistViewController.xib in Resources */,
 				E9549143247F975E008C5995 /* TableViewDiffCellViewController.xib in Resources */,
 				E990ED7E2477703D00F068D1 /* CarView.xib in Resources */,
+				E94DCCAF2491CEB800ACFF3E /* ImageTailorViewController.xib in Resources */,
 				E97F3394248639D00068E757 /* PickViewUseViewController.xib in Resources */,
 				E9EA4D1A2487A2B900E53569 /* ABAddContactsViewController.xib in Resources */,
 				E97D8BFA248F215A008CF06C /* AnimationMainViewController.xib in Resources */,
@@ -1091,6 +1109,7 @@
 				E9A928DE248F378600694EF7 /* TransmitWhiteView.m in Sources */,
 				E9A9290F2490875800694EF7 /* Quartz2DViewController.m in Sources */,
 				E9A928D6248F2EF200694EF7 /* RedView.m in Sources */,
+				E94DCCAE2491CEB800ACFF3E /* ImageTailorViewController.m in Sources */,
 				E97D8BE2248E3486008CF06C /* SegmenteSecondViewController.m in Sources */,
 				E9A928FA248F813B00694EF7 /* GestureViewController.m in Sources */,
 				E9A928D2248F2DD000694EF7 /* EventUIDragViewController.m in Sources */,
@@ -1119,6 +1138,7 @@
 				E97F33842484DEFA0068E757 /* SingleObject.m in Sources */,
 				E97F336D2480E79F0068E757 /* ShoppingCartViewController.m in Sources */,
 				E9300EFD247BB30F0035BF4C /* ScrollViewController.m in Sources */,
+				E94DCCA92491CDA200ACFF3E /* ImageDealViewController.m in Sources */,
 				E97D8BD8248E2F7E008CF06C /* BaseMainViewController.m in Sources */,
 				E97D8B5E2488F1B9008CF06C /* LocalValueSQLiteViewController.m in Sources */,
 				E90667CE2475040100F44ADD /* AppDelegate.m in Sources */,

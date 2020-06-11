@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageTailorViewController">
+            <connections>
+                <outlet property="imageView" destination="pgi-Xf-iZf" id="dlF-q6-TnB"/>
+                <outlet property="imageView2" destination="ma8-iw-rEQ" id="X9t-gf-Jpo"/>
+                <outlet property="imageView3" destination="sFZ-xz-lME" id="l9j-kE-8DS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pgi-Xf-iZf">
+                    <rect key="frame" x="107" y="54" width="200" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="oDf-nO-0XA"/>
+                        <constraint firstAttribute="height" constant="200" id="yg0-7d-Fr9"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ma8-iw-rEQ">
+                    <rect key="frame" x="107" y="264" width="200" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="CIl-f3-cFw"/>
+                        <constraint firstAttribute="width" constant="200" id="qeG-Rm-3Fb"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sFZ-xz-lME">
+                    <rect key="frame" x="107" y="474" width="200" height="200"/>
+                    <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="K4f-oC-UfM"/>
+                        <constraint firstAttribute="width" constant="200" id="vne-gW-d8A"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="sFZ-xz-lME" firstAttribute="top" secondItem="ma8-iw-rEQ" secondAttribute="bottom" constant="10" id="6UT-Pj-9Qe"/>
+                <constraint firstItem="pgi-Xf-iZf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Fkp-YP-53a"/>
+                <constraint firstItem="sFZ-xz-lME" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="JVq-rE-t6i"/>
+                <constraint firstItem="ma8-iw-rEQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Nvs-c7-Krv"/>
+                <constraint firstItem="pgi-Xf-iZf" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="10" id="pbz-r2-UEI"/>
+                <constraint firstItem="ma8-iw-rEQ" firstAttribute="top" secondItem="pgi-Xf-iZf" secondAttribute="bottom" constant="10" id="sxj-mM-hYZ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="132" y="131"/>
+        </view>
+    </objects>
+</document>
