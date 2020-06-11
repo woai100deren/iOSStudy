@@ -11,6 +11,7 @@
 		D29E47102487E48100BDB9C0 /* NSString+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = D29E470F2487E48100BDB9C0 /* NSString+Extensions.m */; };
 		D29E4715248A984400BDB9C0 /* UserDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29E4713248A984400BDB9C0 /* UserDetailViewController.m */; };
 		D29E4716248A984400BDB9C0 /* UserDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D29E4714248A984400BDB9C0 /* UserDetailViewController.xib */; };
+		D29E47192492669300BDB9C0 /* DBImageDealView.m in Sources */ = {isa = PBXBuildFile; fileRef = D29E47182492669300BDB9C0 /* DBImageDealView.m */; };
 		E90667CE2475040100F44ADD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E90667CD2475040100F44ADD /* AppDelegate.m */; };
 		E90667D12475040100F44ADD /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E90667D02475040100F44ADD /* SceneDelegate.m */; };
 		E90667DC2475040100F44ADD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E90667DB2475040100F44ADD /* Assets.xcassets */; };
@@ -177,6 +178,8 @@
 		D29E4712248A984400BDB9C0 /* UserDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserDetailViewController.h; sourceTree = "<group>"; };
 		D29E4713248A984400BDB9C0 /* UserDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserDetailViewController.m; sourceTree = "<group>"; };
 		D29E4714248A984400BDB9C0 /* UserDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailViewController.xib; sourceTree = "<group>"; };
+		D29E47172492669300BDB9C0 /* DBImageDealView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBImageDealView.h; sourceTree = "<group>"; };
+		D29E47182492669300BDB9C0 /* DBImageDealView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBImageDealView.m; sourceTree = "<group>"; };
 		E90667C92475040100F44ADD /* iOS学习.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS学习.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E90667CC2475040100F44ADD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E90667CD2475040100F44ADD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -615,6 +618,8 @@
 				E94DCCCD24922B3500ACFF3E /* DrawingBoardView.m */,
 				E94DCCCF2492386D00ACFF3E /* DBUIBezierPath.h */,
 				E94DCCD02492386D00ACFF3E /* DBUIBezierPath.m */,
+				D29E47172492669300BDB9C0 /* DBImageDealView.h */,
+				D29E47182492669300BDB9C0 /* DBImageDealView.m */,
 			);
 			path = "画板";
 			sourceTree = "<group>";
@@ -1161,6 +1166,7 @@
 				E9549147247F98EC008C5995 /* MyTableViewDiffCell.m in Sources */,
 				E94DCC8E2490CE7E00ACFF3E /* QDDownloadProgressView.m in Sources */,
 				E9A928E1248F37FC00694EF7 /* TransmitGreenView.m in Sources */,
+				D29E47192492669300BDB9C0 /* DBImageDealView.m in Sources */,
 				E9EA4D012487349100E53569 /* ProvinceModel.m in Sources */,
 				D29E4715248A984400BDB9C0 /* UserDetailViewController.m in Sources */,
 				E94DCC8B2490BFF500ACFF3E /* QDShapeView.m in Sources */,

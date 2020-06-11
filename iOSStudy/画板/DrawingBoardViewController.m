@@ -9,8 +9,9 @@
 #import "DrawingBoardViewController.h"
 #import "DrawingBoardView.h"
 #import "Photos/Photos.h"
+#import "DBImageDealView.h"
 
-@interface DrawingBoardViewController ()
+@interface DrawingBoardViewController ()<UINavigationControllerDelegate,UIImagePickerControllerDelegate,DBImageDealViewDelegate>
 @property (weak, nonatomic) IBOutlet DrawingBoardView *drawBoard;
 
 @end
@@ -73,6 +74,24 @@
     }];
 }
 
+#pragma mark UIImagePickerControllerDelegate
+/**选择一张p图片时，会调用这个方法*/
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey, id> *)info{
+    UIImage *image = info[UIImagePickerControllerOriginalImage];
+    
+    DBImageDealView *imageView = [[DBImageDealView alloc] init];
+    imageView.frame = self.drawBoard.frame;
+//    imageView.backgroundColor = UIColor.clearColor;
+    imageView.image = image;
+    imageView.delegate = self;
+    [self.view addSubview:imageView];
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+#pragma mark DBImageDealViewDelegate
+-(void)dbImageDealView:(DBImageDealView *)dbImageDealView newImage:(UIImage *)newImage{
+    self.drawBoard.image = newImage;
+}
 
 #pragma mark -actions
 /**
@@ -97,6 +116,12 @@
  选择相片
  */
 - (IBAction)selectPhoto:(id)sender {
+    UIImagePickerController *vc = [[UIImagePickerController alloc] init];
+    vc.modalPresentationStyle = UIModalPresentationFullScreen;
+    vc.edgesForExtendedLayout = YES;
+    vc.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+    vc.delegate = self;
+    [self presentViewController:vc animated:YES completion:nil];
 }
 /**
  保存图片

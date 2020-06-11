@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DrawingBoardView : UIView
 @property (nonatomic,assign)UIColor *penColor;
 @property (nonatomic,assign)CGFloat penStroke;
+@property (nonatomic,strong)UIImage *image;
 /**清屏*/
 -(void)clearAll;
 /**撤销*/

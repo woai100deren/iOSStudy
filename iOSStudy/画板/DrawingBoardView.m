@@ -39,6 +39,12 @@
     return _penStroke;
 }
 
+- (void)setImage:(UIImage *)image{
+    _image = image;
+    [self.allPathArray addObject:image];
+    [self setNeedsDisplay];
+}
+
 - (void)awakeFromNib{
     [super awakeFromNib];
     UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
@@ -65,8 +71,13 @@
 
 -(void)drawRect:(CGRect)rect{
     for(DBUIBezierPath *path in self.allPathArray){
-        [path.color set];
-        [path stroke];
+        if([path isKindOfClass:[UIImage class]]){
+            UIImage *image = (UIImage *)path;
+            [image drawInRect:rect];
+        }else{
+            [path.color set];
+            [path stroke];
+        }
     }
 }
 /**
