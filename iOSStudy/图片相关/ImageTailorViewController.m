@@ -7,6 +7,7 @@
 //
 
 #import "ImageTailorViewController.h"
+#import "Photos/Photos.h"
 
 @interface ImageTailorViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
@@ -93,6 +94,34 @@
     //关闭上下文
     UIGraphicsEndImageContext();
     self.imageView3.image = image;
+    
+    [self requestSaveImage:image];
 }
 
+-(void)requestSaveImage:(UIImage *)image{
+    [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (status != PHAuthorizationStatusAuthorized) {
+                UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"保存图片失败" message:@"请在设置-隐私-相册中允许当前应用访问相册" preferredStyle:UIAlertControllerStyleAlert];
+                UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"关闭" style:UIAlertActionStyleDefault handler:nil];
+                [alertController addAction:okAction];
+                [self presentViewController:alertController animated:YES completion:nil];
+            }else{
+                [self saveImageToDcim:image];
+            }
+        });
+    }];
+}
+- (void)saveImageToDcim:(UIImage *)image{
+    [[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
+        //写入图片到相册
+        [PHAssetChangeRequest creationRequestForAssetFromImage:image];
+     } completionHandler:^(BOOL success, NSError * _Nullable error) {
+        if (error) {
+            NSLog(@"%@",@"保存失败");
+        } else {
+            NSLog(@"%@",@"保存成功");
+        }
+    }];
+}
 @end
