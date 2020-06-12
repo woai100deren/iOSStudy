@@ -18,10 +18,12 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5Y-rm-CSt">
-                    <rect key="frame" x="41" y="98" width="89" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5Y-rm-CSt">
+                    <rect key="frame" x="50" y="64" width="132" height="40"/>
                     <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="QBW-gt-Dhl"/>
+                    </constraints>
                     <state key="normal" title="transform">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
@@ -29,8 +31,27 @@
                         <action selector="jumpTransform:" destination="-1" eventType="touchUpInside" id="KXc-GM-Cba"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZY-eJ-UIu">
+                    <rect key="frame" x="232" y="64" width="132" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="CALayer相关">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="calayerCorrelation:" destination="-1" eventType="touchUpInside" id="dLL-Y7-ftU"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="GZY-eJ-UIu" firstAttribute="top" secondItem="W5Y-rm-CSt" secondAttribute="top" id="5yO-Ab-TdM"/>
+                <constraint firstItem="GZY-eJ-UIu" firstAttribute="leading" secondItem="W5Y-rm-CSt" secondAttribute="trailing" constant="50" id="70g-XA-pEh"/>
+                <constraint firstItem="W5Y-rm-CSt" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="50" id="87p-0n-dmm"/>
+                <constraint firstItem="GZY-eJ-UIu" firstAttribute="width" secondItem="W5Y-rm-CSt" secondAttribute="width" id="9Rz-kh-w9K"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="GZY-eJ-UIu" secondAttribute="trailing" constant="50" id="SQG-rW-5Zo"/>
+                <constraint firstItem="GZY-eJ-UIu" firstAttribute="height" secondItem="W5Y-rm-CSt" secondAttribute="height" id="f8G-sW-ibB"/>
+                <constraint firstItem="W5Y-rm-CSt" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="lFX-JB-7fU"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <point key="canvasLocation" x="131.8840579710145" y="105.80357142857143"/>
         </view>

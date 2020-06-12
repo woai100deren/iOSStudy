@@ -8,6 +8,7 @@
 
 #import "AnimationMainViewController.h"
 #import "AnimTransformViewController.h"
+#import "CALayerCorrelationViewController.h"
 
 @interface AnimationMainViewController ()
 
@@ -22,6 +23,9 @@
 
 - (IBAction)jumpTransform:(id)sender {
     [self jump:[[AnimTransformViewController alloc] init]];
+}
+- (IBAction)calayerCorrelation:(id)sender {
+    [self jump:[[CALayerCorrelationViewController alloc] init]];
 }
 
 -(void)jump:(UIViewController*) vc{

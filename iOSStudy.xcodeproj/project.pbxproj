@@ -45,6 +45,8 @@
 		E94DCCCB24922B2200ACFF3E /* DrawingBoardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94DCCC924922B2200ACFF3E /* DrawingBoardViewController.xib */; };
 		E94DCCCE24922B3500ACFF3E /* DrawingBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCCCD24922B3500ACFF3E /* DrawingBoardView.m */; };
 		E94DCCD12492386D00ACFF3E /* DBUIBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCCD02492386D00ACFF3E /* DBUIBezierPath.m */; };
+		E94DCCD52493135500ACFF3E /* CALayerCorrelationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCCD32493135500ACFF3E /* CALayerCorrelationViewController.m */; };
+		E94DCCD62493135500ACFF3E /* CALayerCorrelationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94DCCD42493135500ACFF3E /* CALayerCorrelationViewController.xib */; };
 		E9549142247F975E008C5995 /* TableViewDiffCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9549140247F975E008C5995 /* TableViewDiffCellViewController.m */; };
 		E9549143247F975E008C5995 /* TableViewDiffCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9549141247F975E008C5995 /* TableViewDiffCellViewController.xib */; };
 		E9549147247F98EC008C5995 /* MyTableViewDiffCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9549145247F98EC008C5995 /* MyTableViewDiffCell.m */; };
@@ -236,6 +238,9 @@
 		E94DCCCD24922B3500ACFF3E /* DrawingBoardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawingBoardView.m; sourceTree = "<group>"; };
 		E94DCCCF2492386D00ACFF3E /* DBUIBezierPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBUIBezierPath.h; sourceTree = "<group>"; };
 		E94DCCD02492386D00ACFF3E /* DBUIBezierPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBUIBezierPath.m; sourceTree = "<group>"; };
+		E94DCCD22493135500ACFF3E /* CALayerCorrelationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CALayerCorrelationViewController.h; sourceTree = "<group>"; };
+		E94DCCD32493135500ACFF3E /* CALayerCorrelationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CALayerCorrelationViewController.m; sourceTree = "<group>"; };
+		E94DCCD42493135500ACFF3E /* CALayerCorrelationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CALayerCorrelationViewController.xib; sourceTree = "<group>"; };
 		E954913F247F975E008C5995 /* TableViewDiffCellViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewDiffCellViewController.h; sourceTree = "<group>"; };
 		E9549140247F975E008C5995 /* TableViewDiffCellViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewDiffCellViewController.m; sourceTree = "<group>"; };
 		E9549141247F975E008C5995 /* TableViewDiffCellViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewDiffCellViewController.xib; sourceTree = "<group>"; };
@@ -705,6 +710,9 @@
 				E97D8BFB248F226C008CF06C /* AnimTransformViewController.h */,
 				E97D8BFC248F226C008CF06C /* AnimTransformViewController.m */,
 				E97D8BFE248F23DE008CF06C /* AnimTransformViewController.xib */,
+				E94DCCD22493135500ACFF3E /* CALayerCorrelationViewController.h */,
+				E94DCCD32493135500ACFF3E /* CALayerCorrelationViewController.m */,
+				E94DCCD42493135500ACFF3E /* CALayerCorrelationViewController.xib */,
 			);
 			path = "动画相关";
 			sourceTree = "<group>";
@@ -1084,6 +1092,7 @@
 				E9A929102490875800694EF7 /* Quartz2DViewController.xib in Resources */,
 				E9A928FB248F813B00694EF7 /* GestureViewController.xib in Resources */,
 				E9EA4CEC2486434D00E53569 /* flags.plist in Resources */,
+				E94DCCD62493135500ACFF3E /* CALayerCorrelationViewController.xib in Resources */,
 				E9A928D3248F2DD000694EF7 /* EventUIDragViewController.xib in Resources */,
 				E97F33732480E99C0068E757 /* ShoppingCartCell.xib in Resources */,
 				E9EA4D1524878AD200E53569 /* ABTableViewController.xib in Resources */,
@@ -1176,6 +1185,7 @@
 				E94DCC912490DB2900ACFF3E /* QDTextView.m in Sources */,
 				E9EA4CEF2486444900E53569 /* FlagItem.m in Sources */,
 				E97F33802484DE550068E757 /* UiapplicationStudyViewController.m in Sources */,
+				E94DCCD52493135500ACFF3E /* CALayerCorrelationViewController.m in Sources */,
 				D29E47102487E48100BDB9C0 /* NSString+Extensions.m in Sources */,
 				E94DCC9B2490E40000ACFF3E /* SnowflakeTimerViewController.m in Sources */,
 				E9A9291324908B2100694EF7 /* QDLineView.m in Sources */,
