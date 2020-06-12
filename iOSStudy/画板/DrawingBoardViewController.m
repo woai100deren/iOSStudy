@@ -64,8 +64,8 @@
         } else {
            message = @"保存成功";
         }
-        
-         dispatch_async(dispatch_get_global_queue(0,0), ^{
+         
+        dispatch_sync(dispatch_get_main_queue(), ^{
              UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:message preferredStyle:UIAlertControllerStyleAlert];
              UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"关闭" style:UIAlertActionStyleDefault handler:nil];
              [alertController addAction:okAction];
@@ -99,19 +99,29 @@
  */
 - (IBAction)clearAll:(id)sender {
     [self.drawBoard clearAll];
+    //处理正在操作图片，但是还未画到画板上时，清空屏幕的操作
+    for(UIView *view in self.view.subviews){
+        if([view isKindOfClass:[DBImageDealView class]]){
+            [view removeFromSuperview];
+        }
+    }
 }
 /**
  撤销
  */
 - (IBAction)repeal:(id)sender {
+    //处理正在操作图片，但是还未画到画板上时，撤销操作
+    //撤销时，要先撤销最后添加的图片，所以倒序查找
+    for(long i = self.view.subviews.count - 1;i>=0;i--){
+        UIView *view = self.view.subviews[i];
+        if([view isKindOfClass:[DBImageDealView class]]){
+            [view removeFromSuperview];
+            return;
+        }
+    }
     [self.drawBoard repeal];
 }
-/**
- 橡皮擦
- */
-- (IBAction)eraser:(id)sender {
-    [self.drawBoard eraser];
-}
+
 /**
  选择相片
  */

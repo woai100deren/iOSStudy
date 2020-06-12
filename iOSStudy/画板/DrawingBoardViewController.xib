@@ -36,13 +36,6 @@
                                 <action selector="repeal:" destination="-1" eventType="touchUpInside" id="sXU-bG-Aak"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RT0-Ng-Bj5">
-                            <rect key="frame" x="107" y="5" width="46" height="30"/>
-                            <state key="normal" title="橡皮擦"/>
-                            <connections>
-                                <action selector="eraser:" destination="-1" eventType="touchUpInside" id="gmL-f5-5FB"/>
-                            </connections>
-                        </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X7r-19-w1w">
                             <rect key="frame" x="368" y="5" width="31" height="30"/>
                             <state key="normal" title="保存"/>
@@ -51,8 +44,8 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EqJ-bU-rFK">
-                            <rect key="frame" x="168" y="5" width="31" height="30"/>
-                            <state key="normal" title="照片"/>
+                            <rect key="frame" x="107" y="5" width="62" height="30"/>
+                            <state key="normal" title="选择照片"/>
                             <connections>
                                 <action selector="selectPhoto:" destination="-1" eventType="touchUpInside" id="7m1-bn-bW1"/>
                             </connections>
@@ -62,13 +55,11 @@
                     <constraints>
                         <constraint firstItem="EqJ-bU-rFK" firstAttribute="centerY" secondItem="fq2-Qk-nlk" secondAttribute="centerY" id="1Yk-gX-AdH"/>
                         <constraint firstItem="9DX-sQ-mGs" firstAttribute="centerY" secondItem="fq2-Qk-nlk" secondAttribute="centerY" id="3aH-AT-Lbw"/>
-                        <constraint firstItem="RT0-Ng-Bj5" firstAttribute="centerY" secondItem="fq2-Qk-nlk" secondAttribute="centerY" id="6C5-TH-pf9"/>
-                        <constraint firstItem="RT0-Ng-Bj5" firstAttribute="leading" secondItem="9DX-sQ-mGs" secondAttribute="trailing" constant="15" id="8ao-H2-rIc"/>
+                        <constraint firstItem="EqJ-bU-rFK" firstAttribute="leading" secondItem="9DX-sQ-mGs" secondAttribute="trailing" constant="15" id="3uO-cD-kyQ"/>
                         <constraint firstItem="X7r-19-w1w" firstAttribute="centerY" secondItem="fq2-Qk-nlk" secondAttribute="centerY" id="Bch-cP-tdJ"/>
                         <constraint firstItem="9DX-sQ-mGs" firstAttribute="leading" secondItem="YWB-3k-scf" secondAttribute="trailing" constant="15" id="GZ3-jo-gO7"/>
                         <constraint firstAttribute="trailing" secondItem="X7r-19-w1w" secondAttribute="trailing" constant="15" id="HxO-NU-b9b"/>
                         <constraint firstAttribute="height" constant="40" id="Mnb-Do-ijo"/>
-                        <constraint firstItem="EqJ-bU-rFK" firstAttribute="leading" secondItem="RT0-Ng-Bj5" secondAttribute="trailing" constant="15" id="T0a-oL-uCZ"/>
                         <constraint firstItem="YWB-3k-scf" firstAttribute="leading" secondItem="fq2-Qk-nlk" secondAttribute="leading" constant="15" id="fFS-Jn-UOJ"/>
                         <constraint firstItem="YWB-3k-scf" firstAttribute="centerY" secondItem="fq2-Qk-nlk" secondAttribute="centerY" id="xVw-UP-1JH"/>
                     </constraints>
