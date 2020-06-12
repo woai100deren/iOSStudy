@@ -45,8 +45,14 @@
 		E94DCCCB24922B2200ACFF3E /* DrawingBoardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94DCCC924922B2200ACFF3E /* DrawingBoardViewController.xib */; };
 		E94DCCCE24922B3500ACFF3E /* DrawingBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCCCD24922B3500ACFF3E /* DrawingBoardView.m */; };
 		E94DCCD12492386D00ACFF3E /* DBUIBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCCD02492386D00ACFF3E /* DBUIBezierPath.m */; };
-		E94DCCD52493135500ACFF3E /* CALayerCorrelationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCCD32493135500ACFF3E /* CALayerCorrelationViewController.m */; };
-		E94DCCD62493135500ACFF3E /* CALayerCorrelationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94DCCD42493135500ACFF3E /* CALayerCorrelationViewController.xib */; };
+		E94DCCD52493135500ACFF3E /* AnimCALayerCorrelationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCCD32493135500ACFF3E /* AnimCALayerCorrelationViewController.m */; };
+		E94DCCD62493135500ACFF3E /* AnimCALayerCorrelationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94DCCD42493135500ACFF3E /* AnimCALayerCorrelationViewController.xib */; };
+		E94DCCDA24932E0500ACFF3E /* AnimImplicitAnimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCCD824932E0500ACFF3E /* AnimImplicitAnimViewController.m */; };
+		E94DCCDB24932E0500ACFF3E /* AnimImplicitAnimViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94DCCD924932E0500ACFF3E /* AnimImplicitAnimViewController.xib */; };
+		E94DCCDF24932E1600ACFF3E /* AnimClockRotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCCDD24932E1600ACFF3E /* AnimClockRotationViewController.m */; };
+		E94DCCE024932E1600ACFF3E /* AnimClockRotationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94DCCDE24932E1600ACFF3E /* AnimClockRotationViewController.xib */; };
+		E94DCCE42493559F00ACFF3E /* AnimCABaseAnimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCCE22493559F00ACFF3E /* AnimCABaseAnimViewController.m */; };
+		E94DCCE52493559F00ACFF3E /* AnimCABaseAnimViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94DCCE32493559F00ACFF3E /* AnimCABaseAnimViewController.xib */; };
 		E9549142247F975E008C5995 /* TableViewDiffCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9549140247F975E008C5995 /* TableViewDiffCellViewController.m */; };
 		E9549143247F975E008C5995 /* TableViewDiffCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9549141247F975E008C5995 /* TableViewDiffCellViewController.xib */; };
 		E9549147247F98EC008C5995 /* MyTableViewDiffCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9549145247F98EC008C5995 /* MyTableViewDiffCell.m */; };
@@ -238,9 +244,18 @@
 		E94DCCCD24922B3500ACFF3E /* DrawingBoardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawingBoardView.m; sourceTree = "<group>"; };
 		E94DCCCF2492386D00ACFF3E /* DBUIBezierPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBUIBezierPath.h; sourceTree = "<group>"; };
 		E94DCCD02492386D00ACFF3E /* DBUIBezierPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBUIBezierPath.m; sourceTree = "<group>"; };
-		E94DCCD22493135500ACFF3E /* CALayerCorrelationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CALayerCorrelationViewController.h; sourceTree = "<group>"; };
-		E94DCCD32493135500ACFF3E /* CALayerCorrelationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CALayerCorrelationViewController.m; sourceTree = "<group>"; };
-		E94DCCD42493135500ACFF3E /* CALayerCorrelationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CALayerCorrelationViewController.xib; sourceTree = "<group>"; };
+		E94DCCD22493135500ACFF3E /* AnimCALayerCorrelationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimCALayerCorrelationViewController.h; sourceTree = "<group>"; };
+		E94DCCD32493135500ACFF3E /* AnimCALayerCorrelationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimCALayerCorrelationViewController.m; sourceTree = "<group>"; };
+		E94DCCD42493135500ACFF3E /* AnimCALayerCorrelationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimCALayerCorrelationViewController.xib; sourceTree = "<group>"; };
+		E94DCCD724932E0500ACFF3E /* AnimImplicitAnimViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimImplicitAnimViewController.h; sourceTree = "<group>"; };
+		E94DCCD824932E0500ACFF3E /* AnimImplicitAnimViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimImplicitAnimViewController.m; sourceTree = "<group>"; };
+		E94DCCD924932E0500ACFF3E /* AnimImplicitAnimViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimImplicitAnimViewController.xib; sourceTree = "<group>"; };
+		E94DCCDC24932E1600ACFF3E /* AnimClockRotationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimClockRotationViewController.h; sourceTree = "<group>"; };
+		E94DCCDD24932E1600ACFF3E /* AnimClockRotationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimClockRotationViewController.m; sourceTree = "<group>"; };
+		E94DCCDE24932E1600ACFF3E /* AnimClockRotationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimClockRotationViewController.xib; sourceTree = "<group>"; };
+		E94DCCE12493559F00ACFF3E /* AnimCABaseAnimViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimCABaseAnimViewController.h; sourceTree = "<group>"; };
+		E94DCCE22493559F00ACFF3E /* AnimCABaseAnimViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimCABaseAnimViewController.m; sourceTree = "<group>"; };
+		E94DCCE32493559F00ACFF3E /* AnimCABaseAnimViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimCABaseAnimViewController.xib; sourceTree = "<group>"; };
 		E954913F247F975E008C5995 /* TableViewDiffCellViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewDiffCellViewController.h; sourceTree = "<group>"; };
 		E9549140247F975E008C5995 /* TableViewDiffCellViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewDiffCellViewController.m; sourceTree = "<group>"; };
 		E9549141247F975E008C5995 /* TableViewDiffCellViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewDiffCellViewController.xib; sourceTree = "<group>"; };
@@ -710,9 +725,18 @@
 				E97D8BFB248F226C008CF06C /* AnimTransformViewController.h */,
 				E97D8BFC248F226C008CF06C /* AnimTransformViewController.m */,
 				E97D8BFE248F23DE008CF06C /* AnimTransformViewController.xib */,
-				E94DCCD22493135500ACFF3E /* CALayerCorrelationViewController.h */,
-				E94DCCD32493135500ACFF3E /* CALayerCorrelationViewController.m */,
-				E94DCCD42493135500ACFF3E /* CALayerCorrelationViewController.xib */,
+				E94DCCD22493135500ACFF3E /* AnimCALayerCorrelationViewController.h */,
+				E94DCCD32493135500ACFF3E /* AnimCALayerCorrelationViewController.m */,
+				E94DCCD42493135500ACFF3E /* AnimCALayerCorrelationViewController.xib */,
+				E94DCCD724932E0500ACFF3E /* AnimImplicitAnimViewController.h */,
+				E94DCCD824932E0500ACFF3E /* AnimImplicitAnimViewController.m */,
+				E94DCCD924932E0500ACFF3E /* AnimImplicitAnimViewController.xib */,
+				E94DCCDC24932E1600ACFF3E /* AnimClockRotationViewController.h */,
+				E94DCCDD24932E1600ACFF3E /* AnimClockRotationViewController.m */,
+				E94DCCDE24932E1600ACFF3E /* AnimClockRotationViewController.xib */,
+				E94DCCE12493559F00ACFF3E /* AnimCABaseAnimViewController.h */,
+				E94DCCE22493559F00ACFF3E /* AnimCABaseAnimViewController.m */,
+				E94DCCE32493559F00ACFF3E /* AnimCABaseAnimViewController.xib */,
 			);
 			path = "动画相关";
 			sourceTree = "<group>";
@@ -1074,11 +1098,13 @@
 				E97D8BF3248E4662008CF06C /* ModalViewController.xib in Resources */,
 				E97F33692480E43E0068E757 /* drinks.plist in Resources */,
 				E9EA4D372488C1A500E53569 /* test.html in Resources */,
+				E94DCCDB24932E0500ACFF3E /* AnimImplicitAnimViewController.xib in Resources */,
 				E9EA4D422488E2AD00E53569 /* DeliverValueSecondViewController.xib in Resources */,
 				E98A0091247E6B8B00669BB8 /* TableViewCustonCellViewController.xib in Resources */,
 				E97D8B642488F1C7008CF06C /* LocalValueCoreDataViewController.xib in Resources */,
 				E9549148247F98EC008C5995 /* MyTableViewDiffCell.xib in Resources */,
 				E94DCCCB24922B2200ACFF3E /* DrawingBoardViewController.xib in Resources */,
+				E94DCCE024932E1600ACFF3E /* AnimClockRotationViewController.xib in Resources */,
 				E98A0087247E5D8000669BB8 /* TableViewIndexsController.xib in Resources */,
 				E9EA4D1024877C6C00E53569 /* ABLoginViewController.xib in Resources */,
 				E98A0089247E5EEF00669BB8 /* cars.plist in Resources */,
@@ -1092,11 +1118,12 @@
 				E9A929102490875800694EF7 /* Quartz2DViewController.xib in Resources */,
 				E9A928FB248F813B00694EF7 /* GestureViewController.xib in Resources */,
 				E9EA4CEC2486434D00E53569 /* flags.plist in Resources */,
-				E94DCCD62493135500ACFF3E /* CALayerCorrelationViewController.xib in Resources */,
+				E94DCCD62493135500ACFF3E /* AnimCALayerCorrelationViewController.xib in Resources */,
 				E9A928D3248F2DD000694EF7 /* EventUIDragViewController.xib in Resources */,
 				E97F33732480E99C0068E757 /* ShoppingCartCell.xib in Resources */,
 				E9EA4D1524878AD200E53569 /* ABTableViewController.xib in Resources */,
 				E98A0080247E56F900669BB8 /* MainViewController.xib in Resources */,
+				E94DCCE52493559F00ACFF3E /* AnimCABaseAnimViewController.xib in Resources */,
 				E9A928CE248F2D7800694EF7 /* EventMainViewController.xib in Resources */,
 				E9A928DB248F362100694EF7 /* EventTransmitViewController.xib in Resources */,
 				E97D8B692488F253008CF06C /* LocalValueMainViewController.xib in Resources */,
@@ -1185,7 +1212,7 @@
 				E94DCC912490DB2900ACFF3E /* QDTextView.m in Sources */,
 				E9EA4CEF2486444900E53569 /* FlagItem.m in Sources */,
 				E97F33802484DE550068E757 /* UiapplicationStudyViewController.m in Sources */,
-				E94DCCD52493135500ACFF3E /* CALayerCorrelationViewController.m in Sources */,
+				E94DCCD52493135500ACFF3E /* AnimCALayerCorrelationViewController.m in Sources */,
 				D29E47102487E48100BDB9C0 /* NSString+Extensions.m in Sources */,
 				E94DCC9B2490E40000ACFF3E /* SnowflakeTimerViewController.m in Sources */,
 				E9A9291324908B2100694EF7 /* QDLineView.m in Sources */,
@@ -1193,6 +1220,7 @@
 				E9EA4D2B24888AB800E53569 /* ABContactsDetailViewController.m in Sources */,
 				E9A928EA248F38D300694EF7 /* TransmitRedView.m in Sources */,
 				E98A0094247E6E6500669BB8 /* MyTableViewCell.m in Sources */,
+				E94DCCDA24932E0500ACFF3E /* AnimImplicitAnimViewController.m in Sources */,
 				E9EA4D412488E2AD00E53569 /* DeliverValueSecondViewController.m in Sources */,
 				E9A928DE248F378600694EF7 /* TransmitWhiteView.m in Sources */,
 				E94DCCC524921D6C00ACFF3E /* UIView+Extensions.m in Sources */,
@@ -1228,6 +1256,7 @@
 				E94DCCB42491FF7400ACFF3E /* ImageArbitrarilyTailorViewController.m in Sources */,
 				E97D8B9E248A0EF6008CF06C /* iOSStudy.xcdatamodeld in Sources */,
 				E97F33722480E99C0068E757 /* ShoppingCartCell.m in Sources */,
+				E94DCCDF24932E1600ACFF3E /* AnimClockRotationViewController.m in Sources */,
 				E9EA4CFE2487344500E53569 /* CityModel.m in Sources */,
 				E97F33842484DEFA0068E757 /* SingleObject.m in Sources */,
 				E97F336D2480E79F0068E757 /* ShoppingCartViewController.m in Sources */,
@@ -1262,6 +1291,7 @@
 				E94DCC9F2490E4CB00ACFF3E /* SnowflakeView.m in Sources */,
 				E9A928F0248F39A300694EF7 /* TransmitBaseView.m in Sources */,
 				E97D8BD3248E2E37008CF06C /* BaseUIFrameViewController.m in Sources */,
+				E94DCCE42493559F00ACFF3E /* AnimCABaseAnimViewController.m in Sources */,
 				E9EA4CF92487334E00E53569 /* CityTextField.m in Sources */,
 				E9A9290A248F952A00694EF7 /* JumpModel.m in Sources */,
 				E9A928ED248F392300694EF7 /* TransmitOrangeView.m in Sources */,

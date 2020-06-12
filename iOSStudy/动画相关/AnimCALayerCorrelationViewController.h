@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CALayerCorrelationViewController : UIViewController
+@interface AnimCALayerCorrelationViewController : UIViewController
 
 @end
 

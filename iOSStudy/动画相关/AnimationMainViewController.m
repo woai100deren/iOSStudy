@@ -8,7 +8,10 @@
 
 #import "AnimationMainViewController.h"
 #import "AnimTransformViewController.h"
-#import "CALayerCorrelationViewController.h"
+#import "AnimCALayerCorrelationViewController.h"
+#import "AnimImplicitAnimViewController.h"
+#import "AnimClockRotationViewController.h"
+#import "AnimCABaseAnimViewController.h"
 
 @interface AnimationMainViewController ()
 
@@ -25,7 +28,16 @@
     [self jump:[[AnimTransformViewController alloc] init]];
 }
 - (IBAction)calayerCorrelation:(id)sender {
-    [self jump:[[CALayerCorrelationViewController alloc] init]];
+    [self jump:[[AnimCALayerCorrelationViewController alloc] init]];
+}
+- (IBAction)implicitAnim:(id)sender {
+    [self jump:[[AnimImplicitAnimViewController alloc] init]];
+}
+- (IBAction)clockRotation:(id)sender {
+    [self jump:[[AnimClockRotationViewController alloc] init]];
+}
+- (IBAction)CABaseAnimation:(id)sender {
+    [self jump:[[AnimCABaseAnimViewController alloc] init]];
 }
 
 -(void)jump:(UIViewController*) vc{

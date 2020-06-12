@@ -6,16 +6,16 @@
 //  Copyright © 2020 dodoca. All rights reserved.
 //
 
-#import "CALayerCorrelationViewController.h"
+#import "AnimCALayerCorrelationViewController.h"
 
-@interface CALayerCorrelationViewController ()
+@interface AnimCALayerCorrelationViewController ()
 @property (weak, nonatomic) IBOutlet UIView *redView;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView2;
 
 @end
 
-@implementation CALayerCorrelationViewController
+@implementation AnimCALayerCorrelationViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

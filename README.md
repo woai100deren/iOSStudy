@@ -28,6 +28,9 @@ ios开发学习项目
 - 动画相关
   - Transform
   - CALayer相关
+  - 隐式动画
+  - 时钟旋转
+  - Core Animation基础核心动画
 - Event事件
   - UI拖拽
   - 事件传递
