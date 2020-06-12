@@ -81,29 +81,16 @@
                         <action selector="CABaseAnimation:" destination="-1" eventType="touchUpInside" id="RaB-4G-rRs"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zvo-Tz-1ZX">
-                    <rect key="frame" x="232" y="174" width="132" height="40"/>
-                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="40" id="f8B-LJ-bZr"/>
-                    </constraints>
-                    <state key="normal" title="时钟旋转">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </state>
-                </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstItem="9li-OP-Loh" firstAttribute="trailing" secondItem="GZY-eJ-UIu" secondAttribute="trailing" id="0MB-Wx-mXR"/>
                 <constraint firstItem="GZY-eJ-UIu" firstAttribute="top" secondItem="W5Y-rm-CSt" secondAttribute="top" id="5yO-Ab-TdM"/>
                 <constraint firstItem="GZY-eJ-UIu" firstAttribute="leading" secondItem="W5Y-rm-CSt" secondAttribute="trailing" constant="50" id="70g-XA-pEh"/>
-                <constraint firstItem="Zvo-Tz-1ZX" firstAttribute="trailing" secondItem="9li-OP-Loh" secondAttribute="trailing" id="7Gz-ro-It7"/>
                 <constraint firstItem="W5Y-rm-CSt" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="50" id="87p-0n-dmm"/>
                 <constraint firstItem="GZY-eJ-UIu" firstAttribute="width" secondItem="W5Y-rm-CSt" secondAttribute="width" id="9Rz-kh-w9K"/>
-                <constraint firstItem="Zvo-Tz-1ZX" firstAttribute="top" secondItem="lJV-lD-cOL" secondAttribute="top" id="9fh-u4-LDb"/>
                 <constraint firstItem="9li-OP-Loh" firstAttribute="leading" secondItem="GZY-eJ-UIu" secondAttribute="leading" id="GJJ-bX-Qoe"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="GZY-eJ-UIu" secondAttribute="trailing" constant="50" id="SQG-rW-5Zo"/>
-                <constraint firstItem="Zvo-Tz-1ZX" firstAttribute="leading" secondItem="9li-OP-Loh" secondAttribute="leading" id="UkX-ji-AZi"/>
                 <constraint firstItem="lJV-lD-cOL" firstAttribute="trailing" secondItem="As0-Kc-9rx" secondAttribute="trailing" id="eHH-wZ-roJ"/>
                 <constraint firstItem="GZY-eJ-UIu" firstAttribute="height" secondItem="W5Y-rm-CSt" secondAttribute="height" id="f8G-sW-ibB"/>
                 <constraint firstItem="As0-Kc-9rx" firstAttribute="leading" secondItem="W5Y-rm-CSt" secondAttribute="leading" id="giS-3y-0g1"/>

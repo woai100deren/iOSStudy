@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UIImageView *dogImage;
 @property (weak, nonatomic) IBOutlet UIView *blueView;
+@property (weak, nonatomic) IBOutlet UIImageView *transitionsImage;
 
 @end
 
@@ -30,6 +31,7 @@
     [self setUIImageViewAnim];
     [self setUIImageViewShake];
     [self setUIViewMove];
+    [self setTransitionsImage];
 }
 
 -(void)setUIViewAnim{
@@ -87,5 +89,34 @@
     anim.path = path.CGPath;
     
     [self.blueView.layer addAnimation:anim forKey:nil];
+}
+
+static int i = 1;
+-(void)setTransitionsImage{
+    //转场代码和转场动画的代码，要放到一个方法中，否则无效。代码顺序可以随便写
+    
+    NSString *imageName;
+    if(i == 1){
+        imageName = @"drink7";
+        i = 2;
+    }else{
+        imageName = @"drink8";
+        i = 1;
+    }
+    self.transitionsImage.image = [UIImage imageNamed:imageName];
+    
+    CATransition *anim = [CATransition animation];
+    anim.duration = 0.5;
+    //设置转场类型
+    //cube 立方体翻滚效果
+    //rippleEffect 水滴效果
+    anim.type = @"pageCurl";
+    
+    //设置动画的起始位置
+    //值0~1，默认0
+    anim.startProgress = 0;
+    anim.endProgress = 0.8;
+    
+    [self.transitionsImage.layer addAnimation:anim forKey:nil];
 }
 @end
