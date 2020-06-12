@@ -53,6 +53,8 @@
 		E94DCCE024932E1600ACFF3E /* AnimClockRotationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94DCCDE24932E1600ACFF3E /* AnimClockRotationViewController.xib */; };
 		E94DCCE42493559F00ACFF3E /* AnimCABaseAnimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCCE22493559F00ACFF3E /* AnimCABaseAnimViewController.m */; };
 		E94DCCE52493559F00ACFF3E /* AnimCABaseAnimViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94DCCE32493559F00ACFF3E /* AnimCABaseAnimViewController.xib */; };
+		E94DCCEA2493857A00ACFF3E /* ThreadBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCCE82493857A00ACFF3E /* ThreadBasicViewController.m */; };
+		E94DCCEB2493857A00ACFF3E /* ThreadBasicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94DCCE92493857A00ACFF3E /* ThreadBasicViewController.xib */; };
 		E9549142247F975E008C5995 /* TableViewDiffCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9549140247F975E008C5995 /* TableViewDiffCellViewController.m */; };
 		E9549143247F975E008C5995 /* TableViewDiffCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9549141247F975E008C5995 /* TableViewDiffCellViewController.xib */; };
 		E9549147247F98EC008C5995 /* MyTableViewDiffCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9549145247F98EC008C5995 /* MyTableViewDiffCell.m */; };
@@ -256,6 +258,9 @@
 		E94DCCE12493559F00ACFF3E /* AnimCABaseAnimViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimCABaseAnimViewController.h; sourceTree = "<group>"; };
 		E94DCCE22493559F00ACFF3E /* AnimCABaseAnimViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimCABaseAnimViewController.m; sourceTree = "<group>"; };
 		E94DCCE32493559F00ACFF3E /* AnimCABaseAnimViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimCABaseAnimViewController.xib; sourceTree = "<group>"; };
+		E94DCCE72493857A00ACFF3E /* ThreadBasicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadBasicViewController.h; sourceTree = "<group>"; };
+		E94DCCE82493857A00ACFF3E /* ThreadBasicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadBasicViewController.m; sourceTree = "<group>"; };
+		E94DCCE92493857A00ACFF3E /* ThreadBasicViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreadBasicViewController.xib; sourceTree = "<group>"; };
 		E954913F247F975E008C5995 /* TableViewDiffCellViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewDiffCellViewController.h; sourceTree = "<group>"; };
 		E9549140247F975E008C5995 /* TableViewDiffCellViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewDiffCellViewController.m; sourceTree = "<group>"; };
 		E9549141247F975E008C5995 /* TableViewDiffCellViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewDiffCellViewController.xib; sourceTree = "<group>"; };
@@ -531,6 +536,7 @@
 		E90667CB2475040100F44ADD /* iOSStudy */ = {
 			isa = PBXGroup;
 			children = (
+				E94DCCE62493848800ACFF3E /* 进程线程相关 */,
 				E94DCCC624922B0000ACFF3E /* 画板 */,
 				E94DCCB02491FE8F00ACFF3E /* 手势解锁 */,
 				E94DCCA02491C92200ACFF3E /* 图片相关 */,
@@ -642,6 +648,16 @@
 				D29E47182492669300BDB9C0 /* DBImageDealView.m */,
 			);
 			path = "画板";
+			sourceTree = "<group>";
+		};
+		E94DCCE62493848800ACFF3E /* 进程线程相关 */ = {
+			isa = PBXGroup;
+			children = (
+				E94DCCE72493857A00ACFF3E /* ThreadBasicViewController.h */,
+				E94DCCE82493857A00ACFF3E /* ThreadBasicViewController.m */,
+				E94DCCE92493857A00ACFF3E /* ThreadBasicViewController.xib */,
+			);
+			path = "进程线程相关";
 			sourceTree = "<group>";
 		};
 		E97D8B462488F120008CF06C /* 本地化数据 */ = {
@@ -1116,6 +1132,7 @@
 				E90667DC2475040100F44ADD /* Assets.xcassets in Resources */,
 				E9EA4D3224889A3000E53569 /* WKWebViewController.xib in Resources */,
 				E9A929102490875800694EF7 /* Quartz2DViewController.xib in Resources */,
+				E94DCCEB2493857A00ACFF3E /* ThreadBasicViewController.xib in Resources */,
 				E9A928FB248F813B00694EF7 /* GestureViewController.xib in Resources */,
 				E9EA4CEC2486434D00E53569 /* flags.plist in Resources */,
 				E94DCCD62493135500ACFF3E /* AnimCALayerCorrelationViewController.xib in Resources */,
@@ -1267,6 +1284,7 @@
 				E90667CE2475040100F44ADD /* AppDelegate.m in Sources */,
 				E9300EFA247B696E0035BF4C /* ThirdViewController.m in Sources */,
 				E9A928CD248F2D7800694EF7 /* EventMainViewController.m in Sources */,
+				E94DCCEA2493857A00ACFF3E /* ThreadBasicViewController.m in Sources */,
 				E9EA4D3124889A3000E53569 /* WKWebViewController.m in Sources */,
 				E98A0086247E5D8000669BB8 /* TableViewIndexsController.m in Sources */,
 				E9EA4D192487A2B900E53569 /* ABAddContactsViewController.m in Sources */,

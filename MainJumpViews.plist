@@ -170,5 +170,11 @@
 		<key>controller</key>
 		<string>DrawingBoardViewController</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>进程&amp;线程基本知识</string>
+		<key>controller</key>
+		<string>ThreadBasicViewController</string>
+	</dict>
 </array>
 </plist>
