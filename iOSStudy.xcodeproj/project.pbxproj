@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		823771A861BB5CC9AA0E3016 /* Pods_iOSStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2100E6233EC29B67BF103C /* Pods_iOSStudy.framework */; };
+		D26E8C6B2494FECB00AD280F /* ImageFoldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D26E8C692494FECB00AD280F /* ImageFoldViewController.m */; };
+		D26E8C6C2494FECB00AD280F /* ImageFoldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D26E8C6A2494FECB00AD280F /* ImageFoldViewController.xib */; };
 		D29E47102487E48100BDB9C0 /* NSString+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = D29E470F2487E48100BDB9C0 /* NSString+Extensions.m */; };
 		D29E4715248A984400BDB9C0 /* UserDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29E4713248A984400BDB9C0 /* UserDetailViewController.m */; };
 		D29E4716248A984400BDB9C0 /* UserDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D29E4714248A984400BDB9C0 /* UserDetailViewController.xib */; };
@@ -183,6 +185,9 @@
 /* Begin PBXFileReference section */
 		36DDA412446AA61373D3D378 /* Pods-iOSStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSStudy.debug.xcconfig"; path = "Target Support Files/Pods-iOSStudy/Pods-iOSStudy.debug.xcconfig"; sourceTree = "<group>"; };
 		98E1FD6995F50453A37D5BB9 /* Pods-iOSStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSStudy.release.xcconfig"; path = "Target Support Files/Pods-iOSStudy/Pods-iOSStudy.release.xcconfig"; sourceTree = "<group>"; };
+		D26E8C682494FECB00AD280F /* ImageFoldViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageFoldViewController.h; sourceTree = "<group>"; };
+		D26E8C692494FECB00AD280F /* ImageFoldViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageFoldViewController.m; sourceTree = "<group>"; };
+		D26E8C6A2494FECB00AD280F /* ImageFoldViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageFoldViewController.xib; sourceTree = "<group>"; };
 		D29E470E2487E48100BDB9C0 /* NSString+Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Extensions.h"; sourceTree = "<group>"; };
 		D29E470F2487E48100BDB9C0 /* NSString+Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extensions.m"; sourceTree = "<group>"; };
 		D29E4712248A984400BDB9C0 /* UserDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserDetailViewController.h; sourceTree = "<group>"; };
@@ -492,6 +497,16 @@
 				98E1FD6995F50453A37D5BB9 /* Pods-iOSStudy.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		D26E8C672494FDF400AD280F /* 图片折叠 */ = {
+			isa = PBXGroup;
+			children = (
+				D26E8C682494FECB00AD280F /* ImageFoldViewController.h */,
+				D26E8C692494FECB00AD280F /* ImageFoldViewController.m */,
+				D26E8C6A2494FECB00AD280F /* ImageFoldViewController.xib */,
+			);
+			path = "图片折叠";
 			sourceTree = "<group>";
 		};
 		D29E470D2487E43600BDB9C0 /* extension */ = {
@@ -834,6 +849,7 @@
 				E9A928F5248F55F300694EF7 /* UIView拖动 */,
 				E9A928F4248F55CF00694EF7 /* 事件传递 */,
 				E9A928F6248F80E700694EF7 /* 手势识别 */,
+				D26E8C672494FDF400AD280F /* 图片折叠 */,
 			);
 			path = "事件";
 			sourceTree = "<group>";
@@ -1156,6 +1172,7 @@
 				E990ED7E2477703D00F068D1 /* CarView.xib in Resources */,
 				E94DCCAF2491CEB800ACFF3E /* ImageTailorViewController.xib in Resources */,
 				E97F3394248639D00068E757 /* PickViewUseViewController.xib in Resources */,
+				D26E8C6C2494FECB00AD280F /* ImageFoldViewController.xib in Resources */,
 				E9EA4D1A2487A2B900E53569 /* ABAddContactsViewController.xib in Resources */,
 				E97D8BFA248F215A008CF06C /* AnimationMainViewController.xib in Resources */,
 				E97D8BEA248E3A2F008CF06C /* DynamicViewController.xib in Resources */,
@@ -1254,6 +1271,7 @@
 				E99738782476720A00D6F041 /* SecondViewController.m in Sources */,
 				E94DCCD12492386D00ACFF3E /* DBUIBezierPath.m in Sources */,
 				E97D8BED248E3E15008CF06C /* BaseContactsAddViewController.m in Sources */,
+				D26E8C6B2494FECB00AD280F /* ImageFoldViewController.m in Sources */,
 				E97D8BCE248E2A1A008CF06C /* TabBarSystemViewController.m in Sources */,
 				E97F3393248639D00068E757 /* PickViewUseViewController.m in Sources */,
 				E97D8B4A2488F162008CF06C /* LocalValuePlistViewController.m in Sources */,

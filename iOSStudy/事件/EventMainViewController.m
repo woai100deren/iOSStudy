@@ -10,6 +10,7 @@
 #import "EventUIDragViewController.h"
 #import "EventTransmitViewController.h"
 #import "GestureViewController.h"
+#import "ImageFoldViewController.h"
 
 @interface EventMainViewController ()
 
@@ -29,6 +30,9 @@
 }
 - (IBAction)jumpGesture:(id)sender {
     [self jump:[[GestureViewController alloc] init]];
+}
+- (IBAction)imageFold:(id)sender {
+    [self jump:[[ImageFoldViewController alloc] init]];
 }
 
 -(void)jump:(UIViewController*) vc{
