@@ -15,6 +15,9 @@
 		D26E8C75249602E800AD280F /* ImageInvertedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D26E8C73249602E800AD280F /* ImageInvertedViewController.m */; };
 		D26E8C76249602E800AD280F /* ImageInvertedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D26E8C74249602E800AD280F /* ImageInvertedViewController.xib */; };
 		D26E8C79249605B400AD280F /* ImageCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = D26E8C78249605B400AD280F /* ImageCustomView.m */; };
+		D26E8C7D24965BCF00AD280F /* AnimParticleEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D26E8C7B24965BCF00AD280F /* AnimParticleEffectViewController.m */; };
+		D26E8C7E24965BCF00AD280F /* AnimParticleEffectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D26E8C7C24965BCF00AD280F /* AnimParticleEffectViewController.xib */; };
+		D26E8C8124965DE900AD280F /* AnimParticleEffectView.m in Sources */ = {isa = PBXBuildFile; fileRef = D26E8C8024965DE900AD280F /* AnimParticleEffectView.m */; };
 		D29E47102487E48100BDB9C0 /* NSString+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = D29E470F2487E48100BDB9C0 /* NSString+Extensions.m */; };
 		D29E4715248A984400BDB9C0 /* UserDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29E4713248A984400BDB9C0 /* UserDetailViewController.m */; };
 		D29E4716248A984400BDB9C0 /* UserDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D29E4714248A984400BDB9C0 /* UserDetailViewController.xib */; };
@@ -201,6 +204,11 @@
 		D26E8C74249602E800AD280F /* ImageInvertedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageInvertedViewController.xib; sourceTree = "<group>"; };
 		D26E8C77249605B400AD280F /* ImageCustomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageCustomView.h; sourceTree = "<group>"; };
 		D26E8C78249605B400AD280F /* ImageCustomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageCustomView.m; sourceTree = "<group>"; };
+		D26E8C7A24965BCF00AD280F /* AnimParticleEffectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimParticleEffectViewController.h; sourceTree = "<group>"; };
+		D26E8C7B24965BCF00AD280F /* AnimParticleEffectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimParticleEffectViewController.m; sourceTree = "<group>"; };
+		D26E8C7C24965BCF00AD280F /* AnimParticleEffectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimParticleEffectViewController.xib; sourceTree = "<group>"; };
+		D26E8C7F24965DE900AD280F /* AnimParticleEffectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimParticleEffectView.h; sourceTree = "<group>"; };
+		D26E8C8024965DE900AD280F /* AnimParticleEffectView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimParticleEffectView.m; sourceTree = "<group>"; };
 		D29E470E2487E48100BDB9C0 /* NSString+Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Extensions.h"; sourceTree = "<group>"; };
 		D29E470F2487E48100BDB9C0 /* NSString+Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extensions.m"; sourceTree = "<group>"; };
 		D29E4712248A984400BDB9C0 /* UserDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserDetailViewController.h; sourceTree = "<group>"; };
@@ -789,6 +797,11 @@
 				D26E8C6D2495F8C800AD280F /* AnimVolumeVibrateViewController.h */,
 				D26E8C6E2495F8C800AD280F /* AnimVolumeVibrateViewController.m */,
 				D26E8C6F2495F8C800AD280F /* AnimVolumeVibrateViewController.xib */,
+				D26E8C7A24965BCF00AD280F /* AnimParticleEffectViewController.h */,
+				D26E8C7B24965BCF00AD280F /* AnimParticleEffectViewController.m */,
+				D26E8C7C24965BCF00AD280F /* AnimParticleEffectViewController.xib */,
+				D26E8C7F24965DE900AD280F /* AnimParticleEffectView.h */,
+				D26E8C8024965DE900AD280F /* AnimParticleEffectView.m */,
 			);
 			path = "动画相关";
 			sourceTree = "<group>";
@@ -1180,6 +1193,7 @@
 				E98A0080247E56F900669BB8 /* MainViewController.xib in Resources */,
 				E94DCCE52493559F00ACFF3E /* AnimCABaseAnimViewController.xib in Resources */,
 				D26E8C76249602E800AD280F /* ImageInvertedViewController.xib in Resources */,
+				D26E8C7E24965BCF00AD280F /* AnimParticleEffectViewController.xib in Resources */,
 				E9A928CE248F2D7800694EF7 /* EventMainViewController.xib in Resources */,
 				E9A928DB248F362100694EF7 /* EventTransmitViewController.xib in Resources */,
 				E97D8B692488F253008CF06C /* LocalValueMainViewController.xib in Resources */,
@@ -1265,6 +1279,7 @@
 				E94DCC8B2490BFF500ACFF3E /* QDShapeView.m in Sources */,
 				E97D8BE9248E3A2F008CF06C /* DynamicViewController.m in Sources */,
 				E98A007A247E564200669BB8 /* TableViewController.m in Sources */,
+				D26E8C7D24965BCF00AD280F /* AnimParticleEffectViewController.m in Sources */,
 				E97D8B632488F1C7008CF06C /* LocalValueCoreDataViewController.m in Sources */,
 				E94DCC912490DB2900ACFF3E /* QDTextView.m in Sources */,
 				E9EA4CEF2486444900E53569 /* FlagItem.m in Sources */,
@@ -1327,6 +1342,7 @@
 				E90667CE2475040100F44ADD /* AppDelegate.m in Sources */,
 				E9300EFA247B696E0035BF4C /* ThirdViewController.m in Sources */,
 				E9A928CD248F2D7800694EF7 /* EventMainViewController.m in Sources */,
+				D26E8C8124965DE900AD280F /* AnimParticleEffectView.m in Sources */,
 				E94DCCEA2493857A00ACFF3E /* ThreadBasicViewController.m in Sources */,
 				E9EA4D3124889A3000E53569 /* WKWebViewController.m in Sources */,
 				E98A0086247E5D8000669BB8 /* TableViewIndexsController.m in Sources */,
