@@ -11,6 +11,7 @@
 #import "ImageTailorViewController.h"
 #import "ImageArbitrarilyTailorViewController.h"
 #import "ImgeWipeViewController.h"
+#import "ImageInvertedViewController.h"
 
 @interface ImageDealViewController ()
 
@@ -33,6 +34,9 @@
 }
 - (IBAction)imageWipe:(id)sender {
     [self jump:[[ImgeWipeViewController alloc] init]];
+}
+- (IBAction)invertedImage:(id)sender {
+    [self jump:[[ImageInvertedViewController alloc] init]];
 }
 -(void)jump:(UIViewController*)controller{
     [self.navigationController pushViewController:controller animated:YES];

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -67,6 +67,19 @@
                         <action selector="imageWipe:" destination="-1" eventType="touchUpInside" id="vLd-c7-Yyc"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5b-nT-Zna">
+                    <rect key="frame" x="50" y="194" width="144.5" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="mto-dA-naQ"/>
+                    </constraints>
+                    <state key="normal" title="图片倒影">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="invertedImage:" destination="-1" eventType="touchUpInside" id="w5h-9M-vlH"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
@@ -77,9 +90,12 @@
                 <constraint firstItem="SoL-Me-dOh" firstAttribute="top" secondItem="9o9-Cw-QVn" secondAttribute="bottom" constant="30" id="HCH-ty-Tn3"/>
                 <constraint firstItem="Dui-nI-Vtd" firstAttribute="height" secondItem="9o9-Cw-QVn" secondAttribute="height" id="MeF-Ja-3KN"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Dui-nI-Vtd" secondAttribute="trailing" constant="50" id="Mwn-ue-JaV"/>
+                <constraint firstItem="V5b-nT-Zna" firstAttribute="leading" secondItem="SoL-Me-dOh" secondAttribute="leading" id="TBo-Ko-hV1"/>
                 <constraint firstItem="Dui-nI-Vtd" firstAttribute="top" secondItem="9o9-Cw-QVn" secondAttribute="top" id="Tam-8l-DuO"/>
+                <constraint firstItem="V5b-nT-Zna" firstAttribute="top" secondItem="SoL-Me-dOh" secondAttribute="bottom" constant="30" id="WcS-gq-6vd"/>
                 <constraint firstItem="Dui-nI-Vtd" firstAttribute="leading" secondItem="9o9-Cw-QVn" secondAttribute="trailing" constant="25" id="ewr-Ff-cma"/>
                 <constraint firstItem="f1f-2M-CXm" firstAttribute="top" secondItem="SoL-Me-dOh" secondAttribute="top" id="gPB-7g-enK"/>
+                <constraint firstItem="V5b-nT-Zna" firstAttribute="trailing" secondItem="SoL-Me-dOh" secondAttribute="trailing" id="lMC-uD-GfO"/>
                 <constraint firstItem="9o9-Cw-QVn" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="10" id="mzg-Un-0Bp"/>
                 <constraint firstItem="f1f-2M-CXm" firstAttribute="leading" secondItem="Dui-nI-Vtd" secondAttribute="leading" id="pu7-CV-3Lc"/>
                 <constraint firstItem="9o9-Cw-QVn" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="50" id="xxN-DI-OFe"/>

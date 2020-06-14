@@ -12,6 +12,9 @@
 		D26E8C6C2494FECB00AD280F /* ImageFoldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D26E8C6A2494FECB00AD280F /* ImageFoldViewController.xib */; };
 		D26E8C702495F8C800AD280F /* AnimVolumeVibrateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D26E8C6E2495F8C800AD280F /* AnimVolumeVibrateViewController.m */; };
 		D26E8C712495F8C800AD280F /* AnimVolumeVibrateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D26E8C6F2495F8C800AD280F /* AnimVolumeVibrateViewController.xib */; };
+		D26E8C75249602E800AD280F /* ImageInvertedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D26E8C73249602E800AD280F /* ImageInvertedViewController.m */; };
+		D26E8C76249602E800AD280F /* ImageInvertedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D26E8C74249602E800AD280F /* ImageInvertedViewController.xib */; };
+		D26E8C79249605B400AD280F /* ImageCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = D26E8C78249605B400AD280F /* ImageCustomView.m */; };
 		D29E47102487E48100BDB9C0 /* NSString+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = D29E470F2487E48100BDB9C0 /* NSString+Extensions.m */; };
 		D29E4715248A984400BDB9C0 /* UserDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29E4713248A984400BDB9C0 /* UserDetailViewController.m */; };
 		D29E4716248A984400BDB9C0 /* UserDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D29E4714248A984400BDB9C0 /* UserDetailViewController.xib */; };
@@ -193,6 +196,11 @@
 		D26E8C6D2495F8C800AD280F /* AnimVolumeVibrateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimVolumeVibrateViewController.h; sourceTree = "<group>"; };
 		D26E8C6E2495F8C800AD280F /* AnimVolumeVibrateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimVolumeVibrateViewController.m; sourceTree = "<group>"; };
 		D26E8C6F2495F8C800AD280F /* AnimVolumeVibrateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimVolumeVibrateViewController.xib; sourceTree = "<group>"; };
+		D26E8C72249602E800AD280F /* ImageInvertedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageInvertedViewController.h; sourceTree = "<group>"; };
+		D26E8C73249602E800AD280F /* ImageInvertedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageInvertedViewController.m; sourceTree = "<group>"; };
+		D26E8C74249602E800AD280F /* ImageInvertedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageInvertedViewController.xib; sourceTree = "<group>"; };
+		D26E8C77249605B400AD280F /* ImageCustomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageCustomView.h; sourceTree = "<group>"; };
+		D26E8C78249605B400AD280F /* ImageCustomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageCustomView.m; sourceTree = "<group>"; };
 		D29E470E2487E48100BDB9C0 /* NSString+Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Extensions.h"; sourceTree = "<group>"; };
 		D29E470F2487E48100BDB9C0 /* NSString+Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extensions.m"; sourceTree = "<group>"; };
 		D29E4712248A984400BDB9C0 /* UserDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserDetailViewController.h; sourceTree = "<group>"; };
@@ -638,6 +646,11 @@
 				E94DCCB6249208DA00ACFF3E /* ImgeWipeViewController.h */,
 				E94DCCB7249208DA00ACFF3E /* ImgeWipeViewController.m */,
 				E94DCCB8249208DA00ACFF3E /* ImgeWipeViewController.xib */,
+				D26E8C72249602E800AD280F /* ImageInvertedViewController.h */,
+				D26E8C73249602E800AD280F /* ImageInvertedViewController.m */,
+				D26E8C74249602E800AD280F /* ImageInvertedViewController.xib */,
+				D26E8C77249605B400AD280F /* ImageCustomView.h */,
+				D26E8C78249605B400AD280F /* ImageCustomView.m */,
 			);
 			path = "图片相关";
 			sourceTree = "<group>";
@@ -1166,6 +1179,7 @@
 				E9EA4D1524878AD200E53569 /* ABTableViewController.xib in Resources */,
 				E98A0080247E56F900669BB8 /* MainViewController.xib in Resources */,
 				E94DCCE52493559F00ACFF3E /* AnimCABaseAnimViewController.xib in Resources */,
+				D26E8C76249602E800AD280F /* ImageInvertedViewController.xib in Resources */,
 				E9A928CE248F2D7800694EF7 /* EventMainViewController.xib in Resources */,
 				E9A928DB248F362100694EF7 /* EventTransmitViewController.xib in Resources */,
 				E97D8B692488F253008CF06C /* LocalValueMainViewController.xib in Resources */,
@@ -1299,6 +1313,7 @@
 				E97D8BF1248E436F008CF06C /* ModalViewController.m in Sources */,
 				E94DCC942490DB3500ACFF3E /* QDImageView.m in Sources */,
 				E94DCCB42491FF7400ACFF3E /* ImageArbitrarilyTailorViewController.m in Sources */,
+				D26E8C79249605B400AD280F /* ImageCustomView.m in Sources */,
 				E97D8B9E248A0EF6008CF06C /* iOSStudy.xcdatamodeld in Sources */,
 				E97F33722480E99C0068E757 /* ShoppingCartCell.m in Sources */,
 				E94DCCDF24932E1600ACFF3E /* AnimClockRotationViewController.m in Sources */,
@@ -1326,6 +1341,7 @@
 				E990ED7C24776F2100F068D1 /* CarView.m in Sources */,
 				E9549142247F975E008C5995 /* TableViewDiffCellViewController.m in Sources */,
 				E9EA4D3C2488E2A000E53569 /* DeliverValueFirstViewController.m in Sources */,
+				D26E8C75249602E800AD280F /* ImageInvertedViewController.m in Sources */,
 				E98A007F247E56F900669BB8 /* MainViewController.m in Sources */,
 				E98A0090247E6B8B00669BB8 /* TableViewCustonCellViewController.m in Sources */,
 				E97D8B682488F253008CF06C /* LocalValueMainViewController.m in Sources */,
