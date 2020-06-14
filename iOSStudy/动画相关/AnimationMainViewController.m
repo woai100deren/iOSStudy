@@ -12,6 +12,7 @@
 #import "AnimImplicitAnimViewController.h"
 #import "AnimClockRotationViewController.h"
 #import "AnimCABaseAnimViewController.h"
+#import "AnimVolumeVibrateViewController.h"
 
 @interface AnimationMainViewController ()
 
@@ -38,6 +39,9 @@
 }
 - (IBAction)CABaseAnimation:(id)sender {
     [self jump:[[AnimCABaseAnimViewController alloc] init]];
+}
+- (IBAction)volumeVibrate:(id)sender {
+    [self jump:[[AnimVolumeVibrateViewController alloc] init]];
 }
 
 -(void)jump:(UIViewController*) vc{

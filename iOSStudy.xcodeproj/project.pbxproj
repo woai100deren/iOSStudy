@@ -10,6 +10,8 @@
 		823771A861BB5CC9AA0E3016 /* Pods_iOSStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2100E6233EC29B67BF103C /* Pods_iOSStudy.framework */; };
 		D26E8C6B2494FECB00AD280F /* ImageFoldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D26E8C692494FECB00AD280F /* ImageFoldViewController.m */; };
 		D26E8C6C2494FECB00AD280F /* ImageFoldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D26E8C6A2494FECB00AD280F /* ImageFoldViewController.xib */; };
+		D26E8C702495F8C800AD280F /* AnimVolumeVibrateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D26E8C6E2495F8C800AD280F /* AnimVolumeVibrateViewController.m */; };
+		D26E8C712495F8C800AD280F /* AnimVolumeVibrateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D26E8C6F2495F8C800AD280F /* AnimVolumeVibrateViewController.xib */; };
 		D29E47102487E48100BDB9C0 /* NSString+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = D29E470F2487E48100BDB9C0 /* NSString+Extensions.m */; };
 		D29E4715248A984400BDB9C0 /* UserDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D29E4713248A984400BDB9C0 /* UserDetailViewController.m */; };
 		D29E4716248A984400BDB9C0 /* UserDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D29E4714248A984400BDB9C0 /* UserDetailViewController.xib */; };
@@ -188,6 +190,9 @@
 		D26E8C682494FECB00AD280F /* ImageFoldViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageFoldViewController.h; sourceTree = "<group>"; };
 		D26E8C692494FECB00AD280F /* ImageFoldViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageFoldViewController.m; sourceTree = "<group>"; };
 		D26E8C6A2494FECB00AD280F /* ImageFoldViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageFoldViewController.xib; sourceTree = "<group>"; };
+		D26E8C6D2495F8C800AD280F /* AnimVolumeVibrateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimVolumeVibrateViewController.h; sourceTree = "<group>"; };
+		D26E8C6E2495F8C800AD280F /* AnimVolumeVibrateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimVolumeVibrateViewController.m; sourceTree = "<group>"; };
+		D26E8C6F2495F8C800AD280F /* AnimVolumeVibrateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimVolumeVibrateViewController.xib; sourceTree = "<group>"; };
 		D29E470E2487E48100BDB9C0 /* NSString+Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Extensions.h"; sourceTree = "<group>"; };
 		D29E470F2487E48100BDB9C0 /* NSString+Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extensions.m"; sourceTree = "<group>"; };
 		D29E4712248A984400BDB9C0 /* UserDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserDetailViewController.h; sourceTree = "<group>"; };
@@ -768,6 +773,9 @@
 				E94DCCE12493559F00ACFF3E /* AnimCABaseAnimViewController.h */,
 				E94DCCE22493559F00ACFF3E /* AnimCABaseAnimViewController.m */,
 				E94DCCE32493559F00ACFF3E /* AnimCABaseAnimViewController.xib */,
+				D26E8C6D2495F8C800AD280F /* AnimVolumeVibrateViewController.h */,
+				D26E8C6E2495F8C800AD280F /* AnimVolumeVibrateViewController.m */,
+				D26E8C6F2495F8C800AD280F /* AnimVolumeVibrateViewController.xib */,
 			);
 			path = "动画相关";
 			sourceTree = "<group>";
@@ -1122,6 +1130,7 @@
 				E97F338F24862DC20068E757 /* foods.plist in Resources */,
 				E97F336E2480E79F0068E757 /* ShoppingCartViewController.xib in Resources */,
 				E997387A247767CC00D6F041 /* Second.storyboard in Resources */,
+				D26E8C712495F8C800AD280F /* AnimVolumeVibrateViewController.xib in Resources */,
 				E94DCCBF24920CE900ACFF3E /* GestureLockViewController.xib in Resources */,
 				E9ECA05E247F8E8C0041E22D /* MyTableViewCell.xib in Resources */,
 				D29E4716248A984400BDB9C0 /* UserDetailViewController.xib in Resources */,
@@ -1281,6 +1290,7 @@
 				E97D8BE5248E3986008CF06C /* BaseConstactsViewController.m in Sources */,
 				E97F338C24862A830068E757 /* PickViewController.m in Sources */,
 				E97D8BF9248F215A008CF06C /* AnimationMainViewController.m in Sources */,
+				D26E8C702495F8C800AD280F /* AnimVolumeVibrateViewController.m in Sources */,
 				E98A008C247E614F00669BB8 /* CarGroup.m in Sources */,
 				E94DCCB9249208DA00ACFF3E /* ImgeWipeViewController.m in Sources */,
 				E94DCCC224920DE600ACFF3E /* GestureLockView.m in Sources */,
