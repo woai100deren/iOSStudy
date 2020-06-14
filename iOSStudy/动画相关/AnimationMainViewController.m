@@ -13,6 +13,7 @@
 #import "AnimClockRotationViewController.h"
 #import "AnimCABaseAnimViewController.h"
 #import "AnimVolumeVibrateViewController.h"
+#import "AnimParticleEffectViewController.h"
 
 @interface AnimationMainViewController ()
 
@@ -42,6 +43,9 @@
 }
 - (IBAction)volumeVibrate:(id)sender {
     [self jump:[[AnimVolumeVibrateViewController alloc] init]];
+}
+- (IBAction)particleEffect:(id)sender {
+    [self jump:[[AnimParticleEffectViewController alloc] init]];
 }
 
 -(void)jump:(UIViewController*) vc{
