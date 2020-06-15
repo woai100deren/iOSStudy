@@ -30,6 +30,7 @@
 		E9300EF7247B69410035BF4C /* Third.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9300EF6247B69410035BF4C /* Third.storyboard */; };
 		E9300EFA247B696E0035BF4C /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9300EF9247B696E0035BF4C /* ThirdViewController.m */; };
 		E9300EFD247BB30F0035BF4C /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9300EFC247BB30F0035BF4C /* ScrollViewController.m */; };
+		E9444BB5249714080036DB4B /* AnimViscousCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E9444BB4249714080036DB4B /* AnimViscousCustomButton.m */; };
 		E94DCC8B2490BFF500ACFF3E /* QDShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC8A2490BFF500ACFF3E /* QDShapeView.m */; };
 		E94DCC8E2490CE7E00ACFF3E /* QDDownloadProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC8D2490CE7E00ACFF3E /* QDDownloadProgressView.m */; };
 		E94DCC912490DB2900ACFF3E /* QDTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC902490DB2900ACFF3E /* QDTextView.m */; };
@@ -65,6 +66,8 @@
 		E94DCCE52493559F00ACFF3E /* AnimCABaseAnimViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94DCCE32493559F00ACFF3E /* AnimCABaseAnimViewController.xib */; };
 		E94DCCEA2493857A00ACFF3E /* ThreadBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCCE82493857A00ACFF3E /* ThreadBasicViewController.m */; };
 		E94DCCEB2493857A00ACFF3E /* ThreadBasicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94DCCE92493857A00ACFF3E /* ThreadBasicViewController.xib */; };
+		E94DCCEF249711C900ACFF3E /* AnimViscousViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCCED249711C900ACFF3E /* AnimViscousViewController.m */; };
+		E94DCCF0249711C900ACFF3E /* AnimViscousViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E94DCCEE249711C900ACFF3E /* AnimViscousViewController.xib */; };
 		E9549142247F975E008C5995 /* TableViewDiffCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9549140247F975E008C5995 /* TableViewDiffCellViewController.m */; };
 		E9549143247F975E008C5995 /* TableViewDiffCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9549141247F975E008C5995 /* TableViewDiffCellViewController.xib */; };
 		E9549147247F98EC008C5995 /* MyTableViewDiffCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9549145247F98EC008C5995 /* MyTableViewDiffCell.m */; };
@@ -230,6 +233,8 @@
 		E9300EF9247B696E0035BF4C /* ThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		E9300EFB247BB30F0035BF4C /* ScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
 		E9300EFC247BB30F0035BF4C /* ScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
+		E9444BB3249714080036DB4B /* AnimViscousCustomButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimViscousCustomButton.h; sourceTree = "<group>"; };
+		E9444BB4249714080036DB4B /* AnimViscousCustomButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimViscousCustomButton.m; sourceTree = "<group>"; };
 		E94DCC892490BFF500ACFF3E /* QDShapeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDShapeView.h; sourceTree = "<group>"; };
 		E94DCC8A2490BFF500ACFF3E /* QDShapeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDShapeView.m; sourceTree = "<group>"; };
 		E94DCC8C2490CE7E00ACFF3E /* QDDownloadProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDDownloadProgressView.h; sourceTree = "<group>"; };
@@ -287,6 +292,9 @@
 		E94DCCE72493857A00ACFF3E /* ThreadBasicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadBasicViewController.h; sourceTree = "<group>"; };
 		E94DCCE82493857A00ACFF3E /* ThreadBasicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadBasicViewController.m; sourceTree = "<group>"; };
 		E94DCCE92493857A00ACFF3E /* ThreadBasicViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreadBasicViewController.xib; sourceTree = "<group>"; };
+		E94DCCEC249711C900ACFF3E /* AnimViscousViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimViscousViewController.h; sourceTree = "<group>"; };
+		E94DCCED249711C900ACFF3E /* AnimViscousViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimViscousViewController.m; sourceTree = "<group>"; };
+		E94DCCEE249711C900ACFF3E /* AnimViscousViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimViscousViewController.xib; sourceTree = "<group>"; };
 		E954913F247F975E008C5995 /* TableViewDiffCellViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewDiffCellViewController.h; sourceTree = "<group>"; };
 		E9549140247F975E008C5995 /* TableViewDiffCellViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewDiffCellViewController.m; sourceTree = "<group>"; };
 		E9549141247F975E008C5995 /* TableViewDiffCellViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewDiffCellViewController.xib; sourceTree = "<group>"; };
@@ -802,6 +810,11 @@
 				D26E8C7C24965BCF00AD280F /* AnimParticleEffectViewController.xib */,
 				D26E8C7F24965DE900AD280F /* AnimParticleEffectView.h */,
 				D26E8C8024965DE900AD280F /* AnimParticleEffectView.m */,
+				E94DCCEC249711C900ACFF3E /* AnimViscousViewController.h */,
+				E94DCCED249711C900ACFF3E /* AnimViscousViewController.m */,
+				E94DCCEE249711C900ACFF3E /* AnimViscousViewController.xib */,
+				E9444BB3249714080036DB4B /* AnimViscousCustomButton.h */,
+				E9444BB4249714080036DB4B /* AnimViscousCustomButton.m */,
 			);
 			path = "动画相关";
 			sourceTree = "<group>";
@@ -1160,6 +1173,7 @@
 				E94DCCBF24920CE900ACFF3E /* GestureLockViewController.xib in Resources */,
 				E9ECA05E247F8E8C0041E22D /* MyTableViewCell.xib in Resources */,
 				D29E4716248A984400BDB9C0 /* UserDetailViewController.xib in Resources */,
+				E94DCCF0249711C900ACFF3E /* AnimViscousViewController.xib in Resources */,
 				E90667DF2475040100F44ADD /* LaunchScreen.storyboard in Resources */,
 				E97D8BFF248F23DE008CF06C /* AnimTransformViewController.xib in Resources */,
 				E97D8BF3248E4662008CF06C /* ModalViewController.xib in Resources */,
@@ -1298,6 +1312,7 @@
 				E94DCCC524921D6C00ACFF3E /* UIView+Extensions.m in Sources */,
 				E9A9290F2490875800694EF7 /* Quartz2DViewController.m in Sources */,
 				E9A928D6248F2EF200694EF7 /* RedView.m in Sources */,
+				E9444BB5249714080036DB4B /* AnimViscousCustomButton.m in Sources */,
 				E94DCCAE2491CEB800ACFF3E /* ImageTailorViewController.m in Sources */,
 				E97D8BE2248E3486008CF06C /* SegmenteSecondViewController.m in Sources */,
 				E9A928FA248F813B00694EF7 /* GestureViewController.m in Sources */,
@@ -1373,6 +1388,7 @@
 				E9EA4CF92487334E00E53569 /* CityTextField.m in Sources */,
 				E9A9290A248F952A00694EF7 /* JumpModel.m in Sources */,
 				E9A928ED248F392300694EF7 /* TransmitOrangeView.m in Sources */,
+				E94DCCEF249711C900ACFF3E /* AnimViscousViewController.m in Sources */,
 				E9EA4D1424878AD200E53569 /* ABTableViewController.m in Sources */,
 				E97D8B702489ED20008CF06C /* SqliteTool.m in Sources */,
 				E9A928F3248F553900694EF7 /* TransmitImageView.m in Sources */,

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -109,6 +109,21 @@
                         <action selector="particleEffect:" destination="-1" eventType="touchUpInside" id="dm9-aM-7ch"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wuC-bS-a0c">
+                    <rect key="frame" x="232" y="229" width="132" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Sih-ID-Jtf"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="kuC-9q-G03"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="QQ未读数粘性效果">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="qqViscous:" destination="-1" eventType="touchUpInside" id="unO-qk-ciA"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
@@ -116,11 +131,15 @@
                 <constraint firstItem="GZY-eJ-UIu" firstAttribute="top" secondItem="W5Y-rm-CSt" secondAttribute="top" id="5yO-Ab-TdM"/>
                 <constraint firstItem="GZY-eJ-UIu" firstAttribute="leading" secondItem="W5Y-rm-CSt" secondAttribute="trailing" constant="50" id="70g-XA-pEh"/>
                 <constraint firstItem="W5Y-rm-CSt" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="50" id="87p-0n-dmm"/>
+                <constraint firstItem="wuC-bS-a0c" firstAttribute="top" secondItem="vNk-WF-X6H" secondAttribute="top" id="8HS-bo-C2U"/>
                 <constraint firstItem="GZY-eJ-UIu" firstAttribute="width" secondItem="W5Y-rm-CSt" secondAttribute="width" id="9Rz-kh-w9K"/>
                 <constraint firstItem="eFI-sB-Qe1" firstAttribute="leading" secondItem="9li-OP-Loh" secondAttribute="leading" id="9rt-8V-phv"/>
                 <constraint firstItem="eFI-sB-Qe1" firstAttribute="bottom" secondItem="lJV-lD-cOL" secondAttribute="bottom" id="CJD-XF-LKE"/>
                 <constraint firstItem="9li-OP-Loh" firstAttribute="leading" secondItem="GZY-eJ-UIu" secondAttribute="leading" id="GJJ-bX-Qoe"/>
+                <constraint firstItem="wuC-bS-a0c" firstAttribute="bottom" secondItem="vNk-WF-X6H" secondAttribute="bottom" id="Gyv-uC-D5m"/>
+                <constraint firstItem="wuC-bS-a0c" firstAttribute="leading" secondItem="eFI-sB-Qe1" secondAttribute="leading" id="Ome-SB-yVT"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="GZY-eJ-UIu" secondAttribute="trailing" constant="50" id="SQG-rW-5Zo"/>
+                <constraint firstItem="wuC-bS-a0c" firstAttribute="trailing" secondItem="eFI-sB-Qe1" secondAttribute="trailing" id="aFH-mr-ISM"/>
                 <constraint firstItem="vNk-WF-X6H" firstAttribute="leading" secondItem="lJV-lD-cOL" secondAttribute="leading" id="cxD-Nb-D9g"/>
                 <constraint firstItem="lJV-lD-cOL" firstAttribute="trailing" secondItem="As0-Kc-9rx" secondAttribute="trailing" id="eHH-wZ-roJ"/>
                 <constraint firstItem="GZY-eJ-UIu" firstAttribute="height" secondItem="W5Y-rm-CSt" secondAttribute="height" id="f8G-sW-ibB"/>

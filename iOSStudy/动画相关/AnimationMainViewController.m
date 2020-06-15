@@ -14,6 +14,7 @@
 #import "AnimCABaseAnimViewController.h"
 #import "AnimVolumeVibrateViewController.h"
 #import "AnimParticleEffectViewController.h"
+#import "AnimViscousViewController.h"
 
 @interface AnimationMainViewController ()
 
@@ -46,6 +47,9 @@
 }
 - (IBAction)particleEffect:(id)sender {
     [self jump:[[AnimParticleEffectViewController alloc] init]];
+}
+- (IBAction)qqViscous:(id)sender {
+    [self jump:[[AnimViscousViewController alloc] init]];
 }
 
 -(void)jump:(UIViewController*) vc{
