@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ThreadGCDViewController">
+            <connections>
+                <outlet property="imageView" destination="J98-A4-QSq" id="CLx-WI-hEr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="和Thread相关的一些基本知识，请查看当前页面源码" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYQ-BA-Ljo">
+                    <rect key="frame" x="50" y="54" width="314" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kij-qY-0xv">
+                    <rect key="frame" x="137" y="105" width="140" height="30"/>
+                    <state key="normal" title="异步函数 + 并发队列"/>
+                    <connections>
+                        <action selector="asyncConcurrent:" destination="-1" eventType="touchUpInside" id="wJV-w6-0Ky"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0z-4K-IyE">
+                    <rect key="frame" x="137" y="145" width="140" height="30"/>
+                    <state key="normal" title="异步函数 + 串行队列"/>
+                    <connections>
+                        <action selector="asyncSerial:" destination="-1" eventType="touchUpInside" id="4ud-bd-rAr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WoZ-7r-vp7">
+                    <rect key="frame" x="137" y="185" width="140" height="30"/>
+                    <state key="normal" title="同步函数 + 并发队列"/>
+                    <connections>
+                        <action selector="syncConcurrent:" destination="-1" eventType="touchUpInside" id="X1P-Wi-e5o"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBt-ww-C2W">
+                    <rect key="frame" x="139" y="225" width="136" height="30"/>
+                    <state key="normal" title="同步函数 +串行队列"/>
+                    <connections>
+                        <action selector="syncSerial:" destination="-1" eventType="touchUpInside" id="F98-N0-FQz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="riy-lN-iLW">
+                    <rect key="frame" x="144.5" y="265" width="125" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="5E4-mR-D4i"/>
+                    </constraints>
+                    <state key="normal" title="异步函数 + 主队列"/>
+                    <connections>
+                        <action selector="asyncMain:" destination="-1" eventType="touchUpInside" id="bx2-k5-2en"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnX-bd-yHs">
+                    <rect key="frame" x="100.5" y="305" width="213" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="ROe-4i-s1J"/>
+                    </constraints>
+                    <state key="normal" title="同步函数 + 主队列(点击会卡死)"/>
+                    <connections>
+                        <action selector="syncMain:" destination="-1" eventType="touchUpInside" id="C11-5p-9DH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sd-R7-TDT">
+                    <rect key="frame" x="168.5" y="345" width="77" height="30"/>
+                    <state key="normal" title="线程间通讯"/>
+                    <connections>
+                        <action selector="showImage:" destination="-1" eventType="touchUpInside" id="hal-hc-CrM"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="J98-A4-QSq">
+                    <rect key="frame" x="87" y="385" width="240" height="400"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="5ua-Eo-uTA"/>
+                        <constraint firstAttribute="height" constant="400" id="yew-Ll-dpQ"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="cBt-ww-C2W" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0sq-jY-sr3"/>
+                <constraint firstItem="kij-qY-0xv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2up-ZZ-9Vd"/>
+                <constraint firstItem="eYQ-BA-Ljo" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3AH-e3-S7S"/>
+                <constraint firstItem="nnX-bd-yHs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3WR-8N-HuA"/>
+                <constraint firstItem="kij-qY-0xv" firstAttribute="top" secondItem="eYQ-BA-Ljo" secondAttribute="bottom" constant="10" id="9OQ-ji-uG4"/>
+                <constraint firstItem="E0z-4K-IyE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Epa-zZ-cJ3"/>
+                <constraint firstItem="WoZ-7r-vp7" firstAttribute="top" secondItem="E0z-4K-IyE" secondAttribute="bottom" constant="10" id="HTw-xf-QuO"/>
+                <constraint firstItem="riy-lN-iLW" firstAttribute="top" secondItem="cBt-ww-C2W" secondAttribute="bottom" constant="10" id="IGu-DP-fUE"/>
+                <constraint firstItem="J98-A4-QSq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="N1s-nJ-Dvs"/>
+                <constraint firstItem="nnX-bd-yHs" firstAttribute="top" secondItem="riy-lN-iLW" secondAttribute="bottom" constant="10" id="Nb7-Ii-xYY"/>
+                <constraint firstItem="eYQ-BA-Ljo" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="50" id="Pq4-i6-nvX"/>
+                <constraint firstItem="8sd-R7-TDT" firstAttribute="top" secondItem="nnX-bd-yHs" secondAttribute="bottom" constant="10" id="Vcb-3x-oPG"/>
+                <constraint firstItem="J98-A4-QSq" firstAttribute="top" secondItem="8sd-R7-TDT" secondAttribute="bottom" constant="10" id="WSC-I7-Oi0"/>
+                <constraint firstItem="riy-lN-iLW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ceW-Id-QXC"/>
+                <constraint firstItem="E0z-4K-IyE" firstAttribute="top" secondItem="kij-qY-0xv" secondAttribute="bottom" constant="10" id="fSs-7G-0Ir"/>
+                <constraint firstItem="WoZ-7r-vp7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fZG-xw-deK"/>
+                <constraint firstItem="cBt-ww-C2W" firstAttribute="top" secondItem="WoZ-7r-vp7" secondAttribute="bottom" constant="10" id="lA4-EI-gjH"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="eYQ-BA-Ljo" secondAttribute="trailing" constant="50" id="qg7-4B-isb"/>
+                <constraint firstItem="eYQ-BA-Ljo" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="10" id="qyN-5f-ZJY"/>
+                <constraint firstItem="8sd-R7-TDT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="sJK-ny-EYT"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="131.8840579710145" y="92.410714285714278"/>
+        </view>
+    </objects>
+</document>

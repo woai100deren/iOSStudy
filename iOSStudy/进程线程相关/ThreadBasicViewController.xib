@@ -24,11 +24,71 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HdQ-rY-mOP">
+                    <rect key="frame" x="50" y="235" width="132" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="8RR-3z-G3g"/>
+                    </constraints>
+                    <state key="normal" title="pthread">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="pthread:" destination="-1" eventType="touchUpInside" id="bW2-dU-6F5"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2GG-Re-Idz">
+                    <rect key="frame" x="232" y="235" width="132" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="NSThread">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="nsthread:" destination="-1" eventType="touchUpInside" id="ckz-i7-5Fu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHd-AN-FpL">
+                    <rect key="frame" x="50" y="305" width="132" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ZQF-CB-XyU"/>
+                    </constraints>
+                    <state key="normal" title="GCD">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="gcd:" destination="-1" eventType="touchUpInside" id="RjD-wR-Imn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UhY-P3-njh">
+                    <rect key="frame" x="232" y="305" width="132" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="NSOperation">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="nsoperation:" destination="-1" eventType="touchUpInside" id="fzG-wx-pCw"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstItem="4qZ-eP-CID" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="50" id="Kqp-gE-5gG"/>
+                <constraint firstItem="2GG-Re-Idz" firstAttribute="leading" secondItem="HdQ-rY-mOP" secondAttribute="trailing" constant="50" id="R1J-0x-KBg"/>
+                <constraint firstItem="2GG-Re-Idz" firstAttribute="bottom" secondItem="HdQ-rY-mOP" secondAttribute="bottom" id="WU6-2U-7YF"/>
+                <constraint firstItem="UhY-P3-njh" firstAttribute="bottom" secondItem="RHd-AN-FpL" secondAttribute="bottom" id="Wx7-Te-y7f"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="2GG-Re-Idz" secondAttribute="trailing" constant="50" id="a9b-0o-oi9"/>
                 <constraint firstItem="4qZ-eP-CID" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="100" id="aDe-FQ-ffA"/>
+                <constraint firstItem="HdQ-rY-mOP" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="50" id="c0H-BV-ILW"/>
+                <constraint firstItem="2GG-Re-Idz" firstAttribute="top" secondItem="HdQ-rY-mOP" secondAttribute="top" id="fgi-Jc-esK"/>
+                <constraint firstItem="UhY-P3-njh" firstAttribute="leading" secondItem="2GG-Re-Idz" secondAttribute="leading" id="i8s-pC-b3w"/>
+                <constraint firstItem="UhY-P3-njh" firstAttribute="top" secondItem="RHd-AN-FpL" secondAttribute="top" id="mnS-hk-jgE"/>
+                <constraint firstItem="2GG-Re-Idz" firstAttribute="width" secondItem="HdQ-rY-mOP" secondAttribute="width" id="oLi-dm-lXO"/>
+                <constraint firstItem="RHd-AN-FpL" firstAttribute="top" secondItem="HdQ-rY-mOP" secondAttribute="bottom" constant="30" id="reZ-Yd-urf"/>
+                <constraint firstItem="HdQ-rY-mOP" firstAttribute="top" secondItem="4qZ-eP-CID" secondAttribute="bottom" constant="50" id="t8J-Jg-QT0"/>
+                <constraint firstItem="UhY-P3-njh" firstAttribute="trailing" secondItem="2GG-Re-Idz" secondAttribute="trailing" id="uSG-3m-VBC"/>
+                <constraint firstItem="RHd-AN-FpL" firstAttribute="trailing" secondItem="HdQ-rY-mOP" secondAttribute="trailing" id="w92-K5-M9R"/>
+                <constraint firstItem="RHd-AN-FpL" firstAttribute="leading" secondItem="HdQ-rY-mOP" secondAttribute="leading" id="xuV-u8-akZ"/>
                 <constraint firstAttribute="trailing" secondItem="4qZ-eP-CID" secondAttribute="trailing" constant="50" id="yfL-sa-9HP"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>

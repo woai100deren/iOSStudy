@@ -31,6 +31,12 @@
 		E9300EFA247B696E0035BF4C /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9300EF9247B696E0035BF4C /* ThirdViewController.m */; };
 		E9300EFD247BB30F0035BF4C /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9300EFC247BB30F0035BF4C /* ScrollViewController.m */; };
 		E9444BB5249714080036DB4B /* AnimViscousCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E9444BB4249714080036DB4B /* AnimViscousCustomButton.m */; };
+		E9444BB924973DD90036DB4B /* ThreadPthreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9444BB724973DD90036DB4B /* ThreadPthreadViewController.m */; };
+		E9444BBA24973DD90036DB4B /* ThreadPthreadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9444BB824973DD90036DB4B /* ThreadPthreadViewController.xib */; };
+		E9444BBE24973FAA0036DB4B /* ThreadNSThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9444BBC24973FAA0036DB4B /* ThreadNSThreadViewController.m */; };
+		E9444BBF24973FAA0036DB4B /* ThreadNSThreadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9444BBD24973FAA0036DB4B /* ThreadNSThreadViewController.xib */; };
+		E9444BC324975B660036DB4B /* ThreadGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9444BC124975B660036DB4B /* ThreadGCDViewController.m */; };
+		E9444BC424975B660036DB4B /* ThreadGCDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9444BC224975B660036DB4B /* ThreadGCDViewController.xib */; };
 		E94DCC8B2490BFF500ACFF3E /* QDShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC8A2490BFF500ACFF3E /* QDShapeView.m */; };
 		E94DCC8E2490CE7E00ACFF3E /* QDDownloadProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC8D2490CE7E00ACFF3E /* QDDownloadProgressView.m */; };
 		E94DCC912490DB2900ACFF3E /* QDTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC902490DB2900ACFF3E /* QDTextView.m */; };
@@ -235,6 +241,15 @@
 		E9300EFC247BB30F0035BF4C /* ScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
 		E9444BB3249714080036DB4B /* AnimViscousCustomButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimViscousCustomButton.h; sourceTree = "<group>"; };
 		E9444BB4249714080036DB4B /* AnimViscousCustomButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimViscousCustomButton.m; sourceTree = "<group>"; };
+		E9444BB624973DD90036DB4B /* ThreadPthreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadPthreadViewController.h; sourceTree = "<group>"; };
+		E9444BB724973DD90036DB4B /* ThreadPthreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadPthreadViewController.m; sourceTree = "<group>"; };
+		E9444BB824973DD90036DB4B /* ThreadPthreadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreadPthreadViewController.xib; sourceTree = "<group>"; };
+		E9444BBB24973FAA0036DB4B /* ThreadNSThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadNSThreadViewController.h; sourceTree = "<group>"; };
+		E9444BBC24973FAA0036DB4B /* ThreadNSThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadNSThreadViewController.m; sourceTree = "<group>"; };
+		E9444BBD24973FAA0036DB4B /* ThreadNSThreadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreadNSThreadViewController.xib; sourceTree = "<group>"; };
+		E9444BC024975B660036DB4B /* ThreadGCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadGCDViewController.h; sourceTree = "<group>"; };
+		E9444BC124975B660036DB4B /* ThreadGCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadGCDViewController.m; sourceTree = "<group>"; };
+		E9444BC224975B660036DB4B /* ThreadGCDViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreadGCDViewController.xib; sourceTree = "<group>"; };
 		E94DCC892490BFF500ACFF3E /* QDShapeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDShapeView.h; sourceTree = "<group>"; };
 		E94DCC8A2490BFF500ACFF3E /* QDShapeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDShapeView.m; sourceTree = "<group>"; };
 		E94DCC8C2490CE7E00ACFF3E /* QDDownloadProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDDownloadProgressView.h; sourceTree = "<group>"; };
@@ -705,6 +720,15 @@
 				E94DCCE72493857A00ACFF3E /* ThreadBasicViewController.h */,
 				E94DCCE82493857A00ACFF3E /* ThreadBasicViewController.m */,
 				E94DCCE92493857A00ACFF3E /* ThreadBasicViewController.xib */,
+				E9444BB624973DD90036DB4B /* ThreadPthreadViewController.h */,
+				E9444BB724973DD90036DB4B /* ThreadPthreadViewController.m */,
+				E9444BB824973DD90036DB4B /* ThreadPthreadViewController.xib */,
+				E9444BBB24973FAA0036DB4B /* ThreadNSThreadViewController.h */,
+				E9444BBC24973FAA0036DB4B /* ThreadNSThreadViewController.m */,
+				E9444BBD24973FAA0036DB4B /* ThreadNSThreadViewController.xib */,
+				E9444BC024975B660036DB4B /* ThreadGCDViewController.h */,
+				E9444BC124975B660036DB4B /* ThreadGCDViewController.m */,
+				E9444BC224975B660036DB4B /* ThreadGCDViewController.xib */,
 			);
 			path = "进程线程相关";
 			sourceTree = "<group>";
@@ -1183,6 +1207,7 @@
 				E9EA4D422488E2AD00E53569 /* DeliverValueSecondViewController.xib in Resources */,
 				E98A0091247E6B8B00669BB8 /* TableViewCustonCellViewController.xib in Resources */,
 				E97D8B642488F1C7008CF06C /* LocalValueCoreDataViewController.xib in Resources */,
+				E9444BBA24973DD90036DB4B /* ThreadPthreadViewController.xib in Resources */,
 				E9549148247F98EC008C5995 /* MyTableViewDiffCell.xib in Resources */,
 				E94DCCCB24922B2200ACFF3E /* DrawingBoardViewController.xib in Resources */,
 				E94DCCE024932E1600ACFF3E /* AnimClockRotationViewController.xib in Resources */,
@@ -1218,6 +1243,7 @@
 				E98A0082247E5BAC00669BB8 /* ScrollView.xib in Resources */,
 				E94DCCAA2491CDA200ACFF3E /* ImageDealViewController.xib in Resources */,
 				E97D8B4B2488F162008CF06C /* LocalValuePlistViewController.xib in Resources */,
+				E9444BBF24973FAA0036DB4B /* ThreadNSThreadViewController.xib in Resources */,
 				E9549143247F975E008C5995 /* TableViewDiffCellViewController.xib in Resources */,
 				E94DCCB52491FF7400ACFF3E /* ImageArbitrarilyTailorViewController.xib in Resources */,
 				E990ED7E2477703D00F068D1 /* CarView.xib in Resources */,
@@ -1225,6 +1251,7 @@
 				E97F3394248639D00068E757 /* PickViewUseViewController.xib in Resources */,
 				D26E8C6C2494FECB00AD280F /* ImageFoldViewController.xib in Resources */,
 				E9EA4D1A2487A2B900E53569 /* ABAddContactsViewController.xib in Resources */,
+				E9444BC424975B660036DB4B /* ThreadGCDViewController.xib in Resources */,
 				E97D8BFA248F215A008CF06C /* AnimationMainViewController.xib in Resources */,
 				E97D8BEA248E3A2F008CF06C /* DynamicViewController.xib in Resources */,
 				E97D8B502488F17F008CF06C /* LocalValuePreferenceViewController.xib in Resources */,
@@ -1362,12 +1389,14 @@
 				E9EA4D3124889A3000E53569 /* WKWebViewController.m in Sources */,
 				E98A0086247E5D8000669BB8 /* TableViewIndexsController.m in Sources */,
 				E9EA4D192487A2B900E53569 /* ABAddContactsViewController.m in Sources */,
+				E9444BB924973DD90036DB4B /* ThreadPthreadViewController.m in Sources */,
 				E990ED7924776E6D00F068D1 /* Car.m in Sources */,
 				E9A92900248F8EA100694EF7 /* DrawerViewController.m in Sources */,
 				E9EA4D26248880C400E53569 /* ABTableViewCell.m in Sources */,
 				E9EA4D0524873B1D00E53569 /* DateTextField.m in Sources */,
 				E97D8B4F2488F17F008CF06C /* LocalValuePreferenceViewController.m in Sources */,
 				E9EA4D1F2487A72D00E53569 /* ABContacts.m in Sources */,
+				E9444BBE24973FAA0036DB4B /* ThreadNSThreadViewController.m in Sources */,
 				E94DCCCA24922B2200ACFF3E /* DrawingBoardViewController.m in Sources */,
 				E990ED7C24776F2100F068D1 /* CarView.m in Sources */,
 				E9549142247F975E008C5995 /* TableViewDiffCellViewController.m in Sources */,
@@ -1398,6 +1427,7 @@
 				E97F33762480E9BC0068E757 /* DrinkGoods.m in Sources */,
 				E9A9291C2490B41F00694EF7 /* QDBightView.m in Sources */,
 				E9EA4CF2248647F600E53569 /* FlagItemView.m in Sources */,
+				E9444BC324975B660036DB4B /* ThreadGCDViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

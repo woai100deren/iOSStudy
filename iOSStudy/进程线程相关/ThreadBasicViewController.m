@@ -7,6 +7,9 @@
 //
 
 #import "ThreadBasicViewController.h"
+#import "ThreadPthreadViewController.h"
+#import "ThreadNSThreadViewController.h"
+#import "ThreadGCDViewController.h"
 
 @interface ThreadBasicViewController ()
 
@@ -29,7 +32,21 @@
     //判断主线程
     BOOL isMainThread = [currentThread isMainThread];
     //1即为YES
-    NSLog(@"当前线程是不是主线程：%zd",isMainThread);
+    NSLog(@"当前线程是不是主线程：%d",isMainThread);
+}
+- (IBAction)pthread:(id)sender {
+    [self jump:[[ThreadPthreadViewController alloc] init]];
+}
+- (IBAction)nsthread:(id)sender {
+    [self jump:[[ThreadNSThreadViewController alloc] init]];
+}
+- (IBAction)gcd:(id)sender {
+    [self jump:[[ThreadGCDViewController alloc] init]];
+}
+- (IBAction)nsoperation:(id)sender {
 }
 
+-(void)jump:(UIViewController *)controller{
+    [self.navigationController pushViewController:controller animated:YES];
+}
 @end
