@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ThreadNSOperationViewController">
+            <connections>
+                <outlet property="imageView" destination="o00-jP-IEK" id="sNA-b7-ib8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="和Thread相关的一些基本知识，请查看当前页面源码。包括了主线程、子线程、并发线程等。还包括自定义NSOperation。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tO-ab-FFZ">
+                    <rect key="frame" x="50" y="54" width="314" height="81.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AqH-L3-Ntm">
+                    <rect key="frame" x="177" y="150.5" width="60" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="2ku-3m-OE7"/>
+                        <constraint firstAttribute="width" constant="60" id="7cI-Gv-mqP"/>
+                    </constraints>
+                    <state key="normal" title="开始"/>
+                    <connections>
+                        <action selector="threadStart:" destination="-1" eventType="touchUpInside" id="rSC-ht-ZQI"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUM-b5-uT8">
+                    <rect key="frame" x="177" y="200.5" width="60" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="bVT-H0-KJc"/>
+                        <constraint firstAttribute="height" constant="40" id="zuB-ir-2FQ"/>
+                    </constraints>
+                    <state key="normal" title="暂停"/>
+                    <connections>
+                        <action selector="threadPause:" destination="-1" eventType="touchUpInside" id="GC5-Fo-c14"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MzB-7l-bSF">
+                    <rect key="frame" x="177" y="250.5" width="60" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="6aa-RH-SQ3"/>
+                        <constraint firstAttribute="height" constant="40" id="mmG-Cj-aCS"/>
+                    </constraints>
+                    <state key="normal" title="继续"/>
+                    <connections>
+                        <action selector="threadContinue:" destination="-1" eventType="touchUpInside" id="Atz-aL-kG0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bX-3K-Tjg">
+                    <rect key="frame" x="177" y="300.5" width="60" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="G60-SU-P3X"/>
+                        <constraint firstAttribute="height" constant="40" id="sJB-Gb-N6g"/>
+                    </constraints>
+                    <state key="normal" title="取消"/>
+                    <connections>
+                        <action selector="threadCancel:" destination="-1" eventType="touchUpInside" id="dHx-28-wAy"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjM-YX-KRl">
+                    <rect key="frame" x="176" y="350.5" width="62" height="30"/>
+                    <state key="normal" title="加载图片"/>
+                    <connections>
+                        <action selector="loadImage:" destination="-1" eventType="touchUpInside" id="vWb-82-58q"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o00-jP-IEK">
+                    <rect key="frame" x="87" y="390.5" width="240" height="400"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="400" id="Bjh-we-SAF"/>
+                        <constraint firstAttribute="width" constant="240" id="KCZ-9j-ESb"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="9bX-3K-Tjg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1Dw-Th-FdD"/>
+                <constraint firstItem="AqH-L3-Ntm" firstAttribute="top" secondItem="5tO-ab-FFZ" secondAttribute="bottom" constant="15" id="8QY-qg-XNp"/>
+                <constraint firstItem="mjM-YX-KRl" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ARj-Pc-Krr"/>
+                <constraint firstItem="MzB-7l-bSF" firstAttribute="top" secondItem="pUM-b5-uT8" secondAttribute="bottom" constant="10" id="EG6-9Q-VsV"/>
+                <constraint firstItem="mjM-YX-KRl" firstAttribute="top" secondItem="9bX-3K-Tjg" secondAttribute="bottom" constant="10" id="Hw5-l5-lqO"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="5tO-ab-FFZ" secondAttribute="trailing" constant="50" id="LsQ-Ju-rk2"/>
+                <constraint firstItem="AqH-L3-Ntm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Lzh-f9-Rhe"/>
+                <constraint firstItem="5tO-ab-FFZ" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="50" id="Uwu-A9-Id4"/>
+                <constraint firstItem="5tO-ab-FFZ" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="10" id="WU8-49-NCo"/>
+                <constraint firstItem="pUM-b5-uT8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bVO-Se-eXd"/>
+                <constraint firstItem="9bX-3K-Tjg" firstAttribute="top" secondItem="MzB-7l-bSF" secondAttribute="bottom" constant="10" id="e3l-7i-Vy3"/>
+                <constraint firstItem="pUM-b5-uT8" firstAttribute="top" secondItem="AqH-L3-Ntm" secondAttribute="bottom" constant="10" id="tDZ-Pj-7gD"/>
+                <constraint firstItem="MzB-7l-bSF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="u5S-J1-Li8"/>
+                <constraint firstItem="o00-jP-IEK" firstAttribute="top" secondItem="mjM-YX-KRl" secondAttribute="bottom" constant="10" id="wVd-Vk-Rf3"/>
+                <constraint firstItem="o00-jP-IEK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wza-m3-tN6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="132" y="93"/>
+        </view>
+    </objects>
+</document>

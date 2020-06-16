@@ -70,9 +70,23 @@
                         <action selector="nsoperation:" destination="-1" eventType="touchUpInside" id="fzG-wx-pCw"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUN-To-WS9">
+                    <rect key="frame" x="50" y="375" width="132" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="AyR-qa-ZT7"/>
+                    </constraints>
+                    <state key="normal" title="多图下载">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="downloadImages:" destination="-1" eventType="touchUpInside" id="dAX-FF-J9F"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
+                <constraint firstItem="KUN-To-WS9" firstAttribute="trailing" secondItem="RHd-AN-FpL" secondAttribute="trailing" id="0Jd-QX-aH1"/>
                 <constraint firstItem="4qZ-eP-CID" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="50" id="Kqp-gE-5gG"/>
                 <constraint firstItem="2GG-Re-Idz" firstAttribute="leading" secondItem="HdQ-rY-mOP" secondAttribute="trailing" constant="50" id="R1J-0x-KBg"/>
                 <constraint firstItem="2GG-Re-Idz" firstAttribute="bottom" secondItem="HdQ-rY-mOP" secondAttribute="bottom" id="WU6-2U-7YF"/>
@@ -82,10 +96,12 @@
                 <constraint firstItem="HdQ-rY-mOP" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="50" id="c0H-BV-ILW"/>
                 <constraint firstItem="2GG-Re-Idz" firstAttribute="top" secondItem="HdQ-rY-mOP" secondAttribute="top" id="fgi-Jc-esK"/>
                 <constraint firstItem="UhY-P3-njh" firstAttribute="leading" secondItem="2GG-Re-Idz" secondAttribute="leading" id="i8s-pC-b3w"/>
+                <constraint firstItem="KUN-To-WS9" firstAttribute="leading" secondItem="RHd-AN-FpL" secondAttribute="leading" id="l0O-ok-6cN"/>
                 <constraint firstItem="UhY-P3-njh" firstAttribute="top" secondItem="RHd-AN-FpL" secondAttribute="top" id="mnS-hk-jgE"/>
                 <constraint firstItem="2GG-Re-Idz" firstAttribute="width" secondItem="HdQ-rY-mOP" secondAttribute="width" id="oLi-dm-lXO"/>
                 <constraint firstItem="RHd-AN-FpL" firstAttribute="top" secondItem="HdQ-rY-mOP" secondAttribute="bottom" constant="30" id="reZ-Yd-urf"/>
                 <constraint firstItem="HdQ-rY-mOP" firstAttribute="top" secondItem="4qZ-eP-CID" secondAttribute="bottom" constant="50" id="t8J-Jg-QT0"/>
+                <constraint firstItem="KUN-To-WS9" firstAttribute="top" secondItem="RHd-AN-FpL" secondAttribute="bottom" constant="30" id="uLV-TG-Xfl"/>
                 <constraint firstItem="UhY-P3-njh" firstAttribute="trailing" secondItem="2GG-Re-Idz" secondAttribute="trailing" id="uSG-3m-VBC"/>
                 <constraint firstItem="RHd-AN-FpL" firstAttribute="trailing" secondItem="HdQ-rY-mOP" secondAttribute="trailing" id="w92-K5-M9R"/>
                 <constraint firstItem="RHd-AN-FpL" firstAttribute="leading" secondItem="HdQ-rY-mOP" secondAttribute="leading" id="xuV-u8-akZ"/>

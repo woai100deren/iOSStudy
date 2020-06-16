@@ -39,6 +39,9 @@
 		E9444BC424975B660036DB4B /* ThreadGCDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9444BC224975B660036DB4B /* ThreadGCDViewController.xib */; };
 		E9444BCE2498588F0036DB4B /* ThreadSingletonTools.m in Sources */ = {isa = PBXBuildFile; fileRef = E9444BCD2498588F0036DB4B /* ThreadSingletonTools.m */; };
 		E9444BD42498620B0036DB4B /* ThreadGeneralSingletonTools.m in Sources */ = {isa = PBXBuildFile; fileRef = E9444BD32498620B0036DB4B /* ThreadGeneralSingletonTools.m */; };
+		E9444BD924986E440036DB4B /* ThreadNSOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9444BD724986E440036DB4B /* ThreadNSOperationViewController.m */; };
+		E9444BDA24986E440036DB4B /* ThreadNSOperationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9444BD824986E440036DB4B /* ThreadNSOperationViewController.xib */; };
+		E9444BDD249892A40036DB4B /* ThreadMyNSOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E9444BDC249892A40036DB4B /* ThreadMyNSOperation.m */; };
 		E94DCC8B2490BFF500ACFF3E /* QDShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC8A2490BFF500ACFF3E /* QDShapeView.m */; };
 		E94DCC8E2490CE7E00ACFF3E /* QDDownloadProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC8D2490CE7E00ACFF3E /* QDDownloadProgressView.m */; };
 		E94DCC912490DB2900ACFF3E /* QDTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC902490DB2900ACFF3E /* QDTextView.m */; };
@@ -257,6 +260,11 @@
 		E9444BD22498620B0036DB4B /* ThreadGeneralSingletonTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadGeneralSingletonTools.h; sourceTree = "<group>"; };
 		E9444BD32498620B0036DB4B /* ThreadGeneralSingletonTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadGeneralSingletonTools.m; sourceTree = "<group>"; };
 		E9444BD52498642F0036DB4B /* ThreadSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadSingleton.h; sourceTree = "<group>"; };
+		E9444BD624986E440036DB4B /* ThreadNSOperationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadNSOperationViewController.h; sourceTree = "<group>"; };
+		E9444BD724986E440036DB4B /* ThreadNSOperationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadNSOperationViewController.m; sourceTree = "<group>"; };
+		E9444BD824986E440036DB4B /* ThreadNSOperationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreadNSOperationViewController.xib; sourceTree = "<group>"; };
+		E9444BDB249892A40036DB4B /* ThreadMyNSOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadMyNSOperation.h; sourceTree = "<group>"; };
+		E9444BDC249892A40036DB4B /* ThreadMyNSOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadMyNSOperation.m; sourceTree = "<group>"; };
 		E94DCC892490BFF500ACFF3E /* QDShapeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDShapeView.h; sourceTree = "<group>"; };
 		E94DCC8A2490BFF500ACFF3E /* QDShapeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDShapeView.m; sourceTree = "<group>"; };
 		E94DCC8C2490CE7E00ACFF3E /* QDDownloadProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDDownloadProgressView.h; sourceTree = "<group>"; };
@@ -741,6 +749,11 @@
 				E9444BD22498620B0036DB4B /* ThreadGeneralSingletonTools.h */,
 				E9444BD32498620B0036DB4B /* ThreadGeneralSingletonTools.m */,
 				E9444BD52498642F0036DB4B /* ThreadSingleton.h */,
+				E9444BD624986E440036DB4B /* ThreadNSOperationViewController.h */,
+				E9444BD724986E440036DB4B /* ThreadNSOperationViewController.m */,
+				E9444BD824986E440036DB4B /* ThreadNSOperationViewController.xib */,
+				E9444BDB249892A40036DB4B /* ThreadMyNSOperation.h */,
+				E9444BDC249892A40036DB4B /* ThreadMyNSOperation.m */,
 			);
 			path = "进程线程相关";
 			sourceTree = "<group>";
@@ -1214,6 +1227,7 @@
 				E97D8BFF248F23DE008CF06C /* AnimTransformViewController.xib in Resources */,
 				E97D8BF3248E4662008CF06C /* ModalViewController.xib in Resources */,
 				E97F33692480E43E0068E757 /* drinks.plist in Resources */,
+				E9444BDA24986E440036DB4B /* ThreadNSOperationViewController.xib in Resources */,
 				E9EA4D372488C1A500E53569 /* test.html in Resources */,
 				E94DCCDB24932E0500ACFF3E /* AnimImplicitAnimViewController.xib in Resources */,
 				E9EA4D422488E2AD00E53569 /* DeliverValueSecondViewController.xib in Resources */,
@@ -1382,6 +1396,7 @@
 				E9444BCE2498588F0036DB4B /* ThreadSingletonTools.m in Sources */,
 				E97D8BF1248E436F008CF06C /* ModalViewController.m in Sources */,
 				E94DCC942490DB3500ACFF3E /* QDImageView.m in Sources */,
+				E9444BDD249892A40036DB4B /* ThreadMyNSOperation.m in Sources */,
 				E94DCCB42491FF7400ACFF3E /* ImageArbitrarilyTailorViewController.m in Sources */,
 				D26E8C79249605B400AD280F /* ImageCustomView.m in Sources */,
 				E97D8B9E248A0EF6008CF06C /* iOSStudy.xcdatamodeld in Sources */,
@@ -1427,6 +1442,7 @@
 				E94DCC9F2490E4CB00ACFF3E /* SnowflakeView.m in Sources */,
 				E9A928F0248F39A300694EF7 /* TransmitBaseView.m in Sources */,
 				E97D8BD3248E2E37008CF06C /* BaseUIFrameViewController.m in Sources */,
+				E9444BD924986E440036DB4B /* ThreadNSOperationViewController.m in Sources */,
 				E94DCCE42493559F00ACFF3E /* AnimCABaseAnimViewController.m in Sources */,
 				E9EA4CF92487334E00E53569 /* CityTextField.m in Sources */,
 				E9A9290A248F952A00694EF7 /* JumpModel.m in Sources */,
