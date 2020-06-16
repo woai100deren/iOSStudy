@@ -11,6 +11,7 @@
 #import "ThreadNSThreadViewController.h"
 #import "ThreadGCDViewController.h"
 #import "ThreadNSOperationViewController.h"
+#import "ThreadDownloadImagesViewController.h"
 
 @interface ThreadBasicViewController ()
 
@@ -48,6 +49,7 @@
     [self jump:[[ThreadNSOperationViewController alloc] init]];
 }
 - (IBAction)downloadImages:(id)sender {
+    [self jump:[[ThreadDownloadImagesViewController alloc] init]];
 }
 
 -(void)jump:(UIViewController *)controller{

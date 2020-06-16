@@ -61,3 +61,4 @@ ios开发学习项目
   - NSThread
   - GCD
   - NSOperation
+  - 多图下载
