@@ -29,13 +29,13 @@
      第一个参数：C语言的字符串，就是一个标识符，用来区分队列
      第二个参数：队列类型，DISPATCH_QUEUE_CONCURRENT：并发队列，DISPATCH_QUEUE_SERIAL：串行队列
      */
-//    dispatch_queue_t queue = dispatch_queue_create("com.dj.asyncConcurrent", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_queue_t queue = dispatch_queue_create("com.dj.asyncConcurrent", DISPATCH_QUEUE_CONCURRENT);
     
     //获得全局并发队列(不是新创建，本身存在的)
     /**
      第一个参数：优先级
      */
-    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+//    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     
     NSLog(@"start --- ");
     
@@ -51,6 +51,16 @@
     dispatch_async(queue, ^{
         NSLog(@"download2---%@",[NSThread currentThread]);
     });
+    
+    
+    //栅栏函数(用在异步),不能使用全局并发队列。
+    //栅栏函数的目的，只有执行完栅栏函数后，才能执行后面的任务
+    dispatch_barrier_sync(queue, ^{
+        dispatch_async(queue, ^{
+            NSLog(@"++++++++++++++++++++++++");
+        });
+    });
+    
     dispatch_async(queue, ^{
         NSLog(@"download3---%@",[NSThread currentThread]);
     });
