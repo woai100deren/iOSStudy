@@ -87,6 +87,13 @@
                         <constraint firstAttribute="height" constant="400" id="yew-Ll-dpQ"/>
                     </constraints>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPP-sv-NeO">
+                    <rect key="frame" x="147.5" y="795" width="119" height="30"/>
+                    <state key="normal" title="单例模式(见源码)"/>
+                    <connections>
+                        <action selector="singleton:" destination="-1" eventType="touchUpInside" id="ZVD-4X-AN8"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
@@ -101,9 +108,11 @@
                 <constraint firstItem="J98-A4-QSq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="N1s-nJ-Dvs"/>
                 <constraint firstItem="nnX-bd-yHs" firstAttribute="top" secondItem="riy-lN-iLW" secondAttribute="bottom" constant="10" id="Nb7-Ii-xYY"/>
                 <constraint firstItem="eYQ-BA-Ljo" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="50" id="Pq4-i6-nvX"/>
+                <constraint firstItem="aPP-sv-NeO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="T9C-ro-9GK"/>
                 <constraint firstItem="8sd-R7-TDT" firstAttribute="top" secondItem="nnX-bd-yHs" secondAttribute="bottom" constant="10" id="Vcb-3x-oPG"/>
                 <constraint firstItem="J98-A4-QSq" firstAttribute="top" secondItem="8sd-R7-TDT" secondAttribute="bottom" constant="10" id="WSC-I7-Oi0"/>
                 <constraint firstItem="riy-lN-iLW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ceW-Id-QXC"/>
+                <constraint firstItem="aPP-sv-NeO" firstAttribute="top" secondItem="J98-A4-QSq" secondAttribute="bottom" constant="10" id="fE6-yf-PTO"/>
                 <constraint firstItem="E0z-4K-IyE" firstAttribute="top" secondItem="kij-qY-0xv" secondAttribute="bottom" constant="10" id="fSs-7G-0Ir"/>
                 <constraint firstItem="WoZ-7r-vp7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fZG-xw-deK"/>
                 <constraint firstItem="cBt-ww-C2W" firstAttribute="top" secondItem="WoZ-7r-vp7" secondAttribute="bottom" constant="10" id="lA4-EI-gjH"/>

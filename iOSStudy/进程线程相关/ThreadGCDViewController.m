@@ -7,6 +7,8 @@
 //
 
 #import "ThreadGCDViewController.h"
+#import "ThreadSingletonTools.h"
+#import "ThreadGeneralSingletonTools.h"
 
 @interface ThreadGCDViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
@@ -220,6 +222,19 @@
             NSLog(@"更新UI%@----------",[NSThread currentThread]);
         });
     });
+}
+- (IBAction)singleton:(id)sender {
+    ThreadSingletonTools *tools1 = [[ThreadSingletonTools alloc] init];
+    ThreadSingletonTools *tools2 = [[ThreadSingletonTools alloc] init];
+    ThreadSingletonTools *tools3 = [ThreadSingletonTools shareThreadSingletonTools];
+    ThreadSingletonTools *tools4 = [tools1 copy];
+    ThreadSingletonTools *tools5 = [tools1 mutableCopy];
+    
+    NSLog(@"t1:%p,t2:%p,t3:%p,t4:%p,t5:%p",tools1,tools2,tools3,tools4,tools5);
+    
+    ThreadGeneralSingletonTools *t1 = [[ThreadGeneralSingletonTools alloc] init];
+    ThreadGeneralSingletonTools *t2 = [ThreadGeneralSingletonTools shareThreadGeneralSingletonTools];
+    NSLog(@"t1:%p,t2:%p",t1,t2);
 }
 
 @end

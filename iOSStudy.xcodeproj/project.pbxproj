@@ -37,6 +37,8 @@
 		E9444BBF24973FAA0036DB4B /* ThreadNSThreadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9444BBD24973FAA0036DB4B /* ThreadNSThreadViewController.xib */; };
 		E9444BC324975B660036DB4B /* ThreadGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9444BC124975B660036DB4B /* ThreadGCDViewController.m */; };
 		E9444BC424975B660036DB4B /* ThreadGCDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9444BC224975B660036DB4B /* ThreadGCDViewController.xib */; };
+		E9444BCE2498588F0036DB4B /* ThreadSingletonTools.m in Sources */ = {isa = PBXBuildFile; fileRef = E9444BCD2498588F0036DB4B /* ThreadSingletonTools.m */; };
+		E9444BD42498620B0036DB4B /* ThreadGeneralSingletonTools.m in Sources */ = {isa = PBXBuildFile; fileRef = E9444BD32498620B0036DB4B /* ThreadGeneralSingletonTools.m */; };
 		E94DCC8B2490BFF500ACFF3E /* QDShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC8A2490BFF500ACFF3E /* QDShapeView.m */; };
 		E94DCC8E2490CE7E00ACFF3E /* QDDownloadProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC8D2490CE7E00ACFF3E /* QDDownloadProgressView.m */; };
 		E94DCC912490DB2900ACFF3E /* QDTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC902490DB2900ACFF3E /* QDTextView.m */; };
@@ -250,6 +252,11 @@
 		E9444BC024975B660036DB4B /* ThreadGCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadGCDViewController.h; sourceTree = "<group>"; };
 		E9444BC124975B660036DB4B /* ThreadGCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadGCDViewController.m; sourceTree = "<group>"; };
 		E9444BC224975B660036DB4B /* ThreadGCDViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreadGCDViewController.xib; sourceTree = "<group>"; };
+		E9444BCC2498588F0036DB4B /* ThreadSingletonTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadSingletonTools.h; sourceTree = "<group>"; };
+		E9444BCD2498588F0036DB4B /* ThreadSingletonTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadSingletonTools.m; sourceTree = "<group>"; };
+		E9444BD22498620B0036DB4B /* ThreadGeneralSingletonTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadGeneralSingletonTools.h; sourceTree = "<group>"; };
+		E9444BD32498620B0036DB4B /* ThreadGeneralSingletonTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadGeneralSingletonTools.m; sourceTree = "<group>"; };
+		E9444BD52498642F0036DB4B /* ThreadSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadSingleton.h; sourceTree = "<group>"; };
 		E94DCC892490BFF500ACFF3E /* QDShapeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDShapeView.h; sourceTree = "<group>"; };
 		E94DCC8A2490BFF500ACFF3E /* QDShapeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDShapeView.m; sourceTree = "<group>"; };
 		E94DCC8C2490CE7E00ACFF3E /* QDDownloadProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDDownloadProgressView.h; sourceTree = "<group>"; };
@@ -729,6 +736,11 @@
 				E9444BC024975B660036DB4B /* ThreadGCDViewController.h */,
 				E9444BC124975B660036DB4B /* ThreadGCDViewController.m */,
 				E9444BC224975B660036DB4B /* ThreadGCDViewController.xib */,
+				E9444BCC2498588F0036DB4B /* ThreadSingletonTools.h */,
+				E9444BCD2498588F0036DB4B /* ThreadSingletonTools.m */,
+				E9444BD22498620B0036DB4B /* ThreadGeneralSingletonTools.h */,
+				E9444BD32498620B0036DB4B /* ThreadGeneralSingletonTools.m */,
+				E9444BD52498642F0036DB4B /* ThreadSingleton.h */,
 			);
 			path = "进程线程相关";
 			sourceTree = "<group>";
@@ -1367,6 +1379,7 @@
 				E94DCCC224920DE600ACFF3E /* GestureLockView.m in Sources */,
 				E90667E22475040100F44ADD /* main.m in Sources */,
 				E94DCCA32491C94F00ACFF3E /* ImageWatermarkViewController.m in Sources */,
+				E9444BCE2498588F0036DB4B /* ThreadSingletonTools.m in Sources */,
 				E97D8BF1248E436F008CF06C /* ModalViewController.m in Sources */,
 				E94DCC942490DB3500ACFF3E /* QDImageView.m in Sources */,
 				E94DCCB42491FF7400ACFF3E /* ImageArbitrarilyTailorViewController.m in Sources */,
@@ -1375,6 +1388,7 @@
 				E97F33722480E99C0068E757 /* ShoppingCartCell.m in Sources */,
 				E94DCCDF24932E1600ACFF3E /* AnimClockRotationViewController.m in Sources */,
 				E9EA4CFE2487344500E53569 /* CityModel.m in Sources */,
+				E9444BD42498620B0036DB4B /* ThreadGeneralSingletonTools.m in Sources */,
 				E97F33842484DEFA0068E757 /* SingleObject.m in Sources */,
 				E97F336D2480E79F0068E757 /* ShoppingCartViewController.m in Sources */,
 				E9300EFD247BB30F0035BF4C /* ScrollViewController.m in Sources */,
