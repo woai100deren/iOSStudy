@@ -62,3 +62,4 @@ ios开发学习项目
   - GCD
   - NSOperation
   - 多图下载
+- SDWebImage使用

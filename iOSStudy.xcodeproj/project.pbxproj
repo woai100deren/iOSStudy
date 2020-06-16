@@ -48,6 +48,12 @@
 		E9444BE82498A2BA0036DB4B /* ThreadDownloadImagesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9444BE62498A2BA0036DB4B /* ThreadDownloadImagesTableViewCell.m */; };
 		E9444BE92498A2BA0036DB4B /* ThreadDownloadImagesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9444BE72498A2BA0036DB4B /* ThreadDownloadImagesTableViewCell.xib */; };
 		E9444BEC2498A4870036DB4B /* ThreadDownloadImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9444BEB2498A4860036DB4B /* ThreadDownloadImageModel.m */; };
+		E9444BF42498CA930036DB4B /* SDWebImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9444BF22498CA930036DB4B /* SDWebImageViewController.m */; };
+		E9444BF52498CA930036DB4B /* SDWebImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9444BF32498CA930036DB4B /* SDWebImageViewController.xib */; };
+		E9444BF72498CAC30036DB4B /* games.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9444BF62498CAC30036DB4B /* games.plist */; };
+		E9444BFA2498CB070036DB4B /* SDGameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9444BF92498CB070036DB4B /* SDGameModel.m */; };
+		E9444C012498CB370036DB4B /* SDGameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9444BFF2498CB370036DB4B /* SDGameTableViewCell.m */; };
+		E9444C022498CB370036DB4B /* SDGameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9444C002498CB370036DB4B /* SDGameTableViewCell.xib */; };
 		E94DCC8B2490BFF500ACFF3E /* QDShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC8A2490BFF500ACFF3E /* QDShapeView.m */; };
 		E94DCC8E2490CE7E00ACFF3E /* QDDownloadProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC8D2490CE7E00ACFF3E /* QDDownloadProgressView.m */; };
 		E94DCC912490DB2900ACFF3E /* QDTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC902490DB2900ACFF3E /* QDTextView.m */; };
@@ -280,6 +286,15 @@
 		E9444BE72498A2BA0036DB4B /* ThreadDownloadImagesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreadDownloadImagesTableViewCell.xib; sourceTree = "<group>"; };
 		E9444BEA2498A4860036DB4B /* ThreadDownloadImageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadDownloadImageModel.h; sourceTree = "<group>"; };
 		E9444BEB2498A4860036DB4B /* ThreadDownloadImageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadDownloadImageModel.m; sourceTree = "<group>"; };
+		E9444BF12498CA930036DB4B /* SDWebImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDWebImageViewController.h; sourceTree = "<group>"; };
+		E9444BF22498CA930036DB4B /* SDWebImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDWebImageViewController.m; sourceTree = "<group>"; };
+		E9444BF32498CA930036DB4B /* SDWebImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDWebImageViewController.xib; sourceTree = "<group>"; };
+		E9444BF62498CAC30036DB4B /* games.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = games.plist; sourceTree = "<group>"; };
+		E9444BF82498CB070036DB4B /* SDGameModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDGameModel.h; sourceTree = "<group>"; };
+		E9444BF92498CB070036DB4B /* SDGameModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDGameModel.m; sourceTree = "<group>"; };
+		E9444BFE2498CB370036DB4B /* SDGameTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDGameTableViewCell.h; sourceTree = "<group>"; };
+		E9444BFF2498CB370036DB4B /* SDGameTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDGameTableViewCell.m; sourceTree = "<group>"; };
+		E9444C002498CB370036DB4B /* SDGameTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDGameTableViewCell.xib; sourceTree = "<group>"; };
 		E94DCC892490BFF500ACFF3E /* QDShapeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDShapeView.h; sourceTree = "<group>"; };
 		E94DCC8A2490BFF500ACFF3E /* QDShapeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDShapeView.m; sourceTree = "<group>"; };
 		E94DCC8C2490CE7E00ACFF3E /* QDDownloadProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDDownloadProgressView.h; sourceTree = "<group>"; };
@@ -625,6 +640,7 @@
 		E90667CB2475040100F44ADD /* iOSStudy */ = {
 			isa = PBXGroup;
 			children = (
+				E9444BF02498CA6C0036DB4B /* SDWebImage使用 */,
 				E94DCCE62493848800ACFF3E /* 进程线程相关 */,
 				E94DCCC624922B0000ACFF3E /* 画板 */,
 				E94DCCB02491FE8F00ACFF3E /* 手势解锁 */,
@@ -676,6 +692,22 @@
 				E9A92909248F952A00694EF7 /* JumpModel.m */,
 			);
 			path = iOSStudy;
+			sourceTree = "<group>";
+		};
+		E9444BF02498CA6C0036DB4B /* SDWebImage使用 */ = {
+			isa = PBXGroup;
+			children = (
+				E9444BF12498CA930036DB4B /* SDWebImageViewController.h */,
+				E9444BF22498CA930036DB4B /* SDWebImageViewController.m */,
+				E9444BF32498CA930036DB4B /* SDWebImageViewController.xib */,
+				E9444BF62498CAC30036DB4B /* games.plist */,
+				E9444BF82498CB070036DB4B /* SDGameModel.h */,
+				E9444BF92498CB070036DB4B /* SDGameModel.m */,
+				E9444BFE2498CB370036DB4B /* SDGameTableViewCell.h */,
+				E9444BFF2498CB370036DB4B /* SDGameTableViewCell.m */,
+				E9444C002498CB370036DB4B /* SDGameTableViewCell.xib */,
+			);
+			path = "SDWebImage使用";
 			sourceTree = "<group>";
 		};
 		E94DCC972490E3AE00ACFF3E /* 定时器 */ = {
@@ -1244,6 +1276,7 @@
 				E997387A247767CC00D6F041 /* Second.storyboard in Resources */,
 				D26E8C712495F8C800AD280F /* AnimVolumeVibrateViewController.xib in Resources */,
 				E94DCCBF24920CE900ACFF3E /* GestureLockViewController.xib in Resources */,
+				E9444BF52498CA930036DB4B /* SDWebImageViewController.xib in Resources */,
 				E9ECA05E247F8E8C0041E22D /* MyTableViewCell.xib in Resources */,
 				D29E4716248A984400BDB9C0 /* UserDetailViewController.xib in Resources */,
 				E94DCCF0249711C900ACFF3E /* AnimViscousViewController.xib in Resources */,
@@ -1290,6 +1323,7 @@
 				E9A928DB248F362100694EF7 /* EventTransmitViewController.xib in Resources */,
 				E97D8B692488F253008CF06C /* LocalValueMainViewController.xib in Resources */,
 				E94DCCA52491CB7800ACFF3E /* ImageWatermarkViewController.xib in Resources */,
+				E9444BF72498CAC30036DB4B /* games.plist in Resources */,
 				E9EA4D27248880C400E53569 /* ABTableViewCell.xib in Resources */,
 				E9300EF7247B69410035BF4C /* Third.storyboard in Resources */,
 				E97F338D24862A830068E757 /* PickViewController.xib in Resources */,
@@ -1310,6 +1344,7 @@
 				E97D8B502488F17F008CF06C /* LocalValuePreferenceViewController.xib in Resources */,
 				E98A007B247E564200669BB8 /* TableViewController.xib in Resources */,
 				E97D8B5F2488F1B9008CF06C /* LocalValueSQLiteViewController.xib in Resources */,
+				E9444C022498CB370036DB4B /* SDGameTableViewCell.xib in Resources */,
 				E9EA4CFB248733C600E53569 /* ProvincesAndCities.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1431,6 +1466,7 @@
 				E97F33722480E99C0068E757 /* ShoppingCartCell.m in Sources */,
 				E94DCCDF24932E1600ACFF3E /* AnimClockRotationViewController.m in Sources */,
 				E9EA4CFE2487344500E53569 /* CityModel.m in Sources */,
+				E9444C012498CB370036DB4B /* SDGameTableViewCell.m in Sources */,
 				E9444BD42498620B0036DB4B /* ThreadGeneralSingletonTools.m in Sources */,
 				E97F33842484DEFA0068E757 /* SingleObject.m in Sources */,
 				E97F336D2480E79F0068E757 /* ShoppingCartViewController.m in Sources */,
@@ -1475,6 +1511,8 @@
 				E9444BD924986E440036DB4B /* ThreadNSOperationViewController.m in Sources */,
 				E94DCCE42493559F00ACFF3E /* AnimCABaseAnimViewController.m in Sources */,
 				E9EA4CF92487334E00E53569 /* CityTextField.m in Sources */,
+				E9444BF42498CA930036DB4B /* SDWebImageViewController.m in Sources */,
+				E9444BFA2498CB070036DB4B /* SDGameModel.m in Sources */,
 				E9A9290A248F952A00694EF7 /* JumpModel.m in Sources */,
 				E9A928ED248F392300694EF7 /* TransmitOrangeView.m in Sources */,
 				E94DCCEF249711C900ACFF3E /* AnimViscousViewController.m in Sources */,

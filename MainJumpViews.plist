@@ -176,5 +176,11 @@
 		<key>controller</key>
 		<string>ThreadBasicViewController</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>SDWebImage使用</string>
+		<key>controller</key>
+		<string>SDWebImageViewController</string>
+	</dict>
 </array>
 </plist>
