@@ -46,6 +46,12 @@
     return _downOperationDic;
 }
 
+- (void)didReceiveMemoryWarning{
+    //内存警告后，做一些清理
+    [self.imageCacheDic removeAllObjects];
+    [self.queue cancelAllOperations];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"多图下载";
