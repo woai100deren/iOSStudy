@@ -10,7 +10,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SDWebImageViewController">
             <connections>
-                <outlet property="tableView" destination="G9a-F5-Qmw" id="kAq-9v-DGx"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,20 +18,42 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="G9a-F5-Qmw">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5D-Il-QWQ">
+                    <rect key="frame" x="219.5" y="54" width="169.5" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="SDWebImage基本使用">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="use:" destination="-1" eventType="touchUpInside" id="DB4-VF-te6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NMO-vF-IZF">
+                    <rect key="frame" x="25" y="54" width="169.5" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ZZH-TP-xpV"/>
+                    </constraints>
+                    <state key="normal" title="列表加载图片">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="imageList:" destination="-1" eventType="touchUpInside" id="2jf-Qn-4z8"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="G9a-F5-Qmw" secondAttribute="bottom" id="7JY-nk-Azk"/>
-                <constraint firstItem="G9a-F5-Qmw" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Ld6-lg-RxC"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="G9a-F5-Qmw" secondAttribute="trailing" id="iTu-ka-ERa"/>
-                <constraint firstItem="G9a-F5-Qmw" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="ulf-v8-s7T"/>
+                <constraint firstItem="NMO-vF-IZF" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="25" id="3yd-iM-j93"/>
+                <constraint firstItem="C5D-Il-QWQ" firstAttribute="height" secondItem="NMO-vF-IZF" secondAttribute="height" id="O2z-bj-CTV"/>
+                <constraint firstItem="C5D-Il-QWQ" firstAttribute="top" secondItem="NMO-vF-IZF" secondAttribute="top" id="Vvz-Ld-X93"/>
+                <constraint firstItem="C5D-Il-QWQ" firstAttribute="width" secondItem="NMO-vF-IZF" secondAttribute="width" id="kJ4-US-1re"/>
+                <constraint firstItem="NMO-vF-IZF" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="10" id="lac-lr-TEm"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="C5D-Il-QWQ" secondAttribute="trailing" constant="25" id="rhn-ez-lfV"/>
+                <constraint firstItem="C5D-Il-QWQ" firstAttribute="leading" secondItem="NMO-vF-IZF" secondAttribute="trailing" constant="25" id="wMl-pM-Brc"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
-            <point key="canvasLocation" x="132" y="93"/>
+            <point key="canvasLocation" x="132" y="96"/>
         </view>
     </objects>
 </document>

@@ -1,5 +1,5 @@
 //
-//  SDWebImageViewController.h
+//  SDWebImageFrameViewController.h
 //  iOSStudy
 //
 //  Created by dodoca on 2020/6/17.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SDWebImageViewController : UIViewController
+@interface SDWebImageFrameViewController : UIViewController
 
 @end
 

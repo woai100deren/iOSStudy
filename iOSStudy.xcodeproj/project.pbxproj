@@ -48,12 +48,17 @@
 		E9444BE82498A2BA0036DB4B /* ThreadDownloadImagesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9444BE62498A2BA0036DB4B /* ThreadDownloadImagesTableViewCell.m */; };
 		E9444BE92498A2BA0036DB4B /* ThreadDownloadImagesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9444BE72498A2BA0036DB4B /* ThreadDownloadImagesTableViewCell.xib */; };
 		E9444BEC2498A4870036DB4B /* ThreadDownloadImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9444BEB2498A4860036DB4B /* ThreadDownloadImageModel.m */; };
-		E9444BF42498CA930036DB4B /* SDWebImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9444BF22498CA930036DB4B /* SDWebImageViewController.m */; };
-		E9444BF52498CA930036DB4B /* SDWebImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9444BF32498CA930036DB4B /* SDWebImageViewController.xib */; };
+		E9444BF42498CA930036DB4B /* SDWebImageListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9444BF22498CA930036DB4B /* SDWebImageListViewController.m */; };
+		E9444BF52498CA930036DB4B /* SDWebImageListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9444BF32498CA930036DB4B /* SDWebImageListViewController.xib */; };
 		E9444BF72498CAC30036DB4B /* games.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9444BF62498CAC30036DB4B /* games.plist */; };
 		E9444BFA2498CB070036DB4B /* SDGameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9444BF92498CB070036DB4B /* SDGameModel.m */; };
 		E9444C012498CB370036DB4B /* SDGameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9444BFF2498CB370036DB4B /* SDGameTableViewCell.m */; };
 		E9444C022498CB370036DB4B /* SDGameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9444C002498CB370036DB4B /* SDGameTableViewCell.xib */; };
+		E9444C052499B01B0036DB4B /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = E9444C042499B01B0036DB4B /* UIView+Toast.m */; };
+		E9444C092499B35F0036DB4B /* SDWebImageFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9444C072499B35F0036DB4B /* SDWebImageFrameViewController.m */; };
+		E9444C0A2499B35F0036DB4B /* SDWebImageFrameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9444C082499B35F0036DB4B /* SDWebImageFrameViewController.xib */; };
+		E9444C0E2499B38B0036DB4B /* SDWebImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9444C0C2499B38B0036DB4B /* SDWebImageViewController.m */; };
+		E9444C0F2499B38B0036DB4B /* SDWebImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9444C0D2499B38B0036DB4B /* SDWebImageViewController.xib */; };
 		E94DCC8B2490BFF500ACFF3E /* QDShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC8A2490BFF500ACFF3E /* QDShapeView.m */; };
 		E94DCC8E2490CE7E00ACFF3E /* QDDownloadProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC8D2490CE7E00ACFF3E /* QDDownloadProgressView.m */; };
 		E94DCC912490DB2900ACFF3E /* QDTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC902490DB2900ACFF3E /* QDTextView.m */; };
@@ -286,15 +291,23 @@
 		E9444BE72498A2BA0036DB4B /* ThreadDownloadImagesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThreadDownloadImagesTableViewCell.xib; sourceTree = "<group>"; };
 		E9444BEA2498A4860036DB4B /* ThreadDownloadImageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadDownloadImageModel.h; sourceTree = "<group>"; };
 		E9444BEB2498A4860036DB4B /* ThreadDownloadImageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadDownloadImageModel.m; sourceTree = "<group>"; };
-		E9444BF12498CA930036DB4B /* SDWebImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDWebImageViewController.h; sourceTree = "<group>"; };
-		E9444BF22498CA930036DB4B /* SDWebImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDWebImageViewController.m; sourceTree = "<group>"; };
-		E9444BF32498CA930036DB4B /* SDWebImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDWebImageViewController.xib; sourceTree = "<group>"; };
+		E9444BF12498CA930036DB4B /* SDWebImageListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDWebImageListViewController.h; sourceTree = "<group>"; };
+		E9444BF22498CA930036DB4B /* SDWebImageListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDWebImageListViewController.m; sourceTree = "<group>"; };
+		E9444BF32498CA930036DB4B /* SDWebImageListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDWebImageListViewController.xib; sourceTree = "<group>"; };
 		E9444BF62498CAC30036DB4B /* games.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = games.plist; sourceTree = "<group>"; };
 		E9444BF82498CB070036DB4B /* SDGameModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDGameModel.h; sourceTree = "<group>"; };
 		E9444BF92498CB070036DB4B /* SDGameModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDGameModel.m; sourceTree = "<group>"; };
 		E9444BFE2498CB370036DB4B /* SDGameTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDGameTableViewCell.h; sourceTree = "<group>"; };
 		E9444BFF2498CB370036DB4B /* SDGameTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDGameTableViewCell.m; sourceTree = "<group>"; };
 		E9444C002498CB370036DB4B /* SDGameTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDGameTableViewCell.xib; sourceTree = "<group>"; };
+		E9444C032499B01B0036DB4B /* UIView+Toast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		E9444C042499B01B0036DB4B /* UIView+Toast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		E9444C062499B35F0036DB4B /* SDWebImageFrameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDWebImageFrameViewController.h; sourceTree = "<group>"; };
+		E9444C072499B35F0036DB4B /* SDWebImageFrameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDWebImageFrameViewController.m; sourceTree = "<group>"; };
+		E9444C082499B35F0036DB4B /* SDWebImageFrameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDWebImageFrameViewController.xib; sourceTree = "<group>"; };
+		E9444C0B2499B38B0036DB4B /* SDWebImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDWebImageViewController.h; sourceTree = "<group>"; };
+		E9444C0C2499B38B0036DB4B /* SDWebImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDWebImageViewController.m; sourceTree = "<group>"; };
+		E9444C0D2499B38B0036DB4B /* SDWebImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDWebImageViewController.xib; sourceTree = "<group>"; };
 		E94DCC892490BFF500ACFF3E /* QDShapeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDShapeView.h; sourceTree = "<group>"; };
 		E94DCC8A2490BFF500ACFF3E /* QDShapeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDShapeView.m; sourceTree = "<group>"; };
 		E94DCC8C2490CE7E00ACFF3E /* QDDownloadProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDDownloadProgressView.h; sourceTree = "<group>"; };
@@ -697,15 +710,21 @@
 		E9444BF02498CA6C0036DB4B /* SDWebImage使用 */ = {
 			isa = PBXGroup;
 			children = (
-				E9444BF12498CA930036DB4B /* SDWebImageViewController.h */,
-				E9444BF22498CA930036DB4B /* SDWebImageViewController.m */,
-				E9444BF32498CA930036DB4B /* SDWebImageViewController.xib */,
+				E9444C0B2499B38B0036DB4B /* SDWebImageViewController.h */,
+				E9444C0C2499B38B0036DB4B /* SDWebImageViewController.m */,
+				E9444C0D2499B38B0036DB4B /* SDWebImageViewController.xib */,
+				E9444BF12498CA930036DB4B /* SDWebImageListViewController.h */,
+				E9444BF22498CA930036DB4B /* SDWebImageListViewController.m */,
+				E9444BF32498CA930036DB4B /* SDWebImageListViewController.xib */,
 				E9444BF62498CAC30036DB4B /* games.plist */,
 				E9444BF82498CB070036DB4B /* SDGameModel.h */,
 				E9444BF92498CB070036DB4B /* SDGameModel.m */,
 				E9444BFE2498CB370036DB4B /* SDGameTableViewCell.h */,
 				E9444BFF2498CB370036DB4B /* SDGameTableViewCell.m */,
 				E9444C002498CB370036DB4B /* SDGameTableViewCell.xib */,
+				E9444C062499B35F0036DB4B /* SDWebImageFrameViewController.h */,
+				E9444C072499B35F0036DB4B /* SDWebImageFrameViewController.m */,
+				E9444C082499B35F0036DB4B /* SDWebImageFrameViewController.xib */,
 			);
 			path = "SDWebImage使用";
 			sourceTree = "<group>";
@@ -988,6 +1007,8 @@
 			children = (
 				E990ED892477B62400F068D1 /* UIColor+Hex.h */,
 				E990ED8A2477B62400F068D1 /* UIColor+Hex.m */,
+				E9444C032499B01B0036DB4B /* UIView+Toast.h */,
+				E9444C042499B01B0036DB4B /* UIView+Toast.m */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -1276,7 +1297,7 @@
 				E997387A247767CC00D6F041 /* Second.storyboard in Resources */,
 				D26E8C712495F8C800AD280F /* AnimVolumeVibrateViewController.xib in Resources */,
 				E94DCCBF24920CE900ACFF3E /* GestureLockViewController.xib in Resources */,
-				E9444BF52498CA930036DB4B /* SDWebImageViewController.xib in Resources */,
+				E9444BF52498CA930036DB4B /* SDWebImageListViewController.xib in Resources */,
 				E9ECA05E247F8E8C0041E22D /* MyTableViewCell.xib in Resources */,
 				D29E4716248A984400BDB9C0 /* UserDetailViewController.xib in Resources */,
 				E94DCCF0249711C900ACFF3E /* AnimViscousViewController.xib in Resources */,
@@ -1307,6 +1328,7 @@
 				E9A929102490875800694EF7 /* Quartz2DViewController.xib in Resources */,
 				E94DCCEB2493857A00ACFF3E /* ThreadBasicViewController.xib in Resources */,
 				E9444BE224989F780036DB4B /* ThreadDownloadImagesViewController.xib in Resources */,
+				E9444C0F2499B38B0036DB4B /* SDWebImageViewController.xib in Resources */,
 				E9A928FB248F813B00694EF7 /* GestureViewController.xib in Resources */,
 				E9444BE42498A0860036DB4B /* images.plist in Resources */,
 				E9EA4CEC2486434D00E53569 /* flags.plist in Resources */,
@@ -1323,6 +1345,7 @@
 				E9A928DB248F362100694EF7 /* EventTransmitViewController.xib in Resources */,
 				E97D8B692488F253008CF06C /* LocalValueMainViewController.xib in Resources */,
 				E94DCCA52491CB7800ACFF3E /* ImageWatermarkViewController.xib in Resources */,
+				E9444C0A2499B35F0036DB4B /* SDWebImageFrameViewController.xib in Resources */,
 				E9444BF72498CAC30036DB4B /* games.plist in Resources */,
 				E9EA4D27248880C400E53569 /* ABTableViewCell.xib in Resources */,
 				E9300EF7247B69410035BF4C /* Third.storyboard in Resources */,
@@ -1398,6 +1421,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9444C092499B35F0036DB4B /* SDWebImageFrameViewController.m in Sources */,
 				E97D8B542488F193008CF06C /* LocalValueNSCodingViewController.m in Sources */,
 				E9549147247F98EC008C5995 /* MyTableViewDiffCell.m in Sources */,
 				E94DCC8E2490CE7E00ACFF3E /* QDDownloadProgressView.m in Sources */,
@@ -1488,6 +1512,7 @@
 				E9A92900248F8EA100694EF7 /* DrawerViewController.m in Sources */,
 				E9EA4D26248880C400E53569 /* ABTableViewCell.m in Sources */,
 				E9EA4D0524873B1D00E53569 /* DateTextField.m in Sources */,
+				E9444C052499B01B0036DB4B /* UIView+Toast.m in Sources */,
 				E97D8B4F2488F17F008CF06C /* LocalValuePreferenceViewController.m in Sources */,
 				E9EA4D1F2487A72D00E53569 /* ABContacts.m in Sources */,
 				E9444BBE24973FAA0036DB4B /* ThreadNSThreadViewController.m in Sources */,
@@ -1511,7 +1536,7 @@
 				E9444BD924986E440036DB4B /* ThreadNSOperationViewController.m in Sources */,
 				E94DCCE42493559F00ACFF3E /* AnimCABaseAnimViewController.m in Sources */,
 				E9EA4CF92487334E00E53569 /* CityTextField.m in Sources */,
-				E9444BF42498CA930036DB4B /* SDWebImageViewController.m in Sources */,
+				E9444BF42498CA930036DB4B /* SDWebImageListViewController.m in Sources */,
 				E9444BFA2498CB070036DB4B /* SDGameModel.m in Sources */,
 				E9A9290A248F952A00694EF7 /* JumpModel.m in Sources */,
 				E9A928ED248F392300694EF7 /* TransmitOrangeView.m in Sources */,
@@ -1524,6 +1549,7 @@
 				E97D8BDF248E3479008CF06C /* SegmenteFirstViewController.m in Sources */,
 				E97F33762480E9BC0068E757 /* DrinkGoods.m in Sources */,
 				E9A9291C2490B41F00694EF7 /* QDBightView.m in Sources */,
+				E9444C0E2499B38B0036DB4B /* SDWebImageViewController.m in Sources */,
 				E9EA4CF2248647F600E53569 /* FlagItemView.m in Sources */,
 				E9444BC324975B660036DB4B /* ThreadGCDViewController.m in Sources */,
 			);

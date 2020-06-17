@@ -63,3 +63,5 @@ ios开发学习项目
   - NSOperation
   - 多图下载
 - SDWebImage使用
+  - SDWebImage列表加载图片
+  - SDWebImage基本使用

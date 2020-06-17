@@ -40,4 +40,14 @@
     //获取并返回首字母
     return [strPinYin substringToIndex:1];
 }
+
+- (BOOL)isNonEmptyString {
+    if (nil == self || NULL == self || [self isKindOfClass:[NSNull class]]) {
+        return NO;
+    }
+    if (![self isKindOfClass:[NSString class]]) {
+        return NO;
+    }
+    return ([[self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] length] != 0);
+}
 @end

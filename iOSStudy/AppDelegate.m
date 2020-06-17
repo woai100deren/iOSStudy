@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
+#import "SDWebImageManager.h"
 
 @interface AppDelegate ()
 
@@ -51,7 +52,11 @@
 }
 //app接收内存警告时调用
 - (void)applicationDidReceiveMemoryWarning:(UIApplication *)application{
-    
+    //对SDWebImage进行全局内存处理
+    //1.清空缓存(内存)
+    [[SDWebImageManager sharedManager].imageCache clearWithCacheType:SDImageCacheTypeMemory completion:nil];
+    //2.取消当前所有操作
+    [[SDWebImageManager sharedManager] cancelAll];
 }
 //应用程序退出时调用
 - (void)applicationWillTerminate:(UIApplication *)application{
