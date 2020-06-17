@@ -4,9 +4,9 @@
 <array>
 	<dict>
 		<key>title</key>
-		<string>跳转到tableView</string>
+		<string>tableView相关</string>
 		<key>controller</key>
-		<string>TableViewController</string>
+		<string>TableViewMainViewController</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -31,30 +31,6 @@
 		<string>跳转到thirdView</string>
 		<key>controller</key>
 		<string>ThirdViewController</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>跳转到TableView带索引</string>
-		<key>controller</key>
-		<string>TableViewIndexsController</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>跳转到TableView自定义Cell</string>
-		<key>controller</key>
-		<string>TableViewCustonCellViewController</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>跳转到TableView不同Cell</string>
-		<key>controller</key>
-		<string>TableViewDiffCellViewController</string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>跳转到购物车</string>
-		<key>controller</key>
-		<string>ShoppingCartViewController</string>
 	</dict>
 	<dict>
 		<key>title</key>

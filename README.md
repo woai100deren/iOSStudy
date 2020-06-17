@@ -1,14 +1,15 @@
 ios开发学习项目
 
-- 跳转到tableView
+- tableView相关学习
+  - tableView基础
+  - tableView带索引
+  - tableView自定义Cell
+  - tableView不同Cell
+  - 购物车
 - 跳转到Masonry
 - 跳转到scrollView
 - 跳转到secondView
 - 跳转到thirdView
-- 跳转到TableView带索引
-- 跳转到TableView自定义Cell
-- 跳转到TableView不同Cell
-- 跳转到购物车
 - 跳转到UIApplication
 - 学习跳转到PickView
 - 跳转到PickView的使用

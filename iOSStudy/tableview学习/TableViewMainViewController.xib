@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TableViewMainViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHw-qF-9gf">
+                    <rect key="frame" x="25" y="74" width="169.5" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Ckj-oW-ycI"/>
+                    </constraints>
+                    <state key="normal" title="TableView基础">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="tableViewBase:" destination="-1" eventType="touchUpInside" id="FYS-5M-oMD"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ca4-ld-yjB">
+                    <rect key="frame" x="219.5" y="74" width="169.5" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="TableView带索引">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="tableViewIndex:" destination="-1" eventType="touchUpInside" id="VvU-eC-dRP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhR-bO-Dnb">
+                    <rect key="frame" x="25" y="144" width="169.5" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="TableView自定义Cell">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="tableViewCustomCell:" destination="-1" eventType="touchUpInside" id="Ca8-6M-3d5"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZvG-ba-5b5">
+                    <rect key="frame" x="25" y="214" width="169.5" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="1Ip-GY-REt"/>
+                    </constraints>
+                    <state key="normal" title="购物车">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="shoppingCart:" destination="-1" eventType="touchUpInside" id="g8I-TN-rnR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kML-fY-r2z">
+                    <rect key="frame" x="219.5" y="144" width="169.5" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="TableView不同Cell">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="tableViewDiffCell:" destination="-1" eventType="touchUpInside" id="Uvs-TN-5jG"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="kML-fY-r2z" firstAttribute="trailing" secondItem="ca4-ld-yjB" secondAttribute="trailing" id="0ET-9G-QHz"/>
+                <constraint firstItem="ZvG-ba-5b5" firstAttribute="top" secondItem="rhR-bO-Dnb" secondAttribute="bottom" constant="30" id="EE1-gO-dLy"/>
+                <constraint firstItem="ca4-ld-yjB" firstAttribute="height" secondItem="sHw-qF-9gf" secondAttribute="height" id="EP2-A3-4om"/>
+                <constraint firstItem="rhR-bO-Dnb" firstAttribute="trailing" secondItem="sHw-qF-9gf" secondAttribute="trailing" id="HbZ-ou-xZY"/>
+                <constraint firstItem="kML-fY-r2z" firstAttribute="bottom" secondItem="rhR-bO-Dnb" secondAttribute="bottom" id="L3S-Vd-ttb"/>
+                <constraint firstItem="ZvG-ba-5b5" firstAttribute="trailing" secondItem="rhR-bO-Dnb" secondAttribute="trailing" id="Lre-ib-CyR"/>
+                <constraint firstItem="kML-fY-r2z" firstAttribute="leading" secondItem="ca4-ld-yjB" secondAttribute="leading" id="Mb7-4r-dOc"/>
+                <constraint firstItem="rhR-bO-Dnb" firstAttribute="top" secondItem="sHw-qF-9gf" secondAttribute="bottom" constant="30" id="Ov1-cq-TDQ"/>
+                <constraint firstItem="rhR-bO-Dnb" firstAttribute="height" secondItem="sHw-qF-9gf" secondAttribute="height" id="PGW-Gw-H2C"/>
+                <constraint firstItem="ca4-ld-yjB" firstAttribute="top" secondItem="sHw-qF-9gf" secondAttribute="top" id="ckE-US-cCE"/>
+                <constraint firstItem="ZvG-ba-5b5" firstAttribute="leading" secondItem="rhR-bO-Dnb" secondAttribute="leading" id="h4g-Pp-PH9"/>
+                <constraint firstItem="rhR-bO-Dnb" firstAttribute="leading" secondItem="sHw-qF-9gf" secondAttribute="leading" id="hJL-qO-8Qr"/>
+                <constraint firstItem="ca4-ld-yjB" firstAttribute="width" secondItem="sHw-qF-9gf" secondAttribute="width" id="iNM-FA-W6h"/>
+                <constraint firstItem="kML-fY-r2z" firstAttribute="top" secondItem="rhR-bO-Dnb" secondAttribute="top" id="iXL-17-qiU"/>
+                <constraint firstItem="sHw-qF-9gf" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="30" id="mmE-KM-rG8"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="ca4-ld-yjB" secondAttribute="trailing" constant="25" id="oIr-va-LiR"/>
+                <constraint firstItem="sHw-qF-9gf" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="25" id="qZI-Y3-gVk"/>
+                <constraint firstItem="ca4-ld-yjB" firstAttribute="leading" secondItem="sHw-qF-9gf" secondAttribute="trailing" constant="25" id="yNu-7X-vMB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="132" y="96"/>
+        </view>
+    </objects>
+</document>

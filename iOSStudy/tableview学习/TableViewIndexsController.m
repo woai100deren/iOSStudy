@@ -37,9 +37,9 @@
     
     self.tableView.dataSource = self;
     //给索引文字改颜色
-    self.tableView.sectionIndexColor = UIColor.redColor;
+    self.tableView.sectionIndexColor = UIColor.whiteColor;
     //给整个索引垂直列表赋值背景颜色
-    self.tableView.sectionIndexBackgroundColor = UIColor.grayColor;
+    self.tableView.sectionIndexBackgroundColor = UIColor.lightGrayColor;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{

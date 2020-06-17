@@ -63,6 +63,8 @@
 		E9444C152499C8FD0036DB4B /* NSCacheViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9444C132499C8FD0036DB4B /* NSCacheViewController.xib */; };
 		E9444C1F2499ED1B0036DB4B /* ENUMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9444C1D2499ED1B0036DB4B /* ENUMViewController.m */; };
 		E9444C202499ED1B0036DB4B /* ENUMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9444C1E2499ED1B0036DB4B /* ENUMViewController.xib */; };
+		E9444C24249A016E0036DB4B /* TableViewMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9444C22249A016E0036DB4B /* TableViewMainViewController.m */; };
+		E9444C25249A016E0036DB4B /* TableViewMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9444C23249A016E0036DB4B /* TableViewMainViewController.xib */; };
 		E94DCC8B2490BFF500ACFF3E /* QDShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC8A2490BFF500ACFF3E /* QDShapeView.m */; };
 		E94DCC8E2490CE7E00ACFF3E /* QDDownloadProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC8D2490CE7E00ACFF3E /* QDDownloadProgressView.m */; };
 		E94DCC912490DB2900ACFF3E /* QDTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC902490DB2900ACFF3E /* QDTextView.m */; };
@@ -318,6 +320,9 @@
 		E9444C1C2499ED1B0036DB4B /* ENUMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ENUMViewController.h; sourceTree = "<group>"; };
 		E9444C1D2499ED1B0036DB4B /* ENUMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ENUMViewController.m; sourceTree = "<group>"; };
 		E9444C1E2499ED1B0036DB4B /* ENUMViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ENUMViewController.xib; sourceTree = "<group>"; };
+		E9444C21249A016E0036DB4B /* TableViewMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewMainViewController.h; sourceTree = "<group>"; };
+		E9444C22249A016E0036DB4B /* TableViewMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewMainViewController.m; sourceTree = "<group>"; };
+		E9444C23249A016E0036DB4B /* TableViewMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewMainViewController.xib; sourceTree = "<group>"; };
 		E94DCC892490BFF500ACFF3E /* QDShapeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDShapeView.h; sourceTree = "<group>"; };
 		E94DCC8A2490BFF500ACFF3E /* QDShapeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDShapeView.m; sourceTree = "<group>"; };
 		E94DCC8C2490CE7E00ACFF3E /* QDDownloadProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDDownloadProgressView.h; sourceTree = "<group>"; };
@@ -1259,6 +1264,9 @@
 				E97F33712480E99C0068E757 /* ShoppingCartCell.xib */,
 				E97F33742480E9BC0068E757 /* DrinkGoods.h */,
 				E97F33752480E9BC0068E757 /* DrinkGoods.m */,
+				E9444C21249A016E0036DB4B /* TableViewMainViewController.h */,
+				E9444C22249A016E0036DB4B /* TableViewMainViewController.m */,
+				E9444C23249A016E0036DB4B /* TableViewMainViewController.xib */,
 			);
 			path = "tableview学习";
 			sourceTree = "<group>";
@@ -1327,6 +1335,7 @@
 				E97F338F24862DC20068E757 /* foods.plist in Resources */,
 				E97F336E2480E79F0068E757 /* ShoppingCartViewController.xib in Resources */,
 				E997387A247767CC00D6F041 /* Second.storyboard in Resources */,
+				E9444C25249A016E0036DB4B /* TableViewMainViewController.xib in Resources */,
 				D26E8C712495F8C800AD280F /* AnimVolumeVibrateViewController.xib in Resources */,
 				E94DCCBF24920CE900ACFF3E /* GestureLockViewController.xib in Resources */,
 				E9444BF52498CA930036DB4B /* SDWebImageListViewController.xib in Resources */,
@@ -1558,6 +1567,7 @@
 				E9EA4D3C2488E2A000E53569 /* DeliverValueFirstViewController.m in Sources */,
 				E9444BE124989F780036DB4B /* ThreadDownloadImagesViewController.m in Sources */,
 				D26E8C75249602E800AD280F /* ImageInvertedViewController.m in Sources */,
+				E9444C24249A016E0036DB4B /* TableViewMainViewController.m in Sources */,
 				E98A007F247E56F900669BB8 /* MainViewController.m in Sources */,
 				E98A0090247E6B8B00669BB8 /* TableViewCustonCellViewController.m in Sources */,
 				E97D8B682488F253008CF06C /* LocalValueMainViewController.m in Sources */,
