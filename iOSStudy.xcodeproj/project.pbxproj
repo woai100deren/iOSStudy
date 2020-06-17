@@ -59,6 +59,8 @@
 		E9444C0A2499B35F0036DB4B /* SDWebImageFrameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9444C082499B35F0036DB4B /* SDWebImageFrameViewController.xib */; };
 		E9444C0E2499B38B0036DB4B /* SDWebImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9444C0C2499B38B0036DB4B /* SDWebImageViewController.m */; };
 		E9444C0F2499B38B0036DB4B /* SDWebImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9444C0D2499B38B0036DB4B /* SDWebImageViewController.xib */; };
+		E9444C142499C8FD0036DB4B /* NSCacheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9444C122499C8FD0036DB4B /* NSCacheViewController.m */; };
+		E9444C152499C8FD0036DB4B /* NSCacheViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9444C132499C8FD0036DB4B /* NSCacheViewController.xib */; };
 		E94DCC8B2490BFF500ACFF3E /* QDShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC8A2490BFF500ACFF3E /* QDShapeView.m */; };
 		E94DCC8E2490CE7E00ACFF3E /* QDDownloadProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC8D2490CE7E00ACFF3E /* QDDownloadProgressView.m */; };
 		E94DCC912490DB2900ACFF3E /* QDTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC902490DB2900ACFF3E /* QDTextView.m */; };
@@ -308,6 +310,9 @@
 		E9444C0B2499B38B0036DB4B /* SDWebImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDWebImageViewController.h; sourceTree = "<group>"; };
 		E9444C0C2499B38B0036DB4B /* SDWebImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDWebImageViewController.m; sourceTree = "<group>"; };
 		E9444C0D2499B38B0036DB4B /* SDWebImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDWebImageViewController.xib; sourceTree = "<group>"; };
+		E9444C112499C8FD0036DB4B /* NSCacheViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSCacheViewController.h; sourceTree = "<group>"; };
+		E9444C122499C8FD0036DB4B /* NSCacheViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSCacheViewController.m; sourceTree = "<group>"; };
+		E9444C132499C8FD0036DB4B /* NSCacheViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NSCacheViewController.xib; sourceTree = "<group>"; };
 		E94DCC892490BFF500ACFF3E /* QDShapeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDShapeView.h; sourceTree = "<group>"; };
 		E94DCC8A2490BFF500ACFF3E /* QDShapeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDShapeView.m; sourceTree = "<group>"; };
 		E94DCC8C2490CE7E00ACFF3E /* QDDownloadProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDDownloadProgressView.h; sourceTree = "<group>"; };
@@ -653,6 +658,7 @@
 		E90667CB2475040100F44ADD /* iOSStudy */ = {
 			isa = PBXGroup;
 			children = (
+				E9444C102499C8ED0036DB4B /* NSCache */,
 				E9444BF02498CA6C0036DB4B /* SDWebImage使用 */,
 				E94DCCE62493848800ACFF3E /* 进程线程相关 */,
 				E94DCCC624922B0000ACFF3E /* 画板 */,
@@ -727,6 +733,16 @@
 				E9444C082499B35F0036DB4B /* SDWebImageFrameViewController.xib */,
 			);
 			path = "SDWebImage使用";
+			sourceTree = "<group>";
+		};
+		E9444C102499C8ED0036DB4B /* NSCache */ = {
+			isa = PBXGroup;
+			children = (
+				E9444C112499C8FD0036DB4B /* NSCacheViewController.h */,
+				E9444C122499C8FD0036DB4B /* NSCacheViewController.m */,
+				E9444C132499C8FD0036DB4B /* NSCacheViewController.xib */,
+			);
+			path = NSCache;
 			sourceTree = "<group>";
 		};
 		E94DCC972490E3AE00ACFF3E /* 定时器 */ = {
@@ -1320,6 +1336,7 @@
 				E98A0089247E5EEF00669BB8 /* cars.plist in Resources */,
 				E9EA4D2C24888AB800E53569 /* ABContactsDetailViewController.xib in Resources */,
 				E94DCCBA249208DA00ACFF3E /* ImgeWipeViewController.xib in Resources */,
+				E9444C152499C8FD0036DB4B /* NSCacheViewController.xib in Resources */,
 				E97F33812484DE550068E757 /* UiapplicationStudyViewController.xib in Resources */,
 				E9EA4D3D2488E2A000E53569 /* DeliverValueFirstViewController.xib in Resources */,
 				E9A92907248F94A700694EF7 /* MainJumpViews.plist in Resources */,
@@ -1435,6 +1452,7 @@
 				D26E8C7D24965BCF00AD280F /* AnimParticleEffectViewController.m in Sources */,
 				E97D8B632488F1C7008CF06C /* LocalValueCoreDataViewController.m in Sources */,
 				E94DCC912490DB2900ACFF3E /* QDTextView.m in Sources */,
+				E9444C142499C8FD0036DB4B /* NSCacheViewController.m in Sources */,
 				E9EA4CEF2486444900E53569 /* FlagItem.m in Sources */,
 				E97F33802484DE550068E757 /* UiapplicationStudyViewController.m in Sources */,
 				E94DCCD52493135500ACFF3E /* AnimCALayerCorrelationViewController.m in Sources */,

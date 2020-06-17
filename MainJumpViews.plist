@@ -182,5 +182,11 @@
 		<key>controller</key>
 		<string>SDWebImageViewController</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>NSCache使用</string>
+		<key>controller</key>
+		<string>NSCacheViewController</string>
+	</dict>
 </array>
 </plist>
