@@ -12,5 +12,7 @@ target 'iOSStudy' do
   pod 'MBProgressHUD', '~> 1.2.0'
   #第三方图片加载库
   pod 'SDWebImage'
+  #json解析库
+  pod 'JSONModel'
   
 end

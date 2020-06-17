@@ -176,5 +176,11 @@
 		<key>controller</key>
 		<string>NSRunLoopResidentViewController</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>网络请求相关</string>
+		<key>controller</key>
+		<string>NetworkMainViewController</string>
+	</dict>
 </array>
 </plist>

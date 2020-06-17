@@ -68,3 +68,6 @@ ios开发学习项目
   - SDWebImage基本使用
 - NSCache基本使用
 - 枚举示例
+- NSRunLoop常驻线程
+- 网络请求相关
+  - NSURLConnection
