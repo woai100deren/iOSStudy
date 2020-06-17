@@ -65,6 +65,8 @@
 		E9444C202499ED1B0036DB4B /* ENUMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9444C1E2499ED1B0036DB4B /* ENUMViewController.xib */; };
 		E9444C24249A016E0036DB4B /* TableViewMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9444C22249A016E0036DB4B /* TableViewMainViewController.m */; };
 		E9444C25249A016E0036DB4B /* TableViewMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9444C23249A016E0036DB4B /* TableViewMainViewController.xib */; };
+		E9444C2A249A06A80036DB4B /* NSRunLoopResidentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9444C28249A06A80036DB4B /* NSRunLoopResidentViewController.m */; };
+		E9444C2B249A06A80036DB4B /* NSRunLoopResidentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9444C29249A06A80036DB4B /* NSRunLoopResidentViewController.xib */; };
 		E94DCC8B2490BFF500ACFF3E /* QDShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC8A2490BFF500ACFF3E /* QDShapeView.m */; };
 		E94DCC8E2490CE7E00ACFF3E /* QDDownloadProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC8D2490CE7E00ACFF3E /* QDDownloadProgressView.m */; };
 		E94DCC912490DB2900ACFF3E /* QDTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC902490DB2900ACFF3E /* QDTextView.m */; };
@@ -323,6 +325,9 @@
 		E9444C21249A016E0036DB4B /* TableViewMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewMainViewController.h; sourceTree = "<group>"; };
 		E9444C22249A016E0036DB4B /* TableViewMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewMainViewController.m; sourceTree = "<group>"; };
 		E9444C23249A016E0036DB4B /* TableViewMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewMainViewController.xib; sourceTree = "<group>"; };
+		E9444C27249A06A80036DB4B /* NSRunLoopResidentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSRunLoopResidentViewController.h; sourceTree = "<group>"; };
+		E9444C28249A06A80036DB4B /* NSRunLoopResidentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSRunLoopResidentViewController.m; sourceTree = "<group>"; };
+		E9444C29249A06A80036DB4B /* NSRunLoopResidentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NSRunLoopResidentViewController.xib; sourceTree = "<group>"; };
 		E94DCC892490BFF500ACFF3E /* QDShapeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDShapeView.h; sourceTree = "<group>"; };
 		E94DCC8A2490BFF500ACFF3E /* QDShapeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDShapeView.m; sourceTree = "<group>"; };
 		E94DCC8C2490CE7E00ACFF3E /* QDDownloadProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDDownloadProgressView.h; sourceTree = "<group>"; };
@@ -668,6 +673,19 @@
 		E90667CB2475040100F44ADD /* iOSStudy */ = {
 			isa = PBXGroup;
 			children = (
+				E90667CC2475040100F44ADD /* AppDelegate.h */,
+				E90667CD2475040100F44ADD /* AppDelegate.m */,
+				E90667CF2475040100F44ADD /* SceneDelegate.h */,
+				E90667D02475040100F44ADD /* SceneDelegate.m */,
+				E90667DB2475040100F44ADD /* Assets.xcassets */,
+				E90667DD2475040100F44ADD /* LaunchScreen.storyboard */,
+				E90667E02475040100F44ADD /* Info.plist */,
+				E90667E12475040100F44ADD /* main.m */,
+				E98A007C247E56F900669BB8 /* MainViewController.h */,
+				E98A007D247E56F900669BB8 /* MainViewController.m */,
+				E98A007E247E56F900669BB8 /* MainViewController.xib */,
+				E9A92906248F94A700694EF7 /* MainJumpViews.plist */,
+				E9444C26249A067A0036DB4B /* NSRunLoop */,
 				E9444C1B2499ECF90036DB4B /* 枚举 */,
 				E9444C102499C8ED0036DB4B /* NSCache */,
 				E9444BF02498CA6C0036DB4B /* SDWebImage使用 */,
@@ -694,14 +712,6 @@
 				E9ECA05F247F91010041E22D /* tableview学习 */,
 				E990ED852477B5B800F068D1 /* common */,
 				E990ED7F2477A76C00F068D1 /* 自定义控件学习 */,
-				E90667CC2475040100F44ADD /* AppDelegate.h */,
-				E90667CD2475040100F44ADD /* AppDelegate.m */,
-				E90667CF2475040100F44ADD /* SceneDelegate.h */,
-				E90667D02475040100F44ADD /* SceneDelegate.m */,
-				E90667DB2475040100F44ADD /* Assets.xcassets */,
-				E90667DD2475040100F44ADD /* LaunchScreen.storyboard */,
-				E90667E02475040100F44ADD /* Info.plist */,
-				E90667E12475040100F44ADD /* main.m */,
 				E99738762476720A00D6F041 /* SecondViewController.h */,
 				E99738772476720A00D6F041 /* SecondViewController.m */,
 				E9973879247767CC00D6F041 /* Second.storyboard */,
@@ -713,10 +723,6 @@
 				E98A0081247E5BAC00669BB8 /* ScrollView.xib */,
 				E98AFFF4247E0AB000669BB8 /* MasonryViewController.h */,
 				E98AFFF5247E0AB000669BB8 /* MasonryViewController.m */,
-				E98A007C247E56F900669BB8 /* MainViewController.h */,
-				E98A007D247E56F900669BB8 /* MainViewController.m */,
-				E98A007E247E56F900669BB8 /* MainViewController.xib */,
-				E9A92906248F94A700694EF7 /* MainJumpViews.plist */,
 				E97D8B9C248A0EF6008CF06C /* iOSStudy.xcdatamodeld */,
 				E9A92908248F952A00694EF7 /* JumpModel.h */,
 				E9A92909248F952A00694EF7 /* JumpModel.m */,
@@ -764,6 +770,16 @@
 				E9444C1E2499ED1B0036DB4B /* ENUMViewController.xib */,
 			);
 			path = "枚举";
+			sourceTree = "<group>";
+		};
+		E9444C26249A067A0036DB4B /* NSRunLoop */ = {
+			isa = PBXGroup;
+			children = (
+				E9444C27249A06A80036DB4B /* NSRunLoopResidentViewController.h */,
+				E9444C28249A06A80036DB4B /* NSRunLoopResidentViewController.m */,
+				E9444C29249A06A80036DB4B /* NSRunLoopResidentViewController.xib */,
+			);
+			path = NSRunLoop;
 			sourceTree = "<group>";
 		};
 		E94DCC972490E3AE00ACFF3E /* 定时器 */ = {
@@ -1380,6 +1396,7 @@
 				E9A928D3248F2DD000694EF7 /* EventUIDragViewController.xib in Resources */,
 				E97F33732480E99C0068E757 /* ShoppingCartCell.xib in Resources */,
 				E9EA4D1524878AD200E53569 /* ABTableViewController.xib in Resources */,
+				E9444C2B249A06A80036DB4B /* NSRunLoopResidentViewController.xib in Resources */,
 				E98A0080247E56F900669BB8 /* MainViewController.xib in Resources */,
 				E94DCCE52493559F00ACFF3E /* AnimCABaseAnimViewController.xib in Resources */,
 				D26E8C76249602E800AD280F /* ImageInvertedViewController.xib in Resources */,
@@ -1587,6 +1604,7 @@
 				E9A9290A248F952A00694EF7 /* JumpModel.m in Sources */,
 				E9A928ED248F392300694EF7 /* TransmitOrangeView.m in Sources */,
 				E94DCCEF249711C900ACFF3E /* AnimViscousViewController.m in Sources */,
+				E9444C2A249A06A80036DB4B /* NSRunLoopResidentViewController.m in Sources */,
 				E9EA4D1424878AD200E53569 /* ABTableViewController.m in Sources */,
 				E97D8B702489ED20008CF06C /* SqliteTool.m in Sources */,
 				E9A928F3248F553900694EF7 /* TransmitImageView.m in Sources */,

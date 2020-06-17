@@ -170,5 +170,11 @@
 		<key>controller</key>
 		<string>ENUMViewController</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>NSRunLoop常驻线程</string>
+		<key>controller</key>
+		<string>NSRunLoopResidentViewController</string>
+	</dict>
 </array>
 </plist>
