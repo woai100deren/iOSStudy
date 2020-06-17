@@ -61,6 +61,8 @@
 		E9444C0F2499B38B0036DB4B /* SDWebImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9444C0D2499B38B0036DB4B /* SDWebImageViewController.xib */; };
 		E9444C142499C8FD0036DB4B /* NSCacheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9444C122499C8FD0036DB4B /* NSCacheViewController.m */; };
 		E9444C152499C8FD0036DB4B /* NSCacheViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9444C132499C8FD0036DB4B /* NSCacheViewController.xib */; };
+		E9444C1F2499ED1B0036DB4B /* ENUMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9444C1D2499ED1B0036DB4B /* ENUMViewController.m */; };
+		E9444C202499ED1B0036DB4B /* ENUMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9444C1E2499ED1B0036DB4B /* ENUMViewController.xib */; };
 		E94DCC8B2490BFF500ACFF3E /* QDShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC8A2490BFF500ACFF3E /* QDShapeView.m */; };
 		E94DCC8E2490CE7E00ACFF3E /* QDDownloadProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC8D2490CE7E00ACFF3E /* QDDownloadProgressView.m */; };
 		E94DCC912490DB2900ACFF3E /* QDTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E94DCC902490DB2900ACFF3E /* QDTextView.m */; };
@@ -313,6 +315,9 @@
 		E9444C112499C8FD0036DB4B /* NSCacheViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSCacheViewController.h; sourceTree = "<group>"; };
 		E9444C122499C8FD0036DB4B /* NSCacheViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSCacheViewController.m; sourceTree = "<group>"; };
 		E9444C132499C8FD0036DB4B /* NSCacheViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NSCacheViewController.xib; sourceTree = "<group>"; };
+		E9444C1C2499ED1B0036DB4B /* ENUMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ENUMViewController.h; sourceTree = "<group>"; };
+		E9444C1D2499ED1B0036DB4B /* ENUMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ENUMViewController.m; sourceTree = "<group>"; };
+		E9444C1E2499ED1B0036DB4B /* ENUMViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ENUMViewController.xib; sourceTree = "<group>"; };
 		E94DCC892490BFF500ACFF3E /* QDShapeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDShapeView.h; sourceTree = "<group>"; };
 		E94DCC8A2490BFF500ACFF3E /* QDShapeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QDShapeView.m; sourceTree = "<group>"; };
 		E94DCC8C2490CE7E00ACFF3E /* QDDownloadProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QDDownloadProgressView.h; sourceTree = "<group>"; };
@@ -658,6 +663,7 @@
 		E90667CB2475040100F44ADD /* iOSStudy */ = {
 			isa = PBXGroup;
 			children = (
+				E9444C1B2499ECF90036DB4B /* 枚举 */,
 				E9444C102499C8ED0036DB4B /* NSCache */,
 				E9444BF02498CA6C0036DB4B /* SDWebImage使用 */,
 				E94DCCE62493848800ACFF3E /* 进程线程相关 */,
@@ -743,6 +749,16 @@
 				E9444C132499C8FD0036DB4B /* NSCacheViewController.xib */,
 			);
 			path = NSCache;
+			sourceTree = "<group>";
+		};
+		E9444C1B2499ECF90036DB4B /* 枚举 */ = {
+			isa = PBXGroup;
+			children = (
+				E9444C1C2499ED1B0036DB4B /* ENUMViewController.h */,
+				E9444C1D2499ED1B0036DB4B /* ENUMViewController.m */,
+				E9444C1E2499ED1B0036DB4B /* ENUMViewController.xib */,
+			);
+			path = "枚举";
 			sourceTree = "<group>";
 		};
 		E94DCC972490E3AE00ACFF3E /* 定时器 */ = {
@@ -1335,6 +1351,7 @@
 				E9EA4D1024877C6C00E53569 /* ABLoginViewController.xib in Resources */,
 				E98A0089247E5EEF00669BB8 /* cars.plist in Resources */,
 				E9EA4D2C24888AB800E53569 /* ABContactsDetailViewController.xib in Resources */,
+				E9444C202499ED1B0036DB4B /* ENUMViewController.xib in Resources */,
 				E94DCCBA249208DA00ACFF3E /* ImgeWipeViewController.xib in Resources */,
 				E9444C152499C8FD0036DB4B /* NSCacheViewController.xib in Resources */,
 				E97F33812484DE550068E757 /* UiapplicationStudyViewController.xib in Resources */,
@@ -1481,6 +1498,7 @@
 				E99738782476720A00D6F041 /* SecondViewController.m in Sources */,
 				E9444BE82498A2BA0036DB4B /* ThreadDownloadImagesTableViewCell.m in Sources */,
 				E94DCCD12492386D00ACFF3E /* DBUIBezierPath.m in Sources */,
+				E9444C1F2499ED1B0036DB4B /* ENUMViewController.m in Sources */,
 				E97D8BED248E3E15008CF06C /* BaseContactsAddViewController.m in Sources */,
 				D26E8C6B2494FECB00AD280F /* ImageFoldViewController.m in Sources */,
 				E97D8BCE248E2A1A008CF06C /* TabBarSystemViewController.m in Sources */,

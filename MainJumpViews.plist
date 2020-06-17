@@ -188,5 +188,11 @@
 		<key>controller</key>
 		<string>NSCacheViewController</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>枚举示例</string>
+		<key>controller</key>
+		<string>ENUMViewController</string>
+	</dict>
 </array>
 </plist>
