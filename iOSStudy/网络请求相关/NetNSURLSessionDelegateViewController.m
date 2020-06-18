@@ -83,5 +83,7 @@ didReceiveResponse:(NSURLResponse *)response
     NSLog(@"%s",__func__);
     //因为上面session设置的是在mainQueue进行请求
     self.resultLabel.text = [[NSString alloc] initWithData:self.fileData encoding:NSUTF8StringEncoding];
+    //清理，否则可能内存泄漏
+    [session invalidateAndCancel];
 }
 @end

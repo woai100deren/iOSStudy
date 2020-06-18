@@ -132,5 +132,7 @@ didReceiveResponse:(NSURLResponse *)response
     //因为上面session设置的是在mainQueue进行请求
     [self.handle closeFile];
     self.handle = nil;
+    //清理，否则可能内存泄漏
+    [session invalidateAndCancel];
 }
 @end

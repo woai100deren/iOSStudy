@@ -124,5 +124,7 @@ expectedTotalBytes:(int64_t)expectedTotalBytes{
 - (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(NSError *)error{
     NSLog(@"整个下载过程结束");
     self.task = nil;
+    //清理，否则可能内存泄漏
+    [session invalidateAndCancel];
 }
 @end
