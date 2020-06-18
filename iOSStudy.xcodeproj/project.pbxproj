@@ -209,6 +209,9 @@
 		E9D28DD5249B0C7600CC0C71 /* NetNSURLSessionBigDownloadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9D28DD3249B0C7600CC0C71 /* NetNSURLSessionBigDownloadViewController.xib */; };
 		E9D28DD9249B348B00CC0C71 /* NetNSURLSessionBreakpointResumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D28DD7249B348B00CC0C71 /* NetNSURLSessionBreakpointResumeViewController.m */; };
 		E9D28DDA249B348B00CC0C71 /* NetNSURLSessionBreakpointResumeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9D28DD8249B348B00CC0C71 /* NetNSURLSessionBreakpointResumeViewController.xib */; };
+		E9D28DDE249B4BC000CC0C71 /* NSURLSessionUploadFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D28DDC249B4BC000CC0C71 /* NSURLSessionUploadFileViewController.m */; };
+		E9D28DDF249B4BC000CC0C71 /* NSURLSessionUploadFileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9D28DDD249B4BC000CC0C71 /* NSURLSessionUploadFileViewController.xib */; };
+		E9D28DE2249B57B200CC0C71 /* NetResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D28DE1249B57B200CC0C71 /* NetResultModel.m */; };
 		E9EA4CEA2486410300E53569 /* FlagTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA4CE92486410300E53569 /* FlagTextField.m */; };
 		E9EA4CEC2486434D00E53569 /* flags.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9EA4CEB2486434D00E53569 /* flags.plist */; };
 		E9EA4CEF2486444900E53569 /* FlagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA4CEE2486444900E53569 /* FlagItem.m */; };
@@ -570,6 +573,11 @@
 		E9D28DD6249B348B00CC0C71 /* NetNSURLSessionBreakpointResumeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetNSURLSessionBreakpointResumeViewController.h; sourceTree = "<group>"; };
 		E9D28DD7249B348B00CC0C71 /* NetNSURLSessionBreakpointResumeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetNSURLSessionBreakpointResumeViewController.m; sourceTree = "<group>"; };
 		E9D28DD8249B348B00CC0C71 /* NetNSURLSessionBreakpointResumeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NetNSURLSessionBreakpointResumeViewController.xib; sourceTree = "<group>"; };
+		E9D28DDB249B4BC000CC0C71 /* NSURLSessionUploadFileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSURLSessionUploadFileViewController.h; sourceTree = "<group>"; };
+		E9D28DDC249B4BC000CC0C71 /* NSURLSessionUploadFileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSURLSessionUploadFileViewController.m; sourceTree = "<group>"; };
+		E9D28DDD249B4BC000CC0C71 /* NSURLSessionUploadFileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NSURLSessionUploadFileViewController.xib; sourceTree = "<group>"; };
+		E9D28DE0249B57B200CC0C71 /* NetResultModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetResultModel.h; sourceTree = "<group>"; };
+		E9D28DE1249B57B200CC0C71 /* NetResultModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetResultModel.m; sourceTree = "<group>"; };
 		E9EA4CE82486410300E53569 /* FlagTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlagTextField.h; sourceTree = "<group>"; };
 		E9EA4CE92486410300E53569 /* FlagTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlagTextField.m; sourceTree = "<group>"; };
 		E9EA4CEB2486434D00E53569 /* flags.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = flags.plist; sourceTree = "<group>"; };
@@ -834,6 +842,11 @@
 				E9D28DD6249B348B00CC0C71 /* NetNSURLSessionBreakpointResumeViewController.h */,
 				E9D28DD7249B348B00CC0C71 /* NetNSURLSessionBreakpointResumeViewController.m */,
 				E9D28DD8249B348B00CC0C71 /* NetNSURLSessionBreakpointResumeViewController.xib */,
+				E9D28DDB249B4BC000CC0C71 /* NSURLSessionUploadFileViewController.h */,
+				E9D28DDC249B4BC000CC0C71 /* NSURLSessionUploadFileViewController.m */,
+				E9D28DDD249B4BC000CC0C71 /* NSURLSessionUploadFileViewController.xib */,
+				E9D28DE0249B57B200CC0C71 /* NetResultModel.h */,
+				E9D28DE1249B57B200CC0C71 /* NetResultModel.m */,
 			);
 			path = "网络请求相关";
 			sourceTree = "<group>";
@@ -1465,6 +1478,7 @@
 				D26E8C7E24965BCF00AD280F /* AnimParticleEffectViewController.xib in Resources */,
 				E9A928CE248F2D7800694EF7 /* EventMainViewController.xib in Resources */,
 				E9A928DB248F362100694EF7 /* EventTransmitViewController.xib in Resources */,
+				E9D28DDF249B4BC000CC0C71 /* NSURLSessionUploadFileViewController.xib in Resources */,
 				E97D8B692488F253008CF06C /* LocalValueMainViewController.xib in Resources */,
 				E94DCCA52491CB7800ACFF3E /* ImageWatermarkViewController.xib in Resources */,
 				E9444C0A2499B35F0036DB4B /* SDWebImageFrameViewController.xib in Resources */,
@@ -1548,6 +1562,7 @@
 				E9549147247F98EC008C5995 /* MyTableViewDiffCell.m in Sources */,
 				E9D28DD9249B348B00CC0C71 /* NetNSURLSessionBreakpointResumeViewController.m in Sources */,
 				E94DCC8E2490CE7E00ACFF3E /* QDDownloadProgressView.m in Sources */,
+				E9D28DDE249B4BC000CC0C71 /* NSURLSessionUploadFileViewController.m in Sources */,
 				E9A928E1248F37FC00694EF7 /* TransmitGreenView.m in Sources */,
 				D29E47192492669300BDB9C0 /* DBImageDealView.m in Sources */,
 				E9EA4D012487349100E53569 /* ProvinceModel.m in Sources */,
@@ -1634,6 +1649,7 @@
 				E94DCCEA2493857A00ACFF3E /* ThreadBasicViewController.m in Sources */,
 				E9EA4D3124889A3000E53569 /* WKWebViewController.m in Sources */,
 				E9D28DC5249A113900CC0C71 /* NetNSURLSessionViewController.m in Sources */,
+				E9D28DE2249B57B200CC0C71 /* NetResultModel.m in Sources */,
 				E98A0086247E5D8000669BB8 /* TableViewIndexsController.m in Sources */,
 				E9EA4D192487A2B900E53569 /* ABAddContactsViewController.m in Sources */,
 				E9444BB924973DD90036DB4B /* ThreadPthreadViewController.m in Sources */,

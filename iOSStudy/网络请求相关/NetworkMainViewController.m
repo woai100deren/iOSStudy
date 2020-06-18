@@ -12,6 +12,7 @@
 #import "NetNSURLSessionFileDownloadViewController.h"
 #import "NetNSURLSessionBigDownloadViewController.h"
 #import "NetNSURLSessionBreakpointResumeViewController.h"
+#import "NSURLSessionUploadFileViewController.h"
 
 @interface NetworkMainViewController ()
 
@@ -37,6 +38,9 @@
 }
 - (IBAction)breakpointResume:(id)sender {
     [self jump:[[NetNSURLSessionBreakpointResumeViewController alloc]init]];
+}
+- (IBAction)uploadFile:(id)sender {
+    [self jump:[[NSURLSessionUploadFileViewController alloc] init]];
 }
 
 -(void)jump:(UIViewController *)controller{
