@@ -212,6 +212,8 @@
 		E9D28DDE249B4BC000CC0C71 /* NSURLSessionUploadFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D28DDC249B4BC000CC0C71 /* NSURLSessionUploadFileViewController.m */; };
 		E9D28DDF249B4BC000CC0C71 /* NSURLSessionUploadFileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9D28DDD249B4BC000CC0C71 /* NSURLSessionUploadFileViewController.xib */; };
 		E9D28DE2249B57B200CC0C71 /* NetResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D28DE1249B57B200CC0C71 /* NetResultModel.m */; };
+		E9D28DE8249B698700CC0C71 /* NetAFNBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D28DE6249B698700CC0C71 /* NetAFNBaseViewController.m */; };
+		E9D28DE9249B698700CC0C71 /* NetAFNBaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9D28DE7249B698700CC0C71 /* NetAFNBaseViewController.xib */; };
 		E9EA4CEA2486410300E53569 /* FlagTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA4CE92486410300E53569 /* FlagTextField.m */; };
 		E9EA4CEC2486434D00E53569 /* flags.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9EA4CEB2486434D00E53569 /* flags.plist */; };
 		E9EA4CEF2486444900E53569 /* FlagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA4CEE2486444900E53569 /* FlagItem.m */; };
@@ -578,6 +580,9 @@
 		E9D28DDD249B4BC000CC0C71 /* NSURLSessionUploadFileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NSURLSessionUploadFileViewController.xib; sourceTree = "<group>"; };
 		E9D28DE0249B57B200CC0C71 /* NetResultModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetResultModel.h; sourceTree = "<group>"; };
 		E9D28DE1249B57B200CC0C71 /* NetResultModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetResultModel.m; sourceTree = "<group>"; };
+		E9D28DE5249B698700CC0C71 /* NetAFNBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetAFNBaseViewController.h; sourceTree = "<group>"; };
+		E9D28DE6249B698700CC0C71 /* NetAFNBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetAFNBaseViewController.m; sourceTree = "<group>"; };
+		E9D28DE7249B698700CC0C71 /* NetAFNBaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NetAFNBaseViewController.xib; sourceTree = "<group>"; };
 		E9EA4CE82486410300E53569 /* FlagTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlagTextField.h; sourceTree = "<group>"; };
 		E9EA4CE92486410300E53569 /* FlagTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlagTextField.m; sourceTree = "<group>"; };
 		E9EA4CEB2486434D00E53569 /* flags.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = flags.plist; sourceTree = "<group>"; };
@@ -1240,6 +1245,9 @@
 		E9D28DE4249B675B00CC0C71 /* AFN */ = {
 			isa = PBXGroup;
 			children = (
+				E9D28DE5249B698700CC0C71 /* NetAFNBaseViewController.h */,
+				E9D28DE6249B698700CC0C71 /* NetAFNBaseViewController.m */,
+				E9D28DE7249B698700CC0C71 /* NetAFNBaseViewController.xib */,
 			);
 			path = AFN;
 			sourceTree = "<group>";
@@ -1432,6 +1440,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9EA4CF42486480D00E53569 /* FlagItemView.xib in Resources */,
+				E9D28DE9249B698700CC0C71 /* NetAFNBaseViewController.xib in Resources */,
 				E97D8B552488F193008CF06C /* LocalValueNSCodingViewController.xib in Resources */,
 				E97F338F24862DC20068E757 /* foods.plist in Resources */,
 				E97F336E2480E79F0068E757 /* ShoppingCartViewController.xib in Resources */,
@@ -1584,6 +1593,7 @@
 				E9EA4D012487349100E53569 /* ProvinceModel.m in Sources */,
 				D29E4715248A984400BDB9C0 /* UserDetailViewController.m in Sources */,
 				E94DCC8B2490BFF500ACFF3E /* QDShapeView.m in Sources */,
+				E9D28DE8249B698700CC0C71 /* NetAFNBaseViewController.m in Sources */,
 				E97D8BE9248E3A2F008CF06C /* DynamicViewController.m in Sources */,
 				E98A007A247E564200669BB8 /* TableViewController.m in Sources */,
 				D26E8C7D24965BCF00AD280F /* AnimParticleEffectViewController.m in Sources */,

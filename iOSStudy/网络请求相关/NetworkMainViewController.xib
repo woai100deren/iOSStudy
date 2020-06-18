@@ -106,6 +106,21 @@
                         <action selector="uploadFile:" destination="-1" eventType="touchUpInside" id="IDP-ip-NkG"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="oXQ-2s-1zG">
+                    <rect key="frame" x="20" y="264" width="172" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="LwK-31-UeL"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="ZXX-01-Qq8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="AFN基础请求">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="afnBase:" destination="-1" eventType="touchUpInside" id="J2E-ij-pLB"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
@@ -124,12 +139,15 @@
                 <constraint firstItem="vmx-d1-N1m" firstAttribute="trailing" secondItem="3UZ-ff-LN9" secondAttribute="trailing" id="YBW-Gf-R7S"/>
                 <constraint firstItem="3UZ-ff-LN9" firstAttribute="bottom" secondItem="ORz-Op-z7J" secondAttribute="bottom" id="bbi-Nz-Pnb"/>
                 <constraint firstItem="ORz-Op-z7J" firstAttribute="trailing" secondItem="Pow-MK-Dl6" secondAttribute="trailing" id="fL4-A1-92D"/>
+                <constraint firstItem="oXQ-2s-1zG" firstAttribute="top" secondItem="fjk-7p-7tk" secondAttribute="bottom" constant="30" id="hcN-eV-jO8"/>
                 <constraint firstItem="vmx-d1-N1m" firstAttribute="top" secondItem="fjk-7p-7tk" secondAttribute="top" id="iKh-Ow-SK3"/>
                 <constraint firstItem="uIb-nU-T0x" firstAttribute="width" secondItem="Pow-MK-Dl6" secondAttribute="width" id="llf-di-G5W"/>
                 <constraint firstItem="3UZ-ff-LN9" firstAttribute="leading" secondItem="uIb-nU-T0x" secondAttribute="leading" id="p6V-v1-8fR"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="uIb-nU-T0x" secondAttribute="trailing" constant="20" id="rA8-1V-eEi"/>
                 <constraint firstItem="uIb-nU-T0x" firstAttribute="leading" secondItem="Pow-MK-Dl6" secondAttribute="trailing" constant="30" id="te1-uK-7cb"/>
                 <constraint firstItem="uIb-nU-T0x" firstAttribute="height" secondItem="Pow-MK-Dl6" secondAttribute="height" id="v8H-jU-HQB"/>
+                <constraint firstItem="oXQ-2s-1zG" firstAttribute="leading" secondItem="fjk-7p-7tk" secondAttribute="leading" id="y0H-nP-aqQ"/>
+                <constraint firstItem="oXQ-2s-1zG" firstAttribute="trailing" secondItem="fjk-7p-7tk" secondAttribute="trailing" id="z0s-Qi-kYO"/>
                 <constraint firstItem="fjk-7p-7tk" firstAttribute="height" secondItem="ORz-Op-z7J" secondAttribute="height" id="zbh-qB-V3V"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
