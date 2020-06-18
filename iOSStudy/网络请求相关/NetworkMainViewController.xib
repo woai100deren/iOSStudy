@@ -28,7 +28,7 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <connections>
-                        <action selector="urlConnection:" destination="-1" eventType="touchUpInside" id="jrH-8a-wtw"/>
+                        <action selector="urlSession:" destination="-1" eventType="touchUpInside" id="eSs-vb-pbD"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIb-nU-T0x">
@@ -37,9 +37,12 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="QfN-fM-d5f"/>
                     </constraints>
-                    <state key="normal" title="NSURLSession">
+                    <state key="normal" title="NSURLSession代理">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="urlSessionDelegate:" destination="-1" eventType="touchUpInside" id="Tde-sK-Ob4"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

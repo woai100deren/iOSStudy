@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NetNSURLSessionDelegateViewController">
+            <connections>
+                <outlet property="resultLabel" destination="qh9-7k-P64" id="EAB-vz-uo2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSD-8v-Gip">
+                    <rect key="frame" x="176" y="74" width="62" height="30"/>
+                    <state key="normal" title="请求网络"/>
+                    <connections>
+                        <action selector="requestUrl:" destination="-1" eventType="touchUpInside" id="I4O-od-sQI"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="返回结果：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIT-IW-C14">
+                    <rect key="frame" x="20" y="134" width="87" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qh9-7k-P64">
+                    <rect key="frame" x="20" y="160" width="374" height="682"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="qh9-7k-P64" firstAttribute="top" secondItem="mIT-IW-C14" secondAttribute="bottom" constant="5" id="AGO-TI-6KL"/>
+                <constraint firstItem="mIT-IW-C14" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="CYK-Fp-PXg"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="qh9-7k-P64" secondAttribute="bottom" constant="20" id="Nd9-2R-WzK"/>
+                <constraint firstItem="NSD-8v-Gip" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="30" id="cAg-vU-Yrq"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="qh9-7k-P64" secondAttribute="trailing" constant="20" id="gSl-lD-iVu"/>
+                <constraint firstItem="mIT-IW-C14" firstAttribute="top" secondItem="NSD-8v-Gip" secondAttribute="bottom" constant="30" id="jJs-ao-fAa"/>
+                <constraint firstItem="qh9-7k-P64" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="k5J-9s-XgZ"/>
+                <constraint firstItem="NSD-8v-Gip" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="kDO-Jy-XcI"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="132" y="131"/>
+        </view>
+    </objects>
+</document>

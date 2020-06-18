@@ -8,6 +8,7 @@
 
 #import "NetworkMainViewController.h"
 #import "NetNSURLSessionViewController.h"
+#import "NetNSURLSessionDelegateViewController.h"
 
 @interface NetworkMainViewController ()
 
@@ -19,8 +20,11 @@
     [super viewDidLoad];
     self.navigationItem.title = @"网络请求相关";
 }
-- (IBAction)urlConnection:(id)sender {
+- (IBAction)urlSession:(id)sender {
     [self jump:[[NetNSURLSessionViewController alloc] init]];
+}
+- (IBAction)urlSessionDelegate:(id)sender {
+    [self jump:[[NetNSURLSessionDelegateViewController alloc] init]];
 }
 
 -(void)jump:(UIViewController *)controller{

@@ -201,6 +201,8 @@
 		E9A9291C2490B41F00694EF7 /* QDBightView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A9291B2490B41F00694EF7 /* QDBightView.m */; };
 		E9D28DC5249A113900CC0C71 /* NetNSURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D28DC3249A113900CC0C71 /* NetNSURLSessionViewController.m */; };
 		E9D28DC6249A113900CC0C71 /* NetNSURLSessionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9D28DC4249A113900CC0C71 /* NetNSURLSessionViewController.xib */; };
+		E9D28DCA249A21E000CC0C71 /* NetNSURLSessionDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D28DC8249A21E000CC0C71 /* NetNSURLSessionDelegateViewController.m */; };
+		E9D28DCB249A21E000CC0C71 /* NetNSURLSessionDelegateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9D28DC9249A21E000CC0C71 /* NetNSURLSessionDelegateViewController.xib */; };
 		E9EA4CEA2486410300E53569 /* FlagTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA4CE92486410300E53569 /* FlagTextField.m */; };
 		E9EA4CEC2486434D00E53569 /* flags.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9EA4CEB2486434D00E53569 /* flags.plist */; };
 		E9EA4CEF2486444900E53569 /* FlagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA4CEE2486444900E53569 /* FlagItem.m */; };
@@ -550,6 +552,9 @@
 		E9D28DC2249A113900CC0C71 /* NetNSURLSessionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetNSURLSessionViewController.h; sourceTree = "<group>"; };
 		E9D28DC3249A113900CC0C71 /* NetNSURLSessionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetNSURLSessionViewController.m; sourceTree = "<group>"; };
 		E9D28DC4249A113900CC0C71 /* NetNSURLSessionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NetNSURLSessionViewController.xib; sourceTree = "<group>"; };
+		E9D28DC7249A21E000CC0C71 /* NetNSURLSessionDelegateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetNSURLSessionDelegateViewController.h; sourceTree = "<group>"; };
+		E9D28DC8249A21E000CC0C71 /* NetNSURLSessionDelegateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetNSURLSessionDelegateViewController.m; sourceTree = "<group>"; };
+		E9D28DC9249A21E000CC0C71 /* NetNSURLSessionDelegateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NetNSURLSessionDelegateViewController.xib; sourceTree = "<group>"; };
 		E9EA4CE82486410300E53569 /* FlagTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlagTextField.h; sourceTree = "<group>"; };
 		E9EA4CE92486410300E53569 /* FlagTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlagTextField.m; sourceTree = "<group>"; };
 		E9EA4CEB2486434D00E53569 /* flags.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = flags.plist; sourceTree = "<group>"; };
@@ -802,6 +807,9 @@
 				E9D28DC2249A113900CC0C71 /* NetNSURLSessionViewController.h */,
 				E9D28DC3249A113900CC0C71 /* NetNSURLSessionViewController.m */,
 				E9D28DC4249A113900CC0C71 /* NetNSURLSessionViewController.xib */,
+				E9D28DC7249A21E000CC0C71 /* NetNSURLSessionDelegateViewController.h */,
+				E9D28DC8249A21E000CC0C71 /* NetNSURLSessionDelegateViewController.m */,
+				E9D28DC9249A21E000CC0C71 /* NetNSURLSessionDelegateViewController.xib */,
 			);
 			path = "网络请求相关";
 			sourceTree = "<group>";
@@ -1393,6 +1401,7 @@
 				E9EA4D422488E2AD00E53569 /* DeliverValueSecondViewController.xib in Resources */,
 				E98A0091247E6B8B00669BB8 /* TableViewCustonCellViewController.xib in Resources */,
 				E97D8B642488F1C7008CF06C /* LocalValueCoreDataViewController.xib in Resources */,
+				E9D28DCB249A21E000CC0C71 /* NetNSURLSessionDelegateViewController.xib in Resources */,
 				E9444BBA24973DD90036DB4B /* ThreadPthreadViewController.xib in Resources */,
 				E9549148247F98EC008C5995 /* MyTableViewDiffCell.xib in Resources */,
 				E94DCCCB24922B2200ACFF3E /* DrawingBoardViewController.xib in Resources */,
@@ -1528,6 +1537,7 @@
 				D29E47102487E48100BDB9C0 /* NSString+Extensions.m in Sources */,
 				E94DCC9B2490E40000ACFF3E /* SnowflakeTimerViewController.m in Sources */,
 				E9444C30249A0F990036DB4B /* NetworkMainViewController.m in Sources */,
+				E9D28DCA249A21E000CC0C71 /* NetNSURLSessionDelegateViewController.m in Sources */,
 				E9A9291324908B2100694EF7 /* QDLineView.m in Sources */,
 				E97D8BFD248F226C008CF06C /* AnimTransformViewController.m in Sources */,
 				E9EA4D2B24888AB800E53569 /* ABContactsDetailViewController.m in Sources */,
