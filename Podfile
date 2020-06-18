@@ -14,5 +14,7 @@ target 'iOSStudy' do
   pod 'SDWebImage'
   #json解析库
   pod 'JSONModel'
+  #网络请求框架
+  pod 'AFNetworking', '~> 4.0'
   
 end

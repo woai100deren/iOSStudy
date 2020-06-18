@@ -827,26 +827,8 @@
 				E9444C2D249A0F990036DB4B /* NetworkMainViewController.h */,
 				E9444C2E249A0F990036DB4B /* NetworkMainViewController.m */,
 				E9444C2F249A0F990036DB4B /* NetworkMainViewController.xib */,
-				E9D28DC2249A113900CC0C71 /* NetNSURLSessionViewController.h */,
-				E9D28DC3249A113900CC0C71 /* NetNSURLSessionViewController.m */,
-				E9D28DC4249A113900CC0C71 /* NetNSURLSessionViewController.xib */,
-				E9D28DC7249A21E000CC0C71 /* NetNSURLSessionDelegateViewController.h */,
-				E9D28DC8249A21E000CC0C71 /* NetNSURLSessionDelegateViewController.m */,
-				E9D28DC9249A21E000CC0C71 /* NetNSURLSessionDelegateViewController.xib */,
-				E9D28DCC249B00D500CC0C71 /* NetNSURLSessionFileDownloadViewController.h */,
-				E9D28DCD249B00D500CC0C71 /* NetNSURLSessionFileDownloadViewController.m */,
-				E9D28DCE249B00D500CC0C71 /* NetNSURLSessionFileDownloadViewController.xib */,
-				E9D28DD1249B0C7600CC0C71 /* NetNSURLSessionBigDownloadViewController.h */,
-				E9D28DD2249B0C7600CC0C71 /* NetNSURLSessionBigDownloadViewController.m */,
-				E9D28DD3249B0C7600CC0C71 /* NetNSURLSessionBigDownloadViewController.xib */,
-				E9D28DD6249B348B00CC0C71 /* NetNSURLSessionBreakpointResumeViewController.h */,
-				E9D28DD7249B348B00CC0C71 /* NetNSURLSessionBreakpointResumeViewController.m */,
-				E9D28DD8249B348B00CC0C71 /* NetNSURLSessionBreakpointResumeViewController.xib */,
-				E9D28DDB249B4BC000CC0C71 /* NSURLSessionUploadFileViewController.h */,
-				E9D28DDC249B4BC000CC0C71 /* NSURLSessionUploadFileViewController.m */,
-				E9D28DDD249B4BC000CC0C71 /* NSURLSessionUploadFileViewController.xib */,
-				E9D28DE0249B57B200CC0C71 /* NetResultModel.h */,
-				E9D28DE1249B57B200CC0C71 /* NetResultModel.m */,
+				E9D28DE4249B675B00CC0C71 /* AFN */,
+				E9D28DE3249B673E00CC0C71 /* 原生请求 */,
 			);
 			path = "网络请求相关";
 			sourceTree = "<group>";
@@ -1226,6 +1208,40 @@
 				E94DCC932490DB3500ACFF3E /* QDImageView.m */,
 			);
 			path = "绘图Quartz2D";
+			sourceTree = "<group>";
+		};
+		E9D28DE3249B673E00CC0C71 /* 原生请求 */ = {
+			isa = PBXGroup;
+			children = (
+				E9D28DC2249A113900CC0C71 /* NetNSURLSessionViewController.h */,
+				E9D28DC3249A113900CC0C71 /* NetNSURLSessionViewController.m */,
+				E9D28DC4249A113900CC0C71 /* NetNSURLSessionViewController.xib */,
+				E9D28DC7249A21E000CC0C71 /* NetNSURLSessionDelegateViewController.h */,
+				E9D28DC8249A21E000CC0C71 /* NetNSURLSessionDelegateViewController.m */,
+				E9D28DC9249A21E000CC0C71 /* NetNSURLSessionDelegateViewController.xib */,
+				E9D28DCC249B00D500CC0C71 /* NetNSURLSessionFileDownloadViewController.h */,
+				E9D28DCD249B00D500CC0C71 /* NetNSURLSessionFileDownloadViewController.m */,
+				E9D28DCE249B00D500CC0C71 /* NetNSURLSessionFileDownloadViewController.xib */,
+				E9D28DD1249B0C7600CC0C71 /* NetNSURLSessionBigDownloadViewController.h */,
+				E9D28DD2249B0C7600CC0C71 /* NetNSURLSessionBigDownloadViewController.m */,
+				E9D28DD3249B0C7600CC0C71 /* NetNSURLSessionBigDownloadViewController.xib */,
+				E9D28DD6249B348B00CC0C71 /* NetNSURLSessionBreakpointResumeViewController.h */,
+				E9D28DD7249B348B00CC0C71 /* NetNSURLSessionBreakpointResumeViewController.m */,
+				E9D28DD8249B348B00CC0C71 /* NetNSURLSessionBreakpointResumeViewController.xib */,
+				E9D28DDB249B4BC000CC0C71 /* NSURLSessionUploadFileViewController.h */,
+				E9D28DDC249B4BC000CC0C71 /* NSURLSessionUploadFileViewController.m */,
+				E9D28DDD249B4BC000CC0C71 /* NSURLSessionUploadFileViewController.xib */,
+				E9D28DE0249B57B200CC0C71 /* NetResultModel.h */,
+				E9D28DE1249B57B200CC0C71 /* NetResultModel.m */,
+			);
+			path = "原生请求";
+			sourceTree = "<group>";
+		};
+		E9D28DE4249B675B00CC0C71 /* AFN */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AFN;
 			sourceTree = "<group>";
 		};
 		E9EA4CF52486514200E53569 /* flagTextField */ = {
