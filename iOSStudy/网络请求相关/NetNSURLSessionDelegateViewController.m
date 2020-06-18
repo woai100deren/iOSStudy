@@ -81,9 +81,7 @@ didReceiveResponse:(NSURLResponse *)response
  */
 - (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(NSError *)error{
     NSLog(@"%s",__func__);
-    //6.解析数据
-    [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-        self.resultLabel.text = [[NSString alloc] initWithData:self.fileData encoding:NSUTF8StringEncoding];
-    }];
+    //因为上面session设置的是在mainQueue进行请求
+    self.resultLabel.text = [[NSString alloc] initWithData:self.fileData encoding:NSUTF8StringEncoding];
 }
 @end

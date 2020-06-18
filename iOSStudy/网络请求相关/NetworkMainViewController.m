@@ -9,6 +9,8 @@
 #import "NetworkMainViewController.h"
 #import "NetNSURLSessionViewController.h"
 #import "NetNSURLSessionDelegateViewController.h"
+#import "NetNSURLSessionFileDownloadViewController.h"
+#import "NetNSURLSessionBigDownloadViewController.h"
 
 @interface NetworkMainViewController ()
 
@@ -25,6 +27,12 @@
 }
 - (IBAction)urlSessionDelegate:(id)sender {
     [self jump:[[NetNSURLSessionDelegateViewController alloc] init]];
+}
+- (IBAction)urlSessionFileDownload:(id)sender {
+    [self jump:[[NetNSURLSessionFileDownloadViewController alloc] init]];
+}
+- (IBAction)urlSessionBigDownload:(id)sender {
+    [self jump:[[NetNSURLSessionBigDownloadViewController alloc] init]];
 }
 
 -(void)jump:(UIViewController *)controller{

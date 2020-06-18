@@ -44,16 +44,71 @@
                         <action selector="urlSessionDelegate:" destination="-1" eventType="touchUpInside" id="Tde-sK-Ob4"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORz-Op-z7J">
+                    <rect key="frame" x="20" y="124" width="172" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="SUG-7f-HFs"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="gpz-XV-n8w"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="NSURLSession文件下载">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="urlSessionFileDownload:" destination="-1" eventType="touchUpInside" id="z1w-yD-zah"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3UZ-ff-LN9">
+                    <rect key="frame" x="222" y="124" width="172" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="oNy-QJ-iUW"/>
+                        <constraint firstAttribute="height" constant="40" id="stz-NN-j5k"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="NSURLSession大文件下载">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="urlSessionBigDownload:" destination="-1" eventType="touchUpInside" id="aaP-fD-bNw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="fjk-7p-7tk">
+                    <rect key="frame" x="20" y="194" width="172" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="9dF-TY-c5s"/>
+                        <constraint firstAttribute="height" constant="40" id="L2r-B7-OdZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal">
+                        <string key="title">NSURLSession大文件下载
+断点续传(本地缓存)</string>
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
+                <constraint firstItem="3UZ-ff-LN9" firstAttribute="top" secondItem="ORz-Op-z7J" secondAttribute="top" id="61J-7j-5SR"/>
                 <constraint firstItem="Pow-MK-Dl6" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="10" id="Bqj-wo-Czz"/>
+                <constraint firstItem="fjk-7p-7tk" firstAttribute="trailing" secondItem="ORz-Op-z7J" secondAttribute="trailing" id="GCG-gX-kFD"/>
+                <constraint firstItem="fjk-7p-7tk" firstAttribute="top" secondItem="ORz-Op-z7J" secondAttribute="bottom" constant="30" id="HpF-RI-SUb"/>
+                <constraint firstItem="ORz-Op-z7J" firstAttribute="top" secondItem="Pow-MK-Dl6" secondAttribute="bottom" constant="30" id="JaE-A8-6Vu"/>
+                <constraint firstItem="fjk-7p-7tk" firstAttribute="leading" secondItem="ORz-Op-z7J" secondAttribute="leading" id="MnE-il-It5"/>
                 <constraint firstItem="Pow-MK-Dl6" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="ObM-yV-Y6S"/>
                 <constraint firstItem="uIb-nU-T0x" firstAttribute="top" secondItem="Pow-MK-Dl6" secondAttribute="top" id="UTr-g3-EG7"/>
+                <constraint firstItem="ORz-Op-z7J" firstAttribute="leading" secondItem="Pow-MK-Dl6" secondAttribute="leading" id="VqU-PG-ACw"/>
+                <constraint firstItem="3UZ-ff-LN9" firstAttribute="trailing" secondItem="uIb-nU-T0x" secondAttribute="trailing" id="XQc-JI-1ZP"/>
+                <constraint firstItem="3UZ-ff-LN9" firstAttribute="bottom" secondItem="ORz-Op-z7J" secondAttribute="bottom" id="bbi-Nz-Pnb"/>
+                <constraint firstItem="ORz-Op-z7J" firstAttribute="trailing" secondItem="Pow-MK-Dl6" secondAttribute="trailing" id="fL4-A1-92D"/>
                 <constraint firstItem="uIb-nU-T0x" firstAttribute="width" secondItem="Pow-MK-Dl6" secondAttribute="width" id="llf-di-G5W"/>
+                <constraint firstItem="3UZ-ff-LN9" firstAttribute="leading" secondItem="uIb-nU-T0x" secondAttribute="leading" id="p6V-v1-8fR"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="uIb-nU-T0x" secondAttribute="trailing" constant="20" id="rA8-1V-eEi"/>
                 <constraint firstItem="uIb-nU-T0x" firstAttribute="leading" secondItem="Pow-MK-Dl6" secondAttribute="trailing" constant="30" id="te1-uK-7cb"/>
                 <constraint firstItem="uIb-nU-T0x" firstAttribute="height" secondItem="Pow-MK-Dl6" secondAttribute="height" id="v8H-jU-HQB"/>
+                <constraint firstItem="fjk-7p-7tk" firstAttribute="height" secondItem="ORz-Op-z7J" secondAttribute="height" id="zbh-qB-V3V"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <point key="canvasLocation" x="132" y="96"/>
