@@ -70,4 +70,10 @@ ios开发学习项目
 - 枚举示例
 - NSRunLoop常驻线程
 - 网络请求相关
-  - NSURLConnection
+  - NSURLSession基本使用
+  - NSURLSession代理
+  - NSURLSession文件下载
+  - NSURLSession大文件下载
+  - NSURLSession大文件下载断点续传(本地缓存)
+  - NSURLSession文件上传
+  - AFN基础请求
