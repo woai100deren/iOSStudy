@@ -207,6 +207,8 @@
 		E9D28DD0249B00D500CC0C71 /* NetNSURLSessionFileDownloadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9D28DCE249B00D500CC0C71 /* NetNSURLSessionFileDownloadViewController.xib */; };
 		E9D28DD4249B0C7600CC0C71 /* NetNSURLSessionBigDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D28DD2249B0C7600CC0C71 /* NetNSURLSessionBigDownloadViewController.m */; };
 		E9D28DD5249B0C7600CC0C71 /* NetNSURLSessionBigDownloadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9D28DD3249B0C7600CC0C71 /* NetNSURLSessionBigDownloadViewController.xib */; };
+		E9D28DD9249B348B00CC0C71 /* NetNSURLSessionBreakpointResumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D28DD7249B348B00CC0C71 /* NetNSURLSessionBreakpointResumeViewController.m */; };
+		E9D28DDA249B348B00CC0C71 /* NetNSURLSessionBreakpointResumeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9D28DD8249B348B00CC0C71 /* NetNSURLSessionBreakpointResumeViewController.xib */; };
 		E9EA4CEA2486410300E53569 /* FlagTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA4CE92486410300E53569 /* FlagTextField.m */; };
 		E9EA4CEC2486434D00E53569 /* flags.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9EA4CEB2486434D00E53569 /* flags.plist */; };
 		E9EA4CEF2486444900E53569 /* FlagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA4CEE2486444900E53569 /* FlagItem.m */; };
@@ -565,6 +567,9 @@
 		E9D28DD1249B0C7600CC0C71 /* NetNSURLSessionBigDownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetNSURLSessionBigDownloadViewController.h; sourceTree = "<group>"; };
 		E9D28DD2249B0C7600CC0C71 /* NetNSURLSessionBigDownloadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetNSURLSessionBigDownloadViewController.m; sourceTree = "<group>"; };
 		E9D28DD3249B0C7600CC0C71 /* NetNSURLSessionBigDownloadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NetNSURLSessionBigDownloadViewController.xib; sourceTree = "<group>"; };
+		E9D28DD6249B348B00CC0C71 /* NetNSURLSessionBreakpointResumeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetNSURLSessionBreakpointResumeViewController.h; sourceTree = "<group>"; };
+		E9D28DD7249B348B00CC0C71 /* NetNSURLSessionBreakpointResumeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetNSURLSessionBreakpointResumeViewController.m; sourceTree = "<group>"; };
+		E9D28DD8249B348B00CC0C71 /* NetNSURLSessionBreakpointResumeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NetNSURLSessionBreakpointResumeViewController.xib; sourceTree = "<group>"; };
 		E9EA4CE82486410300E53569 /* FlagTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlagTextField.h; sourceTree = "<group>"; };
 		E9EA4CE92486410300E53569 /* FlagTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlagTextField.m; sourceTree = "<group>"; };
 		E9EA4CEB2486434D00E53569 /* flags.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = flags.plist; sourceTree = "<group>"; };
@@ -826,6 +831,9 @@
 				E9D28DD1249B0C7600CC0C71 /* NetNSURLSessionBigDownloadViewController.h */,
 				E9D28DD2249B0C7600CC0C71 /* NetNSURLSessionBigDownloadViewController.m */,
 				E9D28DD3249B0C7600CC0C71 /* NetNSURLSessionBigDownloadViewController.xib */,
+				E9D28DD6249B348B00CC0C71 /* NetNSURLSessionBreakpointResumeViewController.h */,
+				E9D28DD7249B348B00CC0C71 /* NetNSURLSessionBreakpointResumeViewController.m */,
+				E9D28DD8249B348B00CC0C71 /* NetNSURLSessionBreakpointResumeViewController.xib */,
 			);
 			path = "网络请求相关";
 			sourceTree = "<group>";
@@ -1402,6 +1410,7 @@
 				E997387A247767CC00D6F041 /* Second.storyboard in Resources */,
 				E9444C25249A016E0036DB4B /* TableViewMainViewController.xib in Resources */,
 				D26E8C712495F8C800AD280F /* AnimVolumeVibrateViewController.xib in Resources */,
+				E9D28DDA249B348B00CC0C71 /* NetNSURLSessionBreakpointResumeViewController.xib in Resources */,
 				E94DCCBF24920CE900ACFF3E /* GestureLockViewController.xib in Resources */,
 				E9444BF52498CA930036DB4B /* SDWebImageListViewController.xib in Resources */,
 				E9ECA05E247F8E8C0041E22D /* MyTableViewCell.xib in Resources */,
@@ -1537,6 +1546,7 @@
 				E9444C092499B35F0036DB4B /* SDWebImageFrameViewController.m in Sources */,
 				E97D8B542488F193008CF06C /* LocalValueNSCodingViewController.m in Sources */,
 				E9549147247F98EC008C5995 /* MyTableViewDiffCell.m in Sources */,
+				E9D28DD9249B348B00CC0C71 /* NetNSURLSessionBreakpointResumeViewController.m in Sources */,
 				E94DCC8E2490CE7E00ACFF3E /* QDDownloadProgressView.m in Sources */,
 				E9A928E1248F37FC00694EF7 /* TransmitGreenView.m in Sources */,
 				D29E47192492669300BDB9C0 /* DBImageDealView.m in Sources */,

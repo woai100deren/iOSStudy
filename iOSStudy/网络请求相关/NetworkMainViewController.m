@@ -11,6 +11,7 @@
 #import "NetNSURLSessionDelegateViewController.h"
 #import "NetNSURLSessionFileDownloadViewController.h"
 #import "NetNSURLSessionBigDownloadViewController.h"
+#import "NetNSURLSessionBreakpointResumeViewController.h"
 
 @interface NetworkMainViewController ()
 
@@ -33,6 +34,9 @@
 }
 - (IBAction)urlSessionBigDownload:(id)sender {
     [self jump:[[NetNSURLSessionBigDownloadViewController alloc] init]];
+}
+- (IBAction)breakpointResume:(id)sender {
+    [self jump:[[NetNSURLSessionBreakpointResumeViewController alloc]init]];
 }
 
 -(void)jump:(UIViewController *)controller{

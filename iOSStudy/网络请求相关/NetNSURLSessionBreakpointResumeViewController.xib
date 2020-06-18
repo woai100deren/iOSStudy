@@ -8,11 +8,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NetNSURLSessionBigDownloadViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NetNSURLSessionBreakpointResumeViewController">
             <connections>
-                <outlet property="label" destination="thT-Xg-9eo" id="QUL-do-IVr"/>
-                <outlet property="progressLabel" destination="84k-y4-frK" id="CWH-Qu-F5N"/>
-                <outlet property="progressView" destination="2Sb-KJ-0E4" id="k6l-Jf-6f4"/>
+                <outlet property="label" destination="thT-Xg-9eo" id="J92-Pq-uaY"/>
+                <outlet property="progressLabel" destination="84k-y4-frK" id="q6B-TO-KQG"/>
+                <outlet property="progressView" destination="2Sb-KJ-0E4" id="O0E-uc-Bmc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -28,7 +28,7 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <connections>
-                        <action selector="downloadMovie:" destination="-1" eventType="touchUpInside" id="HBd-Bj-o0N"/>
+                        <action selector="download:" destination="-1" eventType="touchUpInside" id="vTG-La-39O"/>
                     </connections>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Sb-KJ-0E4" customClass="QDDownloadProgressView">
@@ -65,7 +65,7 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <connections>
-                        <action selector="pauseDownload:" destination="-1" eventType="touchUpInside" id="fhq-h8-55r"/>
+                        <action selector="pauseDownload:" destination="-1" eventType="touchUpInside" id="8as-P4-OCi"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahd-XQ-RaD">
@@ -75,7 +75,7 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <connections>
-                        <action selector="continueDownload:" destination="-1" eventType="touchUpInside" id="qZr-xc-0hG"/>
+                        <action selector="continueDownload:" destination="-1" eventType="touchUpInside" id="NmY-WE-NKj"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aft-dR-OtA">
@@ -85,39 +85,59 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <connections>
-                        <action selector="cancelDownload:" destination="-1" eventType="touchUpInside" id="z5z-AF-ZqN"/>
+                        <action selector="cancelDownload:" destination="-1" eventType="touchUpInside" id="iTN-a7-HxL"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="退出页面再次进入，不能断点续传" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5HW-cs-4Zw">
-                    <rect key="frame" x="54" y="424" width="306" height="24"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elP-9V-Ka4">
+                    <rect key="frame" x="30" y="424" width="354" height="72"/>
+                    <string key="text">退出页面再次进入，可以断点续传。
+如果想测试此功能，可以先点击下面的清除下载缓存按钮。</string>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1BD-r6-PRV">
+                    <rect key="frame" x="147" y="526" width="120" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="KlT-qH-rLU"/>
+                        <constraint firstAttribute="width" constant="120" id="rzx-BL-X1E"/>
+                    </constraints>
+                    <state key="normal" title="清除下载缓存">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="clearCache:" destination="-1" eventType="touchUpInside" id="3ze-mC-sAd"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstItem="2Sb-KJ-0E4" firstAttribute="top" secondItem="thT-Xg-9eo" secondAttribute="bottom" constant="30" id="2uc-fL-IyZ"/>
+                <constraint firstAttribute="trailing" secondItem="elP-9V-Ka4" secondAttribute="trailing" constant="30" id="4TD-T1-q8K"/>
                 <constraint firstItem="thT-Xg-9eo" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="4s0-tX-4kV"/>
                 <constraint firstItem="ahd-XQ-RaD" firstAttribute="width" secondItem="U0F-t3-4XA" secondAttribute="width" id="59y-TK-oat"/>
                 <constraint firstItem="Aft-dR-OtA" firstAttribute="top" secondItem="U0F-t3-4XA" secondAttribute="top" id="5UF-EE-ktl"/>
                 <constraint firstItem="Aft-dR-OtA" firstAttribute="leading" secondItem="ahd-XQ-RaD" secondAttribute="trailing" constant="20" id="5aM-fe-7VG"/>
                 <constraint firstItem="2Sb-KJ-0E4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="60S-hY-BMd"/>
                 <constraint firstItem="U0F-t3-4XA" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="6pM-MB-2I2"/>
+                <constraint firstItem="elP-9V-Ka4" firstAttribute="top" secondItem="2Sb-KJ-0E4" secondAttribute="bottom" constant="20" id="7kN-lI-8Pz"/>
                 <constraint firstItem="U0F-t3-4XA" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="30" id="805-hQ-1r1"/>
-                <constraint firstItem="5HW-cs-4Zw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="C1K-SO-V7h"/>
                 <constraint firstItem="ahd-XQ-RaD" firstAttribute="height" secondItem="U0F-t3-4XA" secondAttribute="height" id="C55-Uk-Gtb"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Aft-dR-OtA" secondAttribute="trailing" constant="15" id="DQ8-k3-7pM"/>
                 <constraint firstItem="Aft-dR-OtA" firstAttribute="width" secondItem="U0F-t3-4XA" secondAttribute="width" id="FxR-PQ-wTj"/>
                 <constraint firstItem="Aft-dR-OtA" firstAttribute="height" secondItem="U0F-t3-4XA" secondAttribute="height" id="HWk-Ik-yws"/>
                 <constraint firstItem="Xp2-nI-Ccg" firstAttribute="width" secondItem="U0F-t3-4XA" secondAttribute="width" id="J13-1b-5OE"/>
+                <constraint firstItem="elP-9V-Ka4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Jsr-sX-yeL"/>
                 <constraint firstItem="thT-Xg-9eo" firstAttribute="top" secondItem="U0F-t3-4XA" secondAttribute="bottom" constant="10" id="LD1-Q7-wdF"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="thT-Xg-9eo" secondAttribute="trailing" constant="20" id="LNX-Fv-iSr"/>
+                <constraint firstItem="elP-9V-Ka4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="Z0g-8h-B16"/>
+                <constraint firstItem="1BD-r6-PRV" firstAttribute="top" secondItem="elP-9V-Ka4" secondAttribute="bottom" constant="30" id="ZbN-SI-kWg"/>
                 <constraint firstItem="Xp2-nI-Ccg" firstAttribute="top" secondItem="U0F-t3-4XA" secondAttribute="top" id="bAm-4l-bgT"/>
                 <constraint firstItem="ahd-XQ-RaD" firstAttribute="leading" secondItem="Xp2-nI-Ccg" secondAttribute="trailing" constant="20" id="i36-Hd-1Qk"/>
                 <constraint firstItem="Xp2-nI-Ccg" firstAttribute="height" secondItem="U0F-t3-4XA" secondAttribute="height" id="qUc-IA-Ejc"/>
-                <constraint firstItem="5HW-cs-4Zw" firstAttribute="top" secondItem="2Sb-KJ-0E4" secondAttribute="bottom" constant="20" id="tBT-O4-fZA"/>
                 <constraint firstItem="ahd-XQ-RaD" firstAttribute="top" secondItem="U0F-t3-4XA" secondAttribute="top" id="vj4-r9-zJ4"/>
+                <constraint firstItem="1BD-r6-PRV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vpB-V2-7rw"/>
                 <constraint firstItem="Xp2-nI-Ccg" firstAttribute="leading" secondItem="U0F-t3-4XA" secondAttribute="trailing" constant="20" id="wEJ-p9-OdF"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
