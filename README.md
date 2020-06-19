@@ -77,3 +77,5 @@ ios开发学习项目
   - NSURLSession大文件下载断点续传(本地缓存)
   - NSURLSession文件上传
   - AFN基础请求
+  - AFN文件下载
+  - AFN文件上传
