@@ -121,9 +121,25 @@
                         <action selector="afnBase:" destination="-1" eventType="touchUpInside" id="J2E-ij-pLB"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Qg2-PG-Xvy">
+                    <rect key="frame" x="222" y="264" width="172" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="IKo-CY-jpK"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="s1i-R1-r9U"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="AFN文件下载">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="afnDownload:" destination="-1" eventType="touchUpInside" id="95f-Ni-Lcm"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
+                <constraint firstItem="Qg2-PG-Xvy" firstAttribute="top" secondItem="oXQ-2s-1zG" secondAttribute="top" id="3Tr-Pg-LdU"/>
                 <constraint firstItem="3UZ-ff-LN9" firstAttribute="top" secondItem="ORz-Op-z7J" secondAttribute="top" id="61J-7j-5SR"/>
                 <constraint firstItem="vmx-d1-N1m" firstAttribute="leading" secondItem="3UZ-ff-LN9" secondAttribute="leading" id="7uE-5a-443"/>
                 <constraint firstItem="Pow-MK-Dl6" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="10" id="Bqj-wo-Czz"/>
@@ -132,12 +148,15 @@
                 <constraint firstItem="fjk-7p-7tk" firstAttribute="top" secondItem="ORz-Op-z7J" secondAttribute="bottom" constant="30" id="HpF-RI-SUb"/>
                 <constraint firstItem="ORz-Op-z7J" firstAttribute="top" secondItem="Pow-MK-Dl6" secondAttribute="bottom" constant="30" id="JaE-A8-6Vu"/>
                 <constraint firstItem="fjk-7p-7tk" firstAttribute="leading" secondItem="ORz-Op-z7J" secondAttribute="leading" id="MnE-il-It5"/>
+                <constraint firstItem="Qg2-PG-Xvy" firstAttribute="trailing" secondItem="vmx-d1-N1m" secondAttribute="trailing" id="NDB-d5-Fxv"/>
                 <constraint firstItem="Pow-MK-Dl6" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="ObM-yV-Y6S"/>
                 <constraint firstItem="uIb-nU-T0x" firstAttribute="top" secondItem="Pow-MK-Dl6" secondAttribute="top" id="UTr-g3-EG7"/>
                 <constraint firstItem="ORz-Op-z7J" firstAttribute="leading" secondItem="Pow-MK-Dl6" secondAttribute="leading" id="VqU-PG-ACw"/>
                 <constraint firstItem="3UZ-ff-LN9" firstAttribute="trailing" secondItem="uIb-nU-T0x" secondAttribute="trailing" id="XQc-JI-1ZP"/>
                 <constraint firstItem="vmx-d1-N1m" firstAttribute="trailing" secondItem="3UZ-ff-LN9" secondAttribute="trailing" id="YBW-Gf-R7S"/>
+                <constraint firstItem="Qg2-PG-Xvy" firstAttribute="bottom" secondItem="oXQ-2s-1zG" secondAttribute="bottom" id="Zka-fb-vCU"/>
                 <constraint firstItem="3UZ-ff-LN9" firstAttribute="bottom" secondItem="ORz-Op-z7J" secondAttribute="bottom" id="bbi-Nz-Pnb"/>
+                <constraint firstItem="Qg2-PG-Xvy" firstAttribute="leading" secondItem="vmx-d1-N1m" secondAttribute="leading" id="eRV-Mo-aRn"/>
                 <constraint firstItem="ORz-Op-z7J" firstAttribute="trailing" secondItem="Pow-MK-Dl6" secondAttribute="trailing" id="fL4-A1-92D"/>
                 <constraint firstItem="oXQ-2s-1zG" firstAttribute="top" secondItem="fjk-7p-7tk" secondAttribute="bottom" constant="30" id="hcN-eV-jO8"/>
                 <constraint firstItem="vmx-d1-N1m" firstAttribute="top" secondItem="fjk-7p-7tk" secondAttribute="top" id="iKh-Ow-SK3"/>

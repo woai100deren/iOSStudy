@@ -214,6 +214,8 @@
 		E9D28DE2249B57B200CC0C71 /* NetResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D28DE1249B57B200CC0C71 /* NetResultModel.m */; };
 		E9D28DE8249B698700CC0C71 /* NetAFNBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D28DE6249B698700CC0C71 /* NetAFNBaseViewController.m */; };
 		E9D28DE9249B698700CC0C71 /* NetAFNBaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9D28DE7249B698700CC0C71 /* NetAFNBaseViewController.xib */; };
+		E9D28DED249C47F000CC0C71 /* NetDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D28DEB249C47F000CC0C71 /* NetDownloadViewController.m */; };
+		E9D28DEE249C47F000CC0C71 /* NetDownloadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9D28DEC249C47F000CC0C71 /* NetDownloadViewController.xib */; };
 		E9EA4CEA2486410300E53569 /* FlagTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA4CE92486410300E53569 /* FlagTextField.m */; };
 		E9EA4CEC2486434D00E53569 /* flags.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9EA4CEB2486434D00E53569 /* flags.plist */; };
 		E9EA4CEF2486444900E53569 /* FlagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA4CEE2486444900E53569 /* FlagItem.m */; };
@@ -583,6 +585,9 @@
 		E9D28DE5249B698700CC0C71 /* NetAFNBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetAFNBaseViewController.h; sourceTree = "<group>"; };
 		E9D28DE6249B698700CC0C71 /* NetAFNBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetAFNBaseViewController.m; sourceTree = "<group>"; };
 		E9D28DE7249B698700CC0C71 /* NetAFNBaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NetAFNBaseViewController.xib; sourceTree = "<group>"; };
+		E9D28DEA249C47F000CC0C71 /* NetDownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetDownloadViewController.h; sourceTree = "<group>"; };
+		E9D28DEB249C47F000CC0C71 /* NetDownloadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetDownloadViewController.m; sourceTree = "<group>"; };
+		E9D28DEC249C47F000CC0C71 /* NetDownloadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NetDownloadViewController.xib; sourceTree = "<group>"; };
 		E9EA4CE82486410300E53569 /* FlagTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlagTextField.h; sourceTree = "<group>"; };
 		E9EA4CE92486410300E53569 /* FlagTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlagTextField.m; sourceTree = "<group>"; };
 		E9EA4CEB2486434D00E53569 /* flags.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = flags.plist; sourceTree = "<group>"; };
@@ -1248,6 +1253,9 @@
 				E9D28DE5249B698700CC0C71 /* NetAFNBaseViewController.h */,
 				E9D28DE6249B698700CC0C71 /* NetAFNBaseViewController.m */,
 				E9D28DE7249B698700CC0C71 /* NetAFNBaseViewController.xib */,
+				E9D28DEA249C47F000CC0C71 /* NetDownloadViewController.h */,
+				E9D28DEB249C47F000CC0C71 /* NetDownloadViewController.m */,
+				E9D28DEC249C47F000CC0C71 /* NetDownloadViewController.xib */,
 			);
 			path = AFN;
 			sourceTree = "<group>";
@@ -1507,6 +1515,7 @@
 				E97D8B692488F253008CF06C /* LocalValueMainViewController.xib in Resources */,
 				E94DCCA52491CB7800ACFF3E /* ImageWatermarkViewController.xib in Resources */,
 				E9444C0A2499B35F0036DB4B /* SDWebImageFrameViewController.xib in Resources */,
+				E9D28DEE249C47F000CC0C71 /* NetDownloadViewController.xib in Resources */,
 				E9444BF72498CAC30036DB4B /* games.plist in Resources */,
 				E9EA4D27248880C400E53569 /* ABTableViewCell.xib in Resources */,
 				E9300EF7247B69410035BF4C /* Third.storyboard in Resources */,
@@ -1625,6 +1634,7 @@
 				E9A928FA248F813B00694EF7 /* GestureViewController.m in Sources */,
 				E9A928D2248F2DD000694EF7 /* EventUIDragViewController.m in Sources */,
 				E98AFFF6247E0AB000669BB8 /* MasonryViewController.m in Sources */,
+				E9D28DED249C47F000CC0C71 /* NetDownloadViewController.m in Sources */,
 				E94DCCBE24920CE900ACFF3E /* GestureLockViewController.m in Sources */,
 				E9A928E4248F384A00694EF7 /* TransmitBlueView.m in Sources */,
 				E97D8B6C2489E349008CF06C /* LocalValueModel.m in Sources */,

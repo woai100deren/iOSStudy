@@ -14,6 +14,7 @@
 #import "NetNSURLSessionBreakpointResumeViewController.h"
 #import "NSURLSessionUploadFileViewController.h"
 #import "NetAFNBaseViewController.h"
+#import "NetDownloadViewController.h"
 
 @interface NetworkMainViewController ()
 
@@ -45,6 +46,9 @@
 }
 - (IBAction)afnBase:(id)sender {
     [self jump:[[NetAFNBaseViewController alloc] init]];
+}
+- (IBAction)afnDownload:(id)sender {
+    [self jump:[[NetDownloadViewController alloc] init]];
 }
 
 -(void)jump:(UIViewController *)controller{
