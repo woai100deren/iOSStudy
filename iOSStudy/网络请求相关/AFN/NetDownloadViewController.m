@@ -45,6 +45,7 @@ static NSString *url = @"http://clientsys.aslkt.com/uploads/apk/2020/06/13/aslkt
         //下载完成回调。filePath 实际最终存储文件路径，这个路径与destination返回的路径一致。
         //下载完成后的回调是在主线程
         self.resultLabel.text = [NSString stringWithFormat:@"下载完成，文件存储至：%@",filePath];
+        NSLog(@"文件存储路径：%@",filePath);
     }];
     
     [downloadTask resume];

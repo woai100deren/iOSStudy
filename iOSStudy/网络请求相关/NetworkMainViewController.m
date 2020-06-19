@@ -15,6 +15,7 @@
 #import "NSURLSessionUploadFileViewController.h"
 #import "NetAFNBaseViewController.h"
 #import "NetDownloadViewController.h"
+#import "AFNUploadViewController.h"
 
 @interface NetworkMainViewController ()
 
@@ -49,6 +50,9 @@
 }
 - (IBAction)afnDownload:(id)sender {
     [self jump:[[NetDownloadViewController alloc] init]];
+}
+- (IBAction)afnUpload:(id)sender {
+    [self jump:[[AFNUploadViewController alloc] init]];
 }
 
 -(void)jump:(UIViewController *)controller{

@@ -216,6 +216,9 @@
 		E9D28DE9249B698700CC0C71 /* NetAFNBaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9D28DE7249B698700CC0C71 /* NetAFNBaseViewController.xib */; };
 		E9D28DED249C47F000CC0C71 /* NetDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D28DEB249C47F000CC0C71 /* NetDownloadViewController.m */; };
 		E9D28DEE249C47F000CC0C71 /* NetDownloadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9D28DEC249C47F000CC0C71 /* NetDownloadViewController.xib */; };
+		E9D28DF2249C50F100CC0C71 /* AFNUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D28DF0249C50F100CC0C71 /* AFNUploadViewController.m */; };
+		E9D28DF3249C50F100CC0C71 /* AFNUploadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9D28DF1249C50F100CC0C71 /* AFNUploadViewController.xib */; };
+		E9D28DF6249C58AA00CC0C71 /* AXBHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D28DF5249C58AA00CC0C71 /* AXBHttpTool.m */; };
 		E9EA4CEA2486410300E53569 /* FlagTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA4CE92486410300E53569 /* FlagTextField.m */; };
 		E9EA4CEC2486434D00E53569 /* flags.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9EA4CEB2486434D00E53569 /* flags.plist */; };
 		E9EA4CEF2486444900E53569 /* FlagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EA4CEE2486444900E53569 /* FlagItem.m */; };
@@ -588,6 +591,11 @@
 		E9D28DEA249C47F000CC0C71 /* NetDownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetDownloadViewController.h; sourceTree = "<group>"; };
 		E9D28DEB249C47F000CC0C71 /* NetDownloadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetDownloadViewController.m; sourceTree = "<group>"; };
 		E9D28DEC249C47F000CC0C71 /* NetDownloadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NetDownloadViewController.xib; sourceTree = "<group>"; };
+		E9D28DEF249C50F100CC0C71 /* AFNUploadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNUploadViewController.h; sourceTree = "<group>"; };
+		E9D28DF0249C50F100CC0C71 /* AFNUploadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNUploadViewController.m; sourceTree = "<group>"; };
+		E9D28DF1249C50F100CC0C71 /* AFNUploadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AFNUploadViewController.xib; sourceTree = "<group>"; };
+		E9D28DF4249C58AA00CC0C71 /* AXBHttpTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AXBHttpTool.h; sourceTree = "<group>"; };
+		E9D28DF5249C58AA00CC0C71 /* AXBHttpTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AXBHttpTool.m; sourceTree = "<group>"; };
 		E9EA4CE82486410300E53569 /* FlagTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlagTextField.h; sourceTree = "<group>"; };
 		E9EA4CE92486410300E53569 /* FlagTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlagTextField.m; sourceTree = "<group>"; };
 		E9EA4CEB2486434D00E53569 /* flags.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = flags.plist; sourceTree = "<group>"; };
@@ -1256,6 +1264,11 @@
 				E9D28DEA249C47F000CC0C71 /* NetDownloadViewController.h */,
 				E9D28DEB249C47F000CC0C71 /* NetDownloadViewController.m */,
 				E9D28DEC249C47F000CC0C71 /* NetDownloadViewController.xib */,
+				E9D28DEF249C50F100CC0C71 /* AFNUploadViewController.h */,
+				E9D28DF0249C50F100CC0C71 /* AFNUploadViewController.m */,
+				E9D28DF1249C50F100CC0C71 /* AFNUploadViewController.xib */,
+				E9D28DF4249C58AA00CC0C71 /* AXBHttpTool.h */,
+				E9D28DF5249C58AA00CC0C71 /* AXBHttpTool.m */,
 			);
 			path = AFN;
 			sourceTree = "<group>";
@@ -1532,6 +1545,7 @@
 				D26E8C6C2494FECB00AD280F /* ImageFoldViewController.xib in Resources */,
 				E9EA4D1A2487A2B900E53569 /* ABAddContactsViewController.xib in Resources */,
 				E9444BC424975B660036DB4B /* ThreadGCDViewController.xib in Resources */,
+				E9D28DF3249C50F100CC0C71 /* AFNUploadViewController.xib in Resources */,
 				E97D8BFA248F215A008CF06C /* AnimationMainViewController.xib in Resources */,
 				E97D8BEA248E3A2F008CF06C /* DynamicViewController.xib in Resources */,
 				E97D8B502488F17F008CF06C /* LocalValuePreferenceViewController.xib in Resources */,
@@ -1608,6 +1622,7 @@
 				D26E8C7D24965BCF00AD280F /* AnimParticleEffectViewController.m in Sources */,
 				E97D8B632488F1C7008CF06C /* LocalValueCoreDataViewController.m in Sources */,
 				E94DCC912490DB2900ACFF3E /* QDTextView.m in Sources */,
+				E9D28DF2249C50F100CC0C71 /* AFNUploadViewController.m in Sources */,
 				E9444C142499C8FD0036DB4B /* NSCacheViewController.m in Sources */,
 				E9EA4CEF2486444900E53569 /* FlagItem.m in Sources */,
 				E97F33802484DE550068E757 /* UiapplicationStudyViewController.m in Sources */,
@@ -1620,6 +1635,7 @@
 				E97D8BFD248F226C008CF06C /* AnimTransformViewController.m in Sources */,
 				E9EA4D2B24888AB800E53569 /* ABContactsDetailViewController.m in Sources */,
 				E9A928EA248F38D300694EF7 /* TransmitRedView.m in Sources */,
+				E9D28DF6249C58AA00CC0C71 /* AXBHttpTool.m in Sources */,
 				E98A0094247E6E6500669BB8 /* MyTableViewCell.m in Sources */,
 				E9D28DCF249B00D500CC0C71 /* NetNSURLSessionFileDownloadViewController.m in Sources */,
 				E94DCCDA24932E0500ACFF3E /* AnimImplicitAnimViewController.m in Sources */,
@@ -1878,6 +1894,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dj.iOSStudy;
 				PRODUCT_NAME = "iOS学习";
 				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Debug;
 		};
@@ -1896,6 +1913,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dj.iOSStudy;
 				PRODUCT_NAME = "iOS学习";
 				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Release;
 		};
