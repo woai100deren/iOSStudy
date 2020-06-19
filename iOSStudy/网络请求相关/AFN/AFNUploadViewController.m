@@ -8,8 +8,9 @@
 
 #import "AFNUploadViewController.h"
 #import "AFNetworking.h"
-#import "NetResultModel.h"
 #import <SDWebImage/SDWebImage.h>
+#import "NetResultModel.h"
+#import "MJExtension.h"
 
 //分隔符
 #define AXBBoundary @"AXB"
@@ -53,9 +54,8 @@
                 self.progressLabel.text = [NSString stringWithFormat:@"上传进度：%.2f%%",100.0f * uploadProgress.completedUnitCount / uploadProgress.totalUnitCount];
             });
         } completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
-    //        NSString *json = [[NSString alloc]initWithData:responseObject encoding:NSUTF8StringEncoding];
-    //        NetResultModel *result = [[NetResultModel alloc] initWithString:json error:nil];
-    //        [self.imageView sd_setImageWithURL:[NSURL URLWithString:result.filePath]];
+            NetResultModel * model = [NetResultModel mj_objectWithKeyValues:responseObject];
+            [self.imageView sd_setImageWithURL:[NSURL URLWithString:model.filePath]];
         }];
         
         [uploadTask resume];
@@ -81,6 +81,8 @@
         });
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSLog(@"上传成功%@",responseObject);
+        NetResultModel * model = [NetResultModel mj_objectWithKeyValues:responseObject];
+        [self.imageView sd_setImageWithURL:[NSURL URLWithString:model.filePath]];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"上传失败%@",error);
     }];
